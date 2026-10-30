@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cambridge Bops</title>
+<meta name="description" content="Bops, gigs, quizzes, formals and other small things happening in Cambridge this week. Updated daily. Anyone can add an event.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow column, like a departmental listings page. Days are headings, events are rows. */
+:root {
+  --bg: #F8F8F6;
+  --fg: #16181C;
+  --muted: #6B7280;
+  --rule: #DDDFE0;
+  --accent: #2C6E63;        /* darkened Cambridge blue-green, used for links and the button */
+  --accent-ink: #FFFFFF;
+  --field: #FFFFFF;
+  --display: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #131416; --fg: #E8E8E4; --muted: #9AA0A8; --rule: #2A2D31;
+    --accent: #7FC4B5; --accent-ink: #0F1B18; --field: #1B1D20; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #131416; --fg: #E8E8E4; --muted: #9AA0A8; --rule: #2A2D31;
+  --accent: #7FC4B5; --accent-ink: #0F1B18; --field: #1B1D20; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--body); font-size: 15px; line-height: 1.5;
+  padding-block: 2.5rem 4rem;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+main { max-width: 42rem; margin: 0 auto; }
+a { color: var(--accent); text-decoration: none; }
+a:hover, a:focus-visible { text-decoration: underline; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1.5rem; }
+h1 { font-family: var(--display); font-weight: 400; font-size: 2.6rem; line-height: 1; margin: 0; letter-spacing: -0.01em; }
+h1 em { font-style: italic; color: var(--muted); }
+.tagline { color: var(--muted); margin: .4rem 0 0; max-width: 34rem; }
+
+nav.filters { display: flex; flex-wrap: wrap; gap: .35rem .9rem; margin: 1.75rem 0 .25rem; border-bottom: 1px solid var(--rule); padding-bottom: .75rem; }
+nav.filters button {
+  background: none; border: 0; padding: .15rem 0; font: inherit; font-size: .85rem; color: var(--muted); cursor: pointer;
+  text-transform: uppercase; letter-spacing: .06em;
+}
+nav.filters button[aria-pressed="true"] { color: var(--fg); box-shadow: inset 0 -2px 0 var(--fg); }
+nav.filters .spacer { flex: 1; }
+nav.filters .add { color: var(--accent); text-transform: none; letter-spacing: 0; font-weight: 500; }
+
+h2 { font-family: var(--display); font-weight: 400; font-size: 1.45rem; margin: 1.9rem 0 .45rem; }
+h2 small { font-family: var(--body); font-size: .8rem; color: var(--muted); margin-left: .6rem; text-transform: uppercase; letter-spacing: .06em; }
+ul.events { list-style: none; margin: 0; padding: 0; }
+ul.events li {
+  display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: .25rem 1rem;
+  padding: .6rem 0; border-top: 1px solid var(--rule);
+}
+ul.events li:last-child { border-bottom: 1px solid var(--rule); }
+.time { font-variant-numeric: tabular-nums; color: var(--muted); padding-top: .05em; }
+.title { font-weight: 500; }
+.title a { color: inherit; }
+.title a::after { content: " ↗"; color: var(--muted); font-weight: 400; }
+.meta { color: var(--muted); font-size: .9rem; }
+.meta .kind { text-transform: uppercase; letter-spacing: .06em; font-size: .72rem; }
+.meta .sep { margin: 0 .4em; }
+.details { color: var(--fg); font-size: .9rem; margin-top: .15rem; opacity: .85; }
+.empty, .status { color: var(--muted); padding: 1.5rem 0; }
+.status.error { color: #B4432F; }
+
+footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .85rem; display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; }
+
+/* Submission form */
+dialog {
+  background: var(--bg); color: var(--fg); border: 1px solid var(--rule); border-radius: 6px;
+  padding: 1.5rem; width: min(26rem, calc(100vw - 32px)); max-width: none;
+}
+dialog::backdrop { background: rgba(0,0,0,.35); }
+dialog h3 { font-family: var(--display); font-weight: 400; font-size: 1.6rem; margin: 0 0 .25rem; }
+dialog p.hint { color: var(--muted); margin: 0 0 1rem; font-size: .9rem; }
+form { display: grid; gap: .75rem; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+label { display: grid; gap: .25rem; font-size: .8rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+input, select, textarea {
+  font: inherit; font-size: 15px; color: var(--fg); background: var(--field);
+  border: 1px solid var(--rule); border-radius: 4px; padding: .5rem .6rem; width: 100%; min-width: 0;
+}
+textarea { resize: vertical; min-height: 3.5rem; }
+.actions { display: flex; gap: .75rem; align-items: center; margin-top: .25rem; }
+button.primary {
+  font: inherit; font-weight: 500; background: var(--accent); color: var(--accent-ink);
+  border: 0; border-radius: 4px; padding: .55rem 1rem; cursor: pointer;
+}
+button.primary[disabled] { opacity: .6; cursor: default; }
+button.link { font: inherit; background: none; border: 0; color: var(--muted); cursor: pointer; padding: .5rem 0; }
+.formstatus { font-size: .9rem; color: var(--muted); }
+.honey { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+@media (max-width: 480px) {
+  h1 { font-size: 2.2rem; }
+  ul.events li { grid-template-columns: 3.6rem minmax(0, 1fr); }
+  .row { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: no-preference) { dialog[open] { animation: fade .15s ease-out; } }
+@keyframes fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <h1>Cambridge <em>Bops</em></h1>
+      <p class="tagline">Bops, gigs, pub quizzes, formals and the other small things on in Cambridge this fortnight. Refreshed every morning.</p>
+    </div>
+  </header>
+
+  <nav class="filters" aria-label="Filter by kind">
+    <button type="button" data-kind="all" aria-pressed="true">All</button>
+    <button type="button" data-kind="bop" aria-pressed="false">Bops</button>
+    <button type="button" data-kind="gig" aria-pressed="false">Gigs</button>
+    <button type="button" data-kind="quiz" aria-pressed="false">Quizzes</button>
+    <button type="button" data-kind="formal" aria-pressed="false">Formals</button>
+    <button type="button" data-kind="comedy" aria-pressed="false">Comedy</button>
+    <button type="button" data-kind="party" aria-pressed="false">Parties</button>
+    <button type="button" data-kind="other" aria-pressed="false">Other</button>
+    <span class="spacer"></span>
+    <button type="button" class="add" id="open-form">+ Add an event</button>
+  </nav>
+
+  <section id="list" aria-live="polite">
+    <p class="status" id="loading">Loading…</p>
+  </section>
+
+  <footer>
+    <span id="lastrun">Listings are gathered each morning from venue and society pages, plus what people add here.</span>
+    <span><a href="#" id="open-form-2">Add an event</a></span>
+  </footer>
+</main>
+
+<dialog id="dlg">
+  <h3>Add an event</h3>
+  <p class="hint">Six fields, thirty seconds. It appears after the next morning's check.</p>
+  <form id="form" novalidate>
+    <label>Event <input id="f-title" name="title" required maxlength="120" placeholder="Selwyn Halloween Bop" autocomplete="off"></label>
+    <div class="row">
+      <label>Date <input id="f-date" name="date" type="date" required></label>
+      <label>Time <input id="f-time" name="time" type="time" required value="21:00"></label>
+    </div>
+    <div class="row">
+      <label>Where <input id="f-venue" name="venue" required maxlength="120" placeholder="Selwyn bar"></label>
+      <label>Kind
+        <select id="f-kind" name="kind">
+          <option value="bop">Bop</option><option value="gig">Gig</option><option value="quiz">Quiz</option>
+          <option value="formal">Formal / swap</option><option value="comedy">Comedy</option>
+          <option value="party">Party</option><option value="other" selected>Other</option>
+        </select>
+      </label>
+    </div>
+    <label>Link or note <span style="text-transform:none;letter-spacing:0">(optional)</span> <input id="f-extra" name="extra" maxlength="500" placeholder="https://… or £5 on the door, fancy dress"></label>
+    <div class="honey" aria-hidden="true"><label>Website <input id="f-website" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="actions">
+      <button type="submit" class="primary" id="submit">Add it</button>
+      <button type="button" class="link" id="cancel">Cancel</button>
+      <span class="formstatus" id="formstatus"></span>
+    </div>
+  </form>
+</dialog>
+
+<script>
+(function () {
+  const SUPABASE_URL = "__SUPABASE_URL__";
+  const SUPABASE_KEY = "__SUPABASE_KEY__";
+  const TZ = "Europe/London";
+  const headers = { apikey: SUPABASE_KEY, Authorization: "Bearer " + SUPABASE_KEY };
+
+  const list = document.getElementById("list");
+  const dlg = document.getElementById("dlg");
+  const form = document.getElementById("form");
+  const formstatus = document.getElementById("formstatus");
+  let events = [];
+  let kind = "all";
+  try { kind = localStorage.getItem("cambops.kind") || "all"; } catch (e) {}
+
+  const dayKey = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" });
+  const dayLabel = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "long", day: "numeric", month: "long" });
+  const timeLabel = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false });
+  const KIND_NAMES = { bop: "Bop", gig: "Gig", quiz: "Quiz", formal: "Formal", comedy: "Comedy", party: "Party", other: "" };
+
+  function esc(s) { return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+  function relDay(key) {
+    const today = dayKey.format(new Date());
+    const tomorrow = dayKey.format(new Date(Date.now() + 864e5));
+    return key === today ? "Today" : key === tomorrow ? "Tomorrow" : "";
+  }
+
+  function render() {
+    const shown = events.filter(e => kind === "all" || e.kind === kind);
+    if (!shown.length) {
+      list.innerHTML = '<p class="empty">Nothing listed' + (kind === "all" ? " yet" : " under this kind") + '. Know of something? <a href="#" data-open>Add it</a>.</p>';
+      return;
+    }
+    const groups = new Map();
+    for (const e of shown) {
+      const k = dayKey.format(new Date(e.starts_at));
+      if (!groups.has(k)) groups.set(k, []);
+      groups.get(k).push(e);
+    }
+    let html = "";
+    for (const [k, items] of groups) {
+      const rel = relDay(k);
+      html += "<h2>" + esc(dayLabel.format(new Date(k + "T12:00:00"))) + (rel ? "<small>" + rel + "</small>" : "") + "</h2><ul class=\"events\">";
+      for (const e of items) {
+        const t = timeLabel.format(new Date(e.starts_at));
+        const title = e.url ? '<a href="' + esc(e.url) + '" rel="noopener" target="_blank">' + esc(e.title) + "</a>" : esc(e.title);
+        const bits = [];
+        if (KIND_NAMES[e.kind]) bits.push('<span class="kind">' + KIND_NAMES[e.kind] + "</span>");
+        bits.push(esc(e.venue));
+        if (e.host) bits.push(esc(e.host));
+        if (e.price) bits.push(esc(e.price));
+        html += '<li><span class="time">' + t + '</span><div><div class="title">' + title + '</div><div class="meta">' + bits.join('<span class="sep">·</span>') + "</div>" +
+          (e.details ? '<div class="details">' + esc(e.details) + "</div>" : "") + "</div></li>";
+      }
+      html += "</ul>";
+    }
+    list.innerHTML = html;
+  }
+
+  async function load() {
+    const since = new Date(Date.now() - 4 * 3600e3).toISOString();
+    try {
+      const r = await fetch(SUPABASE_URL + "/rest/v1/events?select=title,starts_at,venue,kind,host,price,url,details&starts_at=gte." + encodeURIComponent(since) + "&order=starts_at.asc&limit=500", { headers });
+      if (!r.ok) throw new Error(r.status);
+      events = await r.json();
+      render();
+    } catch (err) {
+      list.innerHTML = '<p class="status error">Could not load the listings. Try again in a minute.</p>';
+    }
+    try {
+      const r = await fetch(SUPABASE_URL + "/rest/v1/scrape_runs?select=ran_at,added,sources&order=ran_at.desc&limit=1", { headers });
+      const rows = r.ok ? await r.json() : [];
+      if (rows.length) {
+        const when = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "short", hour: "2-digit", minute: "2-digit" }).format(new Date(rows[0].ran_at));
+        const n = Array.isArray(rows[0].sources) ? rows[0].sources.length : 0;
+        document.getElementById("lastrun").textContent = "Last checked " + when + (n ? " across " + n + " sources" : "") + ". Plus whatever people add here.";
+      }
+    } catch (e) {}
+  }
+
+  // Filters
+  document.querySelectorAll("nav.filters button[data-kind]").forEach(b => {
+    b.setAttribute("aria-pressed", String(b.dataset.kind === kind));
+    b.addEventListener("click", () => {
+      kind = b.dataset.kind;
+      try { localStorage.setItem("cambops.kind", kind); } catch (e) {}
+      document.querySelectorAll("nav.filters button[data-kind]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+      render();
+    });
+  });
+
+  // Form
+  function openForm(ev) {
+    if (ev) ev.preventDefault();
+    formstatus.textContent = "";
+    if (!document.getElementById("f-date").value) {
+      document.getElementById("f-date").value = dayKey.format(new Date());
+    }
+    dlg.showModal();
+    document.getElementById("f-title").focus();
+  }
+  document.getElementById("open-form").addEventListener("click", openForm);
+  document.getElementById("open-form-2").addEventListener("click", openForm);
+  list.addEventListener("click", e => { if (e.target.matches("[data-open]")) openForm(e); });
+  document.getElementById("cancel").addEventListener("click", () => dlg.close());
+
+  form.addEventListener("submit", async ev => {
+    ev.preventDefault();
+    const title = form.title.value.trim(), venue = form.venue.value.trim(), date = form.date.value, time = form.time.value;
+    if (title.length < 2 || !venue || !date || !time) { formstatus.textContent = "Event, date, time and place are needed."; return; }
+    if (form.website.value) { formstatus.textContent = "Thanks."; dlg.close(); return; } // honeypot
+    const extra = form.extra.value.trim();
+    const body = {
+      title, venue, kind: form.kind.value,
+      starts_at: new Date(date + "T" + time).toISOString(),
+      url: /^https?:\/\//i.test(extra) ? extra : null,
+      details: /^https?:\/\//i.test(extra) || !extra ? null : extra
+    };
+    const btn = document.getElementById("submit");
+    btn.disabled = true; formstatus.textContent = "Sending…";
+    try {
+      const r = await fetch(SUPABASE_URL + "/rest/v1/events", {
+        method: "POST", headers: { ...headers, "Content-Type": "application/json", Prefer: "return=minimal" }, body: JSON.stringify(body)
+      });
+      if (!r.ok) throw new Error(r.status);
+      formstatus.textContent = "Added. It goes live after the next morning's check.";
+      form.reset(); document.getElementById("f-time").value = "21:00";
+      setTimeout(() => { dlg.close(); formstatus.textContent = ""; }, 1800);
+    } catch (err) {
+      formstatus.textContent = "That did not go through. Check the fields and try again.";
+    } finally { btn.disabled = false; }
+  });
+
+  load();
+})();
+</script>
+</body>
+</html>
