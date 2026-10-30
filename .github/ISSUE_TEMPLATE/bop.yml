@@ -1,0 +1,54 @@
+name: Add a bop
+description: Tell us about a college bop. The daily check reviews it and adds it to the site.
+title: "Bop: "
+labels: ["bop-submission"]
+body:
+  - type: input
+    id: college
+    attributes:
+      label: College
+      placeholder: Selwyn
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: Day of the bop, as YYYY-MM-DD.
+      placeholder: 2026-11-14
+    validations:
+      required: true
+  - type: input
+    id: time
+    attributes:
+      label: Start time
+      description: Cambridge time, 24-hour clock.
+      placeholder: "21:00"
+    validations:
+      required: true
+  - type: input
+    id: venue
+    attributes:
+      label: Where in college
+      placeholder: College bar
+  - type: input
+    id: theme
+    attributes:
+      label: Theme or title
+      placeholder: Halloween, Neon, Back to School
+  - type: input
+    id: price
+    attributes:
+      label: Price and tickets
+      placeholder: £3 on the door, members only, guests welcome
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Instagram post, ticket page or JCR page, if there is one.
+      placeholder: https://
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      placeholder: Dress code, who can come, ends at…

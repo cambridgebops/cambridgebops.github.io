@@ -4,43 +4,47 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Cambridge Bops</title>
-<meta name="description" content="Every college bop in Cambridge this fortnight, on one page and one map. Updated daily. Anyone can add one.">
+<meta name="description" content="Every college bop in Cambridge in the next fortnight: when, where, what theme, how much. Updated every morning.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <style>
-/* Layout: one narrow column like a departmental listings page. Map first, then days as headings and bops as rows. */
+/* Layout: one narrow column. Tonight first, then the map, then the fortnight day by day. Rows read time, name, where, how much. */
 :root {
-  --bg: #F8F8F6;
+  --bg: #F7F9F7;
   --fg: #16181C;
-  --muted: #6B7280;
-  --rule: #DDDFE0;
-  --accent: #2C6E63;        /* darkened Cambridge blue-green: links, button, map pins */
-  --accent-ink: #FFFFFF;
+  --muted: #677069;
+  --rule: #DCE2DE;
+  --cam: #A3C1AD;           /* Cambridge blue, Pantone 557C: pins, button, tags, highlight */
+  --cam-ink: #12281C;       /* text on Cambridge blue */
+  --cam-tint: #E6EFE9;      /* pale wash: tonight band, selected filter */
+  --accent: #35684C;        /* the same hue deepened, for links */
   --field: #FFFFFF;
-  --pin-ring: #F8F8F6;
-  --tile-filter: saturate(.55) contrast(.95);
+  --pin-ring: #FFFFFF;
+  --tile-filter: saturate(.45) contrast(.95);
   --display: "Instrument Serif", Georgia, "Times New Roman", serif;
   --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #131416; --fg: #E8E8E4; --muted: #9AA0A8; --rule: #2A2D31;
-    --accent: #7FC4B5; --accent-ink: #0F1B18; --field: #1B1D20; --pin-ring: #131416; --tile-filter: invert(1) hue-rotate(180deg) brightness(.8) contrast(.9) saturate(.3); color-scheme: dark;
+    --bg: #131615; --fg: #E6EAE7; --muted: #98A39C; --rule: #283029;
+    --cam: #A3C1AD; --cam-ink: #12281C; --cam-tint: #1C2820; --accent: #A3C1AD; --field: #1B1F1C; --pin-ring: #131615;
+    --tile-filter: invert(1) hue-rotate(180deg) brightness(.8) contrast(.9) saturate(.3); color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #131416; --fg: #E8E8E4; --muted: #9AA0A8; --rule: #2A2D31;
-  --accent: #7FC4B5; --accent-ink: #0F1B18; --field: #1B1D20; --pin-ring: #131416; --tile-filter: invert(1) hue-rotate(180deg) brightness(.8) contrast(.9) saturate(.3); color-scheme: dark;
+  --bg: #131615; --fg: #E6EAE7; --muted: #98A39C; --rule: #283029;
+  --cam: #A3C1AD; --cam-ink: #12281C; --cam-tint: #1C2820; --accent: #A3C1AD; --field: #1B1F1C; --pin-ring: #131615;
+  --tile-filter: invert(1) hue-rotate(180deg) brightness(.8) contrast(.9) saturate(.3); color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; }
 body {
   background: var(--bg); color: var(--fg);
-  font-family: var(--body); font-size: 15px; line-height: 1.5;
-  padding-block: 2.5rem 4rem;
+  font-family: var(--body); font-size: 16px; line-height: 1.5;
+  padding-block: 2.25rem 4rem;
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
@@ -49,93 +53,95 @@ a { color: var(--accent); text-decoration: none; }
 a:hover, a:focus-visible { text-decoration: underline; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-h1 { font-family: var(--display); font-weight: 400; font-size: 2.6rem; line-height: 1; margin: 0; letter-spacing: -0.01em; }
-h1 em { font-style: italic; color: var(--muted); }
-.tagline { color: var(--muted); margin: .4rem 0 0; max-width: 34rem; }
+h1 { font-family: var(--display); font-weight: 400; font-size: 2.7rem; line-height: 1; margin: 0; letter-spacing: -0.01em; }
+h1 em { font-style: italic; padding: 0 .12em; margin: 0 -.06em; background: linear-gradient(transparent 60%, var(--cam) 60%, var(--cam) 92%, transparent 92%); }
+.tagline { color: var(--muted); margin: .5rem 0 0; max-width: 34rem; }
 
-.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin: 1.6rem 0 1rem; }
-.toolbar label { display: flex; align-items: center; gap: .5rem; font-size: .8rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
-.toolbar select { font: inherit; font-size: 15px; color: var(--fg); background: var(--field); border: 1px solid var(--rule); border-radius: 4px; padding: .5rem 1.8rem .5rem .6rem; min-height: 40px; max-width: 16rem; }
-.toolbar .spacer { flex: 1; }
-.toolbar .add { font: inherit; font-weight: 500; background: none; border: 0; color: var(--accent); cursor: pointer; padding: .6rem 0; min-height: 44px; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin: 1.5rem 0 1rem; }
+.toolbar label { display: flex; align-items: center; gap: .5rem; font-size: .78rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.toolbar select { font: inherit; font-size: 16px; color: var(--fg); background: var(--field); border: 1px solid var(--rule); border-radius: 4px; padding: .5rem 1.8rem .5rem .6rem; min-height: 40px; max-width: 16rem; }
+.toolbar select.on { background: var(--cam-tint); border-color: var(--cam); }
 .toolbar .count { color: var(--muted); font-size: .9rem; font-variant-numeric: tabular-nums; }
+.toolbar .spacer { flex: 1; }
+button.add { font: inherit; font-weight: 500; background: var(--cam); color: var(--cam-ink); border: 0; border-radius: 4px; padding: .55rem .9rem; min-height: 40px; cursor: pointer; }
+button.add:hover { filter: brightness(.96); }
 
-#map { height: 300px; max-width: 100%; border: 1px solid var(--rule); border-radius: 4px; background: var(--field); }
-#map:focus-within { outline: none; }
+/* Tonight */
+.tonight { background: var(--cam-tint); border-left: 4px solid var(--cam); border-radius: 0 4px 4px 0; padding: .8rem 1rem .9rem; margin: 0 0 1rem; }
+.tonight h2 { margin: 0 0 .25rem; font-size: 1.35rem; }
+.tonight ul { list-style: none; margin: 0; padding: 0; }
+.tonight li { display: flex; flex-wrap: wrap; gap: 0 .6rem; align-items: baseline; padding: .2rem 0; }
+.tonight .t { font-variant-numeric: tabular-nums; color: var(--muted); min-width: 3.2rem; }
+.tonight .n { font-weight: 600; }
+.tonight .w { color: var(--muted); }
+
+#map { height: 260px; max-width: 100%; border: 1px solid var(--rule); border-radius: 4px; background: var(--field); }
 .leaflet-container { font: inherit; }
 .leaflet-tile-pane { filter: var(--tile-filter); }
-.leaflet-container a.leaflet-popup-close-button { color: var(--muted); }
 .leaflet-tooltip { border: 0; padding: .6rem .8rem; font-size: .9rem; line-height: 1.4; }
 .leaflet-tooltip-top:before { border-top-color: var(--bg); }
 .leaflet-popup-content-wrapper, .leaflet-popup-tip, .leaflet-tooltip { background: var(--bg); color: var(--fg); box-shadow: 0 2px 10px rgba(0,0,0,.18); border-radius: 4px; }
-.leaflet-popup-content { margin: .7rem .9rem; font-size: .9rem; line-height: 1.4; }
-.leaflet-popup-content strong { font-weight: 500; }
-.leaflet-popup-content .pop { margin-top: .25rem; }
-.leaflet-popup-content .pop .t { color: var(--muted); font-variant-numeric: tabular-nums; margin-right: .4em; }
+.leaflet-tooltip strong { font-weight: 600; }
+.leaflet-tooltip .pop { margin-top: .2rem; }
+.leaflet-tooltip .pop .t { color: var(--muted); font-variant-numeric: tabular-nums; margin-right: .4em; }
 .leaflet-control-attribution { background: var(--bg) !important; color: var(--muted) !important; font-size: .65rem !important; }
 .leaflet-control-attribution a { color: var(--muted) !important; }
 .leaflet-bar a { background: var(--field) !important; color: var(--fg) !important; border-color: var(--rule) !important; }
-.pin { width: 100%; height: 100%; }
 .pin span {
   display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%;
-  background: var(--accent); color: var(--accent-ink); font: 500 12px/1 var(--body); font-variant-numeric: tabular-nums;
+  background: var(--cam); color: var(--cam-ink); font: 600 12px/1 var(--body); font-variant-numeric: tabular-nums;
   box-shadow: 0 0 0 2px var(--pin-ring), 0 1px 3px rgba(0,0,0,.3); cursor: pointer;
 }
 .pin.dim span { opacity: .35; }
-.pin.active span { transform: scale(1.2); }
+.pin.active span { transform: scale(1.15); box-shadow: 0 0 0 2px var(--pin-ring), 0 0 0 4px var(--cam), 0 1px 3px rgba(0,0,0,.3); }
 .mapnote { color: var(--muted); font-size: .8rem; margin: .4rem 0 0; }
 
-h2 { font-family: var(--display); font-weight: 400; font-size: 1.45rem; margin: 1.9rem 0 .45rem; }
-h2 small { font-family: var(--body); font-size: .8rem; color: var(--muted); margin-left: .6rem; text-transform: uppercase; letter-spacing: .06em; }
-ul.events { list-style: none; margin: 0; padding: 0; }
-ul.events li {
-  display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: .25rem 1rem;
-  padding: .6rem 0; border-top: 1px solid var(--rule);
+/* Day sections */
+h2 { font-family: var(--display); font-weight: 400; font-size: 1.5rem; margin: 2rem 0 .4rem; }
+h2 small { font-family: var(--body); font-size: .68rem; font-weight: 600; color: var(--cam-ink); background: var(--cam); border-radius: 999px; padding: .2em .6em; margin-left: .6rem; vertical-align: .3em; text-transform: uppercase; letter-spacing: .06em; }
+ul.bops { list-style: none; margin: 0; padding: 0; }
+ul.bops li {
+  display: grid; grid-template-columns: 4.6rem minmax(0, 1fr); gap: .15rem 1rem;
+  padding: .75rem 0; border-top: 1px solid var(--rule);
 }
-ul.events li:last-child { border-bottom: 1px solid var(--rule); }
-.time { font-variant-numeric: tabular-nums; color: var(--muted); padding-top: .05em; }
-.title { font-weight: 500; }
-.title a { color: inherit; }
-.title a::after { content: " ↗"; color: var(--muted); font-weight: 400; }
-.meta { color: var(--muted); font-size: .9rem; }
-.meta .college { color: var(--fg); }
-.meta .sep { margin: 0 .4em; }
-.details { font-size: .9rem; margin-top: .15rem; opacity: .85; }
+ul.bops li:last-child { border-bottom: 1px solid var(--rule); }
+.time { font-variant-numeric: tabular-nums; color: var(--muted); padding-top: .1em; }
+.name { font-weight: 600; font-size: 1.05rem; line-height: 1.3; }
+.name a { color: inherit; }
+.name a::after { content: " ↗"; color: var(--muted); font-weight: 400; font-size: .85em; }
+.where { color: var(--muted); margin-top: .1rem; }
+.where .college { color: var(--fg); font-weight: 500; }
+.where .sep { margin: 0 .4em; }
+.facts { margin-top: .15rem; display: flex; flex-wrap: wrap; gap: .3rem .5rem; font-size: .85rem; }
+.facts span { border: 1px solid var(--rule); border-radius: 999px; padding: .05em .55em; color: var(--fg); }
+.facts span.price { border-color: var(--cam); background: var(--cam-tint); }
+.details { font-size: .95rem; margin-top: .3rem; color: var(--fg); opacity: .9; }
 .empty, .status { color: var(--muted); padding: 1.5rem 0; }
 .status.error { color: #B4432F; }
 
 footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .85rem; display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1.5rem; }
 footer a { display: inline-block; padding: .6rem 0; }
 
-/* Submission form */
+/* Submission */
 dialog {
   background: var(--bg); color: var(--fg); border: 1px solid var(--rule); border-radius: 6px;
-  padding: 1.5rem; width: min(26rem, calc(100vw - 32px)); max-width: none;
+  padding: 1.5rem; width: min(27rem, calc(100vw - 32px)); max-width: none;
 }
 dialog::backdrop { background: rgba(0,0,0,.35); }
 dialog h3 { font-family: var(--display); font-weight: 400; font-size: 1.6rem; margin: 0 0 .25rem; }
 dialog p.hint { color: var(--muted); margin: 0 0 1rem; font-size: .9rem; }
 form { display: grid; gap: .75rem; }
 .row { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
-form label { display: grid; gap: .25rem; font-size: .8rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+form label { display: grid; gap: .25rem; font-size: .78rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
 form label .opt { text-transform: none; letter-spacing: 0; }
-input, select, textarea {
-  font: inherit; font-size: 15px; color: var(--fg); background: var(--field);
-  border: 1px solid var(--rule); border-radius: 4px; padding: .5rem .6rem; width: 100%; min-width: 0;
-}
+input, select, textarea { font: inherit; font-size: 16px; color: var(--fg); background: var(--field); border: 1px solid var(--rule); border-radius: 4px; padding: .5rem .6rem; width: 100%; min-width: 0; }
 .actions { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; margin-top: .25rem; }
-button.primary {
-  font: inherit; font-weight: 500; background: var(--accent); color: var(--accent-ink);
-  border: 0; border-radius: 4px; padding: .55rem 1rem; cursor: pointer;
-}
-button.primary[disabled] { opacity: .6; cursor: default; }
 button.link { font: inherit; background: none; border: 0; color: var(--muted); cursor: pointer; padding: .5rem 0; }
 .formstatus { font-size: .9rem; color: var(--muted); }
-.honey { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 @media (max-width: 480px) {
-  h1 { font-size: 2.2rem; }
-  #map { height: 240px; }
-  ul.events li { grid-template-columns: 3.6rem minmax(0, 1fr); }
+  h1 { font-size: 2.3rem; }
+  #map { height: 220px; }
+  ul.bops li { grid-template-columns: 3.8rem minmax(0, 1fr); }
   .row { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -149,50 +155,55 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
 <main>
   <header>
     <h1>Cambridge <em>Bops</em></h1>
-    <p class="tagline">Every college bop in Cambridge this fortnight, on one page and one map. Refreshed every morning.</p>
+    <p class="tagline">Every college bop in the next fortnight: when, where, what theme, how much. Checked every morning.</p>
   </header>
 
   <div class="toolbar">
     <label for="college">College
       <select id="college"><option value="all">All colleges</option></select>
     </label>
-    <span class="count" id="count"></span>
+    <span class="count" id="count" aria-live="polite"></span>
     <span class="spacer"></span>
-    <button type="button" class="add" id="open-form">+ Add a bop</button>
+    <button type="button" class="add" id="open-form">Add a bop</button>
   </div>
 
+  <section class="tonight" id="tonight" hidden></section>
+
   <div id="map" role="region" aria-label="Map of colleges with bops"></div>
-  <p class="mapnote">Numbers are bops in the next fortnight. Tap a college to filter the list.</p>
+  <p class="mapnote" id="mapnote">Numbers are bops in the next fortnight. Tap a college to filter the list.</p>
 
   <section id="list" aria-live="polite">
     <p class="status" id="loading">Loading…</p>
   </section>
 
   <footer>
-    <span id="lastrun">Gathered each morning from college ents and JCR pages, plus what people add here.</span>
+    <span id="lastrun">Checked every morning against college calendars, ents pages and student press.</span>
     <span><a href="#" id="open-form-2">Add a bop</a></span>
   </footer>
 </main>
 
-<dialog id="dlg">
-  <h3>Add a bop</h3>
-  <p class="hint">Five fields, thirty seconds. It appears after the next morning's check.</p>
+<dialog id="dlg" aria-labelledby="dlg-title">
+  <h3 id="dlg-title">Add a bop</h3>
+  <p class="hint">Fill in what you know. The last step opens GitHub with it prefilled; press Submit there and it is checked and added the next morning.</p>
   <form id="form" novalidate>
-    <label>Bop <input id="f-title" name="title" required maxlength="120" placeholder="Selwyn Halloween Bop" autocomplete="off"></label>
-    <div class="row">
-      <label>Date <input id="f-date" name="date" type="date" required></label>
-      <label>Time <input id="f-time" name="time" type="time" required value="21:00"></label>
-    </div>
     <div class="row">
       <label>College <select id="f-college" name="college"><option value="">Not a college</option></select></label>
-      <label>Where <span class="opt">(optional)</span> <input id="f-venue" name="venue" maxlength="120" placeholder="College bar"></label>
+      <label>Theme or title <input id="f-title" name="title" maxlength="120" placeholder="Halloween Bop" autocomplete="off"></label>
     </div>
-    <label>Link or note <span class="opt">(optional)</span> <input id="f-extra" name="extra" maxlength="500" placeholder="https://… or £5 on the door, fancy dress"></label>
-    <div class="honey" aria-hidden="true"><label>Website <input id="f-website" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="row">
+      <label>Date <input id="f-date" name="date" type="date" required></label>
+      <label>Start <input id="f-time" name="time" type="time" required value="21:00"></label>
+    </div>
+    <div class="row">
+      <label>Where in college <span class="opt">(optional)</span> <input id="f-venue" name="venue" maxlength="120" placeholder="College bar"></label>
+      <label>Price and tickets <span class="opt">(optional)</span> <input id="f-price" name="price" maxlength="80" placeholder="£3 on the door, guests welcome"></label>
+    </div>
+    <label>Link <span class="opt">(optional)</span> <input id="f-link" name="link" maxlength="300" placeholder="https://… Instagram post, tickets or JCR page"></label>
+    <label>Anything else <span class="opt">(optional)</span> <input id="f-notes" name="notes" maxlength="300" placeholder="Dress code, ends at, who can come"></label>
     <div class="actions">
-      <button type="submit" class="primary" id="submit">Add it</button>
+      <button type="submit" class="add" id="submit">Continue on GitHub</button>
       <button type="button" class="link" id="cancel">Cancel</button>
-      <span class="formstatus" id="formstatus"></span>
+      <span class="formstatus" id="formstatus" role="status" aria-live="polite"></span>
     </div>
   </form>
 </dialog>
@@ -200,12 +211,11 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
 (function () {
-  const SUPABASE_URL = "https://xixflbudqcpzjxdijlta.supabase.co";
-  const SUPABASE_KEY = "sb_publishable_7OBkIQ_8_VzC2slQKpxeIQ_dvsWjMc_";
+  const REPO = "kostadindev/cambops";
   const TZ = "Europe/London";
-  const headers = { apikey: SUPABASE_KEY, Authorization: "Bearer " + SUPABASE_KEY };
+  const WINDOW_MS = 14 * 864e5;
 
-  // College coordinates (approximate centre of each site). Keep names identical to the database check constraint.
+  // College coordinates (approximate centre of each main site). Names match events.json.
   const COLLEGES = {
     "Christ's": [52.2056, 0.1222], "Churchill": [52.2128, 0.0996], "Clare": [52.2049, 0.1150], "Clare Hall": [52.2048, 0.1053],
     "Corpus Christi": [52.2033, 0.1178], "Darwin": [52.2008, 0.1148], "Downing": [52.2008, 0.1246], "Emmanuel": [52.2038, 0.1243],
@@ -218,6 +228,7 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
   };
 
   const list = document.getElementById("list");
+  const tonightEl = document.getElementById("tonight");
   const dlg = document.getElementById("dlg");
   const form = document.getElementById("form");
   const formstatus = document.getElementById("formstatus");
@@ -227,19 +238,22 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
   let college = "all";
   try { college = localStorage.getItem("cambops.college") || "all"; } catch (e) {}
 
+  // Every date is shown in Cambridge time, whatever the visitor's zone.
   const dayKey = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" });
-  const dayLabel = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "long", day: "numeric", month: "long" });
-  const shortDay = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "short", day: "numeric" });
+  const dayLabel = new Intl.DateTimeFormat("en-GB", { timeZone: "UTC", weekday: "long", day: "numeric", month: "long" }); // fed UTC noon of the London day
+  const shortDay = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "short" });
   const timeLabel = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false });
-
   function esc(s) { return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+  function addDays(key, n) { const d = new Date(key + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
   function relDay(key) {
     const today = dayKey.format(new Date());
-    const tomorrow = dayKey.format(new Date(Date.now() + 864e5));
-    return key === today ? "Today" : key === tomorrow ? "Tomorrow" : "";
+    return key === today ? "Tonight" : key === addDays(today, 1) ? "Tomorrow" : "";
+  }
+  function inWindow(e) {
+    const t = Date.parse(e.starts_at);
+    return Number.isFinite(t) && t > Date.now() - 5 * 3600e3 && t < Date.now() + WINDOW_MS;
   }
 
-  // Populate both college selects.
   for (const name of Object.keys(COLLEGES)) {
     collegeSelect.appendChild(new Option(name, name));
     document.getElementById("f-college").appendChild(new Option(name, name));
@@ -247,13 +261,14 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
   collegeSelect.appendChild(new Option("Elsewhere", "none"));
   if (![...collegeSelect.options].some(o => o.value === college)) college = "all";
   collegeSelect.value = college;
+  collegeSelect.classList.toggle("on", college !== "all");
 
-  // Map
-  const map = L.map("map", { scrollWheelZoom: false, zoomControl: true, attributionControl: true }).setView([52.2053, 0.1150], 14);
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
+  // Map, isolated so a tile or script failure never takes the list down with it.
+  let map = null;
+  try {
+    map = L.map("map", { scrollWheelZoom: false }).setView([52.2053, 0.1150], 14);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
+  } catch (e) { document.getElementById("map").hidden = true; document.getElementById("mapnote").hidden = true; }
   const markers = new Map();
   let fitted = false;
 
@@ -261,15 +276,18 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
     college = value;
     try { localStorage.setItem("cambops.college", college); } catch (e) {}
     collegeSelect.value = college;
+    collegeSelect.classList.toggle("on", college !== "all");
     render();
+    if (map && COLLEGES[college]) map.panTo(COLLEGES[college]);
   }
   collegeSelect.addEventListener("change", () => setCollege(collegeSelect.value));
 
   function renderMap(byCollege) {
+    if (!map) return;
     for (const [name, m] of markers) { if (!byCollege.has(name)) { map.removeLayer(m); markers.delete(name); } }
     for (const [name, items] of byCollege) {
       const cls = "pin" + (college !== "all" && college !== name ? " dim" : "") + (college === name ? " active" : "");
-      const icon = L.divIcon({ className: cls, html: "<span>" + items.length + "</span>", iconSize: [28, 28], iconAnchor: [14, 14], popupAnchor: [0, -14] });
+      const icon = L.divIcon({ className: cls, html: "<span>" + items.length + "</span>", iconSize: [28, 28], iconAnchor: [14, 14] });
       let m = markers.get(name);
       if (!m) {
         m = L.marker(COLLEGES[name], { icon, keyboard: true, title: name }).addTo(map);
@@ -285,6 +303,15 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
     }
   }
 
+  function facts(e) {
+    const f = [];
+    if (e.price) f.push('<span class="price">' + esc(e.price) + "</span>");
+    if (e.guests) f.push("<span>" + esc(e.guests) + "</span>");
+    if (e.dress) f.push("<span>" + esc(e.dress) + "</span>");
+    if (e.ends_at && Number.isFinite(Date.parse(e.ends_at))) f.push("<span>until " + timeLabel.format(new Date(e.ends_at)) + "</span>");
+    return f.length ? '<div class="facts">' + f.join("") + "</div>" : "";
+  }
+
   function render() {
     const byCollege = new Map();
     for (const e of events) { if (e.college && COLLEGES[e.college]) { if (!byCollege.has(e.college)) byCollege.set(e.college, []); byCollege.get(e.college).push(e); } }
@@ -292,6 +319,16 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
 
     const shown = events.filter(e => college === "all" || (college === "none" ? !e.college : e.college === college));
     countEl.textContent = shown.length ? shown.length + (shown.length === 1 ? " bop" : " bops") : "";
+
+    // Tonight, pulled out so the most common question is answered first.
+    const today = dayKey.format(new Date());
+    const tonight = shown.filter(e => dayKey.format(new Date(e.starts_at)) === today);
+    if (tonight.length) {
+      tonightEl.hidden = false;
+      tonightEl.innerHTML = "<h2>Tonight</h2><ul>" + tonight.map(e =>
+        '<li><span class="t">' + timeLabel.format(new Date(e.starts_at)) + '</span><span class="n">' + esc(e.title) + '</span><span class="w">' + esc(e.college || e.venue || "") + (e.price ? " · " + esc(e.price) : "") + "</span></li>").join("") + "</ul>";
+    } else { tonightEl.hidden = true; tonightEl.innerHTML = ""; }
+
     if (!shown.length) {
       const where = college === "all" ? "" : college === "none" ? " outside the colleges" : " at " + esc(college);
       list.innerHTML = '<p class="empty">No bops listed' + where + ' in the next fortnight. Know of one? <a href="#" data-open>Add it</a>.</p>';
@@ -306,16 +343,16 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
     let html = "";
     for (const [k, items] of groups) {
       const rel = relDay(k);
-      html += "<h2>" + esc(dayLabel.format(new Date(k + "T12:00:00"))) + (rel ? "<small>" + rel + "</small>" : "") + '</h2><ul class="events">';
+      html += "<h2>" + esc(dayLabel.format(new Date(k + "T12:00:00Z"))) + (rel ? "<small>" + rel + "</small>" : "") + '</h2><ul class="bops">';
       for (const e of items) {
-        const t = timeLabel.format(new Date(e.starts_at));
-        const title = e.url ? '<a href="' + esc(e.url) + '" rel="noopener" target="_blank">' + esc(e.title) + "</a>" : esc(e.title);
-        const bits = [];
-        if (e.college) bits.push('<span class="college">' + esc(e.college) + "</span>");
-        if (e.venue && e.venue !== e.college) bits.push(esc(e.venue));
-        if (e.host && e.host !== e.college) bits.push(esc(e.host));
-        if (e.price) bits.push(esc(e.price));
-        html += '<li><span class="time">' + t + '</span><div><div class="title">' + title + '</div><div class="meta">' + bits.join('<span class="sep">·</span>') + "</div>" +
+        const name = e.url ? '<a href="' + esc(e.url) + '" rel="noopener" target="_blank">' + esc(e.title) + "</a>" : esc(e.title);
+        const where = [];
+        if (e.college) where.push('<span class="college">' + esc(e.college) + "</span>");
+        if (e.venue && e.venue !== e.college) where.push(esc(e.venue));
+        if (e.host && e.host !== e.college) where.push(esc(e.host));
+        html += '<li><span class="time">' + timeLabel.format(new Date(e.starts_at)) + '</span><div>' +
+          '<div class="name">' + name + '</div>' +
+          '<div class="where">' + where.join('<span class="sep">·</span>') + "</div>" + facts(e) +
           (e.details ? '<div class="details">' + esc(e.details) + "</div>" : "") + "</div></li>";
       }
       html += "</ul>";
@@ -324,69 +361,49 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
   }
 
   async function load() {
-    const since = new Date(Date.now() - 4 * 3600e3).toISOString();
     try {
-      const r = await fetch(SUPABASE_URL + "/rest/v1/events?select=title,starts_at,venue,college,host,price,url,details&kind=eq.bop&starts_at=gte." + encodeURIComponent(since) + "&order=starts_at.asc&limit=500", { headers });
+      const r = await fetch("events.json", { cache: "no-cache" });
       if (!r.ok) throw new Error(r.status);
-      events = await r.json();
+      const data = await r.json();
+      events = (data.bops || []).filter(inWindow).sort((a, b) => Date.parse(a.starts_at) - Date.parse(b.starts_at));
       render();
+      if (data.generated) {
+        const when = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "short", hour: "2-digit", minute: "2-digit" }).format(new Date(data.generated));
+        document.getElementById("lastrun").textContent = "Checked " + when + (data.sources ? " across " + data.sources + " sources" : "") + ". Missing one?";
+      }
     } catch (err) {
       list.innerHTML = '<p class="status error">Could not load the listings. Try again in a minute.</p>';
     }
-    try {
-      const r = await fetch(SUPABASE_URL + "/rest/v1/scrape_runs?select=ran_at,sources&order=ran_at.desc&limit=1", { headers });
-      const rows = r.ok ? await r.json() : [];
-      if (rows.length) {
-        const when = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "short", hour: "2-digit", minute: "2-digit" }).format(new Date(rows[0].ran_at));
-        const n = Array.isArray(rows[0].sources) ? rows[0].sources.length : 0;
-        document.getElementById("lastrun").textContent = "Last checked " + when + (n ? " across " + n + " sources" : "") + ", plus whatever people add here.";
-      }
-    } catch (e) {}
   }
 
-  // Form
+  // Submission: a short form that opens a prefilled GitHub issue (the daily check reviews it and adds it).
   function openForm(ev) {
     if (ev) ev.preventDefault();
     formstatus.textContent = "";
     if (!document.getElementById("f-date").value) document.getElementById("f-date").value = dayKey.format(new Date());
-    if (college !== "all" && college !== "none") document.getElementById("f-college").value = college;
+    if (COLLEGES[college]) document.getElementById("f-college").value = college;
     dlg.showModal();
-    document.getElementById("f-title").focus();
+    document.getElementById("f-college").focus();
   }
   document.getElementById("open-form").addEventListener("click", openForm);
   document.getElementById("open-form-2").addEventListener("click", openForm);
   list.addEventListener("click", e => { if (e.target.matches("[data-open]")) openForm(e); });
   document.getElementById("cancel").addEventListener("click", () => dlg.close());
 
-  form.addEventListener("submit", async ev => {
+  form.addEventListener("submit", ev => {
     ev.preventDefault();
-    const title = form.title.value.trim(), date = form.date.value, time = form.time.value;
-    const collegeVal = form.college.value || null;
-    const venue = form.venue.value.trim() || (collegeVal ? collegeVal : "");
-    if (title.length < 2 || !date || !time) { formstatus.textContent = "Name, date and time are needed."; return; }
-    if (!venue) { formstatus.textContent = "Say where it is, or pick a college."; return; }
-    if (form.website.value) { formstatus.textContent = "Thanks."; dlg.close(); return; } // honeypot
-    const extra = form.extra.value.trim();
-    const isUrl = /^https?:\/\//i.test(extra);
-    const body = {
-      title, venue, college: collegeVal, kind: "bop",
-      starts_at: new Date(date + "T" + time).toISOString(),
-      url: isUrl ? extra : null,
-      details: isUrl || !extra ? null : extra
-    };
-    const btn = document.getElementById("submit");
-    btn.disabled = true; formstatus.textContent = "Sending…";
-    try {
-      const r = await fetch(SUPABASE_URL + "/rest/v1/events", {
-        method: "POST", headers: { ...headers, "Content-Type": "application/json", Prefer: "return=minimal" }, body: JSON.stringify(body)
-      });
-      if (!r.ok) throw new Error(r.status);
-      formstatus.textContent = "Added. It goes live after the next morning's check.";
-      form.reset(); document.getElementById("f-time").value = "21:00";
-      setTimeout(() => { dlg.close(); formstatus.textContent = ""; }, 1800);
-    } catch (err) {
-      formstatus.textContent = "That did not go through. Check the fields and try again.";
-    } finally { btn.disabled = false; }
+    const col = form.college.value, title = form.title.value.trim(), date = form.date.value, time = form.time.value;
+    if (!date || !time) { formstatus.textContent = "Date and start time are needed."; return; }
+    if (!col && !form.venue.value.trim()) { formstatus.textContent = "Pick a college or say where it is."; return; }
+    const p = new URLSearchParams({
+      template: "bop.yml",
+      title: "Bop: " + [col, title].filter(Boolean).join(" ") + " on " + date,
+      college: col || form.venue.value.trim(), date, time,
+      venue: form.venue.value.trim(), theme: title, price: form.price.value.trim(), link: form.link.value.trim(), notes: form.notes.value.trim()
+    });
+    for (const [k, v] of [...p]) if (!v) p.delete(k);
+    window.open("https://github.com/" + REPO + "/issues/new?" + p.toString(), "_blank", "noopener");
+    formstatus.textContent = "Opened GitHub in a new tab. Press Submit there to send it.";
   });
 
   load();
