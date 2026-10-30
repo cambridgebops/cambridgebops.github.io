@@ -458,6 +458,13 @@
   },
   {
    "college": "Jesus",
+   "name": "Jesus Ents Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/jesus_ents/",
+   "note": "Collab-posts bops with the JCSU account"
+  },
+  {
+   "college": "Jesus",
    "name": "Jesus JCSU calendar",
    "kind": "JCR events",
    "url": "https://jcsu.jesus.cam.ac.uk/current-students/calendar/"

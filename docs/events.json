@@ -1008,9 +1008,31 @@
    "ok": true,
    "found": 0,
    "note": "no bop articles"
+  },
+  {
+   "slug": "jesus-ents-instagram",
+   "name": "Jesus Ents on Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/jesus_ents/",
+   "ok": true,
+   "found": 1,
+   "note": "read via a logged-in browser, not by the routine"
   }
  ],
  "bops": [
+  {
+   "title": "Halloween Bop",
+   "starts_at": "2026-10-30T20:30:00+00:00",
+   "ends_at": "2026-10-30T22:30:00+00:00",
+   "college": "Jesus",
+   "venue": "Jesus College bar",
+   "host": "Jesus Ents",
+   "price": "Bar tab 20:30 to 21:30",
+   "dress": "Costume",
+   "url": "https://www.instagram.com/p/De7xyC3IaKt/",
+   "details": "Live music from Cash Only 21:30 to 22:30.",
+   "source": "jesus-ents-instagram"
+  },
   {
    "title": "MCR Halloween Party",
    "starts_at": "2026-10-30T21:15:00+00:00",
