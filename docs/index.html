@@ -23,6 +23,9 @@
   --field: #FFFFFF;
   --pin-ring: #FFFFFF;
   --tile-filter: saturate(.45) contrast(.95);
+  --ctl-h: 36px;            /* every filter control is this tall */
+  --ctl-radius: 999px;
+  --ctl-pad: .85rem;
   --display: "Instrument Serif", Georgia, "Times New Roman", serif;
   --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
@@ -48,7 +51,7 @@ body {
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
-main { max-width: 42rem; margin: 0 auto; }
+main { max-width: 42rem; margin: 0 auto; min-width: 0; }
 a { color: var(--accent); text-decoration: none; }
 a:hover, a:focus-visible { text-decoration: underline; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -57,14 +60,33 @@ h1 { font-family: var(--display); font-weight: 400; font-size: 2.7rem; line-heig
 h1 em { font-style: italic; padding: 0 .12em; margin: 0 -.06em; background: linear-gradient(transparent 60%, var(--cam) 60%, var(--cam) 92%, transparent 92%); }
 .tagline { color: var(--muted); margin: .5rem 0 0; max-width: 34rem; }
 
-.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin: 1.5rem 0 1rem; }
-.toolbar label { display: flex; align-items: center; gap: .5rem; font-size: .78rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
-.toolbar select { font: inherit; font-size: 16px; color: var(--fg); background: var(--field); border: 1px solid var(--rule); border-radius: 4px; padding: .5rem 1.8rem .5rem .6rem; min-height: 40px; max-width: 16rem; }
-.toolbar select.on { background: var(--cam-tint); border-color: var(--cam); }
-.toolbar .count { color: var(--muted); font-size: .9rem; font-variant-numeric: tabular-nums; }
-.toolbar .spacer { flex: 1; }
-button.add { font: inherit; font-weight: 500; background: var(--cam); color: var(--cam-ink); border: 0; border-radius: 4px; padding: .55rem .9rem; min-height: 40px; cursor: pointer; }
-button.add:hover { filter: brightness(.96); }
+
+/* Filter system: one control height, one radius, one set of states (rest, hover, pressed, focus).
+   Segmented "when" control, college chips with counts, and a result line. */
+.filters { position: sticky; top: 0; z-index: 500; background: var(--bg); padding: .9rem 0 .75rem; margin: 1.25rem 0 1rem; border-bottom: 1px solid var(--rule); display: grid; gap: .6rem; }
+.filters .group { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; min-width: 0; }
+.filters .chips { flex: 1 1 100%; }
+.chip { flex: 0 0 auto; }
+.filters .lbl { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .07em; min-width: 4.2rem; }
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: var(--ctl-radius); padding: 2px; background: var(--field); }
+.seg button { font: inherit; font-size: .9rem; height: calc(var(--ctl-h) - 4px); padding: 0 var(--ctl-pad); border: 0; border-radius: var(--ctl-radius); background: transparent; color: var(--fg); cursor: pointer; white-space: nowrap; }
+.seg button:hover { background: var(--cam-tint); }
+.seg button[aria-pressed="true"] { background: var(--cam); color: var(--cam-ink); font-weight: 500; }
+.chip { font: inherit; font-size: .9rem; height: var(--ctl-h); padding: 0 .6rem 0 var(--ctl-pad); border: 1px solid var(--rule); border-radius: var(--ctl-radius); background: var(--field); color: var(--fg); cursor: pointer; display: inline-flex; align-items: center; gap: .45rem; white-space: nowrap; }
+.chip:hover { border-color: var(--cam); background: var(--cam-tint); }
+.chip[aria-pressed="true"] { background: var(--cam); border-color: var(--cam); color: var(--cam-ink); font-weight: 500; }
+.chip .n { display: inline-grid; place-items: center; min-width: 1.35rem; height: 1.35rem; padding: 0 .3rem; border-radius: var(--ctl-radius); background: var(--cam-tint); color: var(--fg); font-size: .75rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.chip[aria-pressed="true"] .n { background: rgba(255,255,255,.55); color: var(--cam-ink); }
+.chip.plain { padding: 0 var(--ctl-pad); }
+.seg button:focus-visible, .chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.result { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem .6rem; font-size: .9rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.result strong { color: var(--fg); font-weight: 600; }
+.result button { font: inherit; font-size: .85rem; background: none; border: 0; color: var(--accent); cursor: pointer; padding: .2rem 0; text-decoration: underline; text-underline-offset: 2px; }
+@media (max-width: 480px) {
+  .filters .lbl { min-width: 100%; }
+  .filters .chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+  .filters .chips::-webkit-scrollbar { display: none; }
+}
 
 /* Tonight */
 .tonight { background: var(--cam-tint); border-left: 4px solid var(--cam); border-radius: 0 4px 4px 0; padding: .8rem 1rem .9rem; margin: 0 0 1rem; }
@@ -122,49 +144,38 @@ ul.bops li:last-child { border-bottom: 1px solid var(--rule); }
 footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .85rem; display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1.5rem; }
 footer a { display: inline-block; padding: .6rem 0; }
 
-/* Submission */
-dialog {
-  background: var(--bg); color: var(--fg); border: 1px solid var(--rule); border-radius: 6px;
-  padding: 1.5rem; width: min(27rem, calc(100vw - 32px)); max-width: none;
-}
-dialog::backdrop { background: rgba(0,0,0,.35); }
-dialog h3 { font-family: var(--display); font-weight: 400; font-size: 1.6rem; margin: 0 0 .25rem; }
-dialog p.hint { color: var(--muted); margin: 0 0 1rem; font-size: .9rem; }
-form { display: grid; gap: .75rem; }
-.row { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
-form label { display: grid; gap: .25rem; font-size: .78rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
-form label .opt { text-transform: none; letter-spacing: 0; }
-input, select, textarea { font: inherit; font-size: 16px; color: var(--fg); background: var(--field); border: 1px solid var(--rule); border-radius: 4px; padding: .5rem .6rem; width: 100%; min-width: 0; }
-.actions { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; margin-top: .25rem; }
-button.link { font: inherit; background: none; border: 0; color: var(--muted); cursor: pointer; padding: .5rem 0; }
-.formstatus { font-size: .9rem; color: var(--muted); }
 @media (max-width: 480px) {
   h1 { font-size: 2.3rem; }
   #map { height: 220px; }
   ul.bops li { grid-template-columns: 3.8rem minmax(0, 1fr); }
-  .row { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: no-preference) {
-  dialog[open] { animation: fade .15s ease-out; }
   .pin span { transition: transform .12s ease-out, opacity .12s ease-out; }
 }
-@keyframes fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
 </style>
 </head>
 <body>
 <main>
   <header>
     <h1>Cambridge <em>Bops</em></h1>
-    <p class="tagline">Every college bop in the next fortnight: when, where, what theme, how much. Checked every morning.</p>
+    <p class="tagline">Every college bop in the next fortnight: when, where, what theme, how much. Checked every morning against the colleges' own calendars and pages.</p>
   </header>
 
-  <div class="toolbar">
-    <label for="college">College
-      <select id="college"><option value="all">All colleges</option></select>
-    </label>
-    <span class="count" id="count" aria-live="polite"></span>
-    <span class="spacer"></span>
-    <button type="button" class="add" id="open-form">Add a bop</button>
+  <div class="filters" role="region" aria-label="Filters">
+    <div class="group">
+      <span class="lbl" id="when-lbl">When</span>
+      <div class="seg" role="group" aria-labelledby="when-lbl" id="when">
+        <button type="button" data-when="all" aria-pressed="true">Next 14 days</button>
+        <button type="button" data-when="tonight" aria-pressed="false">Tonight</button>
+        <button type="button" data-when="weekend" aria-pressed="false">This weekend</button>
+        <button type="button" data-when="nextweek" aria-pressed="false">Next week</button>
+      </div>
+    </div>
+    <div class="group" id="college-group">
+      <span class="lbl" id="college-lbl">College</span>
+      <div class="group chips" role="group" aria-labelledby="college-lbl" id="chips"></div>
+    </div>
+    <p class="result" id="result" aria-live="polite"></p>
   </div>
 
   <section class="tonight" id="tonight" hidden></section>
@@ -178,40 +189,14 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
 
   <footer>
     <span id="lastrun">Checked every morning against college calendars, ents pages and student press.</span>
-    <span><a href="#" id="open-form-2">Add a bop</a></span>
+    <span>Listings come only from sources the daily check can verify.</span>
   </footer>
 </main>
 
-<dialog id="dlg" aria-labelledby="dlg-title">
-  <h3 id="dlg-title">Add a bop</h3>
-  <p class="hint">Fill in what you know. The last step opens GitHub with it prefilled; press Submit there and it is checked and added the next morning.</p>
-  <form id="form" novalidate>
-    <div class="row">
-      <label>College <select id="f-college" name="college"><option value="">Not a college</option></select></label>
-      <label>Theme or title <input id="f-title" name="title" maxlength="120" placeholder="Halloween Bop" autocomplete="off"></label>
-    </div>
-    <div class="row">
-      <label>Date <input id="f-date" name="date" type="date" required></label>
-      <label>Start <input id="f-time" name="time" type="time" required value="21:00"></label>
-    </div>
-    <div class="row">
-      <label>Where in college <span class="opt">(optional)</span> <input id="f-venue" name="venue" maxlength="120" placeholder="College bar"></label>
-      <label>Price and tickets <span class="opt">(optional)</span> <input id="f-price" name="price" maxlength="80" placeholder="£3 on the door, guests welcome"></label>
-    </div>
-    <label>Link <span class="opt">(optional)</span> <input id="f-link" name="link" maxlength="300" placeholder="https://… Instagram post, tickets or JCR page"></label>
-    <label>Anything else <span class="opt">(optional)</span> <input id="f-notes" name="notes" maxlength="300" placeholder="Dress code, ends at, who can come"></label>
-    <div class="actions">
-      <button type="submit" class="add" id="submit">Continue on GitHub</button>
-      <button type="button" class="link" id="cancel">Cancel</button>
-      <span class="formstatus" id="formstatus" role="status" aria-live="polite"></span>
-    </div>
-  </form>
-</dialog>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
 (function () {
-  const REPO = "kostadindev/cambops";
   const TZ = "Europe/London";
   const WINDOW_MS = 14 * 864e5;
 
@@ -229,14 +214,12 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
 
   const list = document.getElementById("list");
   const tonightEl = document.getElementById("tonight");
-  const dlg = document.getElementById("dlg");
-  const form = document.getElementById("form");
-  const formstatus = document.getElementById("formstatus");
-  const collegeSelect = document.getElementById("college");
-  const countEl = document.getElementById("count");
+  const chipsEl = document.getElementById("chips");
+  const resultEl = document.getElementById("result");
   let events = [];
-  let college = "all";
-  try { college = localStorage.getItem("cambops.college") || "all"; } catch (e) {}
+  let college = "all", when = "all";
+  try { college = localStorage.getItem("cambops.college") || "all"; when = localStorage.getItem("cambops.when") || "all"; } catch (e) {}
+  if (!["all", "tonight", "weekend", "nextweek"].includes(when)) when = "all";
 
   // Every date is shown in Cambridge time, whatever the visitor's zone.
   const dayKey = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" });
@@ -254,14 +237,35 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
     return Number.isFinite(t) && t > Date.now() - 5 * 3600e3 && t < Date.now() + WINDOW_MS;
   }
 
-  for (const name of Object.keys(COLLEGES)) {
-    collegeSelect.appendChild(new Option(name, name));
-    document.getElementById("f-college").appendChild(new Option(name, name));
+  if (college !== "all" && college !== "none" && !COLLEGES[college]) college = "all";
+
+  // "When" ranges as London day keys: [from, to] inclusive.
+  const WEEKDAY = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "short" });
+  function whenRange(w) {
+    const today = dayKey.format(new Date());
+    const dow = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].indexOf(WEEKDAY.format(new Date()));
+    const toSun = 6 - dow;                                   // days until this Sunday
+    if (w === "tonight") return [today, today];
+    if (w === "weekend") return [addDays(today, Math.max(0, toSun - 2)), addDays(today, toSun)];   // Fri to Sun, or the rest of it
+    if (w === "nextweek") return [addDays(today, toSun + 1), addDays(today, toSun + 7)];
+    return null;
   }
-  collegeSelect.appendChild(new Option("Elsewhere", "none"));
-  if (![...collegeSelect.options].some(o => o.value === college)) college = "all";
-  collegeSelect.value = college;
-  collegeSelect.classList.toggle("on", college !== "all");
+  const WHEN_LABEL = { tonight: "tonight", weekend: "this weekend", nextweek: "next week" };
+  function inWhen(e) {
+    const r = whenRange(when); if (!r) return true;
+    const k = dayKey.format(new Date(e.starts_at));
+    return k >= r[0] && k <= r[1];
+  }
+  document.querySelectorAll("#when button").forEach(b => {
+    b.setAttribute("aria-pressed", String(b.dataset.when === when));
+    b.addEventListener("click", () => setWhen(b.dataset.when));
+  });
+  function setWhen(value) {
+    when = value;
+    try { localStorage.setItem("cambops.when", when); } catch (e) {}
+    document.querySelectorAll("#when button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.when === when)));
+    render();
+  }
 
   // Map, isolated so a tile or script failure never takes the list down with it.
   let map = null;
@@ -275,12 +279,36 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
   function setCollege(value) {
     college = value;
     try { localStorage.setItem("cambops.college", college); } catch (e) {}
-    collegeSelect.value = college;
-    collegeSelect.classList.toggle("on", college !== "all");
     render();
     if (map && COLLEGES[college]) map.panTo(COLLEGES[college]);
   }
-  collegeSelect.addEventListener("change", () => setCollege(collegeSelect.value));
+
+  // College chips: only colleges with a bop in the window, most bops first, counts matching the map pins.
+  function renderChips(byCollege, elsewhere) {
+    const entries = [...byCollege.entries()].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
+    document.getElementById("college-group").hidden = !entries.length && !elsewhere;
+    let html = '<button type="button" class="chip plain" data-college="all" aria-pressed="' + (college === "all") + '">Any college</button>';
+    for (const [name, items] of entries) {
+      html += '<button type="button" class="chip" data-college="' + esc(name) + '" aria-pressed="' + (college === name) + '">' + esc(name) + '<span class="n">' + items.length + "</span></button>";
+    }
+    if (elsewhere) html += '<button type="button" class="chip" data-college="none" aria-pressed="' + (college === "none") + '">Elsewhere<span class="n">' + elsewhere + "</span></button>";
+    chipsEl.innerHTML = html;
+  }
+  chipsEl.addEventListener("click", e => {
+    const b = e.target.closest("[data-college]"); if (!b) return;
+    setCollege(b.dataset.college === college ? "all" : b.dataset.college);
+  });
+
+  function renderResult(n) {
+    const parts = [];
+    if (college === "none") parts.push("outside the colleges"); else if (college !== "all") parts.push("at " + esc(college));
+    if (WHEN_LABEL[when]) parts.push(WHEN_LABEL[when]);
+    const active = college !== "all" || when !== "all";
+    resultEl.innerHTML = "<strong>" + n + (n === 1 ? " bop" : " bops") + "</strong> " + esc(parts.join(" ")) +
+      (active ? ' <button type="button" id="clear">Clear filters</button>' : "");
+    const c = document.getElementById("clear");
+    if (c) c.addEventListener("click", () => { college = "all"; when = "all"; try { localStorage.removeItem("cambops.college"); localStorage.removeItem("cambops.when"); } catch (e) {} document.querySelectorAll("#when button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.when === "all"))); render(); });
+  }
 
   function renderMap(byCollege) {
     if (!map) return;
@@ -313,12 +341,19 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
   }
 
   function render() {
+    // Counts on pins and chips follow the "when" filter, so both always agree with the list.
+    const inTime = events.filter(inWhen);
     const byCollege = new Map();
-    for (const e of events) { if (e.college && COLLEGES[e.college]) { if (!byCollege.has(e.college)) byCollege.set(e.college, []); byCollege.get(e.college).push(e); } }
+    let elsewhere = 0;
+    for (const e of inTime) {
+      if (e.college && COLLEGES[e.college]) { if (!byCollege.has(e.college)) byCollege.set(e.college, []); byCollege.get(e.college).push(e); }
+      else elsewhere++;
+    }
     renderMap(byCollege);
+    renderChips(byCollege, elsewhere);
 
-    const shown = events.filter(e => college === "all" || (college === "none" ? !e.college : e.college === college));
-    countEl.textContent = shown.length ? shown.length + (shown.length === 1 ? " bop" : " bops") : "";
+    const shown = inTime.filter(e => college === "all" || (college === "none" ? !e.college : e.college === college));
+    renderResult(shown.length);
 
     // Tonight, pulled out so the most common question is answered first.
     const today = dayKey.format(new Date());
@@ -331,7 +366,8 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
 
     if (!shown.length) {
       const where = college === "all" ? "" : college === "none" ? " outside the colleges" : " at " + esc(college);
-      list.innerHTML = '<p class="empty">No bops listed' + where + ' in the next fortnight. Know of one? <a href="#" data-open>Add it</a>.</p>';
+      const whenTxt = WHEN_LABEL[when] ? " " + WHEN_LABEL[when] : " in the next fortnight";
+      list.innerHTML = '<p class="empty">No bops listed' + where + whenTxt + '.</p>';
       return;
     }
     const groups = new Map();
@@ -375,36 +411,6 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
       list.innerHTML = '<p class="status error">Could not load the listings. Try again in a minute.</p>';
     }
   }
-
-  // Submission: a short form that opens a prefilled GitHub issue (the daily check reviews it and adds it).
-  function openForm(ev) {
-    if (ev) ev.preventDefault();
-    formstatus.textContent = "";
-    if (!document.getElementById("f-date").value) document.getElementById("f-date").value = dayKey.format(new Date());
-    if (COLLEGES[college]) document.getElementById("f-college").value = college;
-    dlg.showModal();
-    document.getElementById("f-college").focus();
-  }
-  document.getElementById("open-form").addEventListener("click", openForm);
-  document.getElementById("open-form-2").addEventListener("click", openForm);
-  list.addEventListener("click", e => { if (e.target.matches("[data-open]")) openForm(e); });
-  document.getElementById("cancel").addEventListener("click", () => dlg.close());
-
-  form.addEventListener("submit", ev => {
-    ev.preventDefault();
-    const col = form.college.value, title = form.title.value.trim(), date = form.date.value, time = form.time.value;
-    if (!date || !time) { formstatus.textContent = "Date and start time are needed."; return; }
-    if (!col && !form.venue.value.trim()) { formstatus.textContent = "Pick a college or say where it is."; return; }
-    const p = new URLSearchParams({
-      template: "bop.yml",
-      title: "Bop: " + [col, title].filter(Boolean).join(" ") + " on " + date,
-      college: col || form.venue.value.trim(), date, time,
-      venue: form.venue.value.trim(), theme: title, price: form.price.value.trim(), link: form.link.value.trim(), notes: form.notes.value.trim()
-    });
-    for (const [k, v] of [...p]) if (!v) p.delete(k);
-    window.open("https://github.com/" + REPO + "/issues/new?" + p.toString(), "_blank", "noopener");
-    formstatus.textContent = "Opened GitHub in a new tab. Press Submit there to send it.";
-  });
 
   load();
 })();
