@@ -4,10 +4,7 @@ import json, pathlib, unittest
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 REG = ROOT / "docs" / "sources.json"
 KINDS = {"JCR site", "JCR events", "MCR site", "MCR events", "Ents site", "Termcard", "Instagram", "Facebook", "College events", "SU listings", "Student press"}
-THE_31 = ["Christ's", "Churchill", "Clare", "Clare Hall", "Corpus Christi", "Darwin", "Downing", "Emmanuel", "Fitzwilliam", "Girton",
-          "Gonville & Caius", "Homerton", "Hughes Hall", "Jesus", "King's", "Lucy Cavendish", "Magdalene", "Murray Edwards", "Newnham",
-          "Pembroke", "Peterhouse", "Queens'", "Robinson", "St Catharine's", "St Edmund's", "St John's", "Selwyn", "Sidney Sussex",
-          "Trinity", "Trinity Hall", "Wolfson"]
+THE_31 = list(json.loads((ROOT / "city.json").read_text())["colleges"])  # every college of the city, from city.json
 
 
 class TestRegistry(unittest.TestCase):

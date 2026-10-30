@@ -1,5 +1,5 @@
 """The page is a single file; these checks catch the ways a hand edit breaks it."""
-import json, pathlib, re, subprocess, unittest
+import json, pathlib, re, subprocess, sys, unittest
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAGE = (ROOT / "docs" / "index.html").read_text()
@@ -21,11 +21,24 @@ class TestPage(unittest.TestCase):
             self.assertNotIn(banned.lower(), PAGE.lower(), banned)
 
     def test_college_coordinates_match_registry(self):
+        city = json.loads((ROOT / "city.json").read_text())
         reg = json.loads((ROOT / "docs" / "sources.json").read_text())
         names = re.findall(r'"([^"]+)": \[5\d\.\d+, [-\d.]+\]', SCRIPT)
         self.assertEqual(sorted(names), sorted(reg["colleges"]))
+        self.assertEqual(sorted(names), sorted(city["colleges"]))
+        (lat0, lat1), (lng0, lng1) = city["bbox"]["lat"], city["bbox"]["lng"]
         for lat, lng in re.findall(r"\[(5\d\.\d+), ([-\d.]+)\]", SCRIPT):
-            self.assertTrue(52.17 < float(lat) < 52.24 and 0.07 < float(lng) < 0.15, (lat, lng))
+            self.assertTrue(lat0 < float(lat) < lat1 and lng0 < float(lng) < lng1, (lat, lng))
+
+    def test_rendered_pages_are_up_to_date(self):
+        # docs/index.html and docs/ROUTINE.md are generated from site/ and city.json; a stale build must not deploy.
+        r = subprocess.run([sys.executable, str(ROOT / "scripts" / "build.py"), "--check"], capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+
+    def test_page_names_the_city(self):
+        city = json.loads((ROOT / "city.json").read_text())
+        self.assertIn(f"<title>{city['name']} Bops</title>", PAGE)
+        self.assertIn(city["tagline"], PAGE)
 
     def test_external_resources_are_pinned_and_allowed(self):
         srcs = re.findall(r'(?:src|href)="(https://[^"]+)"', PAGE.split("<script>")[0])

@@ -1,0 +1,206 @@
+{
+ "name": "Cambridge",
+ "slug": "cambridgebops",
+ "org": "cambridgebops",
+ "site": "https://cambridgebops.github.io/",
+ "tagline": "College bops in Cambridge for the next fortnight, checked every morning.",
+ "map_center": [
+  52.2053,
+  0.115
+ ],
+ "map_zoom": 14,
+ "bbox": {
+  "lat": [
+   52.17,
+   52.24
+  ],
+  "lng": [
+   0.07,
+   0.15
+  ]
+ },
+ "palette": {
+  "light": {
+   "bg": "#F7F9F7",
+   "fg": "#16181C",
+   "muted": "#677069",
+   "rule": "#DCE2DE",
+   "cam": "#A3C1AD",
+   "cam-ink": "#12281C",
+   "cam-tint": "#E6EFE9",
+   "accent": "#35684C",
+   "field": "#FFFFFF",
+   "pin-ring": "#FFFFFF",
+   "hl": "#A3C1AD",
+   "hl-line": "transparent",
+   "on-badge": "rgba(255,255,255,.55)",
+   "tile-filter": "saturate(.45) contrast(.95)"
+  },
+  "dark": {
+   "bg": "#131615",
+   "fg": "#E6EAE7",
+   "muted": "#98A39C",
+   "rule": "#283029",
+   "cam": "#A3C1AD",
+   "cam-ink": "#12281C",
+   "cam-tint": "#1C2820",
+   "accent": "#A3C1AD",
+   "field": "#1B1F1C",
+   "pin-ring": "#131615",
+   "hl": "#A3C1AD",
+   "hl-line": "transparent",
+   "on-badge": "rgba(255,255,255,.55)",
+   "tile-filter": "invert(1) hue-rotate(180deg) brightness(.8) contrast(.9) saturate(.3)"
+  },
+  "comment": "Cambridge blue, Pantone 557C, for fills; the same hue deepened for links"
+ },
+ "favicon": {
+  "tile": "#A3C1AD",
+  "ball": "#F7F9F7",
+  "lines": "#A3C1AD"
+ },
+ "colleges": {
+  "Christ's": [
+   52.2056,
+   0.1222
+  ],
+  "Churchill": [
+   52.2128,
+   0.0996
+  ],
+  "Clare": [
+   52.2049,
+   0.115
+  ],
+  "Clare Hall": [
+   52.2048,
+   0.1053
+  ],
+  "Corpus Christi": [
+   52.2033,
+   0.1178
+  ],
+  "Darwin": [
+   52.2008,
+   0.1148
+  ],
+  "Downing": [
+   52.2008,
+   0.1246
+  ],
+  "Emmanuel": [
+   52.2038,
+   0.1243
+  ],
+  "Fitzwilliam": [
+   52.2143,
+   0.1086
+  ],
+  "Girton": [
+   52.229,
+   0.0844
+  ],
+  "Gonville & Caius": [
+   52.206,
+   0.118
+  ],
+  "Homerton": [
+   52.1884,
+   0.1398
+  ],
+  "Hughes Hall": [
+   52.2,
+   0.1335
+  ],
+  "Jesus": [
+   52.209,
+   0.1245
+  ],
+  "King's": [
+   52.2043,
+   0.1166
+  ],
+  "Lucy Cavendish": [
+   52.213,
+   0.1093
+  ],
+  "Magdalene": [
+   52.2103,
+   0.1157
+  ],
+  "Murray Edwards": [
+   52.2143,
+   0.1058
+  ],
+  "Newnham": [
+   52.199,
+   0.1077
+  ],
+  "Pembroke": [
+   52.2017,
+   0.1198
+  ],
+  "Peterhouse": [
+   52.2007,
+   0.1187
+  ],
+  "Queens'": [
+   52.202,
+   0.115
+  ],
+  "Robinson": [
+   52.2055,
+   0.105
+  ],
+  "St Catharine's": [
+   52.203,
+   0.117
+  ],
+  "St Edmund's": [
+   52.2158,
+   0.103
+  ],
+  "St John's": [
+   52.2085,
+   0.117
+  ],
+  "Selwyn": [
+   52.2008,
+   0.1053
+  ],
+  "Sidney Sussex": [
+   52.2078,
+   0.1215
+  ],
+  "Trinity": [
+   52.207,
+   0.1172
+  ],
+  "Trinity Hall": [
+   52.2056,
+   0.1152
+  ],
+  "Wolfson": [
+   52.1983,
+   0.105
+  ]
+ },
+ "routine": {
+  "common_rooms": "JCR, MCR or college ents committee",
+  "su": {
+   "name": "Cambridge SU events",
+   "url": "https://www.cambridgesu.co.uk/events"
+  },
+  "press": [
+   {
+    "name": "Varsity",
+    "url": "https://www.varsity.co.uk"
+   },
+   {
+    "name": "The Tab Cambridge",
+    "url": "https://thetab.com/university/cambridge"
+   }
+  ],
+  "js_rendered_examples": "Peterhouse, Girton"
+ }
+}

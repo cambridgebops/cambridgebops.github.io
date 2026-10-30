@@ -17,12 +17,15 @@
   --fg: #16181C;
   --muted: #677069;
   --rule: #DCE2DE;
-  --cam: #A3C1AD;           /* Cambridge blue, Pantone 557C: pins, button, tags, highlight */
-  --cam-ink: #12281C;       /* text on Cambridge blue */
-  --cam-tint: #E6EFE9;      /* pale wash: today's section, selected filter, price chips */
-  --accent: #35684C;        /* the same hue deepened, for links */
+  --cam: #A3C1AD;
+  --cam-ink: #12281C;
+  --cam-tint: #E6EFE9;
+  --accent: #35684C;
   --field: #FFFFFF;
   --pin-ring: #FFFFFF;
+  --hl: #A3C1AD;
+  --hl-line: transparent;
+  --on-badge: rgba(255,255,255,.55);
   --tile-filter: saturate(.45) contrast(.95);
   --ctl-h: 44px;            /* every filter control is this tall: the mobile tap-target minimum */
   --ctl-radius: 999px;
@@ -33,15 +36,39 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #131615; --fg: #E6EAE7; --muted: #98A39C; --rule: #283029;
-    --cam: #A3C1AD; --cam-ink: #12281C; --cam-tint: #1C2820; --accent: #A3C1AD; --field: #1B1F1C; --pin-ring: #131615;
-    --tile-filter: invert(1) hue-rotate(180deg) brightness(.8) contrast(.9) saturate(.3); color-scheme: dark;
+    --bg: #131615;
+    --fg: #E6EAE7;
+    --muted: #98A39C;
+    --rule: #283029;
+    --cam: #A3C1AD;
+    --cam-ink: #12281C;
+    --cam-tint: #1C2820;
+    --accent: #A3C1AD;
+    --field: #1B1F1C;
+    --pin-ring: #131615;
+    --hl: #A3C1AD;
+    --hl-line: transparent;
+    --on-badge: rgba(255,255,255,.55);
+    --tile-filter: invert(1) hue-rotate(180deg) brightness(.8) contrast(.9) saturate(.3);
+    color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #131615; --fg: #E6EAE7; --muted: #98A39C; --rule: #283029;
-  --cam: #A3C1AD; --cam-ink: #12281C; --cam-tint: #1C2820; --accent: #A3C1AD; --field: #1B1F1C; --pin-ring: #131615;
-  --tile-filter: invert(1) hue-rotate(180deg) brightness(.8) contrast(.9) saturate(.3); color-scheme: dark;
+  --bg: #131615;
+  --fg: #E6EAE7;
+  --muted: #98A39C;
+  --rule: #283029;
+  --cam: #A3C1AD;
+  --cam-ink: #12281C;
+  --cam-tint: #1C2820;
+  --accent: #A3C1AD;
+  --field: #1B1F1C;
+  --pin-ring: #131615;
+  --hl: #A3C1AD;
+  --hl-line: transparent;
+  --on-badge: rgba(255,255,255,.55);
+  --tile-filter: invert(1) hue-rotate(180deg) brightness(.8) contrast(.9) saturate(.3);
+  color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; }
@@ -59,7 +86,7 @@ a:hover, a:focus-visible { text-decoration: underline; }
 
 h1 { font-family: var(--display); font-weight: 400; font-size: 2.7rem; line-height: 1; margin: 0; letter-spacing: -0.01em; display: flex; align-items: center; gap: .3em; }
 .ball { width: .72em; height: .72em; flex: 0 0 auto; }
-h1 em { font-style: italic; padding: 0 .12em; margin: 0 -.06em; background: linear-gradient(transparent 60%, var(--cam) 60%, var(--cam) 92%, transparent 92%); }
+h1 em { font-style: italic; padding: 0 .12em; margin: 0 -.06em; background: linear-gradient(transparent 60%, var(--hl) 60%, var(--hl) 92%, transparent 92%); box-shadow: inset 0 -0.08em 0 var(--hl-line); }
 .tagline { color: var(--muted); margin: .5rem 0 0; max-width: 34rem; }
 .notice { font-size: .9rem; color: var(--muted); margin: .25rem 0 0; max-width: 34rem; }
 
@@ -79,7 +106,7 @@ h1 em { font-style: italic; padding: 0 .12em; margin: 0 -.06em; background: line
 .chip:hover { border-color: var(--cam); background: var(--cam-tint); }
 .chip[aria-pressed="true"] { background: var(--cam); border-color: var(--cam); color: var(--cam-ink); font-weight: 500; }
 .chip .n { display: inline-grid; place-items: center; min-width: 1.35rem; height: 1.35rem; padding: 0 .3rem; border-radius: var(--ctl-radius); background: var(--cam-tint); color: var(--fg); font-size: .75rem; font-weight: 600; font-variant-numeric: tabular-nums; }
-.chip[aria-pressed="true"] .n { background: rgba(255,255,255,.55); color: var(--cam-ink); }
+.chip[aria-pressed="true"] .n { background: var(--on-badge); color: var(--cam-ink); }
 .chip.plain { padding: 0 var(--ctl-pad); }
 .seg button:focus-visible, .chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .result { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem .6rem; font-size: .9rem; color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -111,7 +138,7 @@ h1 em { font-style: italic; padding: 0 .12em; margin: 0 -.06em; background: line
 .pin.active span { transform: scale(1.15); box-shadow: 0 0 0 2px var(--pin-ring), 0 0 0 4px var(--cam), 0 1px 3px rgba(0,0,0,.3); }
 .mapnote { color: var(--muted); font-size: .8rem; margin: .4rem 0 0; }
 
-/* Day sections; today's gets the Cambridge blue wash so the first question is answered first */
+/* Day sections; today's gets the accent wash so the first question is answered first */
 .today { background: var(--cam-tint); border-radius: 6px; margin: 1.75rem -0.9rem 0; padding: .1rem .9rem .6rem; }
 .today h2 { margin-top: .9rem; }
 .today ul.bops li:last-child { border-bottom: 0; }
@@ -181,7 +208,7 @@ footer a { display: inline-block; padding: .6rem 0; }
     <p class="result" id="result" aria-live="polite"></p>
   </div>
 
-  <div id="map" role="region" aria-label="Map of colleges with bops"></div>
+  <div id="map" role="region" aria-label="Map of Cambridge colleges with bops"></div>
   <p class="mapnote" id="mapnote">Numbers are bops in the next fortnight. Tap a college to filter the list.</p>
 
   <section id="list" aria-live="polite">
@@ -201,16 +228,39 @@ footer a { display: inline-block; padding: .6rem 0; }
   const TZ = "Europe/London";
   const WINDOW_MS = 14 * 864e5;
 
-  // College coordinates (approximate centre of each main site). Names match events.json.
+  // College coordinates come from city.json; the names match events.json and sources.json.
   const COLLEGES = {
-    "Christ's": [52.2056, 0.1222], "Churchill": [52.2128, 0.0996], "Clare": [52.2049, 0.1150], "Clare Hall": [52.2048, 0.1053],
-    "Corpus Christi": [52.2033, 0.1178], "Darwin": [52.2008, 0.1148], "Downing": [52.2008, 0.1246], "Emmanuel": [52.2038, 0.1243],
-    "Fitzwilliam": [52.2143, 0.1086], "Girton": [52.2290, 0.0844], "Gonville & Caius": [52.2060, 0.1180], "Homerton": [52.1884, 0.1398],
-    "Hughes Hall": [52.2000, 0.1335], "Jesus": [52.2090, 0.1245], "King's": [52.2043, 0.1166], "Lucy Cavendish": [52.2130, 0.1093],
-    "Magdalene": [52.2103, 0.1157], "Murray Edwards": [52.2143, 0.1058], "Newnham": [52.1990, 0.1077], "Pembroke": [52.2017, 0.1198],
-    "Peterhouse": [52.2007, 0.1187], "Queens'": [52.2020, 0.1150], "Robinson": [52.2055, 0.1050], "St Catharine's": [52.2030, 0.1170],
-    "St Edmund's": [52.2158, 0.1030], "St John's": [52.2085, 0.1170], "Selwyn": [52.2008, 0.1053], "Sidney Sussex": [52.2078, 0.1215],
-    "Trinity": [52.2070, 0.1172], "Trinity Hall": [52.2056, 0.1152], "Wolfson": [52.1983, 0.1050]
+    "Christ's": [52.2056, 0.1222],
+    "Churchill": [52.2128, 0.0996],
+    "Clare": [52.2049, 0.115],
+    "Clare Hall": [52.2048, 0.1053],
+    "Corpus Christi": [52.2033, 0.1178],
+    "Darwin": [52.2008, 0.1148],
+    "Downing": [52.2008, 0.1246],
+    "Emmanuel": [52.2038, 0.1243],
+    "Fitzwilliam": [52.2143, 0.1086],
+    "Girton": [52.229, 0.0844],
+    "Gonville & Caius": [52.206, 0.118],
+    "Homerton": [52.1884, 0.1398],
+    "Hughes Hall": [52.2, 0.1335],
+    "Jesus": [52.209, 0.1245],
+    "King's": [52.2043, 0.1166],
+    "Lucy Cavendish": [52.213, 0.1093],
+    "Magdalene": [52.2103, 0.1157],
+    "Murray Edwards": [52.2143, 0.1058],
+    "Newnham": [52.199, 0.1077],
+    "Pembroke": [52.2017, 0.1198],
+    "Peterhouse": [52.2007, 0.1187],
+    "Queens'": [52.202, 0.115],
+    "Robinson": [52.2055, 0.105],
+    "St Catharine's": [52.203, 0.117],
+    "St Edmund's": [52.2158, 0.103],
+    "St John's": [52.2085, 0.117],
+    "Selwyn": [52.2008, 0.1053],
+    "Sidney Sussex": [52.2078, 0.1215],
+    "Trinity": [52.207, 0.1172],
+    "Trinity Hall": [52.2056, 0.1152],
+    "Wolfson": [52.1983, 0.105]
   };
 
   const list = document.getElementById("list");
@@ -221,7 +271,7 @@ footer a { display: inline-block; padding: .6rem 0; }
   try { college = localStorage.getItem("cambops.college") || "all"; when = localStorage.getItem("cambops.when") || "all"; } catch (e) {}
   if (!["all", "tonight", "weekend", "nextweek"].includes(when)) when = "all";
 
-  // Every date is shown in Cambridge time, whatever the visitor's zone.
+  // Every date is shown in UK time, whatever the visitor's zone.
   const dayKey = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" });
   const dayLabel = new Intl.DateTimeFormat("en-GB", { timeZone: "UTC", weekday: "long", day: "numeric", month: "long" }); // fed UTC noon of the London day
   const shortDay = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "short" });
@@ -273,7 +323,7 @@ footer a { display: inline-block; padding: .6rem 0; }
   // Map, isolated so a tile or script failure never takes the list down with it.
   let map = null;
   try {
-    map = L.map("map", { scrollWheelZoom: false }).setView([52.2053, 0.1150], 14);
+    map = L.map("map", { scrollWheelZoom: false }).setView([52.2053, 0.115], 14);
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
   } catch (e) { document.getElementById("map").hidden = true; document.getElementById("mapnote").hidden = true; }
   const markers = new Map();
