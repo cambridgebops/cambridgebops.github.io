@@ -1104,7 +1104,7 @@
    "host": "Selwyn Ents",
    "dress": "Halloween",
    "url": "https://www.instagram.com/selwynents/",
-   "details": "Tickets were sold in Selbar on Tuesday 27 October. Start time from the usual bop slot; the termcard gives the date only.",
+   "details": "Tickets were sold in Selbar on 27 October. Time assumed; the termcard gives only the date.",
    "source": "selwyn-ents-instagram"
   },
   {
@@ -1117,7 +1117,7 @@
    "price": "Free drinks",
    "dress": "Halloween costume, prizes for the best",
    "url": "https://www.mcr.magd.cam.ac.uk/events/mcr-halloween-party-72k8w-w6g72",
-   "details": "After the BA formal. Verified on the MCR events page.",
+   "details": "After the BA formal.",
    "source": "magdalene-mcr-events"
   },
   {
@@ -1128,7 +1128,7 @@
    "host": "Churchill JCR",
    "dress": "Costume, prizes for best individual and group",
    "url": "https://www.instagram.com/p/Ddj51dYEeBI/",
-   "details": "Formal at 7pm, then the bop. From the JCR ents termcard.",
+   "details": "Formal at 7pm, then the bop.",
    "source": "churchill-jcr-instagram"
   },
   {
@@ -1140,7 +1140,6 @@
    "host": "King's LGBTQ+ with Clare bar and KCSU",
    "price": "£4, tickets on RA",
    "url": "https://ra.co/events/2568970",
-   "details": "Announced on the Clare UCS and King's LGBTQ+ Instagram accounts.",
    "source": "clare-ucs-instagram"
   },
   {
@@ -1151,7 +1150,7 @@
    "host": "Selwyn Ents",
    "dress": "Dress as an inspirational woman",
    "url": "https://www.instagram.com/selwynents/",
-   "details": "Date from the Michaelmas bops termcard, marked TBC; time assumed.",
+   "details": "Date marked TBC on the termcard; time assumed.",
    "source": "selwyn-ents-instagram"
   }
  ]

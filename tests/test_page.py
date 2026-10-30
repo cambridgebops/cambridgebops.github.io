@@ -41,6 +41,16 @@ class TestPage(unittest.TestCase):
             self.assertIn(t, tokens)
             self.assertIn(t + ":", dark, f"{t} missing in dark theme")
 
+    def test_links_and_entries_are_guarded(self):
+        # Only http(s) URLs become hrefs, entries without a title or a parseable start are dropped,
+        # and every string from the data file passes through the escaper before reaching innerHTML.
+        self.assertIn("function safeUrl(u)", SCRIPT)
+        self.assertIn('/^https?:\\/\\//i.test(u)', SCRIPT)
+        self.assertIn('typeof e.title !== "string"', SCRIPT)
+        self.assertNotIn("+ e.title +", SCRIPT)
+        self.assertNotIn("+ e.venue +", SCRIPT)
+        self.assertNotIn("+ e.details +", SCRIPT)
+
     def test_dates_are_rendered_in_cambridge_time(self):
         self.assertIn('TZ = "Europe/London"', SCRIPT)
         self.assertNotIn("toLocaleDateString()", SCRIPT)

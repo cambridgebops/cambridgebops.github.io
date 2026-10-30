@@ -66,7 +66,7 @@ h1 em { font-style: italic; padding: 0 .12em; margin: 0 -.06em; background: line
 
 /* Filter system: one control height, one radius, one set of states (rest, hover, pressed, focus).
    Segmented "when" control, college chips with counts, and a result line. */
-.filters { position: sticky; top: 0; z-index: 500; background: var(--bg); padding: .9rem 0 .75rem; margin: 1.25rem 0 1rem; border-bottom: 1px solid var(--rule); display: grid; gap: .6rem; }
+.filters { padding: .9rem 0 .75rem; margin: 1.25rem 0 1rem; border-bottom: 1px solid var(--rule); display: grid; gap: .6rem; }
 .filters .group { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; min-width: 0; }
 .filters .chips { flex: 1 1 100%; }
 .chip { flex: 0 0 auto; }
@@ -90,7 +90,7 @@ h1 em { font-style: italic; padding: 0 .12em; margin: 0 -.06em; background: line
 }
 
 
-#map { height: 260px; max-width: 100%; border: 1px solid var(--rule); border-radius: 4px; background: var(--field); }
+#map { height: 260px; max-width: 100%; border: 1px solid var(--rule); border-radius: 4px; background: var(--field); position: relative; z-index: 0; isolation: isolate; }
 .leaflet-container { font: inherit; }
 .leaflet-tile-pane { filter: var(--tile-filter); }
 .leaflet-tooltip { border: 0; padding: .6rem .8rem; font-size: .9rem; line-height: 1.4; }
@@ -146,7 +146,8 @@ footer a { display: inline-block; padding: .6rem 0; }
 
 @media (max-width: 480px) {
   h1 { font-size: 2.3rem; }
-  .seg button { padding: 0 .7rem; font-size: .88rem; }
+  .seg { display: grid; grid-template-columns: 1fr 1fr; border-radius: 14px; width: 100%; }
+  .seg button { padding: 0 .7rem; font-size: .9rem; border-radius: 11px; }
   #map { height: 220px; }
   ul.bops li { grid-template-columns: 3.8rem minmax(0, 1fr); }
 }
@@ -189,7 +190,7 @@ footer a { display: inline-block; padding: .6rem 0; }
 
   <footer>
     <span id="lastrun">Checked every morning against college calendars, ents pages and student press.</span>
-    <span>Listings come only from announcements the daily check could see. Verify with the college before showing up.</span>
+    <span>From public announcements only. Check with the college before you go.</span>
   </footer>
 </main>
 
@@ -225,6 +226,7 @@ footer a { display: inline-block; padding: .6rem 0; }
   const dayLabel = new Intl.DateTimeFormat("en-GB", { timeZone: "UTC", weekday: "long", day: "numeric", month: "long" }); // fed UTC noon of the London day
   const shortDay = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "short" });
   const timeLabel = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false });
+  function safeUrl(u) { return typeof u === "string" && /^https?:\/\//i.test(u) ? u : ""; }
   function esc(s) { return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
   function addDays(key, n) { const d = new Date(key + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
   function relDay(key) {
@@ -232,9 +234,11 @@ footer a { display: inline-block; padding: .6rem 0; }
     return key === today ? "Tonight" : key === addDays(today, 1) ? "Tomorrow" : "";
   }
   function inWindow(e) {
+    if (!e || typeof e.title !== "string" || !e.title.trim()) return false;
     const t = Date.parse(e.starts_at);
     return Number.isFinite(t) && t > Date.now() - 5 * 3600e3 && t < Date.now() + WINDOW_MS;
   }
+  function knownCollege(e) { return !!(e.college && COLLEGES[e.college]); }
 
   if (college !== "all" && college !== "none" && !COLLEGES[college]) college = "all";
 
@@ -303,6 +307,7 @@ footer a { display: inline-block; padding: .6rem 0; }
     if (college === "none") parts.push("outside the colleges"); else if (college !== "all") parts.push("at " + esc(college));
     if (WHEN_LABEL[when]) parts.push(WHEN_LABEL[when]);
     const active = college !== "all" || when !== "all";
+    resultEl.hidden = !n && !active;
     resultEl.innerHTML = "<strong>" + n + (n === 1 ? " bop" : " bops") + "</strong> " + esc(parts.join(" ")) +
       (active ? ' <button type="button" id="clear">Clear filters</button>' : "");
     const c = document.getElementById("clear");
@@ -336,7 +341,7 @@ footer a { display: inline-block; padding: .6rem 0; }
     if (!e.source && !e.url) return "";
     const src = sourceIndex.get(e.source);
     const label = src ? src.name : (e.source || "").replace(/-/g, " ");
-    const href = e.url || (src && src.url);
+    const href = safeUrl(e.url) || safeUrl(src && src.url);
     const host = hostOf(href || "");
     const where = /instagram\.com/.test(host) ? "Instagram post" : /facebook\.com/.test(host) ? "Facebook post" : host;
     const redundant = !where || label.toLowerCase().includes(where.split(" ")[0].toLowerCase());
@@ -348,7 +353,7 @@ footer a { display: inline-block; padding: .6rem 0; }
     if (e.price) f.push('<span class="price">' + esc(e.price) + "</span>");
     if (e.guests) f.push("<span>" + esc(e.guests) + "</span>");
     if (e.dress) f.push("<span>" + esc(e.dress) + "</span>");
-    if (e.ends_at && Number.isFinite(Date.parse(e.ends_at))) f.push("<span>until " + timeLabel.format(new Date(e.ends_at)) + "</span>");
+    if (e.ends_at && Number.isFinite(Date.parse(e.ends_at)) && Date.parse(e.ends_at) > Date.parse(e.starts_at)) f.push("<span>until " + timeLabel.format(new Date(e.ends_at)) + "</span>");
     return f.length ? '<div class="facts">' + f.join("") + "</div>" : "";
   }
 
@@ -358,13 +363,13 @@ footer a { display: inline-block; padding: .6rem 0; }
     const byCollege = new Map();
     let elsewhere = 0;
     for (const e of inTime) {
-      if (e.college && COLLEGES[e.college]) { if (!byCollege.has(e.college)) byCollege.set(e.college, []); byCollege.get(e.college).push(e); }
+      if (knownCollege(e)) { if (!byCollege.has(e.college)) byCollege.set(e.college, []); byCollege.get(e.college).push(e); }
       else elsewhere++;
     }
     renderMap(byCollege);
     renderChips(byCollege, elsewhere);
 
-    const shown = inTime.filter(e => college === "all" || (college === "none" ? !e.college : e.college === college));
+    const shown = inTime.filter(e => college === "all" || (college === "none" ? !knownCollege(e) : e.college === college));
     renderResult(shown.length);
 
 
@@ -386,9 +391,10 @@ footer a { display: inline-block; padding: .6rem 0; }
       if (rel === "Tonight") html += '<div class="today">';
       html += "<h2>" + esc(dayLabel.format(new Date(k + "T12:00:00Z"))) + (rel ? "<small>" + rel + "</small>" : "") + '</h2><ul class="bops">';
       for (const e of items) {
-        const name = e.url ? '<a href="' + esc(e.url) + '" rel="noopener" target="_blank">' + esc(e.title) + "</a>" : esc(e.title);
+        const link = safeUrl(e.url);
+        const name = link ? '<a href="' + esc(link) + '" rel="noopener" target="_blank">' + esc(e.title) + "</a>" : esc(e.title);
         const where = [];
-        if (e.college) where.push('<span class="college">' + esc(e.college) + "</span>");
+        if (knownCollege(e)) where.push('<span class="college">' + esc(e.college) + "</span>");
         if (e.venue && e.venue !== e.college) where.push(esc(e.venue));
         if (e.host && e.host !== e.college) where.push(esc(e.host));
         html += '<li><span class="time">' + timeLabel.format(new Date(e.starts_at)) + '</span><div>' +
