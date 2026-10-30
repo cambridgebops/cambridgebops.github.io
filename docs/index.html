@@ -254,6 +254,7 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
   const markers = new Map();
+  let fitted = false;
 
   function setCollege(value) {
     college = value;
@@ -276,6 +277,10 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
       } else { m.setIcon(icon); }
       const pop = items.slice(0, 4).map(e => '<div class="pop"><span class="t">' + esc(shortDay.format(new Date(e.starts_at))) + " " + timeLabel.format(new Date(e.starts_at)) + "</span>" + esc(e.title) + "</div>").join("") + (items.length > 4 ? '<div class="pop">and ' + (items.length - 4) + " more</div>" : "");
       m.bindTooltip("<strong>" + esc(name) + "</strong>" + pop, { direction: "top", offset: [0, -12], opacity: 1 });
+    }
+    if (byCollege.size && !fitted) {
+      fitted = true;
+      map.fitBounds(L.latLngBounds([...byCollege.keys()].map(n => COLLEGES[n])), { padding: [36, 36], maxZoom: 15 });
     }
   }
 
