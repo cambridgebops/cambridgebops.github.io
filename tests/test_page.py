@@ -12,7 +12,7 @@ class TestPage(unittest.TestCase):
         self.assertEqual(r.returncode, 0, r.stderr)
 
     def test_required_elements(self):
-        for id_ in ["when", "chips", "result", "tonight", "map", "list", "sources", "srcs", "lastrun"]:
+        for id_ in ["when", "chips", "result", "tonight", "map", "list", "lastrun"]:
             self.assertIn(f'id="{id_}"', PAGE, id_)
 
     def test_reads_events_json_only(self):

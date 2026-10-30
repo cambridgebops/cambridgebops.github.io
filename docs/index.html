@@ -145,23 +145,6 @@ ul.bops li:last-child { border-bottom: 1px solid var(--rule); }
 .src { font-size: .8rem; color: var(--muted); margin-top: .25rem; }
 .src a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
 
-/* Where the bops came from this run */
-.sources { margin-top: 3rem; }
-.sources summary { cursor: pointer; font-family: var(--display); font-size: 1.5rem; list-style: none; display: flex; align-items: baseline; gap: .6rem; }
-.sources summary::-webkit-details-marker { display: none; }
-.sources summary::before { content: "+"; font-family: var(--body); color: var(--muted); font-size: 1.1rem; width: 1rem; }
-.sources[open] summary::before { content: "\2013"; }
-.sources summary small { font-family: var(--body); font-size: .85rem; color: var(--muted); }
-.sources p.lead { color: var(--muted); font-size: .9rem; margin: .25rem 0 .75rem; }
-table.srcs { width: 100%; border-collapse: collapse; font-size: .9rem; }
-table.srcs th { text-align: left; font-weight: 500; color: var(--muted); font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; padding: .35rem 0; border-bottom: 1px solid var(--rule); }
-table.srcs td { padding: .45rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
-table.srcs td.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; padding-left: 1rem; }
-table.srcs td.kind { color: var(--muted); white-space: nowrap; padding-right: 1rem; }
-table.srcs .ok, table.srcs .fail { display: inline-block; width: .55rem; height: .55rem; border-radius: 50%; margin-right: .45rem; vertical-align: middle; }
-table.srcs .ok { background: var(--cam); } table.srcs .fail { background: #C8604B; }
-table.srcs td a { color: var(--fg); }
-.srcwrap { overflow-x: auto; }
 .empty, .status { color: var(--muted); padding: 1.5rem 0; }
 .status.error { color: #B4432F; }
 
@@ -211,12 +194,6 @@ footer a { display: inline-block; padding: .6rem 0; }
   <section id="list" aria-live="polite">
     <p class="status" id="loading">Loading…</p>
   </section>
-
-  <details class="sources" id="sources" hidden>
-    <summary>Where these came from <small id="sources-sub"></small></summary>
-    <p class="lead">Every source the morning check read, and how many of the listed bops it supplied. Nothing is listed that one of these did not state.</p>
-    <div class="srcwrap"><table class="srcs" id="srcs"></table></div>
-  </details>
 
   <footer>
     <span id="lastrun">Checked every morning against college calendars, ents pages and student press.</span>
@@ -373,21 +350,6 @@ footer a { display: inline-block; padding: .6rem 0; }
     const where = /instagram\.com/.test(host) ? "Instagram post" : /facebook\.com/.test(host) ? "Facebook post" : host;
     return '<div class="src">' + (href ? 'Announced at <a href="' + esc(href) + '" rel="noopener" target="_blank">' + esc(label) + "</a>" + (where && where !== label ? " (" + esc(where) + ")" : "") : "Source: " + esc(label)) + "</div>";
   }
-  function renderSources(data) {
-    const el = document.getElementById("sources");
-    const srcs = Array.isArray(data.sources) ? data.sources : [];
-    if (!srcs.length) { el.hidden = true; return; }
-    el.hidden = false;
-    const ok = srcs.filter(x => x.ok !== false).length;
-    document.getElementById("sources-sub").textContent = srcs.length + " sources checked, " + ok + " reachable";
-    const rows = srcs.slice().sort((a, b) => (b.found || 0) - (a.found || 0) || String(a.name).localeCompare(String(b.name)));
-    document.getElementById("srcs").innerHTML = "<thead><tr><th>Source</th><th>Kind</th><th style=\"text-align:right\">Bops</th></tr></thead><tbody>" + rows.map(x =>
-      "<tr><td><span class=\"" + (x.ok === false ? "fail" : "ok") + "\" title=\"" + (x.ok === false ? "could not be read" : "read") + "\"></span>" +
-      (x.url ? '<a href="' + esc(x.url) + '" rel="noopener" target="_blank">' + esc(x.name || x.url) + "</a>" : esc(x.name || "")) +
-      (x.note ? ' <span class="kind">' + esc(x.note) + "</span>" : "") + "</td>" +
-      '<td class="kind">' + esc(x.kind || "") + "</td>" +
-      '<td class="n">' + (x.ok === false ? "–" : (x.found || 0)) + "</td></tr>").join("") + "</tbody>";
-  }
 
   function facts(e) {
     const f = [];
@@ -463,7 +425,6 @@ footer a { display: inline-block; padding: .6rem 0; }
       sourceIndex = new Map(srcs.filter(x => x.slug).map(x => [x.slug, x]));
       events = (data.bops || []).filter(inWindow).sort((a, b) => Date.parse(a.starts_at) - Date.parse(b.starts_at));
       render();
-      renderSources(data);
       if (data.generated) {
         const when = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "short", hour: "2-digit", minute: "2-digit" }).format(new Date(data.generated));
         const n = srcs.length || (typeof data.sources === "number" ? data.sources : 0);
