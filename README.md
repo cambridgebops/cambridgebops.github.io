@@ -1,6 +1,6 @@
 # Cambridge Bops
 
-A minimalist listing of the small things on in Cambridge: bops, gigs, pub quizzes, formals, comedy nights and parties. Modelled on talks.cam, for everything talks.cam does not cover.
+A minimalist listing and map of college bops in Cambridge. Modelled on talks.cam, for the one kind of event talks.cam will never cover.
 
 - **Site:** https://kostadindev.github.io/cambops/ (static page, GitHub Pages from `docs/`)
 - **Backend:** Supabase project `cambops` (`xixflbudqcpzjxdijlta`, London region): Postgres with row-level security, reached directly from the page with the publishable key. Supabase does not render HTML on `*.supabase.co`, so the Edge Function `site` only redirects to the page.
@@ -10,10 +10,10 @@ A minimalist listing of the small things on in Cambridge: bops, gigs, pub quizze
 
 | Piece | Where | Notes |
 |---|---|---|
-| Page | `site/index.html` | Vanilla HTML, no build step beyond filling in the URL and key. Reads `events` and the latest `scrape_runs` row through PostgREST. The form inserts a row with `status = 'pending'`. |
+| Page | `site/index.html` | Vanilla HTML plus Leaflet (OpenStreetMap tiles). Reads bops and the latest `scrape_runs` row through PostgREST, groups them by day, filters by college (select or map pin) and shows a count per college on the map. The form inserts a row with `status = 'pending'`, `kind = 'bop'`. |
 | Built page | `docs/index.html` | `scripts/build.sh <supabase-url> <publishable-key>` writes it. Commit and push to deploy. |
-| Schema | `supabase/migrations/` | `events` (approved or pending, deduplicated by `source_key`) and `scrape_runs` (one row per routine run, shown in the footer). |
-| Access rules | same file | Anonymous: read approved upcoming events, insert pending submissions only. Nothing else. The routine writes with the connector's privileges. |
+| Schema | `supabase/migrations/` | `events` (approved or pending, deduplicated by `source_key`; `college` is constrained to the 31 colleges; `lat`/`lng` reserved for non-college venues) and `scrape_runs` (one row per routine run, shown in the footer). College coordinates live in the page, keyed by the same names. |
+| Access rules | same file | Anonymous: read approved upcoming bops, insert pending bops only (no status, source, kind or coordinates of their choosing). Nothing else. The routine writes with the connector's privileges. |
 | Routine | `docs/ROUTINE.md` | Four steps: gather, write, review submissions, housekeeping. |
 
 ## Working on it
