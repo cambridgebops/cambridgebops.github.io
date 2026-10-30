@@ -1,6 +1,6 @@
 # Daily routine prompt
 
-This is the prompt given to the Claude Code cloud routine "Cambridge Bops daily refresh" (every day at 06:00 UTC, with the repository `kostadindev/cambops` checked out). Keep this file in sync with the routine at https://claude.ai/code/routines. The routine is the only thing that writes to the site; there is no submission form.
+This is the prompt given to the Claude Code cloud routine "Cambridge Bops daily refresh" (every day at 06:00 UTC, with the repository `cambridgebops/cambridgebops.github.io` checked out). Keep this file in sync with the routine at https://claude.ai/code/routines. The routine is the only thing that writes to the site; there is no submission form.
 
 ---
 

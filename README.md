@@ -2,7 +2,7 @@
 
 A static page that lists and maps every college bop in Cambridge for the next fortnight, in the spirit of talks.cam. No backend and no submission form: a Claude Code cloud routine checks college calendars, ents pages and student press every morning, keeps only what it can verify, rewrites one JSON file and pushes it.
 
-- **Site:** https://kostadindev.github.io/cambops/ (GitHub Pages from `docs/`)
+- **Site:** https://cambridgebops.github.io/ (GitHub Pages, deployed from `docs/` by the test workflow)
 - **Data:** `docs/events.json`, rewritten daily by the routine. The page reads it and shows the next 14 days in Cambridge time.
 - **Routine:** prompt in `docs/ROUTINE.md`; manage it at https://claude.ai/code/routines.
 
@@ -27,11 +27,6 @@ python3 -m unittest discover -s tests      # data contract, registry, page: must
 python3 scripts/check_sources.py           # are all 31 colleges' sources still reachable?
 ``` To change what the routine does, edit `docs/ROUTINE.md` and paste the same text into the routine.
 
-## Hosting setup (one time)
+## Hosting
 
-```bash
-gh repo create kostadindev/cambops --public --source=. --remote=origin --push
-gh api -X POST repos/kostadindev/cambops/pages -f build_type=workflow     # Pages served by the Test and deploy workflow
-```
-
-Then add the repository as the routine's source so it can commit, allow it to push to `main` (or let it open pull requests), and enable the routine.
+The repository lives in the `cambridgebops` organization and is served by GitHub Pages at https://cambridgebops.github.io/. Pushes to `main` run the tests and deploy `docs/`. The daily routine commits to the same repository.
