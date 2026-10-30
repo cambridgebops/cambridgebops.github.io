@@ -131,6 +131,7 @@ ul.bops li:last-child { border-bottom: 1px solid var(--rule); }
 .name { font-weight: 600; font-size: 1.05rem; line-height: 1.3; }
 .name a { color: inherit; }
 .name a::after { content: " ↗"; color: var(--muted); font-weight: 400; font-size: .85em; }
+.name a:hover::after { color: var(--accent); }
 .where { color: var(--muted); margin-top: .1rem; }
 .where .college { color: var(--fg); font-weight: 500; }
 .where .sep { margin: 0 .4em; }
@@ -138,6 +139,26 @@ ul.bops li:last-child { border-bottom: 1px solid var(--rule); }
 .facts span { border: 1px solid var(--rule); border-radius: 999px; padding: .05em .55em; color: var(--fg); }
 .facts span.price { border-color: var(--cam); background: var(--cam-tint); }
 .details { font-size: .95rem; margin-top: .3rem; color: var(--fg); opacity: .9; }
+.src { font-size: .8rem; color: var(--muted); margin-top: .25rem; }
+.src a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
+
+/* Where the bops came from this run */
+.sources { margin-top: 3rem; }
+.sources summary { cursor: pointer; font-family: var(--display); font-size: 1.5rem; list-style: none; display: flex; align-items: baseline; gap: .6rem; }
+.sources summary::-webkit-details-marker { display: none; }
+.sources summary::before { content: "+"; font-family: var(--body); color: var(--muted); font-size: 1.1rem; width: 1rem; }
+.sources[open] summary::before { content: "\2013"; }
+.sources summary small { font-family: var(--body); font-size: .85rem; color: var(--muted); }
+.sources p.lead { color: var(--muted); font-size: .9rem; margin: .25rem 0 .75rem; }
+table.srcs { width: 100%; border-collapse: collapse; font-size: .9rem; }
+table.srcs th { text-align: left; font-weight: 500; color: var(--muted); font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; padding: .35rem 0; border-bottom: 1px solid var(--rule); }
+table.srcs td { padding: .45rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+table.srcs td.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; padding-left: 1rem; }
+table.srcs td.kind { color: var(--muted); white-space: nowrap; padding-right: 1rem; }
+table.srcs .ok, table.srcs .fail { display: inline-block; width: .55rem; height: .55rem; border-radius: 50%; margin-right: .45rem; vertical-align: middle; }
+table.srcs .ok { background: var(--cam); } table.srcs .fail { background: #C8604B; }
+table.srcs td a { color: var(--fg); }
+.srcwrap { overflow-x: auto; }
 .empty, .status { color: var(--muted); padding: 1.5rem 0; }
 .status.error { color: #B4432F; }
 
@@ -186,6 +207,12 @@ footer a { display: inline-block; padding: .6rem 0; }
   <section id="list" aria-live="polite">
     <p class="status" id="loading">Loading…</p>
   </section>
+
+  <details class="sources" id="sources" hidden>
+    <summary>Where these came from <small id="sources-sub"></small></summary>
+    <p class="lead">Every source the morning check read, and how many of the listed bops it supplied. Nothing is listed that one of these did not state.</p>
+    <div class="srcwrap"><table class="srcs" id="srcs"></table></div>
+  </details>
 
   <footer>
     <span id="lastrun">Checked every morning against college calendars, ents pages and student press.</span>
@@ -331,6 +358,33 @@ footer a { display: inline-block; padding: .6rem 0; }
     }
   }
 
+  let sourceIndex = new Map(); // slug -> {name, url, kind}
+  function hostOf(u) { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return ""; } }
+  function sourceLine(e) {
+    if (!e.source && !e.url) return "";
+    const src = sourceIndex.get(e.source);
+    const label = src ? src.name : (e.source || "").replace(/-/g, " ");
+    const href = e.url || (src && src.url);
+    const host = hostOf(href || "");
+    const where = /instagram\.com/.test(host) ? "Instagram post" : /facebook\.com/.test(host) ? "Facebook post" : host;
+    return '<div class="src">' + (href ? 'Announced at <a href="' + esc(href) + '" rel="noopener" target="_blank">' + esc(label) + "</a>" + (where && where !== label ? " (" + esc(where) + ")" : "") : "Source: " + esc(label)) + "</div>";
+  }
+  function renderSources(data) {
+    const el = document.getElementById("sources");
+    const srcs = Array.isArray(data.sources) ? data.sources : [];
+    if (!srcs.length) { el.hidden = true; return; }
+    el.hidden = false;
+    const ok = srcs.filter(x => x.ok !== false).length;
+    document.getElementById("sources-sub").textContent = srcs.length + " sources checked, " + ok + " reachable";
+    const rows = srcs.slice().sort((a, b) => (b.found || 0) - (a.found || 0) || String(a.name).localeCompare(String(b.name)));
+    document.getElementById("srcs").innerHTML = "<thead><tr><th>Source</th><th>Kind</th><th style=\"text-align:right\">Bops</th></tr></thead><tbody>" + rows.map(x =>
+      "<tr><td><span class=\"" + (x.ok === false ? "fail" : "ok") + "\" title=\"" + (x.ok === false ? "could not be read" : "read") + "\"></span>" +
+      (x.url ? '<a href="' + esc(x.url) + '" rel="noopener" target="_blank">' + esc(x.name || x.url) + "</a>" : esc(x.name || "")) +
+      (x.note ? ' <span class="kind">' + esc(x.note) + "</span>" : "") + "</td>" +
+      '<td class="kind">' + esc(x.kind || "") + "</td>" +
+      '<td class="n">' + (x.ok === false ? "–" : (x.found || 0)) + "</td></tr>").join("") + "</tbody>";
+  }
+
   function facts(e) {
     const f = [];
     if (e.price) f.push('<span class="price">' + esc(e.price) + "</span>");
@@ -389,7 +443,7 @@ footer a { display: inline-block; padding: .6rem 0; }
         html += '<li><span class="time">' + timeLabel.format(new Date(e.starts_at)) + '</span><div>' +
           '<div class="name">' + name + '</div>' +
           '<div class="where">' + where.join('<span class="sep">·</span>') + "</div>" + facts(e) +
-          (e.details ? '<div class="details">' + esc(e.details) + "</div>" : "") + "</div></li>";
+          (e.details ? '<div class="details">' + esc(e.details) + "</div>" : "") + sourceLine(e) + "</div></li>";
       }
       html += "</ul>";
     }
@@ -401,11 +455,15 @@ footer a { display: inline-block; padding: .6rem 0; }
       const r = await fetch("events.json", { cache: "no-cache" });
       if (!r.ok) throw new Error(r.status);
       const data = await r.json();
+      const srcs = Array.isArray(data.sources) ? data.sources : [];
+      sourceIndex = new Map(srcs.filter(x => x.slug).map(x => [x.slug, x]));
       events = (data.bops || []).filter(inWindow).sort((a, b) => Date.parse(a.starts_at) - Date.parse(b.starts_at));
       render();
+      renderSources(data);
       if (data.generated) {
         const when = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "short", hour: "2-digit", minute: "2-digit" }).format(new Date(data.generated));
-        document.getElementById("lastrun").textContent = "Checked " + when + (data.sources ? " across " + data.sources + " sources" : "") + ".";
+        const n = srcs.length || (typeof data.sources === "number" ? data.sources : 0);
+        document.getElementById("lastrun").textContent = "Checked " + when + (n ? " across " + n + " sources" : "") + ".";
       }
     } catch (err) {
       list.innerHTML = '<p class="status error">Could not load the listings. Try again in a minute.</p>';
