@@ -1,0 +1,50 @@
+"""The page is a single file; these checks catch the ways a hand edit breaks it."""
+import json, pathlib, re, subprocess, unittest
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+PAGE = (ROOT / "docs" / "index.html").read_text()
+SCRIPT = PAGE.split("<script>")[1].split("</script>")[0]
+
+
+class TestPage(unittest.TestCase):
+    def test_script_parses(self):
+        r = subprocess.run(["node", "-e", "new Function(require('fs').readFileSync(0,'utf8'))"], input=SCRIPT, text=True, capture_output=True)
+        self.assertEqual(r.returncode, 0, r.stderr)
+
+    def test_required_elements(self):
+        for id_ in ["when", "chips", "result", "tonight", "map", "list", "sources", "srcs", "lastrun"]:
+            self.assertIn(f'id="{id_}"', PAGE, id_)
+
+    def test_reads_events_json_only(self):
+        self.assertIn('fetch("events.json"', SCRIPT)
+        for banned in ["supabase", "Add a bop", "<form", "<dialog", "github.com/kostadindev/cambops/issues"]:
+            self.assertNotIn(banned.lower(), PAGE.lower(), banned)
+
+    def test_college_coordinates_match_registry(self):
+        reg = json.loads((ROOT / "docs" / "sources.json").read_text())
+        names = re.findall(r'"([^"]+)": \[5\d\.\d+, [-\d.]+\]', SCRIPT)
+        self.assertEqual(sorted(names), sorted(reg["colleges"]))
+        for lat, lng in re.findall(r"\[(5\d\.\d+), ([-\d.]+)\]", SCRIPT):
+            self.assertTrue(52.17 < float(lat) < 52.24 and 0.07 < float(lng) < 0.15, (lat, lng))
+
+    def test_external_resources_are_pinned_and_allowed(self):
+        srcs = re.findall(r'(?:src|href)="(https://[^"]+)"', PAGE.split("<script>")[0])
+        for u in srcs:
+            self.assertTrue(u.startswith(("https://fonts.googleapis.com", "https://fonts.gstatic.com", "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/")), u)
+        self.assertIn("tile.openstreetmap.org", SCRIPT)
+        self.assertNotIn("cartocdn", SCRIPT)
+
+    def test_theme_tokens_defined_in_both_themes(self):
+        tokens = set(re.findall(r"(--[a-z-]+):", PAGE.split("@media")[0]))
+        dark = PAGE.split(':root[data-theme="dark"]')[1].split("}")[0]
+        for t in ["--bg", "--fg", "--muted", "--rule", "--cam", "--cam-ink", "--cam-tint", "--accent", "--field"]:
+            self.assertIn(t, tokens)
+            self.assertIn(t + ":", dark, f"{t} missing in dark theme")
+
+    def test_dates_are_rendered_in_cambridge_time(self):
+        self.assertIn('TZ = "Europe/London"', SCRIPT)
+        self.assertNotIn("toLocaleDateString()", SCRIPT)
+
+
+if __name__ == "__main__":
+    unittest.main()

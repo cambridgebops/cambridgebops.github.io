@@ -12,17 +12,26 @@ A static page that lists and maps every college bop in Cambridge for the next fo
 |---|---|
 | `docs/index.html` | The whole page: Cambridge blue palette, a sticky filter bar (When segmented control, college chips with counts, result line with Clear), "Tonight" band, Leaflet map of colleges with a bop count per pin (OpenStreetMap tiles), and a day-by-day list with price, guest policy, dress code, end time and source link. |
 | `docs/events.json` | `{generated, sources, bops: [...]}`. Fields per bop: title, starts_at, ends_at, college, venue, host, price, guests, dress, url, details, source. |
-| `docs/ROUTINE.md` | The routine's instructions: check verified sources college by college, write the JSON, commit and push. |
+| `docs/sources.json` | The registry of verified sources, about 140 across the 31 colleges: JCR, MCR and ents sites, calendars, termcards, college events pages, SU listings, student press, and each college's JCR or ents Instagram. The routine reads only these. |
+| `docs/ROUTINE.md` | The routine's instructions: check every registered source, write the JSON, run the tests, commit and push. |
+| `tests/` | Unit tests for the data contract (`events.json`), the registry (`sources.json`) and the page. |
+| `scripts/check_sources.py` | Reachability test: probes every registered URL and reports colleges without a working source. |
+| `.github/workflows/deploy.yml` | Runs the tests on every push and deploys `docs/` to GitHub Pages only when they pass. |
 
 ## Working on it
 
-Edit `docs/index.html` directly, open it in a browser (`python3 -m http.server -d docs 8765`, since `fetch` needs a server), commit and push. GitHub Pages redeploys on push. To change what the routine does, edit `docs/ROUTINE.md` and paste the same text into the routine.
+Edit `docs/index.html` directly, open it in a browser (`python3 -m http.server -d docs 8765`, since `fetch` needs a server), run the tests, commit and push. GitHub Pages redeploys when the tests pass.
+
+```bash
+python3 -m unittest discover -s tests      # data contract, registry, page: must pass before any deploy
+python3 scripts/check_sources.py           # are all 31 colleges' sources still reachable?
+``` To change what the routine does, edit `docs/ROUTINE.md` and paste the same text into the routine.
 
 ## Hosting setup (one time)
 
 ```bash
 gh repo create kostadindev/cambops --public --source=. --remote=origin --push
-gh api -X POST repos/kostadindev/cambops/pages -f build_type=legacy -f 'source[branch]=main' -f 'source[path]=/docs'
+gh api -X POST repos/kostadindev/cambops/pages -f build_type=workflow     # Pages served by the Test and deploy workflow
 ```
 
 Then add the repository as the routine's source so it can commit, allow it to push to `main` (or let it open pull requests), and enable the routine.
