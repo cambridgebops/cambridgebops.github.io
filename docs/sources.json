@@ -444,6 +444,13 @@
   },
   {
    "college": "Jesus",
+   "name": "Friday Night Jesus (JCSU ents) on Facebook",
+   "kind": "Facebook",
+   "url": "https://www.facebook.com/FridayNightJesus",
+   "note": "Where JCSU bops are announced; cannot be read by the routine. The JCSU website returns 403 to automated readers."
+  },
+  {
+   "college": "Jesus",
    "name": "Jesus JCSU Instagram",
    "kind": "Instagram",
    "url": "https://www.instagram.com/jesuscollegestudentunion/",

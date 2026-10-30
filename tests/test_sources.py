@@ -3,7 +3,7 @@ import json, pathlib, unittest
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 REG = ROOT / "docs" / "sources.json"
-KINDS = {"JCR site", "JCR events", "MCR site", "MCR events", "Ents site", "Termcard", "Instagram", "College events", "SU listings", "Student press"}
+KINDS = {"JCR site", "JCR events", "MCR site", "MCR events", "Ents site", "Termcard", "Instagram", "Facebook", "College events", "SU listings", "Student press"}
 THE_31 = ["Christ's", "Churchill", "Clare", "Clare Hall", "Corpus Christi", "Darwin", "Downing", "Emmanuel", "Fitzwilliam", "Girton",
           "Gonville & Caius", "Homerton", "Hughes Hall", "Jesus", "King's", "Lucy Cavendish", "Magdalene", "Murray Edwards", "Newnham",
           "Pembroke", "Peterhouse", "Queens'", "Robinson", "St Catharine's", "St Edmund's", "St John's", "Selwyn", "Sidney Sussex",
@@ -33,8 +33,8 @@ class TestRegistry(unittest.TestCase):
         self.assertEqual([c for c in THE_31 if c not in have], [])
 
     def test_every_college_has_a_readable_source(self):
-        # Instagram cannot be fetched, so each college needs at least one web page too.
-        readable = {s["college"] for s in self.reg["sources"] if s["kind"] != "Instagram"}
+        # Instagram and Facebook cannot be fetched, so each college needs at least one web page too.
+        readable = {s["college"] for s in self.reg["sources"] if s["kind"] not in ("Instagram", "Facebook")}
         self.assertEqual([c for c in THE_31 if c not in readable], [])
 
     def test_university_wide_sources_present(self):
