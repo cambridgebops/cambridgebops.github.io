@@ -61,6 +61,7 @@ h1 { font-family: var(--display); font-weight: 400; font-size: 2.7rem; line-heig
 .ball { width: .72em; height: .72em; flex: 0 0 auto; }
 h1 em { font-style: italic; padding: 0 .12em; margin: 0 -.06em; background: linear-gradient(transparent 60%, var(--cam) 60%, var(--cam) 92%, transparent 92%); }
 .tagline { color: var(--muted); margin: .5rem 0 0; max-width: 34rem; }
+.notice { font-size: .9rem; color: var(--muted); margin: .6rem 0 0; max-width: 34rem; padding-left: .75rem; border-left: 3px solid var(--cam); }
 
 
 /* Filter system: one control height, one radius, one set of states (rest, hover, pressed, focus).
@@ -181,7 +182,8 @@ footer a { display: inline-block; padding: .6rem 0; }
 <main>
   <header>
     <h1><svg class="ball" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><defs><clipPath id="ballclip"><circle cx="20" cy="20" r="18"/></clipPath></defs><circle cx="20" cy="20" r="18" fill="var(--cam)"/><g clip-path="url(#ballclip)" stroke="var(--bg)" stroke-width="1.6"><path d="M2 8h36M2 14h36M2 20h36M2 26h36M2 32h36"/><path d="M8 2v36M14 2v36M20 2v36M26 2v36M32 2v36"/></g><rect x="18.5" y="0" width="3" height="3" fill="var(--cam-ink)"/></svg>Cambridge <em>Bops</em></h1>
-    <p class="tagline">Every college bop in the next fortnight: when, where, what theme, how much. Checked every morning against the colleges' own calendars and pages.</p>
+    <p class="tagline">Every college bop in the next fortnight: when, where, what theme, how much. Checked every morning against the colleges' own calendars, pages and announcements.</p>
+    <p class="notice">Check before you go. Dates, times and guest rules come from public announcements and colleges change them; the link on each bop is the place to confirm.</p>
   </header>
 
   <div class="filters" role="region" aria-label="Filters">
@@ -218,7 +220,7 @@ footer a { display: inline-block; padding: .6rem 0; }
 
   <footer>
     <span id="lastrun">Checked every morning against college calendars, ents pages and student press.</span>
-    <span>Listings come only from sources the daily check can verify.</span>
+    <span>Listings come only from announcements the daily check could see. Verify with the college before showing up.</span>
   </footer>
 </main>
 

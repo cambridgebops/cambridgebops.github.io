@@ -18,6 +18,8 @@ A bop goes in only when one of these sources states its college and date. Instag
 
 Also read `docs/events.json` as it is now. Keep every bop in it that is still in the window and still appears on its source; update one whose source now gives a different time or venue; drop one whose source says it is cancelled or that no longer appears anywhere you can check.
 
+Some JCR sites render their content with JavaScript (Peterhouse, Girton) and show nothing to WebFetch. For those, render the page with a headless browser: `npx --yes playwright@1.47.2 install chromium` once per run, then a short Node script using `chromium.launch({ headless: true })`, `page.goto(url, { waitUntil: "networkidle" })` and `page.innerText("body")`. Use it only to render pages that serve content to an ordinary browser; never to log in anywhere, never with anyone's credentials, and never to get past a site that has refused you with a 403 or a challenge page. Instagram and Facebook stay off limits to the routine for the same reason.
+
 If a registered source has moved or died, do not edit `docs/sources.json` yourself; say so in your summary so a person can fix the registry.
 
 ## 2. Write docs/events.json
