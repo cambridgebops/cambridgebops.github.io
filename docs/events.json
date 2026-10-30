@@ -1017,6 +1017,69 @@
    "ok": true,
    "found": 1,
    "note": "read via a logged-in browser, not by the routine"
+  },
+  {
+   "slug": "selwyn-ents-instagram",
+   "name": "Selwyn Ents on Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/selwynents/",
+   "ok": true,
+   "found": 2,
+   "note": "Michaelmas bops termcard (dates marked TBC); read via a logged-in browser"
+  },
+  {
+   "slug": "churchill-jcr-instagram",
+   "name": "Churchill JCR on Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/churchillcoljcr/",
+   "ok": true,
+   "found": 1,
+   "note": "Ents termcard post of 21 September; read via a logged-in browser"
+  },
+  {
+   "slug": "clare-ucs-instagram",
+   "name": "Clare UCS on Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/ucs_clare/",
+   "ok": true,
+   "found": 1,
+   "note": "Collab post with King's LGBTQ+ and Clare bar; read via a logged-in browser"
+  },
+  {
+   "slug": "queens-ents-instagram",
+   "name": "Queens' Ents on Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/queensents/",
+   "ok": true,
+   "found": 0,
+   "note": "Halloween Bop was Wed 28 Oct, before the window"
+  },
+  {
+   "slug": "christs-ents-instagram",
+   "name": "Christ's Ents on Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/christsents/",
+   "ok": true,
+   "found": 0,
+   "note": "Welcome Back Bop was 9 Oct; termcard not readable"
+  },
+  {
+   "slug": "catz-entz-instagram",
+   "name": "Catz Entz on Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/catzentz/",
+   "ok": true,
+   "found": 0,
+   "note": "Bar swap with Queens' and Jesus announced as 'tomorrow', date not stated"
+  },
+  {
+   "slug": "kings-ents-instagram",
+   "name": "King's Ents on Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/kings.ents/",
+   "ok": true,
+   "found": 0,
+   "note": "formals only in recent posts"
   }
  ],
  "bops": [
@@ -1034,6 +1097,17 @@
    "source": "jesus-ents-instagram"
   },
   {
+   "title": "Selwyn Halloween Bop",
+   "starts_at": "2026-10-30T21:00:00+00:00",
+   "college": "Selwyn",
+   "venue": "Selwyn bar",
+   "host": "Selwyn Ents",
+   "dress": "Halloween",
+   "url": "https://www.instagram.com/selwynents/",
+   "details": "Tickets were sold in Selbar on Tuesday 27 October. Start time from the usual bop slot; the termcard gives the date only.",
+   "source": "selwyn-ents-instagram"
+  },
+  {
    "title": "MCR Halloween Party",
    "starts_at": "2026-10-30T21:15:00+00:00",
    "ends_at": "2026-10-30T23:00:00+00:00",
@@ -1045,6 +1119,40 @@
    "url": "https://www.mcr.magd.cam.ac.uk/events/mcr-halloween-party-72k8w-w6g72",
    "details": "After the BA formal. Verified on the MCR events page.",
    "source": "magdalene-mcr-events"
+  },
+  {
+   "title": "Halloween Formal & Bop",
+   "starts_at": "2026-11-01T19:00:00+00:00",
+   "college": "Churchill",
+   "venue": "Dining Hall",
+   "host": "Churchill JCR",
+   "dress": "Costume, prizes for best individual and group",
+   "url": "https://www.instagram.com/p/Ddj51dYEeBI/",
+   "details": "Formal at 7pm, then the bop. From the JCR ents termcard.",
+   "source": "churchill-jcr-instagram"
+  },
+  {
+   "title": "Gaelic Samhain: queer Halloween party",
+   "starts_at": "2026-11-01T20:00:00+00:00",
+   "ends_at": "2026-11-01T23:00:00+00:00",
+   "college": "Clare",
+   "venue": "Clare Cellars",
+   "host": "King's LGBTQ+ with Clare bar and KCSU",
+   "price": "£4, tickets on RA",
+   "url": "https://ra.co/events/2568970",
+   "details": "Announced on the Clare UCS and King's LGBTQ+ Instagram accounts.",
+   "source": "clare-ucs-instagram"
+  },
+  {
+   "title": "50 Years of Women in Selwyn Bop",
+   "starts_at": "2026-11-13T21:00:00+00:00",
+   "college": "Selwyn",
+   "venue": "Selwyn bar",
+   "host": "Selwyn Ents",
+   "dress": "Dress as an inspirational woman",
+   "url": "https://www.instagram.com/selwynents/",
+   "details": "Date from the Michaelmas bops termcard, marked TBC; time assumed.",
+   "source": "selwyn-ents-instagram"
   }
  ]
 }

@@ -50,6 +50,12 @@
   },
   {
    "college": "Christ's",
+   "name": "Christ's Ents Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/christsents/"
+  },
+  {
+   "college": "Christ's",
    "name": "Christ's MCR What's On",
    "kind": "MCR events",
    "url": "https://www.christsmcr.co.uk/whats-on"
@@ -490,6 +496,12 @@
   },
   {
    "college": "King's",
+   "name": "King's Ents Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/kings.ents/"
+  },
+  {
+   "college": "King's",
    "name": "KCSU events calendar",
    "kind": "JCR events",
    "url": "https://calendar.google.com/calendar/embed?src=events@kcsu.org.uk&ctz=Europe/London",
@@ -688,6 +700,12 @@
    "kind": "Instagram",
    "url": "https://www.instagram.com/qmcrcambridge/",
    "note": "Linked from qmcr.org"
+  },
+  {
+   "college": "Queens'",
+   "name": "Queens' Ents Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/queensents/"
   },
   {
    "college": "Queens'",
