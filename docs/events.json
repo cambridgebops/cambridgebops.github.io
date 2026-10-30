@@ -1,1157 +1,1177 @@
 {
- "generated": "2026-10-30T15:48:56+00:00",
- "sources": [
-  {
-   "slug": "christs-jcr-site",
-   "name": "Christ's JCR",
-   "kind": "JCR site",
-   "url": "https://thejcr.co.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed; links to termcard only"
-  },
-  {
-   "slug": "christs-mcr-whats-on",
-   "name": "Christ's MCR What's On",
-   "kind": "MCR events",
-   "url": "https://www.christsmcr.co.uk/whats-on",
-   "ok": true,
-   "found": 0,
-   "note": "page is a single image; no readable events"
-  },
-  {
-   "slug": "christs-mcr-site",
-   "name": "Christ's MCR",
-   "kind": "MCR site",
-   "url": "https://www.christsmcr.co.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "christs-jcr-termcard",
-   "name": "Christ's JCR termcard",
-   "kind": "Termcard",
-   "url": "https://thejcr.co.uk/get-involved/termcard",
-   "ok": true,
-   "found": 0,
-   "note": "Michaelmas section empty; iCal feed latest event Oct 2024"
-  },
-  {
-   "slug": "churchill-jcr-mcr-page",
-   "name": "Churchill College JCR and MCR page",
-   "kind": "College events",
-   "url": "https://www.chu.cam.ac.uk/about/governance/jcr-and-mcr/",
-   "ok": true,
-   "found": 0,
-   "note": "committee contacts only"
-  },
-  {
-   "slug": "churchill-college-events",
-   "name": "Churchill College events",
-   "kind": "College events",
-   "url": "https://www.chu.cam.ac.uk/events/",
-   "ok": true,
-   "found": 0,
-   "note": "college events only, no bop"
-  },
-  {
-   "slug": "clare-ucs-site",
-   "name": "Clare UCS",
-   "kind": "JCR site",
-   "url": "https://ucs.clare.cam.ac.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed; points to Instagram"
-  },
-  {
-   "slug": "clare-ucs-going-out",
-   "name": "Clare UCS Going Out",
-   "kind": "JCR events",
-   "url": "https://ucs.clare.cam.ac.uk/current-students/going-out/",
-   "ok": true,
-   "found": 0,
-   "note": "no dated bops"
-  },
-  {
-   "slug": "clare-mcr-events",
-   "name": "Clare MCR events",
-   "kind": "MCR events",
-   "url": "https://mcr.clare.cam.ac.uk/news-and-events/all-events",
-   "ok": true,
-   "found": 0,
-   "note": "listing stale (2022)"
-  },
-  {
-   "slug": "clare-mcr-site",
-   "name": "Clare MCR",
-   "kind": "MCR site",
-   "url": "https://mcr.clare.cam.ac.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "events booker requires login"
-  },
-  {
-   "slug": "clare-hall-events",
-   "name": "Clare Hall events",
-   "kind": "College events",
-   "url": "https://www.clarehall.cam.ac.uk/events/",
-   "ok": true,
-   "found": 0,
-   "note": "concerts, seminars, Diwali formal; no bop"
-  },
-  {
-   "slug": "clare-hall-gsb-events",
-   "name": "Clare Hall GSB events",
-   "kind": "MCR events",
-   "url": "https://www.clarehall.cam.ac.uk/events-category/gsb/",
-   "ok": true,
-   "found": 0,
-   "note": "no bop in window"
-  },
-  {
-   "slug": "clare-hall-gsb-site",
-   "name": "Clare Hall GSB",
-   "kind": "MCR site",
-   "url": "https://www.clarehall.cam.ac.uk/gsb/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "corpus-jcr-site",
-   "name": "Corpus JCR",
-   "kind": "JCR site",
-   "url": "https://www.jcr.corpus.cam.ac.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "no dated events"
-  },
-  {
-   "slug": "corpus-ents",
-   "name": "Corpus Ents",
-   "kind": "Ents site",
-   "url": "https://www.jcr.corpus.cam.ac.uk/corpus-ents",
-   "ok": true,
-   "found": 0,
-   "note": "embedded calendar iCal has one 2020 event"
-  },
-  {
-   "slug": "corpus-jcr-events-calendars",
-   "name": "Corpus JCR events calendars",
-   "kind": "JCR events",
-   "url": "https://www.jcr.corpus.cam.ac.uk/events-calendars",
-   "ok": true,
-   "found": 0,
-   "note": "no readable entries; last edited Oct 2024"
-  },
-  {
-   "slug": "corpus-mcr-events",
-   "name": "Corpus MCR events",
-   "kind": "MCR events",
-   "url": "https://www.corpusmcr.com/currentstudents/events",
-   "ok": true,
-   "found": 0,
-   "note": "images only; no readable events"
-  },
-  {
-   "slug": "corpus-mcr-site",
-   "name": "Corpus MCR",
-   "kind": "MCR site",
-   "url": "https://www.corpusmcr.com/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "corpus-mcr-term-card",
-   "name": "Corpus MCR term card",
-   "kind": "Termcard",
-   "url": "https://www.corpusmcr.com/currentstudents/term-card",
-   "ok": true,
-   "found": 0,
-   "note": "Welcome Week 2025 image only"
-  },
-  {
-   "slug": "darwin-college-events",
-   "name": "Darwin College events",
-   "kind": "College events",
-   "url": "https://www.darwin.cam.ac.uk/events/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "darwin-dcsa-events",
-   "name": "Darwin DCSA events",
-   "kind": "MCR events",
-   "url": "https://www.dcsa.darwin.cam.ac.uk/events/",
-   "ok": true,
-   "found": 0,
-   "note": "three embedded calendars read as iCal; nothing in window"
-  },
-  {
-   "slug": "darwin-dcsa-site",
-   "name": "Darwin DCSA",
-   "kind": "MCR site",
-   "url": "https://www.dcsa.darwin.cam.ac.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "downing-jcr-site",
-   "name": "Downing JCR",
-   "kind": "JCR site",
-   "url": "https://downingjcr.org.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "committee pages and minutes only"
-  },
-  {
-   "slug": "downing-college-events",
-   "name": "Downing College events",
-   "kind": "College events",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "ok": true,
-   "found": 0,
-   "note": "seminars, concert, club dinner; no bop"
-  },
-  {
-   "slug": "downing-mcr-page",
-   "name": "Downing MCR",
-   "kind": "MCR site",
-   "url": "https://dow.cam.ac.uk/people/downing-mcr",
-   "ok": true,
-   "found": 0,
-   "note": "college calendar iCal read: Halloween and Firework Night formals, 'Week 5 Blues' in the JCR 6 Nov; none labelled a bop"
-  },
-  {
-   "slug": "emmanuel-ecsu-site",
-   "name": "Emmanuel ECSU",
-   "kind": "JCR site",
-   "url": "https://ecsu.org.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed; points to Instagram"
-  },
-  {
-   "slug": "emmanuel-mcr-events-calendar",
-   "name": "Emmanuel MCR events calendar",
-   "kind": "MCR events",
-   "url": "https://www.emmamcr.org.uk/events-calendar",
-   "ok": true,
-   "found": 0,
-   "note": "iCal read; calendar empty for November"
-  },
-  {
-   "slug": "emmanuel-mcr-site",
-   "name": "Emmanuel MCR",
-   "kind": "MCR site",
-   "url": "https://www.emmamcr.org.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "no dated events"
-  },
-  {
-   "slug": "fitzwilliam-jcr-site",
-   "name": "Fitzwilliam JCR",
-   "kind": "JCR site",
-   "url": "https://www.fitzjcr.com/",
-   "ok": true,
-   "found": 0,
-   "note": "no events; Instagram feed section empty"
-  },
-  {
-   "slug": "fitzwilliam-college-jcr-mcr-page",
-   "name": "Fitzwilliam College JCR and MCR page",
-   "kind": "College events",
-   "url": "https://www.fitz.cam.ac.uk/jcr-mcr",
-   "ok": true,
-   "found": 0,
-   "note": "links only"
-  },
-  {
-   "slug": "fitzwilliam-mcr-events",
-   "name": "Fitzwilliam MCR events",
-   "kind": "MCR events",
-   "url": "https://mcr.fitz.cam.ac.uk/events-today/",
-   "ok": true,
-   "found": 0,
-   "note": "iCal empty; Google Calendar latest entry 2022"
-  },
-  {
-   "slug": "fitzwilliam-mcr-site",
-   "name": "Fitzwilliam MCR",
-   "kind": "MCR site",
-   "url": "https://mcr.fitz.cam.ac.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "describes MCR bops generally, no dates"
-  },
-  {
-   "slug": "fitzwilliam-mcr-term-card",
-   "name": "Fitzwilliam MCR term card",
-   "kind": "Termcard",
-   "url": "https://mcr.fitz.cam.ac.uk/overview/term-card/",
-   "ok": true,
-   "found": 0,
-   "note": "out-of-term placeholder"
-  },
-  {
-   "slug": "girton-jcr-site",
-   "name": "Girton JCR",
-   "kind": "JCR site",
-   "url": "https://girtonjcr.co.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "client-rendered shell"
-  },
-  {
-   "slug": "girton-college-events",
-   "name": "Girton College events",
-   "kind": "College events",
-   "url": "https://www.girton.cam.ac.uk/upcoming-events",
-   "ok": true,
-   "found": 0,
-   "note": "concerts and chapel services"
-  },
-  {
-   "slug": "girton-jcr-events-calendar",
-   "name": "Girton JCR events calendar",
-   "kind": "JCR events",
-   "url": "https://girtonjcr.co.uk/events-calendar",
-   "ok": true,
-   "found": 0,
-   "note": "calendar iCal read, 198 events, latest Nov 2025; nothing in window"
-  },
-  {
-   "slug": "girton-mcr-events",
-   "name": "Girton MCR events",
-   "kind": "MCR events",
-   "url": "https://sites.google.com/cam.ac.uk/girton-mcr/events",
-   "ok": true,
-   "found": 0,
-   "note": "calendar iCal read; nothing in window"
-  },
-  {
-   "slug": "girton-mcr-site",
-   "name": "Girton MCR",
-   "kind": "MCR site",
-   "url": "https://sites.google.com/cam.ac.uk/girton-mcr/home",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "caius-gcsu-site",
-   "name": "Caius GCSU (JCR)",
-   "kind": "JCR site",
-   "url": "https://jcr.cai.cam.ac.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "caius-gcsu-ents",
-   "name": "Caius GCSU Ents",
-   "kind": "JCR events",
-   "url": "https://jcr.cai.cam.ac.uk/college-life/ents/",
-   "ok": true,
-   "found": 0,
-   "note": "bops in Harvey Court JCR, termcard on Instagram; no dates"
-  },
-  {
-   "slug": "caius-mcr-site",
-   "name": "Caius MCR",
-   "kind": "MCR site",
-   "url": "https://mcr.cai.cam.ac.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "MCR calendar grid empty for the window"
-  },
-  {
-   "slug": "hus-jcr-site",
-   "name": "Homerton HUS (JCR)",
-   "kind": "JCR site",
-   "url": "https://www.hus-jcr.co.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "points to Instagram term card"
-  },
-  {
-   "slug": "hus-jcr-events",
-   "name": "HUS events",
-   "kind": "JCR events",
-   "url": "https://www.hus-jcr.co.uk/events/",
-   "ok": true,
-   "found": 0,
-   "note": "no upcoming events"
-  },
-  {
-   "slug": "homerton-mcr-ents",
-   "name": "Homerton MCR upcoming ents",
-   "kind": "MCR events",
-   "url": "https://homerton-mcr.co.uk/upcoming-ents",
-   "ok": true,
-   "found": 0,
-   "note": "listings end 10 Oct"
-  },
-  {
-   "slug": "homerton-mcr-site",
-   "name": "Homerton MCR",
-   "kind": "MCR site",
-   "url": "https://homerton-mcr.co.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "hughes-college-events",
-   "name": "Hughes Hall events",
-   "kind": "College events",
-   "url": "https://www.hughes.cam.ac.uk/about/events/",
-   "ok": true,
-   "found": 0,
-   "note": "talks and alumni dinners only"
-  },
-  {
-   "slug": "hughes-mcr-calendar",
-   "name": "Hughes Hall MCR calendar",
-   "kind": "MCR events",
-   "url": "https://www.hughes.cam.ac.uk/student-centre/hughes-hall-mcr/mcr-calendar/",
-   "ok": true,
-   "found": 0,
-   "note": "no calendar content in the page"
-  },
-  {
-   "slug": "hughes-mcr-site",
-   "name": "Hughes Hall MCR",
-   "kind": "MCR site",
-   "url": "https://www.hughes.cam.ac.uk/student-centre/hughes-hall-mcr/",
-   "ok": true,
-   "found": 0,
-   "note": "mentions bops generally, no dates"
-  },
-  {
-   "slug": "jesus-jcsu-site",
-   "name": "Jesus JCSU",
-   "kind": "JCR site",
-   "url": "https://jcsu.jesus.cam.ac.uk/",
-   "ok": false,
-   "found": 0,
-   "note": "403"
-  },
-  {
-   "slug": "jesus-college-events",
-   "name": "Jesus College events",
-   "kind": "College events",
-   "url": "https://www.jesus.cam.ac.uk/college/events",
-   "ok": true,
-   "found": 0,
-   "note": "chapel, talks and alumni events only"
-  },
-  {
-   "slug": "jesus-jcsu-calendar",
-   "name": "Jesus JCSU calendar",
-   "kind": "JCR events",
-   "url": "https://jcsu.jesus.cam.ac.uk/current-students/calendar/",
-   "ok": false,
-   "found": 0,
-   "note": "403"
-  },
-  {
-   "slug": "jesus-jcsu-student-events",
-   "name": "Jesus JCSU student-run events",
-   "kind": "JCR events",
-   "url": "https://jcsu.jesus.cam.ac.uk/current-students/student-run-events/",
-   "ok": false,
-   "found": 0,
-   "note": "403"
-  },
-  {
-   "slug": "kcsu-site",
-   "name": "King's KCSU",
-   "kind": "JCR site",
-   "url": "https://kcsu.org.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "links to the Google Calendar"
-  },
-  {
-   "slug": "kcsu-calendar",
-   "name": "KCSU events calendar",
-   "kind": "JCR events",
-   "url": "https://calendar.google.com/calendar/embed?src=events@kcsu.org.uk&ctz=Europe/London",
-   "ok": true,
-   "found": 0,
-   "note": "iCal feed read; calendar contains no events"
-  },
-  {
-   "slug": "lucy-su-page",
-   "name": "Lucy Cavendish Students' Union (college page)",
-   "kind": "JCR site",
-   "url": "https://www.lucy.cam.ac.uk/our-college/place-live-and-study/students-union",
-   "ok": true,
-   "found": 0,
-   "note": "mentions bops generally, no dates"
-  },
-  {
-   "slug": "lucy-college-events",
-   "name": "Lucy Cavendish events",
-   "kind": "College events",
-   "url": "https://www.lucy.cam.ac.uk/events",
-   "ok": true,
-   "found": 0,
-   "note": "talks and formals only"
-  },
-  {
-   "slug": "lucy-jcr-cambridgesu",
-   "name": "Lucy JCR on Cambridge SU",
-   "kind": "JCR events",
-   "url": "https://www.cambridgesu.co.uk/organisation/lucyjcr/",
-   "ok": true,
-   "found": 0,
-   "note": "calendar empty"
-  },
-  {
-   "slug": "magdalene-jcr-site",
-   "name": "Magdalene JCR",
-   "kind": "JCR site",
-   "url": "https://jcr.magd.cam.ac.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "points to Instagram"
-  },
-  {
-   "slug": "magdalene-mcr-events",
-   "name": "Magdalene MCR events",
-   "kind": "MCR events",
-   "url": "https://www.mcr.magd.cam.ac.uk/events",
-   "ok": true,
-   "found": 1,
-   "note": "full Michaelmas listing"
-  },
-  {
-   "slug": "magdalene-mcr-site",
-   "name": "Magdalene MCR",
-   "kind": "MCR site",
-   "url": "https://www.mcr.magd.cam.ac.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "links to the events page"
-  },
-  {
-   "slug": "murray-edwards-jcr-cambridgesu",
-   "name": "Murray Edwards JCR on Cambridge SU",
-   "kind": "JCR site",
-   "url": "https://www.cambridgesu.co.uk/organisation/14844/",
-   "ok": true,
-   "found": 0,
-   "note": "calendar empty"
-  },
-  {
-   "slug": "murray-edwards-college-life",
-   "name": "Murray Edwards college life",
-   "kind": "College events",
-   "url": "https://www.murrayedwards.cam.ac.uk/college-life",
-   "ok": true,
-   "found": 0,
-   "note": "no dated events"
-  },
-  {
-   "slug": "murray-edwards-mcr-site",
-   "name": "Murray Edwards MCR",
-   "kind": "MCR site",
-   "url": "https://memcr.soc.srcf.net/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "newnham-college-social-life",
-   "name": "Newnham college social life",
-   "kind": "College events",
-   "url": "https://newn.cam.ac.uk/study-here/life-newnham/societies-and-facilities/college-social-life",
-   "ok": true,
-   "found": 0,
-   "note": "no dated events"
-  },
-  {
-   "slug": "newnham-mcr-cambridgesu",
-   "name": "Newnham MCR on Cambridge SU",
-   "kind": "MCR events",
-   "url": "https://www.cambridgesu.co.uk/organisation/newnhammcr/",
-   "ok": true,
-   "found": 0,
-   "note": "calendar empty"
-  },
-  {
-   "slug": "newnham-mcr-site",
-   "name": "Newnham MCR",
-   "kind": "MCR site",
-   "url": "https://newnhammcr.soc.srcf.net/",
-   "ok": true,
-   "found": 0,
-   "note": "linked calendar read: room bookings only in the window"
-  },
-  {
-   "slug": "pembroke-jp-site",
-   "name": "Pembroke JP (JPC)",
-   "kind": "JCR site",
-   "url": "https://jp.pem.cam.ac.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "points to the Ents Instagram"
-  },
-  {
-   "slug": "pembroke-jp-bar",
-   "name": "Pembroke JP bar page",
-   "kind": "JCR events",
-   "url": "https://jp.pem.cam.ac.uk/the-jp-bar/",
-   "ok": true,
-   "found": 0,
-   "note": "calendar section empty"
-  },
-  {
-   "slug": "pembroke-gp-social",
-   "name": "Pembroke GP social",
-   "kind": "MCR events",
-   "url": "https://gp.pem.cam.ac.uk/graduatelife/social/",
-   "ok": true,
-   "found": 0,
-   "note": "bops at the start and end of each term; no dates"
-  },
-  {
-   "slug": "pembroke-gp-site",
-   "name": "Pembroke GP (MCR)",
-   "kind": "MCR site",
-   "url": "https://gp.pem.cam.ac.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "peterhouse-jcr-site",
-   "name": "Peterhouse JCR",
-   "kind": "JCR site",
-   "url": "https://www.peterhousejcr.co.uk/",
-   "ok": false,
-   "found": 0,
-   "note": "JavaScript-rendered; not readable"
-  },
-  {
-   "slug": "peterhouse-jcr-events",
-   "name": "Peterhouse JCR events",
-   "kind": "JCR events",
-   "url": "https://www.peterhousejcr.co.uk/events",
-   "ok": false,
-   "found": 0,
-   "note": "JavaScript-rendered; not readable"
-  },
-  {
-   "slug": "peterhouse-mcr-site",
-   "name": "Peterhouse MCR",
-   "kind": "MCR site",
-   "url": "https://www.peterhousemcr.co.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "no dated events"
-  },
-  {
-   "slug": "peterhouse-mcr-termcard",
-   "name": "Peterhouse MCR term card",
-   "kind": "Termcard",
-   "url": "https://www.peterhousemcr.co.uk/term-card",
-   "ok": true,
-   "found": 0,
-   "note": "stale; newest entry March 2024"
-  },
-  {
-   "slug": "queens-jcr-site",
-   "name": "Queens' JCR (QJCR)",
-   "kind": "JCR site",
-   "url": "https://qjcr.org.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "queens-qents",
-   "name": "QEnts (Queens' JCR Ents)",
-   "kind": "Ents site",
-   "url": "https://qjcr.org.uk/jcr/qents/",
-   "ok": true,
-   "found": 0,
-   "note": "describes three bops a term, no dates"
-  },
-  {
-   "slug": "queens-jcr-events",
-   "name": "Queens' JCR events",
-   "kind": "JCR events",
-   "url": "https://qjcr.org.uk/events",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "queens-mcr-upcoming",
-   "name": "Queens' MCR upcoming events",
-   "kind": "MCR events",
-   "url": "https://www.qmcr.org/upcomingevents",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "queens-mcr-site",
-   "name": "Queens' MCR",
-   "kind": "MCR site",
-   "url": "https://www.qmcr.org/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "robinson-rcsa-site",
-   "name": "Robinson RCSA",
-   "kind": "JCR site",
-   "url": "https://www.rcsa.co.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "mentions weekly bops, no dates"
-  },
-  {
-   "slug": "robinson-rcsa-events",
-   "name": "Robinson RCSA events",
-   "kind": "JCR events",
-   "url": "https://www.rcsa.co.uk/events",
-   "ok": false,
-   "found": 0,
-   "note": "404"
-  },
-  {
-   "slug": "catz-jcr-site",
-   "name": "Catz JCR",
-   "kind": "JCR site",
-   "url": "https://www.catzjcr.com/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed; bulletin dated March 2026"
-  },
-  {
-   "slug": "catz-jcr-calendar",
-   "name": "Catz JCR calendar",
-   "kind": "JCR events",
-   "url": "https://www.catzjcr.com/catz-calendar",
-   "ok": true,
-   "found": 0,
-   "note": "iCal read: latest entries from 2024, nothing in window"
-  },
-  {
-   "slug": "catz-mcr-events",
-   "name": "Catz MCR events",
-   "kind": "MCR events",
-   "url": "https://mcr.caths.cam.ac.uk/events",
-   "ok": true,
-   "found": 0,
-   "note": "no events planned"
-  },
-  {
-   "slug": "catz-mcr-site",
-   "name": "Catz MCR",
-   "kind": "MCR site",
-   "url": "https://mcr.caths.cam.ac.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "st-edmunds-cr-site",
-   "name": "St Edmund's CR (Combination Room)",
-   "kind": "JCR site",
-   "url": "https://my-cr.st-edmunds.cam.ac.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "dated site; linked event list says no events at the moment"
-  },
-  {
-   "slug": "st-edmunds-bar-cr",
-   "name": "St Edmund's College Bar & CR page",
-   "kind": "College events",
-   "url": "https://www.st-edmunds.cam.ac.uk/college-life/bar-cr/",
-   "ok": true,
-   "found": 0,
-   "note": "describes bops, no dates"
-  },
-  {
-   "slug": "st-edmunds-college-events",
-   "name": "St Edmund's College events",
-   "kind": "College events",
-   "url": "https://www.st-edmunds.cam.ac.uk/news-events/events/",
-   "ok": true,
-   "found": 0,
-   "note": "wellbeing events only"
-  },
-  {
-   "slug": "st-johns-jcr-site",
-   "name": "St John's JCR",
-   "kind": "JCR site",
-   "url": "https://www.sjcjcr.com/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "st-johns-jcr-ents",
-   "name": "St John's JCR Ents",
-   "kind": "Ents site",
-   "url": "https://www.sjcjcr.com/yourjcr/ents",
-   "ok": true,
-   "found": 0,
-   "note": "describes parties in the Fisher Building, no dates"
-  },
-  {
-   "slug": "st-johns-sbr-events",
-   "name": "St John's SBR events",
-   "kind": "MCR events",
-   "url": "https://sites.google.com/cam.ac.uk/sbr/events",
-   "ok": true,
-   "found": 0,
-   "note": "recurring events only, no dates"
-  },
-  {
-   "slug": "st-johns-sbr-site",
-   "name": "St John's SBR (MCR)",
-   "kind": "MCR site",
-   "url": "https://sites.google.com/cam.ac.uk/sbr/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "selwyn-jcr-site",
-   "name": "Selwyn JCR",
-   "kind": "JCR site",
-   "url": "https://selwynjcr.org/",
-   "ok": true,
-   "found": 0,
-   "note": "links to calendar only"
-  },
-  {
-   "slug": "selwyn-jcr-calendar",
-   "name": "Selwyn JCR calendar (Google)",
-   "kind": "JCR events",
-   "url": "https://calendar.google.com/calendar/embed?src=c_4d4a7c193587cb0b3adb95cd4df6cc52f93456a2ef5db9017e2345c8df96ef42%40group.calendar.google.com&ctz=Europe%2FLondon",
-   "ok": true,
-   "found": 0,
-   "note": "iCal feed has only two 2024 entries"
-  },
-  {
-   "slug": "selwyn-mcr-page",
-   "name": "Selwyn College MCR page",
-   "kind": "MCR site",
-   "url": "https://www.sel.cam.ac.uk/joining-selwyn/graduates/postgraduate-community-and-mcr",
-   "ok": true,
-   "found": 0,
-   "note": "no events"
-  },
-  {
-   "slug": "sidney-sscsu-site",
-   "name": "Sidney Sussex SSCSU (JCR)",
-   "kind": "JCR site",
-   "url": "https://www.sscsu.org.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "last news 2022"
-  },
-  {
-   "slug": "sidney-college-sscsu-page",
-   "name": "Sidney Sussex College SSCSU page",
-   "kind": "JCR site",
-   "url": "https://www.sid.cam.ac.uk/life-sidney/clubs-and-societies/sscsu-jcr",
-   "ok": true,
-   "found": 0,
-   "note": "describes bops in SidBar, no dates"
-  },
-  {
-   "slug": "sidney-college-events",
-   "name": "Sidney Sussex College events",
-   "kind": "College events",
-   "url": "https://www.sid.cam.ac.uk/about-sidney/events",
-   "ok": true,
-   "found": 0,
-   "note": "alumni events only"
-  },
-  {
-   "slug": "sidney-mcr-events",
-   "name": "Sidney Sussex MCR events",
-   "kind": "MCR events",
-   "url": "https://www.sidneysussexmcr.com/events",
-   "ok": true,
-   "found": 0,
-   "note": "Diwali graduate formal 2 Nov (a formal, not a bop)"
-  },
-  {
-   "slug": "sidney-mcr-site",
-   "name": "Sidney Sussex MCR",
-   "kind": "MCR site",
-   "url": "https://www.sidneysussexmcr.com/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "trinity-tcsu-site",
-   "name": "Trinity College Students' Union (TCSU)",
-   "kind": "JCR site",
-   "url": "https://web.tcsu.net/",
-   "ok": true,
-   "found": 0,
-   "note": "no events page"
-  },
-  {
-   "slug": "trinity-ba-events",
-   "name": "Trinity BA Society events",
-   "kind": "MCR events",
-   "url": "https://www.basociety.net/ba-events/",
-   "ok": true,
-   "found": 0,
-   "note": "Michaelmas 2026 term card read: formals and bar nights, no bop"
-  },
-  {
-   "slug": "trinity-ba-site",
-   "name": "Trinity BA Society (MCR)",
-   "kind": "MCR site",
-   "url": "https://www.basociety.net/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "trinity-hall-jcr-site",
-   "name": "Trinity Hall JCR",
-   "kind": "JCR site",
-   "url": "https://www.jcr.trinhall.cam.ac.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "trinity-hall-jcr-ents",
-   "name": "Trinity Hall JCR Ents",
-   "kind": "Ents site",
-   "url": "https://www.jcr.trinhall.cam.ac.uk/college-life/ents",
-   "ok": true,
-   "found": 0,
-   "note": "Crescent Room and Superhall dates to be announced"
-  },
-  {
-   "slug": "trinity-hall-mcr-site",
-   "name": "Trinity Hall MCR",
-   "kind": "MCR site",
-   "url": "https://thmcr.soc.srcf.net/",
-   "ok": true,
-   "found": 0,
-   "note": "no dates"
-  },
-  {
-   "slug": "wolfson-wcsa-site",
-   "name": "Wolfson College Students' Association (WCSA)",
-   "kind": "JCR site",
-   "url": "https://www.wcsa.org.uk/",
-   "ok": true,
-   "found": 0,
-   "note": "stale (2022 content)"
-  },
-  {
-   "slug": "wolfson-college-wcsa-page",
-   "name": "Wolfson College WCSA page",
-   "kind": "JCR site",
-   "url": "https://www.wolfson.cam.ac.uk/student-association-wcsa",
-   "ok": true,
-   "found": 0,
-   "note": "no events listed"
-  },
-  {
-   "slug": "wolfson-whats-on",
-   "name": "Wolfson College What's On",
-   "kind": "College events",
-   "url": "https://www.wolfson.cam.ac.uk/college-life/whats-on",
-   "ok": true,
-   "found": 0,
-   "note": "talks, concerts, pub quiz; no bop"
-  },
-  {
-   "slug": "cambridge-su-events",
-   "name": "Cambridge SU events",
-   "kind": "SU listings",
-   "url": "https://www.cambridgesu.co.uk/events",
-   "ok": true,
-   "found": 0,
-   "note": "no bops in window"
-  },
-  {
-   "slug": "varsity",
-   "name": "Varsity",
-   "kind": "Student press",
-   "url": "https://www.varsity.co.uk",
-   "ok": true,
-   "found": 0,
-   "note": "Halloween guide mentions bops generically, no college or date"
-  },
-  {
-   "slug": "the-tab-cambridge",
-   "name": "The Tab Cambridge",
-   "kind": "Student press",
-   "url": "https://thetab.com/university/cambridge",
-   "ok": true,
-   "found": 0,
-   "note": "no bop articles"
-  },
-  {
-   "slug": "jesus-ents-instagram",
-   "name": "Jesus Ents on Instagram",
-   "kind": "Instagram",
-   "url": "https://www.instagram.com/jesus_ents/",
-   "ok": true,
-   "found": 1,
-   "note": "read by hand on Instagram, not by the routine"
-  },
-  {
-   "slug": "selwyn-ents-instagram",
-   "name": "Selwyn Ents on Instagram",
-   "kind": "Instagram",
-   "url": "https://www.instagram.com/selwynents/",
-   "ok": true,
-   "found": 2,
-   "note": "Michaelmas bops termcard (dates marked TBC); read by hand on Instagram"
-  },
-  {
-   "slug": "churchill-jcr-instagram",
-   "name": "Churchill JCR on Instagram",
-   "kind": "Instagram",
-   "url": "https://www.instagram.com/churchillcoljcr/",
-   "ok": true,
-   "found": 1,
-   "note": "Ents termcard post of 21 September; read by hand on Instagram"
-  },
-  {
-   "slug": "clare-ucs-instagram",
-   "name": "Clare UCS on Instagram",
-   "kind": "Instagram",
-   "url": "https://www.instagram.com/ucs_clare/",
-   "ok": true,
-   "found": 1,
-   "note": "Collab post with King's LGBTQ+ and Clare bar; read by hand on Instagram"
-  },
-  {
-   "slug": "queens-ents-instagram",
-   "name": "Queens' Ents on Instagram",
-   "kind": "Instagram",
-   "url": "https://www.instagram.com/queensents/",
-   "ok": true,
-   "found": 0,
-   "note": "Halloween Bop was Wed 28 Oct, before the window"
-  },
-  {
-   "slug": "christs-ents-instagram",
-   "name": "Christ's Ents on Instagram",
-   "kind": "Instagram",
-   "url": "https://www.instagram.com/christsents/",
-   "ok": true,
-   "found": 0,
-   "note": "Welcome Back Bop was 9 Oct; termcard not readable"
-  },
-  {
-   "slug": "catz-entz-instagram",
-   "name": "Catz Entz on Instagram",
-   "kind": "Instagram",
-   "url": "https://www.instagram.com/catzentz/",
-   "ok": true,
-   "found": 0,
-   "note": "Bar swap with Queens' and Jesus announced as 'tomorrow', date not stated"
-  },
-  {
-   "slug": "kings-ents-instagram",
-   "name": "King's Ents on Instagram",
-   "kind": "Instagram",
-   "url": "https://www.instagram.com/kings.ents/",
-   "ok": true,
-   "found": 0,
-   "note": "formals only in recent posts"
-  }
- ],
- "bops": [
-  {
-   "title": "Halloween Bop",
-   "starts_at": "2026-10-30T20:30:00+00:00",
-   "ends_at": "2026-10-30T22:30:00+00:00",
-   "college": "Jesus",
-   "venue": "Jesus College bar",
-   "host": "Jesus Ents",
-   "price": "Bar tab 20:30 to 21:30",
-   "dress": "Costume",
-   "url": "https://www.instagram.com/p/De7xyC3IaKt/",
-   "details": "Live music from Cash Only 21:30 to 22:30.",
-   "source": "jesus-ents-instagram"
-  },
-  {
-   "title": "Selwyn Halloween Bop",
-   "starts_at": "2026-10-30T21:00:00+00:00",
-   "college": "Selwyn",
-   "venue": "Selwyn bar",
-   "host": "Selwyn Ents",
-   "dress": "Halloween",
-   "url": "https://www.instagram.com/selwynents/",
-   "details": "Tickets were sold in Selbar on 27 October. Time assumed; the termcard gives only the date.",
-   "source": "selwyn-ents-instagram"
-  },
-  {
-   "title": "MCR Halloween Party",
-   "starts_at": "2026-10-30T21:15:00+00:00",
-   "ends_at": "2026-10-30T23:00:00+00:00",
-   "college": "Magdalene",
-   "venue": "Benson Hall",
-   "host": "Magdalene MCR",
-   "price": "Free drinks",
-   "dress": "Halloween costume, prizes for the best",
-   "url": "https://www.mcr.magd.cam.ac.uk/events/mcr-halloween-party-72k8w-w6g72",
-   "details": "After the BA formal.",
-   "source": "magdalene-mcr-events"
-  },
-  {
-   "title": "Halloween Formal & Bop",
-   "starts_at": "2026-11-01T19:00:00+00:00",
-   "college": "Churchill",
-   "venue": "Dining Hall",
-   "host": "Churchill JCR",
-   "dress": "Costume, prizes for best individual and group",
-   "url": "https://www.instagram.com/p/Ddj51dYEeBI/",
-   "details": "Formal at 7pm, then the bop.",
-   "source": "churchill-jcr-instagram"
-  },
-  {
-   "title": "Gaelic Samhain: queer Halloween party",
-   "starts_at": "2026-11-01T20:00:00+00:00",
-   "ends_at": "2026-11-01T23:00:00+00:00",
-   "college": "Clare",
-   "venue": "Clare Cellars",
-   "host": "King's LGBTQ+ with Clare bar and KCSU",
-   "price": "£4, tickets on RA",
-   "url": "https://ra.co/events/2568970",
-   "source": "clare-ucs-instagram"
-  },
-  {
-   "title": "50 Years of Women in Selwyn Bop",
-   "starts_at": "2026-11-13T21:00:00+00:00",
-   "college": "Selwyn",
-   "venue": "Selwyn bar",
-   "host": "Selwyn Ents",
-   "dress": "Dress as an inspirational woman",
-   "url": "https://www.instagram.com/selwynents/",
-   "details": "Date marked TBC on the termcard; time assumed.",
-   "source": "selwyn-ents-instagram"
-  }
- ]
+  "generated": "2026-10-30T15:48:56+00:00",
+  "sources": [
+    {
+      "slug": "christs-jcr-site",
+      "name": "Christ's JCR",
+      "kind": "JCR site",
+      "url": "https://thejcr.co.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed; links to termcard only"
+    },
+    {
+      "slug": "christs-mcr-whats-on",
+      "name": "Christ's MCR What's On",
+      "kind": "MCR events",
+      "url": "https://www.christsmcr.co.uk/whats-on",
+      "ok": true,
+      "found": 0,
+      "note": "page is a single image; no readable events"
+    },
+    {
+      "slug": "christs-mcr-site",
+      "name": "Christ's MCR",
+      "kind": "MCR site",
+      "url": "https://www.christsmcr.co.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "christs-jcr-termcard",
+      "name": "Christ's JCR termcard",
+      "kind": "Termcard",
+      "url": "https://thejcr.co.uk/get-involved/termcard",
+      "ok": true,
+      "found": 0,
+      "note": "Michaelmas section empty; iCal feed latest event Oct 2024"
+    },
+    {
+      "slug": "churchill-jcr-mcr-page",
+      "name": "Churchill College JCR and MCR page",
+      "kind": "College events",
+      "url": "https://www.chu.cam.ac.uk/about/governance/jcr-and-mcr/",
+      "ok": true,
+      "found": 0,
+      "note": "committee contacts only"
+    },
+    {
+      "slug": "churchill-college-events",
+      "name": "Churchill College events",
+      "kind": "College events",
+      "url": "https://www.chu.cam.ac.uk/events/",
+      "ok": true,
+      "found": 0,
+      "note": "college events only, no bop"
+    },
+    {
+      "slug": "clare-ucs-site",
+      "name": "Clare UCS",
+      "kind": "JCR site",
+      "url": "https://ucs.clare.cam.ac.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed; points to Instagram"
+    },
+    {
+      "slug": "clare-ucs-going-out",
+      "name": "Clare UCS Going Out",
+      "kind": "JCR events",
+      "url": "https://ucs.clare.cam.ac.uk/current-students/going-out/",
+      "ok": true,
+      "found": 0,
+      "note": "no dated bops"
+    },
+    {
+      "slug": "clare-mcr-events",
+      "name": "Clare MCR events",
+      "kind": "MCR events",
+      "url": "https://mcr.clare.cam.ac.uk/news-and-events/all-events",
+      "ok": true,
+      "found": 0,
+      "note": "listing stale (2022)"
+    },
+    {
+      "slug": "clare-mcr-site",
+      "name": "Clare MCR",
+      "kind": "MCR site",
+      "url": "https://mcr.clare.cam.ac.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "events booker requires login"
+    },
+    {
+      "slug": "clare-hall-events",
+      "name": "Clare Hall events",
+      "kind": "College events",
+      "url": "https://www.clarehall.cam.ac.uk/events/",
+      "ok": true,
+      "found": 0,
+      "note": "concerts, seminars, Diwali formal; no bop"
+    },
+    {
+      "slug": "clare-hall-gsb-events",
+      "name": "Clare Hall GSB events",
+      "kind": "MCR events",
+      "url": "https://www.clarehall.cam.ac.uk/events-category/gsb/",
+      "ok": true,
+      "found": 0,
+      "note": "no bop in window"
+    },
+    {
+      "slug": "clare-hall-gsb-site",
+      "name": "Clare Hall GSB",
+      "kind": "MCR site",
+      "url": "https://www.clarehall.cam.ac.uk/gsb/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "corpus-jcr-site",
+      "name": "Corpus JCR",
+      "kind": "JCR site",
+      "url": "https://www.jcr.corpus.cam.ac.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "no dated events"
+    },
+    {
+      "slug": "corpus-ents",
+      "name": "Corpus Ents",
+      "kind": "Ents site",
+      "url": "https://www.jcr.corpus.cam.ac.uk/corpus-ents",
+      "ok": true,
+      "found": 0,
+      "note": "embedded calendar iCal has one 2020 event"
+    },
+    {
+      "slug": "corpus-jcr-events-calendars",
+      "name": "Corpus JCR events calendars",
+      "kind": "JCR events",
+      "url": "https://www.jcr.corpus.cam.ac.uk/events-calendars",
+      "ok": true,
+      "found": 0,
+      "note": "no readable entries; last edited Oct 2024"
+    },
+    {
+      "slug": "corpus-mcr-events",
+      "name": "Corpus MCR events",
+      "kind": "MCR events",
+      "url": "https://www.corpusmcr.com/currentstudents/events",
+      "ok": true,
+      "found": 0,
+      "note": "images only; no readable events"
+    },
+    {
+      "slug": "corpus-mcr-site",
+      "name": "Corpus MCR",
+      "kind": "MCR site",
+      "url": "https://www.corpusmcr.com/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "corpus-mcr-term-card",
+      "name": "Corpus MCR term card",
+      "kind": "Termcard",
+      "url": "https://www.corpusmcr.com/currentstudents/term-card",
+      "ok": true,
+      "found": 0,
+      "note": "Welcome Week 2025 image only"
+    },
+    {
+      "slug": "darwin-college-events",
+      "name": "Darwin College events",
+      "kind": "College events",
+      "url": "https://www.darwin.cam.ac.uk/events/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "darwin-dcsa-events",
+      "name": "Darwin DCSA events",
+      "kind": "MCR events",
+      "url": "https://www.dcsa.darwin.cam.ac.uk/events/",
+      "ok": true,
+      "found": 0,
+      "note": "three embedded calendars read as iCal; nothing in window"
+    },
+    {
+      "slug": "darwin-dcsa-site",
+      "name": "Darwin DCSA",
+      "kind": "MCR site",
+      "url": "https://www.dcsa.darwin.cam.ac.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "downing-jcr-site",
+      "name": "Downing JCR",
+      "kind": "JCR site",
+      "url": "https://downingjcr.org.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "committee pages and minutes only"
+    },
+    {
+      "slug": "downing-college-events",
+      "name": "Downing College events",
+      "kind": "College events",
+      "url": "https://dow.cam.ac.uk/about/events",
+      "ok": true,
+      "found": 0,
+      "note": "seminars, concert, club dinner; no bop"
+    },
+    {
+      "slug": "downing-mcr-page",
+      "name": "Downing MCR",
+      "kind": "MCR site",
+      "url": "https://dow.cam.ac.uk/people/downing-mcr",
+      "ok": true,
+      "found": 0,
+      "note": "college calendar iCal read: Halloween and Firework Night formals, 'Week 5 Blues' in the JCR 6 Nov; none labelled a bop"
+    },
+    {
+      "slug": "emmanuel-ecsu-site",
+      "name": "Emmanuel ECSU",
+      "kind": "JCR site",
+      "url": "https://ecsu.org.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed; points to Instagram"
+    },
+    {
+      "slug": "emmanuel-mcr-events-calendar",
+      "name": "Emmanuel MCR events calendar",
+      "kind": "MCR events",
+      "url": "https://www.emmamcr.org.uk/events-calendar",
+      "ok": true,
+      "found": 0,
+      "note": "iCal read; calendar empty for November"
+    },
+    {
+      "slug": "emmanuel-mcr-site",
+      "name": "Emmanuel MCR",
+      "kind": "MCR site",
+      "url": "https://www.emmamcr.org.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "no dated events"
+    },
+    {
+      "slug": "fitzwilliam-jcr-site",
+      "name": "Fitzwilliam JCR",
+      "kind": "JCR site",
+      "url": "https://www.fitzjcr.com/",
+      "ok": true,
+      "found": 0,
+      "note": "no events; Instagram feed section empty"
+    },
+    {
+      "slug": "fitzwilliam-college-jcr-mcr-page",
+      "name": "Fitzwilliam College JCR and MCR page",
+      "kind": "College events",
+      "url": "https://www.fitz.cam.ac.uk/jcr-mcr",
+      "ok": true,
+      "found": 0,
+      "note": "links only"
+    },
+    {
+      "slug": "fitzwilliam-mcr-events",
+      "name": "Fitzwilliam MCR events",
+      "kind": "MCR events",
+      "url": "https://mcr.fitz.cam.ac.uk/events-today/",
+      "ok": true,
+      "found": 0,
+      "note": "iCal empty; Google Calendar latest entry 2022"
+    },
+    {
+      "slug": "fitzwilliam-mcr-site",
+      "name": "Fitzwilliam MCR",
+      "kind": "MCR site",
+      "url": "https://mcr.fitz.cam.ac.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "describes MCR bops generally, no dates"
+    },
+    {
+      "slug": "fitzwilliam-mcr-term-card",
+      "name": "Fitzwilliam MCR term card",
+      "kind": "Termcard",
+      "url": "https://mcr.fitz.cam.ac.uk/overview/term-card/",
+      "ok": true,
+      "found": 0,
+      "note": "out-of-term placeholder"
+    },
+    {
+      "slug": "girton-jcr-site",
+      "name": "Girton JCR",
+      "kind": "JCR site",
+      "url": "https://girtonjcr.co.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "client-rendered shell"
+    },
+    {
+      "slug": "girton-college-events",
+      "name": "Girton College events",
+      "kind": "College events",
+      "url": "https://www.girton.cam.ac.uk/upcoming-events",
+      "ok": true,
+      "found": 0,
+      "note": "concerts and chapel services"
+    },
+    {
+      "slug": "girton-jcr-events-calendar",
+      "name": "Girton JCR events calendar",
+      "kind": "JCR events",
+      "url": "https://girtonjcr.co.uk/events-calendar",
+      "ok": true,
+      "found": 0,
+      "note": "calendar iCal read, 198 events, latest Nov 2025; nothing in window"
+    },
+    {
+      "slug": "girton-mcr-events",
+      "name": "Girton MCR events",
+      "kind": "MCR events",
+      "url": "https://sites.google.com/cam.ac.uk/girton-mcr/events",
+      "ok": true,
+      "found": 0,
+      "note": "calendar iCal read; nothing in window"
+    },
+    {
+      "slug": "girton-mcr-site",
+      "name": "Girton MCR",
+      "kind": "MCR site",
+      "url": "https://sites.google.com/cam.ac.uk/girton-mcr/home",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "caius-gcsu-site",
+      "name": "Caius GCSU (JCR)",
+      "kind": "JCR site",
+      "url": "https://jcr.cai.cam.ac.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "caius-gcsu-ents",
+      "name": "Caius GCSU Ents",
+      "kind": "JCR events",
+      "url": "https://jcr.cai.cam.ac.uk/college-life/ents/",
+      "ok": true,
+      "found": 0,
+      "note": "bops in Harvey Court JCR, termcard on Instagram; no dates"
+    },
+    {
+      "slug": "caius-mcr-site",
+      "name": "Caius MCR",
+      "kind": "MCR site",
+      "url": "https://mcr.cai.cam.ac.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "MCR calendar grid empty for the window"
+    },
+    {
+      "slug": "hus-jcr-site",
+      "name": "Homerton HUS (JCR)",
+      "kind": "JCR site",
+      "url": "https://www.hus-jcr.co.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "points to Instagram term card"
+    },
+    {
+      "slug": "hus-jcr-events",
+      "name": "HUS events",
+      "kind": "JCR events",
+      "url": "https://www.hus-jcr.co.uk/events/",
+      "ok": true,
+      "found": 0,
+      "note": "no upcoming events"
+    },
+    {
+      "slug": "homerton-mcr-ents",
+      "name": "Homerton MCR upcoming ents",
+      "kind": "MCR events",
+      "url": "https://homerton-mcr.co.uk/upcoming-ents",
+      "ok": true,
+      "found": 0,
+      "note": "listings end 10 Oct"
+    },
+    {
+      "slug": "homerton-mcr-site",
+      "name": "Homerton MCR",
+      "kind": "MCR site",
+      "url": "https://homerton-mcr.co.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "hughes-college-events",
+      "name": "Hughes Hall events",
+      "kind": "College events",
+      "url": "https://www.hughes.cam.ac.uk/about/events/",
+      "ok": true,
+      "found": 0,
+      "note": "talks and alumni dinners only"
+    },
+    {
+      "slug": "hughes-mcr-calendar",
+      "name": "Hughes Hall MCR calendar",
+      "kind": "MCR events",
+      "url": "https://www.hughes.cam.ac.uk/student-centre/hughes-hall-mcr/mcr-calendar/",
+      "ok": true,
+      "found": 0,
+      "note": "no calendar content in the page"
+    },
+    {
+      "slug": "hughes-mcr-site",
+      "name": "Hughes Hall MCR",
+      "kind": "MCR site",
+      "url": "https://www.hughes.cam.ac.uk/student-centre/hughes-hall-mcr/",
+      "ok": true,
+      "found": 0,
+      "note": "mentions bops generally, no dates"
+    },
+    {
+      "slug": "jesus-jcsu-site",
+      "name": "Jesus JCSU",
+      "kind": "JCR site",
+      "url": "https://jcsu.jesus.cam.ac.uk/",
+      "ok": false,
+      "found": 0,
+      "note": "403"
+    },
+    {
+      "slug": "jesus-college-events",
+      "name": "Jesus College events",
+      "kind": "College events",
+      "url": "https://www.jesus.cam.ac.uk/college/events",
+      "ok": true,
+      "found": 0,
+      "note": "chapel, talks and alumni events only"
+    },
+    {
+      "slug": "jesus-jcsu-calendar",
+      "name": "Jesus JCSU calendar",
+      "kind": "JCR events",
+      "url": "https://jcsu.jesus.cam.ac.uk/current-students/calendar/",
+      "ok": false,
+      "found": 0,
+      "note": "403"
+    },
+    {
+      "slug": "jesus-jcsu-student-events",
+      "name": "Jesus JCSU student-run events",
+      "kind": "JCR events",
+      "url": "https://jcsu.jesus.cam.ac.uk/current-students/student-run-events/",
+      "ok": false,
+      "found": 0,
+      "note": "403"
+    },
+    {
+      "slug": "kcsu-site",
+      "name": "King's KCSU",
+      "kind": "JCR site",
+      "url": "https://kcsu.org.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "links to the Google Calendar"
+    },
+    {
+      "slug": "kcsu-calendar",
+      "name": "KCSU events calendar",
+      "kind": "JCR events",
+      "url": "https://calendar.google.com/calendar/embed?src=events@kcsu.org.uk&ctz=Europe/London",
+      "ok": true,
+      "found": 0,
+      "note": "iCal feed read; calendar contains no events"
+    },
+    {
+      "slug": "lucy-su-page",
+      "name": "Lucy Cavendish Students' Union (college page)",
+      "kind": "JCR site",
+      "url": "https://www.lucy.cam.ac.uk/our-college/place-live-and-study/students-union",
+      "ok": true,
+      "found": 0,
+      "note": "mentions bops generally, no dates"
+    },
+    {
+      "slug": "lucy-college-events",
+      "name": "Lucy Cavendish events",
+      "kind": "College events",
+      "url": "https://www.lucy.cam.ac.uk/events",
+      "ok": true,
+      "found": 0,
+      "note": "talks and formals only"
+    },
+    {
+      "slug": "lucy-jcr-cambridgesu",
+      "name": "Lucy JCR on Cambridge SU",
+      "kind": "JCR events",
+      "url": "https://www.cambridgesu.co.uk/organisation/lucyjcr/",
+      "ok": true,
+      "found": 0,
+      "note": "calendar empty"
+    },
+    {
+      "slug": "magdalene-jcr-site",
+      "name": "Magdalene JCR",
+      "kind": "JCR site",
+      "url": "https://jcr.magd.cam.ac.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "points to Instagram"
+    },
+    {
+      "slug": "magdalene-mcr-events",
+      "name": "Magdalene MCR events",
+      "kind": "MCR events",
+      "url": "https://www.mcr.magd.cam.ac.uk/events",
+      "ok": true,
+      "found": 1,
+      "note": "full Michaelmas listing"
+    },
+    {
+      "slug": "magdalene-mcr-site",
+      "name": "Magdalene MCR",
+      "kind": "MCR site",
+      "url": "https://www.mcr.magd.cam.ac.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "links to the events page"
+    },
+    {
+      "slug": "murray-edwards-jcr-cambridgesu",
+      "name": "Murray Edwards JCR on Cambridge SU",
+      "kind": "JCR site",
+      "url": "https://www.cambridgesu.co.uk/organisation/14844/",
+      "ok": true,
+      "found": 0,
+      "note": "calendar empty"
+    },
+    {
+      "slug": "murray-edwards-college-life",
+      "name": "Murray Edwards college life",
+      "kind": "College events",
+      "url": "https://www.murrayedwards.cam.ac.uk/college-life",
+      "ok": true,
+      "found": 0,
+      "note": "no dated events"
+    },
+    {
+      "slug": "murray-edwards-mcr-site",
+      "name": "Murray Edwards MCR",
+      "kind": "MCR site",
+      "url": "https://memcr.soc.srcf.net/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "newnham-college-social-life",
+      "name": "Newnham college social life",
+      "kind": "College events",
+      "url": "https://newn.cam.ac.uk/study-here/life-newnham/societies-and-facilities/college-social-life",
+      "ok": true,
+      "found": 0,
+      "note": "no dated events"
+    },
+    {
+      "slug": "newnham-mcr-cambridgesu",
+      "name": "Newnham MCR on Cambridge SU",
+      "kind": "MCR events",
+      "url": "https://www.cambridgesu.co.uk/organisation/newnhammcr/",
+      "ok": true,
+      "found": 0,
+      "note": "calendar empty"
+    },
+    {
+      "slug": "newnham-mcr-site",
+      "name": "Newnham MCR",
+      "kind": "MCR site",
+      "url": "https://newnhammcr.soc.srcf.net/",
+      "ok": true,
+      "found": 0,
+      "note": "linked calendar read: room bookings only in the window"
+    },
+    {
+      "slug": "pembroke-jp-site",
+      "name": "Pembroke JP (JPC)",
+      "kind": "JCR site",
+      "url": "https://jp.pem.cam.ac.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "points to the Ents Instagram"
+    },
+    {
+      "slug": "pembroke-jp-bar",
+      "name": "Pembroke JP bar page",
+      "kind": "JCR events",
+      "url": "https://jp.pem.cam.ac.uk/the-jp-bar/",
+      "ok": true,
+      "found": 0,
+      "note": "calendar section empty"
+    },
+    {
+      "slug": "pembroke-gp-social",
+      "name": "Pembroke GP social",
+      "kind": "MCR events",
+      "url": "https://gp.pem.cam.ac.uk/graduatelife/social/",
+      "ok": true,
+      "found": 0,
+      "note": "bops at the start and end of each term; no dates"
+    },
+    {
+      "slug": "pembroke-gp-site",
+      "name": "Pembroke GP (MCR)",
+      "kind": "MCR site",
+      "url": "https://gp.pem.cam.ac.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "peterhouse-jcr-site",
+      "name": "Peterhouse JCR",
+      "kind": "JCR site",
+      "url": "https://www.peterhousejcr.co.uk/",
+      "ok": false,
+      "found": 0,
+      "note": "JavaScript-rendered; not readable"
+    },
+    {
+      "slug": "peterhouse-jcr-events",
+      "name": "Peterhouse JCR events",
+      "kind": "JCR events",
+      "url": "https://www.peterhousejcr.co.uk/events",
+      "ok": false,
+      "found": 0,
+      "note": "JavaScript-rendered; not readable"
+    },
+    {
+      "slug": "peterhouse-mcr-site",
+      "name": "Peterhouse MCR",
+      "kind": "MCR site",
+      "url": "https://www.peterhousemcr.co.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "no dated events"
+    },
+    {
+      "slug": "peterhouse-mcr-termcard",
+      "name": "Peterhouse MCR term card",
+      "kind": "Termcard",
+      "url": "https://www.peterhousemcr.co.uk/term-card",
+      "ok": true,
+      "found": 0,
+      "note": "stale; newest entry March 2024"
+    },
+    {
+      "slug": "queens-jcr-site",
+      "name": "Queens' JCR (QJCR)",
+      "kind": "JCR site",
+      "url": "https://qjcr.org.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "queens-qents",
+      "name": "QEnts (Queens' JCR Ents)",
+      "kind": "Ents site",
+      "url": "https://qjcr.org.uk/jcr/qents/",
+      "ok": true,
+      "found": 0,
+      "note": "describes three bops a term, no dates"
+    },
+    {
+      "slug": "queens-jcr-events",
+      "name": "Queens' JCR events",
+      "kind": "JCR events",
+      "url": "https://qjcr.org.uk/events",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "queens-mcr-upcoming",
+      "name": "Queens' MCR upcoming events",
+      "kind": "MCR events",
+      "url": "https://www.qmcr.org/upcomingevents",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "queens-mcr-site",
+      "name": "Queens' MCR",
+      "kind": "MCR site",
+      "url": "https://www.qmcr.org/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "robinson-rcsa-site",
+      "name": "Robinson RCSA",
+      "kind": "JCR site",
+      "url": "https://www.rcsa.co.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "mentions weekly bops, no dates"
+    },
+    {
+      "slug": "robinson-rcsa-events",
+      "name": "Robinson RCSA events",
+      "kind": "JCR events",
+      "url": "https://www.rcsa.co.uk/events",
+      "ok": false,
+      "found": 0,
+      "note": "404"
+    },
+    {
+      "slug": "catz-jcr-site",
+      "name": "Catz JCR",
+      "kind": "JCR site",
+      "url": "https://www.catzjcr.com/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed; bulletin dated March 2026"
+    },
+    {
+      "slug": "catz-jcr-calendar",
+      "name": "Catz JCR calendar",
+      "kind": "JCR events",
+      "url": "https://www.catzjcr.com/catz-calendar",
+      "ok": true,
+      "found": 0,
+      "note": "iCal read: latest entries from 2024, nothing in window"
+    },
+    {
+      "slug": "catz-mcr-events",
+      "name": "Catz MCR events",
+      "kind": "MCR events",
+      "url": "https://mcr.caths.cam.ac.uk/events",
+      "ok": true,
+      "found": 0,
+      "note": "no events planned"
+    },
+    {
+      "slug": "catz-mcr-site",
+      "name": "Catz MCR",
+      "kind": "MCR site",
+      "url": "https://mcr.caths.cam.ac.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "st-edmunds-cr-site",
+      "name": "St Edmund's CR (Combination Room)",
+      "kind": "JCR site",
+      "url": "https://my-cr.st-edmunds.cam.ac.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "dated site; linked event list says no events at the moment"
+    },
+    {
+      "slug": "st-edmunds-bar-cr",
+      "name": "St Edmund's College Bar & CR page",
+      "kind": "College events",
+      "url": "https://www.st-edmunds.cam.ac.uk/college-life/bar-cr/",
+      "ok": true,
+      "found": 0,
+      "note": "describes bops, no dates"
+    },
+    {
+      "slug": "st-edmunds-college-events",
+      "name": "St Edmund's College events",
+      "kind": "College events",
+      "url": "https://www.st-edmunds.cam.ac.uk/news-events/events/",
+      "ok": true,
+      "found": 0,
+      "note": "wellbeing events only"
+    },
+    {
+      "slug": "st-johns-jcr-site",
+      "name": "St John's JCR",
+      "kind": "JCR site",
+      "url": "https://www.sjcjcr.com/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "st-johns-jcr-ents",
+      "name": "St John's JCR Ents",
+      "kind": "Ents site",
+      "url": "https://www.sjcjcr.com/yourjcr/ents",
+      "ok": true,
+      "found": 0,
+      "note": "describes parties in the Fisher Building, no dates"
+    },
+    {
+      "slug": "st-johns-sbr-events",
+      "name": "St John's SBR events",
+      "kind": "MCR events",
+      "url": "https://sites.google.com/cam.ac.uk/sbr/events",
+      "ok": true,
+      "found": 0,
+      "note": "recurring events only, no dates"
+    },
+    {
+      "slug": "st-johns-sbr-site",
+      "name": "St John's SBR (MCR)",
+      "kind": "MCR site",
+      "url": "https://sites.google.com/cam.ac.uk/sbr/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "selwyn-jcr-site",
+      "name": "Selwyn JCR",
+      "kind": "JCR site",
+      "url": "https://selwynjcr.org/",
+      "ok": true,
+      "found": 0,
+      "note": "links to calendar only"
+    },
+    {
+      "slug": "selwyn-jcr-calendar",
+      "name": "Selwyn JCR calendar (Google)",
+      "kind": "JCR events",
+      "url": "https://calendar.google.com/calendar/embed?src=c_4d4a7c193587cb0b3adb95cd4df6cc52f93456a2ef5db9017e2345c8df96ef42%40group.calendar.google.com&ctz=Europe%2FLondon",
+      "ok": true,
+      "found": 0,
+      "note": "iCal feed has only two 2024 entries"
+    },
+    {
+      "slug": "selwyn-mcr-page",
+      "name": "Selwyn College MCR page",
+      "kind": "MCR site",
+      "url": "https://www.sel.cam.ac.uk/joining-selwyn/graduates/postgraduate-community-and-mcr",
+      "ok": true,
+      "found": 0,
+      "note": "no events"
+    },
+    {
+      "slug": "sidney-sscsu-site",
+      "name": "Sidney Sussex SSCSU (JCR)",
+      "kind": "JCR site",
+      "url": "https://www.sscsu.org.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "last news 2022"
+    },
+    {
+      "slug": "sidney-college-sscsu-page",
+      "name": "Sidney Sussex College SSCSU page",
+      "kind": "JCR site",
+      "url": "https://www.sid.cam.ac.uk/life-sidney/clubs-and-societies/sscsu-jcr",
+      "ok": true,
+      "found": 0,
+      "note": "describes bops in SidBar, no dates"
+    },
+    {
+      "slug": "sidney-college-events",
+      "name": "Sidney Sussex College events",
+      "kind": "College events",
+      "url": "https://www.sid.cam.ac.uk/about-sidney/events",
+      "ok": true,
+      "found": 0,
+      "note": "alumni events only"
+    },
+    {
+      "slug": "sidney-mcr-events",
+      "name": "Sidney Sussex MCR events",
+      "kind": "MCR events",
+      "url": "https://www.sidneysussexmcr.com/events",
+      "ok": true,
+      "found": 0,
+      "note": "Diwali graduate formal 2 Nov (a formal, not a bop)"
+    },
+    {
+      "slug": "sidney-mcr-site",
+      "name": "Sidney Sussex MCR",
+      "kind": "MCR site",
+      "url": "https://www.sidneysussexmcr.com/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "trinity-tcsu-site",
+      "name": "Trinity College Students' Union (TCSU)",
+      "kind": "JCR site",
+      "url": "https://web.tcsu.net/",
+      "ok": true,
+      "found": 0,
+      "note": "no events page"
+    },
+    {
+      "slug": "trinity-ba-events",
+      "name": "Trinity BA Society events",
+      "kind": "MCR events",
+      "url": "https://www.basociety.net/ba-events/",
+      "ok": true,
+      "found": 0,
+      "note": "Michaelmas 2026 term card read: formals and bar nights, no bop"
+    },
+    {
+      "slug": "trinity-ba-site",
+      "name": "Trinity BA Society (MCR)",
+      "kind": "MCR site",
+      "url": "https://www.basociety.net/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "trinity-hall-jcr-site",
+      "name": "Trinity Hall JCR",
+      "kind": "JCR site",
+      "url": "https://www.jcr.trinhall.cam.ac.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "trinity-hall-jcr-ents",
+      "name": "Trinity Hall JCR Ents",
+      "kind": "Ents site",
+      "url": "https://www.jcr.trinhall.cam.ac.uk/college-life/ents",
+      "ok": true,
+      "found": 0,
+      "note": "Crescent Room and Superhall dates to be announced"
+    },
+    {
+      "slug": "trinity-hall-mcr-site",
+      "name": "Trinity Hall MCR",
+      "kind": "MCR site",
+      "url": "https://thmcr.soc.srcf.net/",
+      "ok": true,
+      "found": 0,
+      "note": "no dates"
+    },
+    {
+      "slug": "wolfson-wcsa-site",
+      "name": "Wolfson College Students' Association (WCSA)",
+      "kind": "JCR site",
+      "url": "https://www.wcsa.org.uk/",
+      "ok": true,
+      "found": 0,
+      "note": "stale (2022 content)"
+    },
+    {
+      "slug": "wolfson-college-wcsa-page",
+      "name": "Wolfson College WCSA page",
+      "kind": "JCR site",
+      "url": "https://www.wolfson.cam.ac.uk/student-association-wcsa",
+      "ok": true,
+      "found": 0,
+      "note": "no events listed"
+    },
+    {
+      "slug": "wolfson-whats-on",
+      "name": "Wolfson College What's On",
+      "kind": "College events",
+      "url": "https://www.wolfson.cam.ac.uk/college-life/whats-on",
+      "ok": true,
+      "found": 0,
+      "note": "talks, concerts, pub quiz; no bop"
+    },
+    {
+      "slug": "cambridge-su-events",
+      "name": "Cambridge SU events",
+      "kind": "SU listings",
+      "url": "https://www.cambridgesu.co.uk/events",
+      "ok": true,
+      "found": 0,
+      "note": "no bops in window"
+    },
+    {
+      "slug": "varsity",
+      "name": "Varsity",
+      "kind": "Student press",
+      "url": "https://www.varsity.co.uk",
+      "ok": true,
+      "found": 0,
+      "note": "Halloween guide mentions bops generically, no college or date"
+    },
+    {
+      "slug": "the-tab-cambridge",
+      "name": "The Tab Cambridge",
+      "kind": "Student press",
+      "url": "https://thetab.com/university/cambridge",
+      "ok": true,
+      "found": 0,
+      "note": "no bop articles"
+    },
+    {
+      "slug": "jesus-ents-instagram",
+      "name": "Jesus Ents on Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/jesus_ents/",
+      "ok": true,
+      "found": 1,
+      "note": "read by hand on Instagram, not by the routine"
+    },
+    {
+      "slug": "selwyn-ents-instagram",
+      "name": "Selwyn Ents on Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/selwynents/",
+      "ok": true,
+      "found": 2,
+      "note": "Michaelmas bops termcard (dates marked TBC); read by hand on Instagram"
+    },
+    {
+      "slug": "churchill-jcr-instagram",
+      "name": "Churchill JCR on Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/churchillcoljcr/",
+      "ok": true,
+      "found": 1,
+      "note": "Ents termcard post of 21 September; read by hand on Instagram"
+    },
+    {
+      "slug": "clare-ucs-instagram",
+      "name": "Clare UCS on Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/ucs_clare/",
+      "ok": true,
+      "found": 1,
+      "note": "Collab post with King's LGBTQ+ and Clare bar; read by hand on Instagram"
+    },
+    {
+      "slug": "queens-ents-instagram",
+      "name": "Queens' Ents on Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/queensents/",
+      "ok": true,
+      "found": 0,
+      "note": "Halloween Bop was Wed 28 Oct, before the window"
+    },
+    {
+      "slug": "christs-ents-instagram",
+      "name": "Christ's Ents on Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/christsents/",
+      "ok": true,
+      "found": 0,
+      "note": "Welcome Back Bop was 9 Oct; termcard not readable"
+    },
+    {
+      "slug": "catz-entz-instagram",
+      "name": "Catz Entz on Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/catzentz/",
+      "ok": true,
+      "found": 0,
+      "note": "Bar swap with Queens' and Jesus announced as 'tomorrow', date not stated"
+    },
+    {
+      "slug": "kings-ents-instagram",
+      "name": "King's Ents on Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/kings.ents/",
+      "ok": true,
+      "found": 0,
+      "note": "formals only in recent posts"
+    },
+    {
+      "slug": "husjcr-instagram",
+      "name": "HUS Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/husjcr/",
+      "ok": false,
+      "found": 1,
+      "note": "added by a person reading the account"
+    }
+  ],
+  "bops": [
+    {
+      "title": "Halloween Bop",
+      "starts_at": "2026-10-30T20:30:00+00:00",
+      "ends_at": "2026-10-30T22:30:00+00:00",
+      "college": "Jesus",
+      "venue": "Jesus College bar",
+      "host": "Jesus Ents",
+      "price": "Bar tab 20:30 to 21:30",
+      "dress": "Costume",
+      "url": "https://www.instagram.com/p/De7xyC3IaKt/",
+      "details": "Live music from Cash Only 21:30 to 22:30.",
+      "source": "jesus-ents-instagram"
+    },
+    {
+      "title": "Selwyn Halloween Bop",
+      "starts_at": "2026-10-30T21:00:00+00:00",
+      "college": "Selwyn",
+      "venue": "Selwyn bar",
+      "host": "Selwyn Ents",
+      "dress": "Halloween",
+      "url": "https://www.instagram.com/selwynents/",
+      "details": "Tickets were sold in Selbar on 27 October. Time assumed; the termcard gives only the date.",
+      "source": "selwyn-ents-instagram"
+    },
+    {
+      "title": "Homerton Halloween Bop",
+      "starts_at": "2026-10-30T21:00:00+00:00",
+      "ends_at": "2026-10-31T02:00:00+00:00",
+      "college": "Homerton",
+      "venue": "Great Hall",
+      "host": "Homerton Union of Students",
+      "url": "https://www.instagram.com/husjcr/p/DfE1IPUjVfO/",
+      "details": "Announced on the HUS Instagram account.",
+      "source": "husjcr-instagram"
+    },
+    {
+      "title": "MCR Halloween Party",
+      "starts_at": "2026-10-30T21:15:00+00:00",
+      "ends_at": "2026-10-30T23:00:00+00:00",
+      "college": "Magdalene",
+      "venue": "Benson Hall",
+      "host": "Magdalene MCR",
+      "price": "Free drinks",
+      "dress": "Halloween costume, prizes for the best",
+      "url": "https://www.mcr.magd.cam.ac.uk/events/mcr-halloween-party-72k8w-w6g72",
+      "details": "After the BA formal.",
+      "source": "magdalene-mcr-events"
+    },
+    {
+      "title": "Halloween Formal & Bop",
+      "starts_at": "2026-11-01T19:00:00+00:00",
+      "college": "Churchill",
+      "venue": "Dining Hall",
+      "host": "Churchill JCR",
+      "dress": "Costume, prizes for best individual and group",
+      "url": "https://www.instagram.com/p/Ddj51dYEeBI/",
+      "details": "Formal at 7pm, then the bop.",
+      "source": "churchill-jcr-instagram"
+    },
+    {
+      "title": "Gaelic Samhain: queer Halloween party",
+      "starts_at": "2026-11-01T20:00:00+00:00",
+      "ends_at": "2026-11-01T23:00:00+00:00",
+      "college": "Clare",
+      "venue": "Clare Cellars",
+      "host": "King's LGBTQ+ with Clare bar and KCSU",
+      "price": "£4, tickets on RA",
+      "url": "https://ra.co/events/2568970",
+      "source": "clare-ucs-instagram"
+    },
+    {
+      "title": "50 Years of Women in Selwyn Bop",
+      "starts_at": "2026-11-13T21:00:00+00:00",
+      "college": "Selwyn",
+      "venue": "Selwyn bar",
+      "host": "Selwyn Ents",
+      "dress": "Dress as an inspirational woman",
+      "url": "https://www.instagram.com/selwynents/",
+      "details": "Date marked TBC on the termcard; time assumed.",
+      "source": "selwyn-ents-instagram"
+    }
+  ]
 }
