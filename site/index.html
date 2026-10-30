@@ -20,6 +20,7 @@
   --accent-ink: #FFFFFF;
   --field: #FFFFFF;
   --pin-ring: #F8F8F6;
+  --tile-filter: saturate(.55) contrast(.95);
   --display: "Instrument Serif", Georgia, "Times New Roman", serif;
   --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
@@ -27,12 +28,12 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #131416; --fg: #E8E8E4; --muted: #9AA0A8; --rule: #2A2D31;
-    --accent: #7FC4B5; --accent-ink: #0F1B18; --field: #1B1D20; --pin-ring: #131416; color-scheme: dark;
+    --accent: #7FC4B5; --accent-ink: #0F1B18; --field: #1B1D20; --pin-ring: #131416; --tile-filter: invert(1) hue-rotate(180deg) brightness(.8) contrast(.9) saturate(.3); color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #131416; --fg: #E8E8E4; --muted: #9AA0A8; --rule: #2A2D31;
-  --accent: #7FC4B5; --accent-ink: #0F1B18; --field: #1B1D20; --pin-ring: #131416; color-scheme: dark;
+  --accent: #7FC4B5; --accent-ink: #0F1B18; --field: #1B1D20; --pin-ring: #131416; --tile-filter: invert(1) hue-rotate(180deg) brightness(.8) contrast(.9) saturate(.3); color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; }
@@ -62,6 +63,7 @@ h1 em { font-style: italic; color: var(--muted); }
 #map { height: 300px; max-width: 100%; border: 1px solid var(--rule); border-radius: 4px; background: var(--field); }
 #map:focus-within { outline: none; }
 .leaflet-container { font: inherit; }
+.leaflet-tile-pane { filter: var(--tile-filter); }
 .leaflet-container a.leaflet-popup-close-button { color: var(--muted); }
 .leaflet-tooltip { border: 0; padding: .6rem .8rem; font-size: .9rem; line-height: 1.4; }
 .leaflet-tooltip-top:before { border-top-color: var(--bg); }
@@ -246,19 +248,11 @@ button.link { font: inherit; background: none; border: 0; color: var(--muted); c
   collegeSelect.value = college;
 
   // Map
-  const dark = matchMedia("(prefers-color-scheme: dark)");
-  const isDark = () => document.documentElement.dataset.theme === "dark" || (document.documentElement.dataset.theme !== "light" && dark.matches);
   const map = L.map("map", { scrollWheelZoom: false, zoomControl: true, attributionControl: true }).setView([52.2053, 0.1150], 14);
-  let tiles = null;
-  function setTiles() {
-    if (tiles) map.removeLayer(tiles);
-    tiles = L.tileLayer("https://{s}.basemaps.cartocdn.com/" + (isDark() ? "dark_all" : "light_all") + "/{z}/{x}/{y}{r}.png", {
-      maxZoom: 19, subdomains: "abcd",
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
-    }).addTo(map);
-  }
-  setTiles();
-  dark.addEventListener("change", setTiles);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
   const markers = new Map();
 
   function setCollege(value) {
