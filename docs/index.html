@@ -19,12 +19,12 @@
   --rule: #DCE2DE;
   --cam: #A3C1AD;           /* Cambridge blue, Pantone 557C: pins, button, tags, highlight */
   --cam-ink: #12281C;       /* text on Cambridge blue */
-  --cam-tint: #E6EFE9;      /* pale wash: tonight band, selected filter */
+  --cam-tint: #E6EFE9;      /* pale wash: today's section, selected filter, price chips */
   --accent: #35684C;        /* the same hue deepened, for links */
   --field: #FFFFFF;
   --pin-ring: #FFFFFF;
   --tile-filter: saturate(.45) contrast(.95);
-  --ctl-h: 36px;            /* every filter control is this tall */
+  --ctl-h: 44px;            /* every filter control is this tall: the mobile tap-target minimum */
   --ctl-radius: 999px;
   --ctl-pad: .85rem;
   --display: "Instrument Serif", Georgia, "Times New Roman", serif;
@@ -61,7 +61,7 @@ h1 { font-family: var(--display); font-weight: 400; font-size: 2.7rem; line-heig
 .ball { width: .72em; height: .72em; flex: 0 0 auto; }
 h1 em { font-style: italic; padding: 0 .12em; margin: 0 -.06em; background: linear-gradient(transparent 60%, var(--cam) 60%, var(--cam) 92%, transparent 92%); }
 .tagline { color: var(--muted); margin: .5rem 0 0; max-width: 34rem; }
-.notice { font-size: .9rem; color: var(--muted); margin: .6rem 0 0; max-width: 34rem; padding-left: .75rem; border-left: 3px solid var(--cam); }
+.notice { font-size: .9rem; color: var(--muted); margin: .25rem 0 0; max-width: 34rem; }
 
 
 /* Filter system: one control height, one radius, one set of states (rest, hover, pressed, focus).
@@ -71,7 +71,7 @@ h1 em { font-style: italic; padding: 0 .12em; margin: 0 -.06em; background: line
 .filters .chips { flex: 1 1 100%; }
 .chip { flex: 0 0 auto; }
 .filters .lbl { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .07em; min-width: 4.2rem; }
-.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: var(--ctl-radius); padding: 2px; background: var(--field); }
+.seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--rule); border-radius: var(--ctl-radius); padding: 2px; background: var(--field); }
 .seg button { font: inherit; font-size: .9rem; height: calc(var(--ctl-h) - 4px); padding: 0 var(--ctl-pad); border: 0; border-radius: var(--ctl-radius); background: transparent; color: var(--fg); cursor: pointer; white-space: nowrap; }
 .seg button:hover { background: var(--cam-tint); }
 .seg button[aria-pressed="true"] { background: var(--cam); color: var(--cam-ink); font-weight: 500; }
@@ -87,18 +87,8 @@ h1 em { font-style: italic; padding: 0 .12em; margin: 0 -.06em; background: line
 .result button { font: inherit; font-size: .85rem; background: none; border: 0; color: var(--accent); cursor: pointer; padding: .2rem 0; text-decoration: underline; text-underline-offset: 2px; }
 @media (max-width: 480px) {
   .filters .lbl { min-width: 100%; }
-  .filters .chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
-  .filters .chips::-webkit-scrollbar { display: none; }
 }
 
-/* Tonight */
-.tonight { background: var(--cam-tint); border-left: 4px solid var(--cam); border-radius: 0 4px 4px 0; padding: .8rem 1rem .9rem; margin: 0 0 1rem; }
-.tonight h2 { margin: 0 0 .25rem; font-size: 1.35rem; }
-.tonight ul { list-style: none; margin: 0; padding: 0; }
-.tonight li { display: flex; flex-wrap: wrap; gap: 0 .6rem; align-items: baseline; padding: .2rem 0; }
-.tonight .t { font-variant-numeric: tabular-nums; color: var(--muted); min-width: 3.2rem; }
-.tonight .n { font-weight: 600; }
-.tonight .w { color: var(--muted); }
 
 #map { height: 260px; max-width: 100%; border: 1px solid var(--rule); border-radius: 4px; background: var(--field); }
 .leaflet-container { font: inherit; }
@@ -121,7 +111,10 @@ h1 em { font-style: italic; padding: 0 .12em; margin: 0 -.06em; background: line
 .pin.active span { transform: scale(1.15); box-shadow: 0 0 0 2px var(--pin-ring), 0 0 0 4px var(--cam), 0 1px 3px rgba(0,0,0,.3); }
 .mapnote { color: var(--muted); font-size: .8rem; margin: .4rem 0 0; }
 
-/* Day sections */
+/* Day sections; today's gets the Cambridge blue wash so the first question is answered first */
+.today { background: var(--cam-tint); border-radius: 6px; margin: 1.75rem -0.9rem 0; padding: .1rem .9rem .6rem; }
+.today h2 { margin-top: .9rem; }
+.today ul.bops li:last-child { border-bottom: 0; }
 h2 { font-family: var(--display); font-weight: 400; font-size: 1.5rem; margin: 2rem 0 .4rem; }
 h2 small { font-family: var(--body); font-size: .68rem; font-weight: 600; color: var(--cam-ink); background: var(--cam); border-radius: 999px; padding: .2em .6em; margin-left: .6rem; vertical-align: .3em; text-transform: uppercase; letter-spacing: .06em; }
 ul.bops { list-style: none; margin: 0; padding: 0; }
@@ -153,6 +146,7 @@ footer a { display: inline-block; padding: .6rem 0; }
 
 @media (max-width: 480px) {
   h1 { font-size: 2.3rem; }
+  .seg button { padding: 0 .7rem; font-size: .88rem; }
   #map { height: 220px; }
   ul.bops li { grid-template-columns: 3.8rem minmax(0, 1fr); }
 }
@@ -165,8 +159,8 @@ footer a { display: inline-block; padding: .6rem 0; }
 <main>
   <header>
     <h1><svg class="ball" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><defs><clipPath id="ballclip"><circle cx="20" cy="20" r="18"/></clipPath></defs><circle cx="20" cy="20" r="18" fill="var(--cam)"/><g clip-path="url(#ballclip)" stroke="var(--bg)" stroke-width="1.6"><path d="M2 8h36M2 14h36M2 20h36M2 26h36M2 32h36"/><path d="M8 2v36M14 2v36M20 2v36M26 2v36M32 2v36"/></g><rect x="18.5" y="0" width="3" height="3" fill="var(--cam-ink)"/></svg>Cambridge <em>Bops</em></h1>
-    <p class="tagline">Every college bop in the next fortnight: when, where, what theme, how much. Checked every morning against the colleges' own calendars, pages and announcements.</p>
-    <p class="notice">Check before you go. Dates, times and guest rules come from public announcements and colleges change them; the link on each bop is the place to confirm.</p>
+    <p class="tagline">College bops in Cambridge for the next fortnight, checked every morning.</p>
+    <p class="notice">Details change. Check the link on each bop before you go.</p>
   </header>
 
   <div class="filters" role="region" aria-label="Filters">
@@ -185,8 +179,6 @@ footer a { display: inline-block; padding: .6rem 0; }
     </div>
     <p class="result" id="result" aria-live="polite"></p>
   </div>
-
-  <section class="tonight" id="tonight" hidden></section>
 
   <div id="map" role="region" aria-label="Map of colleges with bops"></div>
   <p class="mapnote" id="mapnote">Numbers are bops in the next fortnight. Tap a college to filter the list.</p>
@@ -221,7 +213,6 @@ footer a { display: inline-block; padding: .6rem 0; }
   };
 
   const list = document.getElementById("list");
-  const tonightEl = document.getElementById("tonight");
   const chipsEl = document.getElementById("chips");
   const resultEl = document.getElementById("result");
   let events = [];
@@ -348,7 +339,8 @@ footer a { display: inline-block; padding: .6rem 0; }
     const href = e.url || (src && src.url);
     const host = hostOf(href || "");
     const where = /instagram\.com/.test(host) ? "Instagram post" : /facebook\.com/.test(host) ? "Facebook post" : host;
-    return '<div class="src">' + (href ? 'Announced at <a href="' + esc(href) + '" rel="noopener" target="_blank">' + esc(label) + "</a>" + (where && where !== label ? " (" + esc(where) + ")" : "") : "Source: " + esc(label)) + "</div>";
+    const redundant = !where || label.toLowerCase().includes(where.split(" ")[0].toLowerCase());
+    return '<div class="src">' + (href ? 'Announced at <a href="' + esc(href) + '" rel="noopener" target="_blank">' + esc(label) + "</a>" + (redundant ? "" : " (" + esc(where) + ")") : "Source: " + esc(label)) + "</div>";
   }
 
   function facts(e) {
@@ -375,14 +367,6 @@ footer a { display: inline-block; padding: .6rem 0; }
     const shown = inTime.filter(e => college === "all" || (college === "none" ? !e.college : e.college === college));
     renderResult(shown.length);
 
-    // Tonight, pulled out so the most common question is answered first.
-    const today = dayKey.format(new Date());
-    const tonight = shown.filter(e => dayKey.format(new Date(e.starts_at)) === today);
-    if (tonight.length) {
-      tonightEl.hidden = false;
-      tonightEl.innerHTML = "<h2>Tonight</h2><ul>" + tonight.map(e =>
-        '<li><span class="t">' + timeLabel.format(new Date(e.starts_at)) + '</span><span class="n">' + esc(e.title) + '</span><span class="w">' + esc(e.college || e.venue || "") + (e.price ? " · " + esc(e.price) : "") + "</span></li>").join("") + "</ul>";
-    } else { tonightEl.hidden = true; tonightEl.innerHTML = ""; }
 
     if (!shown.length) {
       const where = college === "all" ? "" : college === "none" ? " outside the colleges" : " at " + esc(college);
@@ -399,6 +383,7 @@ footer a { display: inline-block; padding: .6rem 0; }
     let html = "";
     for (const [k, items] of groups) {
       const rel = relDay(k);
+      if (rel === "Tonight") html += '<div class="today">';
       html += "<h2>" + esc(dayLabel.format(new Date(k + "T12:00:00Z"))) + (rel ? "<small>" + rel + "</small>" : "") + '</h2><ul class="bops">';
       for (const e of items) {
         const name = e.url ? '<a href="' + esc(e.url) + '" rel="noopener" target="_blank">' + esc(e.title) + "</a>" : esc(e.title);
@@ -412,6 +397,7 @@ footer a { display: inline-block; padding: .6rem 0; }
           (e.details ? '<div class="details">' + esc(e.details) + "</div>" : "") + sourceLine(e) + "</div></li>";
       }
       html += "</ul>";
+      if (rel === "Tonight") html += "</div>";
     }
     list.innerHTML = html;
   }

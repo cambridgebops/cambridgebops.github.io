@@ -12,7 +12,7 @@ A static page that lists and maps every college bop in Cambridge for the next fo
 |---|---|
 | `docs/index.html` | The whole page: Cambridge blue palette, a sticky filter bar (When segmented control, college chips with counts, result line with Clear), "Tonight" band, Leaflet map of colleges with a bop count per pin (OpenStreetMap tiles), and a day-by-day list with price, guest policy, dress code, end time and source link. |
 | `docs/events.json` | `{generated, sources, bops: [...]}`. Fields per bop: title, starts_at, ends_at, college, venue, host, price, guests, dress, url, details, source. |
-| `docs/sources.json` | The registry of verified sources, about 140 across the 31 colleges: JCR, MCR and ents sites, calendars, termcards, college events pages, SU listings, student press, and each college's JCR or ents Instagram. The routine reads only these. |
+| `docs/sources.json` | The registry of verified sources, about 150 across the 31 colleges: JCR, MCR and ents sites, calendars, termcards, college events pages, SU listings, student press, and each college's JCR or ents Instagram. The routine reads only these. |
 | `docs/ROUTINE.md` | The routine's instructions: check every registered source, write the JSON, run the tests, commit and push. |
 | `tests/` | Unit tests for the data contract (`events.json`), the registry (`sources.json`) and the page. |
 | `scripts/check_sources.py` | Reachability test: probes every registered URL and reports colleges without a working source. |

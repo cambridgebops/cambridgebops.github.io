@@ -12,12 +12,12 @@ class TestPage(unittest.TestCase):
         self.assertEqual(r.returncode, 0, r.stderr)
 
     def test_required_elements(self):
-        for id_ in ["when", "chips", "result", "tonight", "map", "list", "lastrun"]:
+        for id_ in ["when", "chips", "result", "map", "list", "lastrun"]:
             self.assertIn(f'id="{id_}"', PAGE, id_)
 
     def test_reads_events_json_only(self):
         self.assertIn('fetch("events.json"', SCRIPT)
-        for banned in ["supabase", "Add a bop", "<form", "<dialog", "github.com/kostadindev/cambops/issues"]:
+        for banned in ["supabase", "Add a bop", "<form", "<dialog", "/issues/new"]:
             self.assertNotIn(banned.lower(), PAGE.lower(), banned)
 
     def test_college_coordinates_match_registry(self):
