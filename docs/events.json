@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T15:48:56+00:00",
+  "generated": "2026-10-30T19:47:23+00:00",
   "sources": [
     {
       "slug": "christs-jcr-site",
@@ -9,6 +9,24 @@
       "ok": true,
       "found": 0,
       "note": "no events listed; links to termcard only"
+    },
+    {
+      "slug": "christ-s-jcr-instagram",
+      "name": "Christ's JCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/christsjcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
+      "slug": "christs-ents-instagram",
+      "name": "Christ's Ents Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/christsents/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
     },
     {
       "slug": "christs-mcr-whats-on",
@@ -42,18 +60,27 @@
       "name": "Churchill College JCR and MCR page",
       "kind": "College events",
       "url": "https://www.chu.cam.ac.uk/about/governance/jcr-and-mcr/",
-      "ok": true,
-      "found": 0,
-      "note": "committee contacts only"
+      "ok": false,
+      "note": "HTTP 403",
+      "found": 0
     },
     {
       "slug": "churchill-college-events",
       "name": "Churchill College events",
       "kind": "College events",
       "url": "https://www.chu.cam.ac.uk/events/",
-      "ok": true,
-      "found": 0,
-      "note": "college events only, no bop"
+      "ok": false,
+      "note": "HTTP 403",
+      "found": 0
+    },
+    {
+      "slug": "churchill-jcr-instagram",
+      "name": "Churchill JCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/churchillcoljcr/",
+      "ok": false,
+      "found": 1,
+      "note": "not readable by the routine"
     },
     {
       "slug": "clare-ucs-site",
@@ -63,6 +90,15 @@
       "ok": true,
       "found": 0,
       "note": "no events listed; points to Instagram"
+    },
+    {
+      "slug": "clare-ucs-instagram",
+      "name": "Clare UCS Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/ucs_clare/",
+      "ok": false,
+      "found": 1,
+      "note": "not readable by the routine"
     },
     {
       "slug": "clare-ucs-going-out",
@@ -101,6 +137,15 @@
       "note": "concerts, seminars, Diwali formal; no bop"
     },
     {
+      "slug": "clare-hall-gsb-instagram",
+      "name": "Clare Hall GSB Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/clarehall.gsb/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "clare-hall-gsb-events",
       "name": "Clare Hall GSB events",
       "kind": "MCR events",
@@ -135,6 +180,15 @@
       "ok": true,
       "found": 0,
       "note": "embedded calendar iCal has one 2020 event"
+    },
+    {
+      "slug": "corpus-jcr-instagram",
+      "name": "Corpus JCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/corpuschristi_jcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
     },
     {
       "slug": "corpus-jcr-events-calendars",
@@ -182,6 +236,15 @@
       "note": "no events listed"
     },
     {
+      "slug": "darwin-dcsa-instagram",
+      "name": "Darwin DCSA Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/dcsa_darwin_college/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "darwin-dcsa-events",
       "name": "Darwin DCSA events",
       "kind": "MCR events",
@@ -218,6 +281,15 @@
       "note": "seminars, concert, club dinner; no bop"
     },
     {
+      "slug": "downing-mcr-instagram",
+      "name": "Downing MCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/downingcollegemcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "downing-mcr-page",
       "name": "Downing MCR",
       "kind": "MCR site",
@@ -234,6 +306,15 @@
       "ok": true,
       "found": 0,
       "note": "no events listed; points to Instagram"
+    },
+    {
+      "slug": "emmanuel-ecsu-instagram",
+      "name": "Emmanuel ECSU Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/ecsucambridge/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
     },
     {
       "slug": "emmanuel-mcr-events-calendar",
@@ -272,6 +353,15 @@
       "note": "links only"
     },
     {
+      "slug": "fitzwilliam-jcr-instagram",
+      "name": "Fitzwilliam JCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/fitzjcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "fitzwilliam-mcr-events",
       "name": "Fitzwilliam MCR events",
       "kind": "MCR events",
@@ -303,9 +393,9 @@
       "name": "Girton JCR",
       "kind": "JCR site",
       "url": "https://girtonjcr.co.uk/",
-      "ok": true,
-      "found": 0,
-      "note": "client-rendered shell"
+      "ok": false,
+      "note": "content rendered by JavaScript or embed; nothing readable",
+      "found": 0
     },
     {
       "slug": "girton-college-events",
@@ -317,13 +407,22 @@
       "note": "concerts and chapel services"
     },
     {
+      "slug": "girton-jcr-instagram",
+      "name": "Girton JCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/girtonjcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "girton-jcr-events-calendar",
       "name": "Girton JCR events calendar",
       "kind": "JCR events",
       "url": "https://girtonjcr.co.uk/events-calendar",
-      "ok": true,
-      "found": 0,
-      "note": "calendar iCal read, 198 events, latest Nov 2025; nothing in window"
+      "ok": false,
+      "note": "content rendered by JavaScript or embed; nothing readable",
+      "found": 0
     },
     {
       "slug": "girton-mcr-events",
@@ -353,6 +452,15 @@
       "note": "no events listed"
     },
     {
+      "slug": "caius-mcr-instagram",
+      "name": "Caius MCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/caiusmcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "caius-gcsu-ents",
       "name": "Caius GCSU Ents",
       "kind": "JCR events",
@@ -378,6 +486,15 @@
       "ok": true,
       "found": 0,
       "note": "points to Instagram term card"
+    },
+    {
+      "slug": "husjcr-instagram",
+      "name": "HUS Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/husjcr/",
+      "ok": false,
+      "found": 1,
+      "note": "not readable by the routine"
     },
     {
       "slug": "hus-jcr-events",
@@ -416,6 +533,15 @@
       "note": "talks and alumni dinners only"
     },
     {
+      "slug": "hughes-hall-mcr-instagram",
+      "name": "Hughes Hall MCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/hugheshallmcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "hughes-mcr-calendar",
       "name": "Hughes Hall MCR calendar",
       "kind": "MCR events",
@@ -438,7 +564,7 @@
       "name": "Jesus JCSU",
       "kind": "JCR site",
       "url": "https://jcsu.jesus.cam.ac.uk/",
-      "ok": false,
+      "ok": true,
       "found": 0,
       "note": "403"
     },
@@ -452,11 +578,38 @@
       "note": "chapel, talks and alumni events only"
     },
     {
+      "slug": "friday-night-jesus-jcsu-ents-on-facebook",
+      "name": "Friday Night Jesus (JCSU ents) on Facebook",
+      "kind": "Facebook",
+      "url": "https://www.facebook.com/FridayNightJesus",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
+      "slug": "jesus-jcsu-instagram",
+      "name": "Jesus JCSU Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/jesuscollegestudentunion/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
+      "slug": "jesus-ents-instagram",
+      "name": "Jesus Ents Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/jesus_ents/",
+      "ok": false,
+      "found": 1,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "jesus-jcsu-calendar",
       "name": "Jesus JCSU calendar",
       "kind": "JCR events",
       "url": "https://jcsu.jesus.cam.ac.uk/current-students/calendar/",
-      "ok": false,
+      "ok": true,
       "found": 0,
       "note": "403"
     },
@@ -465,7 +618,7 @@
       "name": "Jesus JCSU student-run events",
       "kind": "JCR events",
       "url": "https://jcsu.jesus.cam.ac.uk/current-students/student-run-events/",
-      "ok": false,
+      "ok": true,
       "found": 0,
       "note": "403"
     },
@@ -479,13 +632,31 @@
       "note": "links to the Google Calendar"
     },
     {
+      "slug": "kcsu-instagram",
+      "name": "KCSU Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/KCSUCambridge/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
+      "slug": "kings-ents-instagram",
+      "name": "King's Ents Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/kings.ents/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "kcsu-calendar",
       "name": "KCSU events calendar",
       "kind": "JCR events",
       "url": "https://calendar.google.com/calendar/embed?src=events@kcsu.org.uk&ctz=Europe/London",
-      "ok": true,
-      "found": 0,
-      "note": "iCal feed read; calendar contains no events"
+      "ok": false,
+      "note": "content rendered by JavaScript or embed; nothing readable",
+      "found": 0
     },
     {
       "slug": "lucy-su-page",
@@ -506,6 +677,24 @@
       "note": "talks and formals only"
     },
     {
+      "slug": "lucy-jcr-instagram",
+      "name": "Lucy JCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/lucycavjcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
+      "slug": "lucy-mcr-instagram",
+      "name": "Lucy MCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/lucycavmcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "lucy-jcr-cambridgesu",
       "name": "Lucy JCR on Cambridge SU",
       "kind": "JCR events",
@@ -522,6 +711,15 @@
       "ok": true,
       "found": 0,
       "note": "points to Instagram"
+    },
+    {
+      "slug": "magdalene-jcr-instagram",
+      "name": "Magdalene JCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/magdalenecollegejcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
     },
     {
       "slug": "magdalene-mcr-events",
@@ -578,6 +776,15 @@
       "note": "no dated events"
     },
     {
+      "slug": "newnham-mcr-instagram",
+      "name": "Newnham MCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/newnham_mcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "newnham-mcr-cambridgesu",
       "name": "Newnham MCR on Cambridge SU",
       "kind": "MCR events",
@@ -603,6 +810,15 @@
       "ok": true,
       "found": 0,
       "note": "points to the Ents Instagram"
+    },
+    {
+      "slug": "pembroke-ents-instagram",
+      "name": "Pembroke Ents Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/pem.ents/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
     },
     {
       "slug": "pembroke-jp-bar",
@@ -637,8 +853,17 @@
       "kind": "JCR site",
       "url": "https://www.peterhousejcr.co.uk/",
       "ok": false,
+      "note": "content rendered by JavaScript or embed; nothing readable",
+      "found": 0
+    },
+    {
+      "slug": "peterhouse-mcr-instagram",
+      "name": "Peterhouse MCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/peterhousemcr/",
+      "ok": false,
       "found": 0,
-      "note": "JavaScript-rendered; not readable"
+      "note": "not readable by the routine"
     },
     {
       "slug": "peterhouse-jcr-events",
@@ -646,8 +871,8 @@
       "kind": "JCR events",
       "url": "https://www.peterhousejcr.co.uk/events",
       "ok": false,
-      "found": 0,
-      "note": "JavaScript-rendered; not readable"
+      "note": "content rendered by JavaScript or embed; nothing readable",
+      "found": 0
     },
     {
       "slug": "peterhouse-mcr-site",
@@ -686,6 +911,33 @@
       "note": "describes three bops a term, no dates"
     },
     {
+      "slug": "queens-jcr-instagram",
+      "name": "Queens' JCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/queensjcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
+      "slug": "queens-mcr-instagram",
+      "name": "Queens' MCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/qmcrcambridge/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
+      "slug": "queens-ents-instagram",
+      "name": "Queens' Ents Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/queensents/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "queens-jcr-events",
       "name": "Queens' JCR events",
       "kind": "JCR events",
@@ -722,11 +974,20 @@
       "note": "mentions weekly bops, no dates"
     },
     {
+      "slug": "robinson-jcr-instagram",
+      "name": "Robinson JCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/robinsoncollegejcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "robinson-rcsa-events",
       "name": "Robinson RCSA events",
       "kind": "JCR events",
       "url": "https://www.rcsa.co.uk/events",
-      "ok": false,
+      "ok": true,
       "found": 0,
       "note": "404"
     },
@@ -738,6 +999,15 @@
       "ok": true,
       "found": 0,
       "note": "no events listed; bulletin dated March 2026"
+    },
+    {
+      "slug": "catz-entz-instagram",
+      "name": "Catz Entz Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/catzentz/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
     },
     {
       "slug": "catz-jcr-calendar",
@@ -794,6 +1064,15 @@
       "note": "wellbeing events only"
     },
     {
+      "slug": "st-edmund-s-college-instagram",
+      "name": "St Edmund's College Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/stedmundscam/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "st-johns-jcr-site",
       "name": "St John's JCR",
       "kind": "JCR site",
@@ -810,6 +1089,15 @@
       "ok": true,
       "found": 0,
       "note": "describes parties in the Fisher Building, no dates"
+    },
+    {
+      "slug": "st-john-s-jcr-instagram",
+      "name": "St John's JCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/stjohnsjcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
     },
     {
       "slug": "st-johns-sbr-events",
@@ -839,13 +1127,22 @@
       "note": "links to calendar only"
     },
     {
+      "slug": "selwyn-ents-instagram",
+      "name": "Selwyn Ents Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/selwynents/",
+      "ok": false,
+      "found": 2,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "selwyn-jcr-calendar",
       "name": "Selwyn JCR calendar (Google)",
       "kind": "JCR events",
       "url": "https://calendar.google.com/calendar/embed?src=c_4d4a7c193587cb0b3adb95cd4df6cc52f93456a2ef5db9017e2345c8df96ef42%40group.calendar.google.com&ctz=Europe%2FLondon",
-      "ok": true,
-      "found": 0,
-      "note": "iCal feed has only two 2024 entries"
+      "ok": false,
+      "note": "content rendered by JavaScript or embed; nothing readable",
+      "found": 0
     },
     {
       "slug": "selwyn-mcr-page",
@@ -884,6 +1181,15 @@
       "note": "alumni events only"
     },
     {
+      "slug": "sidney-sussex-jcr-instagram",
+      "name": "Sidney Sussex JCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/sidneysussexjcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "sidney-mcr-events",
       "name": "Sidney Sussex MCR events",
       "kind": "MCR events",
@@ -909,6 +1215,15 @@
       "ok": true,
       "found": 0,
       "note": "no events page"
+    },
+    {
+      "slug": "tcsu-instagram",
+      "name": "TCSU Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/trincollsu/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
     },
     {
       "slug": "trinity-ba-events",
@@ -947,6 +1262,15 @@
       "note": "Crescent Room and Superhall dates to be announced"
     },
     {
+      "slug": "trinity-hall-jcr-instagram",
+      "name": "Trinity Hall JCR Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/trinhall.jcr/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "trinity-hall-mcr-site",
       "name": "Trinity Hall MCR",
       "kind": "MCR site",
@@ -983,6 +1307,15 @@
       "note": "talks, concerts, pub quiz; no bop"
     },
     {
+      "slug": "wcsa-instagram",
+      "name": "WCSA Instagram",
+      "kind": "Instagram",
+      "url": "https://www.instagram.com/wcsa_cambridge/",
+      "ok": false,
+      "found": 0,
+      "note": "not readable by the routine"
+    },
+    {
       "slug": "cambridge-su-events",
       "name": "Cambridge SU events",
       "kind": "SU listings",
@@ -1008,87 +1341,6 @@
       "ok": true,
       "found": 0,
       "note": "no bop articles"
-    },
-    {
-      "slug": "jesus-ents-instagram",
-      "name": "Jesus Ents on Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/jesus_ents/",
-      "ok": true,
-      "found": 1,
-      "note": "read by hand on Instagram, not by the routine"
-    },
-    {
-      "slug": "selwyn-ents-instagram",
-      "name": "Selwyn Ents on Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/selwynents/",
-      "ok": true,
-      "found": 2,
-      "note": "Michaelmas bops termcard (dates marked TBC); read by hand on Instagram"
-    },
-    {
-      "slug": "churchill-jcr-instagram",
-      "name": "Churchill JCR on Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/churchillcoljcr/",
-      "ok": true,
-      "found": 1,
-      "note": "Ents termcard post of 21 September; read by hand on Instagram"
-    },
-    {
-      "slug": "clare-ucs-instagram",
-      "name": "Clare UCS on Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/ucs_clare/",
-      "ok": true,
-      "found": 1,
-      "note": "Collab post with King's LGBTQ+ and Clare bar; read by hand on Instagram"
-    },
-    {
-      "slug": "queens-ents-instagram",
-      "name": "Queens' Ents on Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/queensents/",
-      "ok": true,
-      "found": 0,
-      "note": "Halloween Bop was Wed 28 Oct, before the window"
-    },
-    {
-      "slug": "christs-ents-instagram",
-      "name": "Christ's Ents on Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/christsents/",
-      "ok": true,
-      "found": 0,
-      "note": "Welcome Back Bop was 9 Oct; termcard not readable"
-    },
-    {
-      "slug": "catz-entz-instagram",
-      "name": "Catz Entz on Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/catzentz/",
-      "ok": true,
-      "found": 0,
-      "note": "Bar swap with Queens' and Jesus announced as 'tomorrow', date not stated"
-    },
-    {
-      "slug": "kings-ents-instagram",
-      "name": "King's Ents on Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/kings.ents/",
-      "ok": true,
-      "found": 0,
-      "note": "formals only in recent posts"
-    },
-    {
-      "slug": "husjcr-instagram",
-      "name": "HUS Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/husjcr/",
-      "ok": false,
-      "found": 1,
-      "note": "added by a person reading the account"
     }
   ],
   "bops": [
