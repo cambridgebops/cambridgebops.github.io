@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-01T06:16:44+00:00",
+  "generated": "2026-11-01T13:56:33+00:00",
   "run": {
-    "checked_at": "2026-11-01T06:16:44+00:00",
+    "checked_at": "2026-11-01T13:56:33+00:00",
     "window_from": "2026-11-01",
     "window_to": "2026-11-15",
     "sources_checked": 149,
-    "sources_ok": 106
+    "sources_ok": 110
   },
   "sources": [
     {
@@ -55,9 +55,9 @@
       "name": "Christ's JCR termcard",
       "kind": "Termcard",
       "url": "https://thejcr.co.uk/get-involved/termcard",
-      "ok": true,
+      "ok": false,
       "found": 0,
-      "note": "embedded calendar feeds empty"
+      "note": "termcard page returns \"500 Internal Error\"; embedded calendar feeds empty"
     },
     {
       "slug": "churchill-jcr-mcr-page",
@@ -225,7 +225,7 @@
       "url": "https://www.darwin.cam.ac.uk/events/",
       "ok": true,
       "found": 0,
-      "note": "plain fetch reset; read with headless browser"
+      "note": "no upcoming events listed"
     },
     {
       "slug": "darwin-dcsa-instagram",
@@ -266,7 +266,8 @@
       "kind": "College events",
       "url": "https://dow.cam.ac.uk/about/events",
       "ok": true,
-      "found": 0
+      "found": 3,
+      "note": "read via the linked Google Calendar iCal feed"
     },
     {
       "slug": "downing-mcr-instagram",
@@ -367,7 +368,7 @@
       "url": "https://mcr.fitz.cam.ac.uk/overview/term-card/",
       "ok": true,
       "found": 0,
-      "note": "says out of term; no current term card"
+      "note": "still says out of term; no current term card"
     },
     {
       "slug": "girton-jcr-site",
@@ -456,9 +457,8 @@
       "name": "Homerton HUS (JCR)",
       "kind": "JCR site",
       "url": "https://www.hus-jcr.co.uk/",
-      "ok": false,
-      "found": 0,
-      "note": "502 / connection closed today"
+      "ok": true,
+      "found": 0
     },
     {
       "slug": "husjcr-instagram",
@@ -474,9 +474,9 @@
       "name": "HUS events",
       "kind": "JCR events",
       "url": "https://www.hus-jcr.co.uk/events/",
-      "ok": false,
+      "ok": true,
       "found": 0,
-      "note": "502 / connection closed today"
+      "note": "no upcoming events listed"
     },
     {
       "slug": "homerton-mcr-ents",
@@ -492,7 +492,8 @@
       "kind": "MCR site",
       "url": "https://homerton-mcr.co.uk/",
       "ok": true,
-      "found": 0
+      "found": 2,
+      "note": "formal dates from the linked Formal Hall Dates page"
     },
     {
       "slug": "hughes-college-events",
@@ -532,9 +533,8 @@
       "name": "Jesus JCSU",
       "kind": "JCR site",
       "url": "https://jcsu.jesus.cam.ac.uk/",
-      "ok": false,
-      "found": 0,
-      "note": "403 today"
+      "ok": true,
+      "found": 0
     },
     {
       "slug": "jesus-college-events",
@@ -576,18 +576,17 @@
       "name": "Jesus JCSU calendar",
       "kind": "JCR events",
       "url": "https://jcsu.jesus.cam.ac.uk/current-students/calendar/",
-      "ok": false,
+      "ok": true,
       "found": 0,
-      "note": "403 today"
+      "note": "calendar embed shows no events"
     },
     {
       "slug": "jesus-jcsu-student-events",
       "name": "Jesus JCSU student-run events",
       "kind": "JCR events",
       "url": "https://jcsu.jesus.cam.ac.uk/current-students/student-run-events/",
-      "ok": false,
-      "found": 0,
-      "note": "403 today"
+      "ok": true,
+      "found": 0
     },
     {
       "slug": "kcsu-site",
@@ -689,7 +688,7 @@
       "kind": "MCR events",
       "url": "https://www.mcr.magd.cam.ac.uk/events",
       "ok": true,
-      "found": 0
+      "found": 2
     },
     {
       "slug": "magdalene-mcr-site",
@@ -897,7 +896,8 @@
       "kind": "MCR events",
       "url": "https://www.qmcr.org/upcomingevents",
       "ok": true,
-      "found": 0
+      "found": 1,
+      "note": "read via the embedded Google Calendar iCal feed"
     },
     {
       "slug": "queens-mcr-site",
@@ -1121,7 +1121,7 @@
       "kind": "MCR events",
       "url": "https://www.sidneysussexmcr.com/events",
       "ok": true,
-      "found": 0
+      "found": 2
     },
     {
       "slug": "sidney-mcr-site",
@@ -1282,6 +1282,118 @@
       "source": "clare-ucs-instagram"
     },
     {
+      "kind": "formal",
+      "title": "Diwali Formal (MCR)",
+      "starts_at": "2026-11-02T18:00:00+00:00",
+      "ends_at": "2026-11-02T23:00:00+00:00",
+      "college": "Sidney Sussex",
+      "venue": "Hall, then Mong Hall and the bar",
+      "host": "Sidney Sussex MCR",
+      "guests": "Graduate formal; swap with 15 members of Trinity Hall",
+      "url": "https://www.sidneysussexmcr.com/events",
+      "details": "Intro to Bollywood dance 6pm in Mong Hall, formal in Hall 7-9pm, then DJ and drinks in the bar until 11pm.",
+      "source": "sidney-mcr-events"
+    },
+    {
+      "kind": "formal",
+      "title": "Formal Hall",
+      "starts_at": "2026-11-03T19:30:00+00:00",
+      "college": "Homerton",
+      "venue": "New Dining Hall",
+      "host": "Homerton College",
+      "price": "£20 Homerton students, £24 guests",
+      "guests": "Open to UG and PG students; usually up to 2 guests",
+      "url": "https://homerton-mcr.co.uk/formal-hall-dates",
+      "details": "Regular Tuesday formal; tickets on UPay from 26 Oct. No dress code.",
+      "source": "homerton-mcr-site"
+    },
+    {
+      "kind": "formal",
+      "title": "Diwali Formal",
+      "starts_at": "2026-11-04T19:15:00+00:00",
+      "ends_at": "2026-11-04T21:15:00+00:00",
+      "college": "Downing",
+      "venue": "Dining Hall",
+      "url": "https://calendar.google.com/calendar/embed?src=9sn3srd7kjhk8r3ah3l6r0rgas@group.calendar.google.com&ctz=Europe/London",
+      "details": "Listed on the Downing College events calendar.",
+      "source": "downing-college-events"
+    },
+    {
+      "kind": "formal",
+      "title": "Firework Night Formal",
+      "starts_at": "2026-11-06T19:30:00+00:00",
+      "ends_at": "2026-11-06T21:30:00+00:00",
+      "college": "Downing",
+      "venue": "Dining Hall",
+      "url": "https://calendar.google.com/calendar/embed?src=9sn3srd7kjhk8r3ah3l6r0rgas@group.calendar.google.com&ctz=Europe/London",
+      "details": "Follows the College Fireworks Display at 7pm.",
+      "source": "downing-college-events"
+    },
+    {
+      "kind": "formal",
+      "title": "BA Formal Dinner in Hall",
+      "starts_at": "2026-11-06T19:30:00+00:00",
+      "ends_at": "2026-11-06T20:45:00+00:00",
+      "college": "Magdalene",
+      "venue": "Hall",
+      "host": "Magdalene MCR",
+      "guests": "Students and their guests",
+      "dress": "Formal with gowns",
+      "url": "https://www.mcr.magd.cam.ac.uk/events/ba-formal-dinner-in-hall-hdw54-8wc4j-dfy83-w9sg8-3xrar",
+      "details": "Three courses; book on UPay. Free pre-drinks in Benson Hall from 6.45pm, port and chocolates in the MCR after.",
+      "source": "magdalene-mcr-events"
+    },
+    {
+      "kind": "formal",
+      "title": "Themed Formal Hall",
+      "starts_at": "2026-11-10T19:30:00+00:00",
+      "college": "Homerton",
+      "venue": "New Dining Hall",
+      "host": "Homerton College",
+      "price": "£20 Homerton students, £24 guests",
+      "guests": "Open to UG and PG students; usually up to 2 guests",
+      "url": "https://homerton-mcr.co.uk/formal-hall-dates",
+      "details": "Theme to be confirmed; tickets on UPay from 2 Nov.",
+      "source": "homerton-mcr-site"
+    },
+    {
+      "kind": "formal",
+      "title": "Alcohol Free Formal",
+      "starts_at": "2026-11-11T19:15:00+00:00",
+      "ends_at": "2026-11-11T21:15:00+00:00",
+      "college": "Downing",
+      "venue": "Dining Hall",
+      "url": "https://calendar.google.com/calendar/embed?src=9sn3srd7kjhk8r3ah3l6r0rgas@group.calendar.google.com&ctz=Europe/London",
+      "details": "Listed on the Downing College events calendar.",
+      "source": "downing-college-events"
+    },
+    {
+      "kind": "formal",
+      "title": "Woodville Feast",
+      "starts_at": "2026-11-13T19:00:00+00:00",
+      "ends_at": "2026-11-13T21:45:00+00:00",
+      "college": "Queens'",
+      "venue": "Old Hall",
+      "host": "Queens' MCR",
+      "url": "https://www.qmcr.org/upcomingevents",
+      "details": "The MCR's termly feast in Old Hall, from the MCR events calendar.",
+      "source": "queens-mcr-upcoming"
+    },
+    {
+      "kind": "formal",
+      "title": "BA Formal Dinner in Hall",
+      "starts_at": "2026-11-13T19:30:00+00:00",
+      "ends_at": "2026-11-13T20:45:00+00:00",
+      "college": "Magdalene",
+      "venue": "Hall",
+      "host": "Magdalene MCR",
+      "guests": "Students and their guests",
+      "dress": "Formal with gowns",
+      "url": "https://www.mcr.magd.cam.ac.uk/events/ba-formal-dinner-in-hall-hdw54-8wc4j-dfy83-w9sg8-3xrar-wcx6d",
+      "details": "Three courses; book on UPay. Free pre-drinks in Benson Hall from 6.45pm, port and chocolates in the MCR after.",
+      "source": "magdalene-mcr-events"
+    },
+    {
       "kind": "bop",
       "title": "50 Years of Women in Selwyn Bop",
       "starts_at": "2026-11-13T21:00:00+00:00",
@@ -1292,6 +1404,19 @@
       "url": "https://www.instagram.com/selwynents/",
       "details": "Date marked TBC on the termcard; time assumed.",
       "source": "selwyn-ents-instagram"
+    },
+    {
+      "kind": "formal",
+      "title": "Baila en Sidney formal",
+      "starts_at": "2026-11-14T19:00:00+00:00",
+      "ends_at": "2026-11-14T23:00:00+00:00",
+      "college": "Sidney Sussex",
+      "venue": "Hall, then the bar",
+      "host": "Sidney Sussex MCR",
+      "guests": "Graduate formal; 10 members of Cuban Salsa Soc joining",
+      "url": "https://www.sidneysussexmcr.com/events",
+      "details": "Cuban-themed formal 7-9pm, then a live Latin band and drinks in the bar until 11pm.",
+      "source": "sidney-mcr-events"
     }
   ]
 }
