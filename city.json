@@ -212,5 +212,12 @@
   "one": "May Ball",
   "many": "May Balls",
   "routine": "Cambridge May Balls and June Events, held in May Week in June"
- }
+ },
+ "full_terms": [
+  {
+   "name": "Michaelmas 2026",
+   "from": "2026-10-06",
+   "to": "2026-12-04"
+  }
+ ]
 }

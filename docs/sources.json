@@ -37,9 +37,9 @@
  "sources": [
   {
    "college": "Christ's",
-   "name": "Christ's JCR",
-   "kind": "JCR site",
-   "url": "https://thejcr.co.uk/"
+   "name": "Christ's Ents Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/christsents/"
   },
   {
    "college": "Christ's",
@@ -50,9 +50,9 @@
   },
   {
    "college": "Christ's",
-   "name": "Christ's Ents Instagram",
-   "kind": "Instagram",
-   "url": "https://www.instagram.com/christsents/"
+   "name": "Christ's JCR",
+   "kind": "JCR site",
+   "url": "https://thejcr.co.uk/"
   },
   {
    "college": "Christ's",
@@ -88,17 +88,21 @@
   },
   {
    "college": "Churchill",
+   "name": "Churchill formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
+   "formal_days": [
+    "Thu",
+    "Fri",
+    "Sun"
+   ]
+  },
+  {
+   "college": "Churchill",
    "name": "Churchill JCR Instagram",
    "kind": "Instagram",
    "url": "https://www.instagram.com/churchillcoljcr/",
    "note": "Handle listed on the college's JCR and MCR page"
-  },
-  {
-   "college": "Clare",
-   "name": "Clare UCS",
-   "kind": "JCR site",
-   "url": "https://ucs.clare.cam.ac.uk/",
-   "note": "Union of Clare Students"
   },
   {
    "college": "Clare",
@@ -113,6 +117,13 @@
    "kind": "JCR events",
    "url": "https://ucs.clare.cam.ac.uk/current-students/going-out/",
    "note": "Describes Cellars bops and Clare Ents"
+  },
+  {
+   "college": "Clare",
+   "name": "Clare UCS",
+   "kind": "JCR site",
+   "url": "https://ucs.clare.cam.ac.uk/",
+   "note": "Union of Clare Students"
   },
   {
    "college": "Clare",
@@ -131,6 +142,15 @@
    "name": "Clare Hall events",
    "kind": "College events",
    "url": "https://www.clarehall.cam.ac.uk/events/"
+  },
+  {
+   "college": "Clare Hall",
+   "name": "Clare Hall formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.clarehall.cam.ac.uk/dining/",
+   "formal_days": [
+    "Wed"
+   ]
   },
   {
    "college": "Clare Hall",
@@ -154,16 +174,20 @@
   },
   {
    "college": "Corpus Christi",
-   "name": "Corpus JCR",
-   "kind": "JCR site",
-   "url": "https://www.jcr.corpus.cam.ac.uk/"
-  },
-  {
-   "college": "Corpus Christi",
    "name": "Corpus Ents",
    "kind": "Ents site",
    "url": "https://www.jcr.corpus.cam.ac.uk/corpus-ents",
    "note": "Google Calendar embedded"
+  },
+  {
+   "college": "Corpus Christi",
+   "name": "Corpus Christi formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
+   "formal_days": [
+    "Fri",
+    "Sun"
+   ]
   },
   {
    "college": "Corpus Christi",
@@ -177,6 +201,12 @@
    "name": "Corpus JCR events calendars",
    "kind": "JCR events",
    "url": "https://www.jcr.corpus.cam.ac.uk/events-calendars"
+  },
+  {
+   "college": "Corpus Christi",
+   "name": "Corpus JCR",
+   "kind": "JCR site",
+   "url": "https://www.jcr.corpus.cam.ac.uk/"
   },
   {
    "college": "Corpus Christi",
@@ -204,6 +234,17 @@
   },
   {
    "college": "Darwin",
+   "name": "Darwin formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
+   "formal_days": [
+    "Wed",
+    "Fri"
+   ],
+   "note": "Most Wednesdays and Fridays"
+  },
+  {
+   "college": "Darwin",
    "name": "Darwin DCSA Instagram",
    "kind": "Instagram",
    "url": "https://www.instagram.com/dcsa_darwin_college/",
@@ -225,16 +266,21 @@
   },
   {
    "college": "Downing",
-   "name": "Downing JCR",
-   "kind": "JCR site",
-   "url": "https://downingjcr.org.uk/",
-   "note": "Single-page app; no events section found"
-  },
-  {
-   "college": "Downing",
    "name": "Downing College events",
    "kind": "College events",
    "url": "https://dow.cam.ac.uk/about/events"
+  },
+  {
+   "college": "Downing",
+   "name": "Downing formal hall",
+   "kind": "Formal hall",
+   "url": "https://dow.cam.ac.uk/current-students/catering",
+   "formal_days": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sun"
+   ]
   },
   {
    "college": "Downing",
@@ -245,6 +291,13 @@
   },
   {
    "college": "Downing",
+   "name": "Downing JCR",
+   "kind": "JCR site",
+   "url": "https://downingjcr.org.uk/",
+   "note": "Single-page app; no events section found"
+  },
+  {
+   "college": "Downing",
    "name": "Downing MCR",
    "kind": "MCR site",
    "url": "https://dow.cam.ac.uk/people/downing-mcr",
@@ -252,10 +305,15 @@
   },
   {
    "college": "Emmanuel",
-   "name": "Emmanuel ECSU",
-   "kind": "JCR site",
-   "url": "https://ecsu.org.uk/",
-   "note": "Emmanuel College Students' Union"
+   "name": "Emmanuel formal hall",
+   "kind": "Formal hall",
+   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
+   "formal_days": [
+    "Mon",
+    "Fri",
+    "Sat",
+    "Sun"
+   ]
   },
   {
    "college": "Emmanuel",
@@ -263,6 +321,13 @@
    "kind": "Instagram",
    "url": "https://www.instagram.com/ecsucambridge/",
    "note": "Handle from ECSU site footer"
+  },
+  {
+   "college": "Emmanuel",
+   "name": "Emmanuel ECSU",
+   "kind": "JCR site",
+   "url": "https://ecsu.org.uk/",
+   "note": "Emmanuel College Students' Union"
   },
   {
    "college": "Emmanuel",
@@ -279,12 +344,6 @@
   },
   {
    "college": "Fitzwilliam",
-   "name": "Fitzwilliam JCR",
-   "kind": "JCR site",
-   "url": "https://www.fitzjcr.com/"
-  },
-  {
-   "college": "Fitzwilliam",
    "name": "Fitzwilliam College JCR and MCR page",
    "kind": "College events",
    "url": "https://www.fitz.cam.ac.uk/jcr-mcr"
@@ -295,6 +354,12 @@
    "kind": "Instagram",
    "url": "https://www.instagram.com/fitzjcr/",
    "note": "Handle from the JCR FAQ page"
+  },
+  {
+   "college": "Fitzwilliam",
+   "name": "Fitzwilliam JCR",
+   "kind": "JCR site",
+   "url": "https://www.fitzjcr.com/"
   },
   {
    "college": "Fitzwilliam",
@@ -317,16 +382,18 @@
   },
   {
    "college": "Girton",
-   "name": "Girton JCR",
-   "kind": "JCR site",
-   "url": "https://girtonjcr.co.uk/",
-   "note": "Single-page app"
-  },
-  {
-   "college": "Girton",
    "name": "Girton College events",
    "kind": "College events",
    "url": "https://www.girton.cam.ac.uk/upcoming-events"
+  },
+  {
+   "college": "Girton",
+   "name": "Girton formal hall",
+   "kind": "Formal hall",
+   "url": "https://girton.cam.ac.uk/dining-and-socialising",
+   "formal_days": [
+    "Thu"
+   ]
   },
   {
    "college": "Girton",
@@ -343,6 +410,13 @@
   },
   {
    "college": "Girton",
+   "name": "Girton JCR",
+   "kind": "JCR site",
+   "url": "https://girtonjcr.co.uk/",
+   "note": "Single-page app"
+  },
+  {
+   "college": "Girton",
    "name": "Girton MCR events",
    "kind": "MCR events",
    "url": "https://sites.google.com/cam.ac.uk/girton-mcr/events",
@@ -356,9 +430,19 @@
   },
   {
    "college": "Gonville & Caius",
-   "name": "Caius GCSU (JCR)",
-   "kind": "JCR site",
-   "url": "https://jcr.cai.cam.ac.uk/"
+   "name": "Gonville & Caius formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "formal_days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun"
+   ],
+   "note": "Second sitting"
   },
   {
    "college": "Gonville & Caius",
@@ -375,15 +459,15 @@
   },
   {
    "college": "Gonville & Caius",
+   "name": "Caius GCSU (JCR)",
+   "kind": "JCR site",
+   "url": "https://jcr.cai.cam.ac.uk/"
+  },
+  {
+   "college": "Gonville & Caius",
    "name": "Caius MCR",
    "kind": "MCR site",
    "url": "https://mcr.cai.cam.ac.uk/"
-  },
-  {
-   "college": "Homerton",
-   "name": "Homerton HUS (JCR)",
-   "kind": "JCR site",
-   "url": "https://www.hus-jcr.co.uk/"
   },
   {
    "college": "Homerton",
@@ -398,6 +482,12 @@
    "kind": "JCR events",
    "url": "https://www.hus-jcr.co.uk/events/",
    "note": "Site says ents are listed on the Instagram term card"
+  },
+  {
+   "college": "Homerton",
+   "name": "Homerton HUS (JCR)",
+   "kind": "JCR site",
+   "url": "https://www.hus-jcr.co.uk/"
   },
   {
    "college": "Homerton",
@@ -416,6 +506,17 @@
    "name": "Hughes Hall events",
    "kind": "College events",
    "url": "https://www.hughes.cam.ac.uk/about/events/"
+  },
+  {
+   "college": "Hughes Hall",
+   "name": "Hughes Hall formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
+   "formal_days": [
+    "Tue",
+    "Fri"
+   ],
+   "note": "Usually Tuesdays and Fridays"
   },
   {
    "college": "Hughes Hall",
@@ -438,12 +539,6 @@
   },
   {
    "college": "Jesus",
-   "name": "Jesus JCSU",
-   "kind": "JCR site",
-   "url": "https://jcsu.jesus.cam.ac.uk/"
-  },
-  {
-   "college": "Jesus",
    "name": "Jesus College events",
    "kind": "College events",
    "url": "https://www.jesus.cam.ac.uk/college/events"
@@ -457,10 +552,15 @@
   },
   {
    "college": "Jesus",
-   "name": "Jesus JCSU Instagram",
-   "kind": "Instagram",
-   "url": "https://www.instagram.com/jesuscollegestudentunion/",
-   "note": "Linked from jcsu.jesus.cam.ac.uk"
+   "name": "Jesus formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
+   "formal_days": [
+    "Tue",
+    "Wed",
+    "Fri",
+    "Sun"
+   ]
   },
   {
    "college": "Jesus",
@@ -468,6 +568,13 @@
    "kind": "Instagram",
    "url": "https://www.instagram.com/jesus_ents/",
    "note": "Collab-posts bops with the JCSU account"
+  },
+  {
+   "college": "Jesus",
+   "name": "Jesus JCSU Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/jesuscollegestudentunion/",
+   "note": "Linked from jcsu.jesus.cam.ac.uk"
   },
   {
    "college": "Jesus",
@@ -482,10 +589,10 @@
    "url": "https://jcsu.jesus.cam.ac.uk/current-students/student-run-events/"
   },
   {
-   "college": "King's",
-   "name": "King's KCSU",
+   "college": "Jesus",
+   "name": "Jesus JCSU",
    "kind": "JCR site",
-   "url": "https://kcsu.org.uk/"
+   "url": "https://jcsu.jesus.cam.ac.uk/"
   },
   {
    "college": "King's",
@@ -508,17 +615,26 @@
    "note": "Google Calendar embed linked from the KCSU Events menu"
   },
   {
-   "college": "Lucy Cavendish",
-   "name": "Lucy Cavendish Students' Union (college page)",
+   "college": "King's",
+   "name": "King's KCSU",
    "kind": "JCR site",
-   "url": "https://www.lucy.cam.ac.uk/our-college/place-live-and-study/students-union",
-   "note": "No separate SU website"
+   "url": "https://kcsu.org.uk/"
   },
   {
    "college": "Lucy Cavendish",
    "name": "Lucy Cavendish events",
    "kind": "College events",
    "url": "https://www.lucy.cam.ac.uk/events"
+  },
+  {
+   "college": "Lucy Cavendish",
+   "name": "Lucy Cavendish formal hall",
+   "kind": "Formal hall",
+   "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
+   "formal_days": [
+    "Thu",
+    "Fri"
+   ]
   },
   {
    "college": "Lucy Cavendish",
@@ -541,11 +657,11 @@
    "url": "https://www.cambridgesu.co.uk/organisation/lucyjcr/"
   },
   {
-   "college": "Magdalene",
-   "name": "Magdalene JCR",
+   "college": "Lucy Cavendish",
+   "name": "Lucy Cavendish Students' Union (college page)",
    "kind": "JCR site",
-   "url": "https://jcr.magd.cam.ac.uk/",
-   "note": "No events page"
+   "url": "https://www.lucy.cam.ac.uk/our-college/place-live-and-study/students-union",
+   "note": "No separate SU website"
   },
   {
    "college": "Magdalene",
@@ -553,6 +669,13 @@
    "kind": "Instagram",
    "url": "https://www.instagram.com/magdalenecollegejcr/",
    "note": "Linked from jcr.magd.cam.ac.uk"
+  },
+  {
+   "college": "Magdalene",
+   "name": "Magdalene JCR",
+   "kind": "JCR site",
+   "url": "https://jcr.magd.cam.ac.uk/",
+   "note": "No events page"
   },
   {
    "college": "Magdalene",
@@ -568,16 +691,16 @@
   },
   {
    "college": "Murray Edwards",
-   "name": "Murray Edwards JCR on Cambridge SU",
-   "kind": "JCR site",
-   "url": "https://www.cambridgesu.co.uk/organisation/14844/"
-  },
-  {
-   "college": "Murray Edwards",
    "name": "Murray Edwards college life",
    "kind": "College events",
    "url": "https://www.murrayedwards.cam.ac.uk/college-life",
    "note": "No live MECSU site found; bops are announced on the JCR's Instagram"
+  },
+  {
+   "college": "Murray Edwards",
+   "name": "Murray Edwards JCR on Cambridge SU",
+   "kind": "JCR site",
+   "url": "https://www.cambridgesu.co.uk/organisation/14844/"
   },
   {
    "college": "Murray Edwards",
@@ -613,12 +736,6 @@
   },
   {
    "college": "Pembroke",
-   "name": "Pembroke JP (JPC)",
-   "kind": "JCR site",
-   "url": "https://jp.pem.cam.ac.uk/"
-  },
-  {
-   "college": "Pembroke",
    "name": "Pembroke Ents Instagram",
    "kind": "Instagram",
    "url": "https://www.instagram.com/pem.ents/",
@@ -629,6 +746,12 @@
    "name": "Pembroke JP bar page",
    "kind": "JCR events",
    "url": "https://jp.pem.cam.ac.uk/the-jp-bar/"
+  },
+  {
+   "college": "Pembroke",
+   "name": "Pembroke JP (JPC)",
+   "kind": "JCR site",
+   "url": "https://jp.pem.cam.ac.uk/"
   },
   {
    "college": "Pembroke",
@@ -644,10 +767,18 @@
   },
   {
    "college": "Peterhouse",
-   "name": "Peterhouse JCR",
-   "kind": "JCR site",
-   "url": "https://www.peterhousejcr.co.uk/",
-   "note": "JavaScript-rendered"
+   "name": "Peterhouse formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "formal_days": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun"
+   ]
   },
   {
    "college": "Peterhouse",
@@ -664,6 +795,13 @@
   },
   {
    "college": "Peterhouse",
+   "name": "Peterhouse JCR",
+   "kind": "JCR site",
+   "url": "https://www.peterhousejcr.co.uk/",
+   "note": "JavaScript-rendered"
+  },
+  {
+   "college": "Peterhouse",
    "name": "Peterhouse MCR",
    "kind": "MCR site",
    "url": "https://www.peterhousemcr.co.uk/"
@@ -676,16 +814,26 @@
   },
   {
    "college": "Queens'",
-   "name": "Queens' JCR (QJCR)",
-   "kind": "JCR site",
-   "url": "https://qjcr.org.uk/"
-  },
-  {
-   "college": "Queens'",
    "name": "QEnts (Queens' JCR Ents)",
    "kind": "Ents site",
    "url": "https://qjcr.org.uk/jcr/qents/",
    "note": "Ents page of the JCR site; bops run by QEnts in Fitzpatrick Hall"
+  },
+  {
+   "college": "Queens'",
+   "name": "Queens' formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
+   "formal_days": [
+    "Wed",
+    "Sun"
+   ]
+  },
+  {
+   "college": "Queens'",
+   "name": "Queens' Ents Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/queensents/"
   },
   {
    "college": "Queens'",
@@ -703,15 +851,15 @@
   },
   {
    "college": "Queens'",
-   "name": "Queens' Ents Instagram",
-   "kind": "Instagram",
-   "url": "https://www.instagram.com/queensents/"
-  },
-  {
-   "college": "Queens'",
    "name": "Queens' JCR events",
    "kind": "JCR events",
    "url": "https://qjcr.org.uk/events"
+  },
+  {
+   "college": "Queens'",
+   "name": "Queens' JCR (QJCR)",
+   "kind": "JCR site",
+   "url": "https://qjcr.org.uk/"
   },
   {
    "college": "Queens'",
@@ -727,10 +875,13 @@
   },
   {
    "college": "Robinson",
-   "name": "Robinson RCSA",
-   "kind": "JCR site",
-   "url": "https://www.rcsa.co.uk/",
-   "note": "Robinson College Students' Association"
+   "name": "Robinson formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
+   "formal_days": [
+    "Tue",
+    "Fri"
+   ]
   },
   {
    "college": "Robinson",
@@ -746,99 +897,21 @@
    "url": "https://www.rcsa.co.uk/events"
   },
   {
-   "college": "St Catharine's",
-   "name": "Catz JCR",
+   "college": "Robinson",
+   "name": "Robinson RCSA",
    "kind": "JCR site",
-   "url": "https://www.catzjcr.com/"
-  },
-  {
-   "college": "St Catharine's",
-   "name": "Catz Entz Instagram",
-   "kind": "Instagram",
-   "url": "https://www.instagram.com/catzentz/",
-   "note": "Listed on catzjcr.com/social-media"
-  },
-  {
-   "college": "St Catharine's",
-   "name": "Catz JCR calendar",
-   "kind": "JCR events",
-   "url": "https://www.catzjcr.com/catz-calendar"
-  },
-  {
-   "college": "St Catharine's",
-   "name": "Catz MCR events",
-   "kind": "MCR events",
-   "url": "https://mcr.caths.cam.ac.uk/events"
-  },
-  {
-   "college": "St Catharine's",
-   "name": "Catz MCR",
-   "kind": "MCR site",
-   "url": "https://mcr.caths.cam.ac.uk/"
-  },
-  {
-   "college": "St Edmund's",
-   "name": "St Edmund's CR (Combination Room)",
-   "kind": "JCR site",
-   "url": "https://my-cr.st-edmunds.cam.ac.uk/",
-   "note": "Combined student body; site content may be dated"
-  },
-  {
-   "college": "St Edmund's",
-   "name": "St Edmund's College Bar & CR page",
-   "kind": "College events",
-   "url": "https://www.st-edmunds.cam.ac.uk/college-life/bar-cr/"
-  },
-  {
-   "college": "St Edmund's",
-   "name": "St Edmund's College events",
-   "kind": "College events",
-   "url": "https://www.st-edmunds.cam.ac.uk/news-events/events/"
-  },
-  {
-   "college": "St Edmund's",
-   "name": "St Edmund's College Instagram",
-   "kind": "Instagram",
-   "url": "https://www.instagram.com/stedmundscam/",
-   "note": "College account; no CR-specific account found"
-  },
-  {
-   "college": "St John's",
-   "name": "St John's JCR",
-   "kind": "JCR site",
-   "url": "https://www.sjcjcr.com/"
-  },
-  {
-   "college": "St John's",
-   "name": "St John's JCR Ents",
-   "kind": "Ents site",
-   "url": "https://www.sjcjcr.com/yourjcr/ents"
-  },
-  {
-   "college": "St John's",
-   "name": "St John's JCR Instagram",
-   "kind": "Instagram",
-   "url": "https://www.instagram.com/stjohnsjcr/",
-   "note": "Linked from sjcjcr.com"
-  },
-  {
-   "college": "St John's",
-   "name": "St John's SBR events",
-   "kind": "MCR events",
-   "url": "https://sites.google.com/cam.ac.uk/sbr/events"
-  },
-  {
-   "college": "St John's",
-   "name": "St John's SBR (MCR)",
-   "kind": "MCR site",
-   "url": "https://sites.google.com/cam.ac.uk/sbr/"
+   "url": "https://www.rcsa.co.uk/",
+   "note": "Robinson College Students' Association"
   },
   {
    "college": "Selwyn",
-   "name": "Selwyn JCR",
-   "kind": "JCR site",
-   "url": "https://selwynjcr.org/",
-   "note": "Homepage embeds the JCR Google Calendar"
+   "name": "Selwyn formal hall",
+   "kind": "Formal hall",
+   "url": "https://selwynjcr.org/college-life/formals",
+   "formal_days": [
+    "Tue",
+    "Thu"
+   ]
   },
   {
    "college": "Selwyn",
@@ -856,23 +929,17 @@
   },
   {
    "college": "Selwyn",
+   "name": "Selwyn JCR",
+   "kind": "JCR site",
+   "url": "https://selwynjcr.org/",
+   "note": "Homepage embeds the JCR Google Calendar"
+  },
+  {
+   "college": "Selwyn",
    "name": "Selwyn College MCR page",
    "kind": "MCR site",
    "url": "https://www.sel.cam.ac.uk/joining-selwyn/graduates/postgraduate-community-and-mcr",
    "note": "The MCR's own site returns 410 Gone"
-  },
-  {
-   "college": "Sidney Sussex",
-   "name": "Sidney Sussex SSCSU (JCR)",
-   "kind": "JCR site",
-   "url": "https://www.sscsu.org.uk/"
-  },
-  {
-   "college": "Sidney Sussex",
-   "name": "Sidney Sussex College SSCSU page",
-   "kind": "JCR site",
-   "url": "https://www.sid.cam.ac.uk/life-sidney/clubs-and-societies/sscsu-jcr",
-   "note": "Describes the Ents team"
   },
   {
    "college": "Sidney Sussex",
@@ -889,6 +956,19 @@
   },
   {
    "college": "Sidney Sussex",
+   "name": "Sidney Sussex College SSCSU page",
+   "kind": "JCR site",
+   "url": "https://www.sid.cam.ac.uk/life-sidney/clubs-and-societies/sscsu-jcr",
+   "note": "Describes the Ents team"
+  },
+  {
+   "college": "Sidney Sussex",
+   "name": "Sidney Sussex SSCSU (JCR)",
+   "kind": "JCR site",
+   "url": "https://www.sscsu.org.uk/"
+  },
+  {
+   "college": "Sidney Sussex",
    "name": "Sidney Sussex MCR events",
    "kind": "MCR events",
    "url": "https://www.sidneysussexmcr.com/events"
@@ -900,11 +980,115 @@
    "url": "https://www.sidneysussexmcr.com/"
   },
   {
-   "college": "Trinity",
-   "name": "Trinity College Students' Union (TCSU)",
+   "college": "St Catharine's",
+   "name": "St Catharine's formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
+   "formal_days": [
+    "Wed",
+    "Thu",
+    "Sun"
+   ],
+   "note": "Wednesday undergraduate, Thursday postgraduate"
+  },
+  {
+   "college": "St Catharine's",
+   "name": "Catz Entz Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/catzentz/",
+   "note": "Listed on catzjcr.com/social-media"
+  },
+  {
+   "college": "St Catharine's",
+   "name": "Catz JCR calendar",
+   "kind": "JCR events",
+   "url": "https://www.catzjcr.com/catz-calendar"
+  },
+  {
+   "college": "St Catharine's",
+   "name": "Catz JCR",
    "kind": "JCR site",
-   "url": "https://web.tcsu.net/",
-   "note": "No public events page found"
+   "url": "https://www.catzjcr.com/"
+  },
+  {
+   "college": "St Catharine's",
+   "name": "Catz MCR events",
+   "kind": "MCR events",
+   "url": "https://mcr.caths.cam.ac.uk/events"
+  },
+  {
+   "college": "St Catharine's",
+   "name": "Catz MCR",
+   "kind": "MCR site",
+   "url": "https://mcr.caths.cam.ac.uk/"
+  },
+  {
+   "college": "St Edmund's",
+   "name": "St Edmund's College Bar & CR page",
+   "kind": "College events",
+   "url": "https://www.st-edmunds.cam.ac.uk/college-life/bar-cr/"
+  },
+  {
+   "college": "St Edmund's",
+   "name": "St Edmund's College events",
+   "kind": "College events",
+   "url": "https://www.st-edmunds.cam.ac.uk/news-events/events/"
+  },
+  {
+   "college": "St Edmund's",
+   "name": "St Edmund's formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
+   "formal_days": [
+    "Tue",
+    "Fri"
+   ],
+   "note": "Most Tuesdays and Fridays"
+  },
+  {
+   "college": "St Edmund's",
+   "name": "St Edmund's College Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/stedmundscam/",
+   "note": "College account; no CR-specific account found"
+  },
+  {
+   "college": "St Edmund's",
+   "name": "St Edmund's CR (Combination Room)",
+   "kind": "JCR site",
+   "url": "https://my-cr.st-edmunds.cam.ac.uk/",
+   "note": "Combined student body; site content may be dated"
+  },
+  {
+   "college": "St John's",
+   "name": "St John's JCR Ents",
+   "kind": "Ents site",
+   "url": "https://www.sjcjcr.com/yourjcr/ents"
+  },
+  {
+   "college": "St John's",
+   "name": "St John's JCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/stjohnsjcr/",
+   "note": "Linked from sjcjcr.com"
+  },
+  {
+   "college": "St John's",
+   "name": "St John's JCR",
+   "kind": "JCR site",
+   "url": "https://www.sjcjcr.com/"
+  },
+  {
+   "college": "St John's",
+   "name": "St John's SBR events",
+   "kind": "MCR events",
+   "url": "https://sites.google.com/cam.ac.uk/sbr/events"
+  },
+  {
+   "college": "St John's",
+   "name": "St John's SBR (MCR)",
+   "kind": "MCR site",
+   "url": "https://sites.google.com/cam.ac.uk/sbr/"
   },
   {
    "college": "Trinity",
@@ -912,6 +1096,13 @@
    "kind": "Instagram",
    "url": "https://www.instagram.com/trincollsu/",
    "note": "Linked from web.tcsu.net"
+  },
+  {
+   "college": "Trinity",
+   "name": "Trinity College Students' Union (TCSU)",
+   "kind": "JCR site",
+   "url": "https://web.tcsu.net/",
+   "note": "No public events page found"
   },
   {
    "college": "Trinity",
@@ -924,12 +1115,6 @@
    "name": "Trinity BA Society (MCR)",
    "kind": "MCR site",
    "url": "https://www.basociety.net/"
-  },
-  {
-   "college": "Trinity Hall",
-   "name": "Trinity Hall JCR",
-   "kind": "JCR site",
-   "url": "https://www.jcr.trinhall.cam.ac.uk/"
   },
   {
    "college": "Trinity Hall",
@@ -946,10 +1131,39 @@
   },
   {
    "college": "Trinity Hall",
+   "name": "Trinity Hall JCR",
+   "kind": "JCR site",
+   "url": "https://www.jcr.trinhall.cam.ac.uk/"
+  },
+  {
+   "college": "Trinity Hall",
    "name": "Trinity Hall MCR",
    "kind": "MCR site",
    "url": "https://thmcr.soc.srcf.net/",
    "note": "The mcr.trinhall.cam.ac.uk domain does not connect"
+  },
+  {
+   "college": "Wolfson",
+   "name": "Wolfson College What's On",
+   "kind": "College events",
+   "url": "https://www.wolfson.cam.ac.uk/college-life/whats-on"
+  },
+  {
+   "college": "Wolfson",
+   "name": "Wolfson formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
+   "formal_days": [
+    "Tue",
+    "Fri"
+   ]
+  },
+  {
+   "college": "Wolfson",
+   "name": "WCSA Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/wcsa_cambridge/",
+   "note": "Linked from the college's WCSA page"
   },
   {
    "college": "Wolfson",
@@ -965,19 +1179,6 @@
    "url": "https://www.wolfson.cam.ac.uk/student-association-wcsa"
   },
   {
-   "college": "Wolfson",
-   "name": "Wolfson College What's On",
-   "kind": "College events",
-   "url": "https://www.wolfson.cam.ac.uk/college-life/whats-on"
-  },
-  {
-   "college": "Wolfson",
-   "name": "WCSA Instagram",
-   "kind": "Instagram",
-   "url": "https://www.instagram.com/wcsa_cambridge/",
-   "note": "Linked from the college's WCSA page"
-  },
-  {
    "college": "All",
    "name": "Cambridge SU events",
    "kind": "SU listings",
@@ -985,15 +1186,15 @@
   },
   {
    "college": "All",
-   "name": "Varsity",
-   "kind": "Student press",
-   "url": "https://www.varsity.co.uk"
-  },
-  {
-   "college": "All",
    "name": "The Tab Cambridge",
    "kind": "Student press",
    "url": "https://thetab.com/university/cambridge"
+  },
+  {
+   "college": "All",
+   "name": "Varsity",
+   "kind": "Student press",
+   "url": "https://www.varsity.co.uk"
   }
  ],
  "_notes": "Clare Ents (clareents.com) is offline; Clare Cellars ents are announced on the Clare Ents and Clare Cellars Facebook and Instagram pages, reached from the Clare UCS 'Going out' page."

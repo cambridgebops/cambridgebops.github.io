@@ -4,7 +4,7 @@
     "checked_at": "2026-11-01T13:56:33+00:00",
     "window_from": "2026-11-01",
     "window_to": "2026-11-15",
-    "sources_checked": 149,
+    "sources_checked": 167,
     "sources_ok": 110
   },
   "sources": [
@@ -1254,6 +1254,168 @@
       "url": "https://thetab.com/university/cambridge",
       "ok": true,
       "found": 0
+    },
+    {
+      "slug": "churchill-churchill-formal-hall",
+      "name": "Churchill formal hall",
+      "kind": "Formal hall",
+      "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "clare-hall-clare-hall-formal-hall",
+      "name": "Clare Hall formal hall",
+      "kind": "Formal hall",
+      "url": "https://www.clarehall.cam.ac.uk/dining/",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "corpus-christi-corpus-christi-formal-hall",
+      "name": "Corpus Christi formal hall",
+      "kind": "Formal hall",
+      "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "darwin-darwin-formal-hall",
+      "name": "Darwin formal hall",
+      "kind": "Formal hall",
+      "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "downing-downing-formal-hall",
+      "name": "Downing formal hall",
+      "kind": "Formal hall",
+      "url": "https://dow.cam.ac.uk/current-students/catering",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "emmanuel-emmanuel-formal-hall",
+      "name": "Emmanuel formal hall",
+      "kind": "Formal hall",
+      "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "girton-girton-formal-hall",
+      "name": "Girton formal hall",
+      "kind": "Formal hall",
+      "url": "https://girton.cam.ac.uk/dining-and-socialising",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "gonville-caius-gonville-caius-formal-hall",
+      "name": "Gonville & Caius formal hall",
+      "kind": "Formal hall",
+      "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "hughes-hall-hughes-hall-formal-hall",
+      "name": "Hughes Hall formal hall",
+      "kind": "Formal hall",
+      "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "jesus-jesus-formal-hall",
+      "name": "Jesus formal hall",
+      "kind": "Formal hall",
+      "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "lucy-cavendish-lucy-cavendish-formal-hall",
+      "name": "Lucy Cavendish formal hall",
+      "kind": "Formal hall",
+      "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "peterhouse-peterhouse-formal-hall",
+      "name": "Peterhouse formal hall",
+      "kind": "Formal hall",
+      "url": "https://www.pet.cam.ac.uk/food-and-drink",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "queens-queens-formal-hall",
+      "name": "Queens' formal hall",
+      "kind": "Formal hall",
+      "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "robinson-robinson-formal-hall",
+      "name": "Robinson formal hall",
+      "kind": "Formal hall",
+      "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "selwyn-selwyn-formal-hall",
+      "name": "Selwyn formal hall",
+      "kind": "Formal hall",
+      "url": "https://selwynjcr.org/college-life/formals",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "st-catharine-s-st-catharine-s-formal-hall",
+      "name": "St Catharine's formal hall",
+      "kind": "Formal hall",
+      "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "st-edmund-s-st-edmund-s-formal-hall",
+      "name": "St Edmund's formal hall",
+      "kind": "Formal hall",
+      "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
+    },
+    {
+      "slug": "wolfson-wolfson-formal-hall",
+      "name": "Wolfson formal hall",
+      "kind": "Formal hall",
+      "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
+      "ok": false,
+      "found": 0,
+      "note": "added to the registry; first read on the next run"
     }
   ],
   "bops": [
