@@ -1,1594 +1,2692 @@
 {
-  "generated": "2026-11-01T13:56:33+00:00",
-  "run": {
-    "checked_at": "2026-11-01T13:56:33+00:00",
-    "window_from": "2026-11-01",
-    "window_to": "2026-11-15",
-    "sources_checked": 167,
-    "sources_ok": 110
+ "generated": "2026-11-01T14:27:38+00:00",
+ "run": {
+  "checked_at": "2026-11-01T14:27:38+00:00",
+  "window_from": "2026-11-01",
+  "window_to": "2026-11-15",
+  "sources_checked": 167,
+  "sources_ok": 104
+ },
+ "sources": [
+  {
+   "slug": "christs-ents-instagram",
+   "name": "Christ's Ents Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/christsents/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
   },
-  "sources": [
-    {
-      "slug": "christs-jcr-site",
-      "name": "Christ's JCR",
-      "kind": "JCR site",
-      "url": "https://thejcr.co.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "christ-s-jcr-instagram",
-      "name": "Christ's JCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/christsjcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "christs-ents-instagram",
-      "name": "Christ's Ents Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/christsents/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "christs-mcr-whats-on",
-      "name": "Christ's MCR What's On",
-      "kind": "MCR events",
-      "url": "https://www.christsmcr.co.uk/whats-on",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "christs-mcr-site",
-      "name": "Christ's MCR",
-      "kind": "MCR site",
-      "url": "https://www.christsmcr.co.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "christs-jcr-termcard",
-      "name": "Christ's JCR termcard",
-      "kind": "Termcard",
-      "url": "https://thejcr.co.uk/get-involved/termcard",
-      "ok": false,
-      "found": 0,
-      "note": "termcard page returns \"500 Internal Error\"; embedded calendar feeds empty"
-    },
-    {
-      "slug": "churchill-jcr-mcr-page",
-      "name": "Churchill College JCR and MCR page",
-      "kind": "College events",
-      "url": "https://www.chu.cam.ac.uk/about/governance/jcr-and-mcr/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "churchill-college-events",
-      "name": "Churchill College events",
-      "kind": "College events",
-      "url": "https://www.chu.cam.ac.uk/events/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "churchill-jcr-instagram",
-      "name": "Churchill JCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/churchillcoljcr/",
-      "ok": false,
-      "found": 1,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "clare-ucs-site",
-      "name": "Clare UCS",
-      "kind": "JCR site",
-      "url": "https://ucs.clare.cam.ac.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "clare-ucs-instagram",
-      "name": "Clare UCS Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/ucs_clare/",
-      "ok": false,
-      "found": 1,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "clare-ucs-going-out",
-      "name": "Clare UCS Going Out",
-      "kind": "JCR events",
-      "url": "https://ucs.clare.cam.ac.uk/current-students/going-out/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "clare-mcr-events",
-      "name": "Clare MCR events",
-      "kind": "MCR events",
-      "url": "https://mcr.clare.cam.ac.uk/news-and-events/all-events",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "clare-mcr-site",
-      "name": "Clare MCR",
-      "kind": "MCR site",
-      "url": "https://mcr.clare.cam.ac.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "clare-hall-events",
-      "name": "Clare Hall events",
-      "kind": "College events",
-      "url": "https://www.clarehall.cam.ac.uk/events/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "clare-hall-gsb-instagram",
-      "name": "Clare Hall GSB Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/clarehall.gsb/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "clare-hall-gsb-events",
-      "name": "Clare Hall GSB events",
-      "kind": "MCR events",
-      "url": "https://www.clarehall.cam.ac.uk/events-category/gsb/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "clare-hall-gsb-site",
-      "name": "Clare Hall GSB",
-      "kind": "MCR site",
-      "url": "https://www.clarehall.cam.ac.uk/gsb/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "corpus-jcr-site",
-      "name": "Corpus JCR",
-      "kind": "JCR site",
-      "url": "https://www.jcr.corpus.cam.ac.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "corpus-ents",
-      "name": "Corpus Ents",
-      "kind": "Ents site",
-      "url": "https://www.jcr.corpus.cam.ac.uk/corpus-ents",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "corpus-jcr-instagram",
-      "name": "Corpus JCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/corpuschristi_jcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "corpus-jcr-events-calendars",
-      "name": "Corpus JCR events calendars",
-      "kind": "JCR events",
-      "url": "https://www.jcr.corpus.cam.ac.uk/events-calendars",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "corpus-mcr-events",
-      "name": "Corpus MCR events",
-      "kind": "MCR events",
-      "url": "https://www.corpusmcr.com/currentstudents/events",
-      "ok": true,
-      "found": 0,
-      "note": "this is Corpus Christi College, Oxford MCR, not Cambridge"
-    },
-    {
-      "slug": "corpus-mcr-site",
-      "name": "Corpus MCR",
-      "kind": "MCR site",
-      "url": "https://www.corpusmcr.com/",
-      "ok": true,
-      "found": 0,
-      "note": "this is Corpus Christi College, Oxford MCR, not Cambridge"
-    },
-    {
-      "slug": "corpus-mcr-term-card",
-      "name": "Corpus MCR term card",
-      "kind": "Termcard",
-      "url": "https://www.corpusmcr.com/currentstudents/term-card",
-      "ok": true,
-      "found": 0,
-      "note": "this is Corpus Christi College, Oxford MCR, not Cambridge"
-    },
-    {
-      "slug": "darwin-college-events",
-      "name": "Darwin College events",
-      "kind": "College events",
-      "url": "https://www.darwin.cam.ac.uk/events/",
-      "ok": true,
-      "found": 0,
-      "note": "no upcoming events listed"
-    },
-    {
-      "slug": "darwin-dcsa-instagram",
-      "name": "Darwin DCSA Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/dcsa_darwin_college/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "darwin-dcsa-events",
-      "name": "Darwin DCSA events",
-      "kind": "MCR events",
-      "url": "https://www.dcsa.darwin.cam.ac.uk/events/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "darwin-dcsa-site",
-      "name": "Darwin DCSA",
-      "kind": "MCR site",
-      "url": "https://www.dcsa.darwin.cam.ac.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "downing-jcr-site",
-      "name": "Downing JCR",
-      "kind": "JCR site",
-      "url": "https://downingjcr.org.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "downing-college-events",
-      "name": "Downing College events",
-      "kind": "College events",
-      "url": "https://dow.cam.ac.uk/about/events",
-      "ok": true,
-      "found": 3,
-      "note": "read via the linked Google Calendar iCal feed"
-    },
-    {
-      "slug": "downing-mcr-instagram",
-      "name": "Downing MCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/downingcollegemcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "downing-mcr-page",
-      "name": "Downing MCR",
-      "kind": "MCR site",
-      "url": "https://dow.cam.ac.uk/people/downing-mcr",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "emmanuel-ecsu-site",
-      "name": "Emmanuel ECSU",
-      "kind": "JCR site",
-      "url": "https://ecsu.org.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "emmanuel-ecsu-instagram",
-      "name": "Emmanuel ECSU Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/ecsucambridge/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "emmanuel-mcr-events-calendar",
-      "name": "Emmanuel MCR events calendar",
-      "kind": "MCR events",
-      "url": "https://www.emmamcr.org.uk/events-calendar",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "emmanuel-mcr-site",
-      "name": "Emmanuel MCR",
-      "kind": "MCR site",
-      "url": "https://www.emmamcr.org.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "fitzwilliam-jcr-site",
-      "name": "Fitzwilliam JCR",
-      "kind": "JCR site",
-      "url": "https://www.fitzjcr.com/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "fitzwilliam-college-jcr-mcr-page",
-      "name": "Fitzwilliam College JCR and MCR page",
-      "kind": "College events",
-      "url": "https://www.fitz.cam.ac.uk/jcr-mcr",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "fitzwilliam-jcr-instagram",
-      "name": "Fitzwilliam JCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/fitzjcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "fitzwilliam-mcr-events",
-      "name": "Fitzwilliam MCR events",
-      "kind": "MCR events",
-      "url": "https://mcr.fitz.cam.ac.uk/events-today/",
-      "ok": true,
-      "found": 0,
-      "note": "plain fetch timed out; read with headless browser"
-    },
-    {
-      "slug": "fitzwilliam-mcr-site",
-      "name": "Fitzwilliam MCR",
-      "kind": "MCR site",
-      "url": "https://mcr.fitz.cam.ac.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "fitzwilliam-mcr-term-card",
-      "name": "Fitzwilliam MCR term card",
-      "kind": "Termcard",
-      "url": "https://mcr.fitz.cam.ac.uk/overview/term-card/",
-      "ok": true,
-      "found": 0,
-      "note": "still says out of term; no current term card"
-    },
-    {
-      "slug": "girton-jcr-site",
-      "name": "Girton JCR",
-      "kind": "JCR site",
-      "url": "https://girtonjcr.co.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "girton-college-events",
-      "name": "Girton College events",
-      "kind": "College events",
-      "url": "https://www.girton.cam.ac.uk/upcoming-events",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "girton-jcr-instagram",
-      "name": "Girton JCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/girtonjcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "girton-jcr-events-calendar",
-      "name": "Girton JCR events calendar",
-      "kind": "JCR events",
-      "url": "https://girtonjcr.co.uk/events-calendar",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "girton-mcr-events",
-      "name": "Girton MCR events",
-      "kind": "MCR events",
-      "url": "https://sites.google.com/cam.ac.uk/girton-mcr/events",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "girton-mcr-site",
-      "name": "Girton MCR",
-      "kind": "MCR site",
-      "url": "https://sites.google.com/cam.ac.uk/girton-mcr/home",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "caius-gcsu-site",
-      "name": "Caius GCSU (JCR)",
-      "kind": "JCR site",
-      "url": "https://jcr.cai.cam.ac.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "caius-mcr-instagram",
-      "name": "Caius MCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/caiusmcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "caius-gcsu-ents",
-      "name": "Caius GCSU Ents",
-      "kind": "JCR events",
-      "url": "https://jcr.cai.cam.ac.uk/college-life/ents/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "caius-mcr-site",
-      "name": "Caius MCR",
-      "kind": "MCR site",
-      "url": "https://mcr.cai.cam.ac.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "hus-jcr-site",
-      "name": "Homerton HUS (JCR)",
-      "kind": "JCR site",
-      "url": "https://www.hus-jcr.co.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "husjcr-instagram",
-      "name": "HUS Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/husjcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "hus-jcr-events",
-      "name": "HUS events",
-      "kind": "JCR events",
-      "url": "https://www.hus-jcr.co.uk/events/",
-      "ok": true,
-      "found": 0,
-      "note": "no upcoming events listed"
-    },
-    {
-      "slug": "homerton-mcr-ents",
-      "name": "Homerton MCR upcoming ents",
-      "kind": "MCR events",
-      "url": "https://homerton-mcr.co.uk/upcoming-ents",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "homerton-mcr-site",
-      "name": "Homerton MCR",
-      "kind": "MCR site",
-      "url": "https://homerton-mcr.co.uk/",
-      "ok": true,
-      "found": 2,
-      "note": "formal dates from the linked Formal Hall Dates page"
-    },
-    {
-      "slug": "hughes-college-events",
-      "name": "Hughes Hall events",
-      "kind": "College events",
-      "url": "https://www.hughes.cam.ac.uk/about/events/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "hughes-hall-mcr-instagram",
-      "name": "Hughes Hall MCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/hugheshallmcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "hughes-mcr-calendar",
-      "name": "Hughes Hall MCR calendar",
-      "kind": "MCR events",
-      "url": "https://www.hughes.cam.ac.uk/student-centre/hughes-hall-mcr/mcr-calendar/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "hughes-mcr-site",
-      "name": "Hughes Hall MCR",
-      "kind": "MCR site",
-      "url": "https://www.hughes.cam.ac.uk/student-centre/hughes-hall-mcr/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "jesus-jcsu-site",
-      "name": "Jesus JCSU",
-      "kind": "JCR site",
-      "url": "https://jcsu.jesus.cam.ac.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "jesus-college-events",
-      "name": "Jesus College events",
-      "kind": "College events",
-      "url": "https://www.jesus.cam.ac.uk/college/events",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "friday-night-jesus-jcsu-ents-on-facebook",
-      "name": "Friday Night Jesus (JCSU ents) on Facebook",
-      "kind": "Facebook",
-      "url": "https://www.facebook.com/FridayNightJesus",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "jesus-jcsu-instagram",
-      "name": "Jesus JCSU Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/jesuscollegestudentunion/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "jesus-ents-instagram",
-      "name": "Jesus Ents Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/jesus_ents/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "jesus-jcsu-calendar",
-      "name": "Jesus JCSU calendar",
-      "kind": "JCR events",
-      "url": "https://jcsu.jesus.cam.ac.uk/current-students/calendar/",
-      "ok": true,
-      "found": 0,
-      "note": "calendar embed shows no events"
-    },
-    {
-      "slug": "jesus-jcsu-student-events",
-      "name": "Jesus JCSU student-run events",
-      "kind": "JCR events",
-      "url": "https://jcsu.jesus.cam.ac.uk/current-students/student-run-events/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "kcsu-site",
-      "name": "King's KCSU",
-      "kind": "JCR site",
-      "url": "https://kcsu.org.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "kcsu-instagram",
-      "name": "KCSU Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/KCSUCambridge/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "kings-ents-instagram",
-      "name": "King's Ents Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/kings.ents/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "kcsu-calendar",
-      "name": "KCSU events calendar",
-      "kind": "JCR events",
-      "url": "https://calendar.google.com/calendar/embed?src=events@kcsu.org.uk&ctz=Europe/London",
-      "ok": true,
-      "found": 0,
-      "note": "public iCal feed has no events"
-    },
-    {
-      "slug": "lucy-su-page",
-      "name": "Lucy Cavendish Students' Union (college page)",
-      "kind": "JCR site",
-      "url": "https://www.lucy.cam.ac.uk/our-college/place-live-and-study/students-union",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "lucy-college-events",
-      "name": "Lucy Cavendish events",
-      "kind": "College events",
-      "url": "https://www.lucy.cam.ac.uk/events",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "lucy-jcr-instagram",
-      "name": "Lucy JCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/lucycavjcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "lucy-mcr-instagram",
-      "name": "Lucy MCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/lucycavmcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "lucy-jcr-cambridgesu",
-      "name": "Lucy JCR on Cambridge SU",
-      "kind": "JCR events",
-      "url": "https://www.cambridgesu.co.uk/organisation/lucyjcr/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "magdalene-jcr-site",
-      "name": "Magdalene JCR",
-      "kind": "JCR site",
-      "url": "https://jcr.magd.cam.ac.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "magdalene-jcr-instagram",
-      "name": "Magdalene JCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/magdalenecollegejcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "magdalene-mcr-events",
-      "name": "Magdalene MCR events",
-      "kind": "MCR events",
-      "url": "https://www.mcr.magd.cam.ac.uk/events",
-      "ok": true,
-      "found": 2
-    },
-    {
-      "slug": "magdalene-mcr-site",
-      "name": "Magdalene MCR",
-      "kind": "MCR site",
-      "url": "https://www.mcr.magd.cam.ac.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "murray-edwards-jcr-cambridgesu",
-      "name": "Murray Edwards JCR on Cambridge SU",
-      "kind": "JCR site",
-      "url": "https://www.cambridgesu.co.uk/organisation/14844/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "murray-edwards-college-life",
-      "name": "Murray Edwards college life",
-      "kind": "College events",
-      "url": "https://www.murrayedwards.cam.ac.uk/college-life",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "murray-edwards-mcr-site",
-      "name": "Murray Edwards MCR",
-      "kind": "MCR site",
-      "url": "https://memcr.soc.srcf.net/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "newnham-college-social-life",
-      "name": "Newnham college social life",
-      "kind": "College events",
-      "url": "https://newn.cam.ac.uk/study-here/life-newnham/societies-and-facilities/college-social-life",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "newnham-mcr-instagram",
-      "name": "Newnham MCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/newnham_mcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "newnham-mcr-cambridgesu",
-      "name": "Newnham MCR on Cambridge SU",
-      "kind": "MCR events",
-      "url": "https://www.cambridgesu.co.uk/organisation/newnhammcr/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "newnham-mcr-site",
-      "name": "Newnham MCR",
-      "kind": "MCR site",
-      "url": "https://newnhammcr.soc.srcf.net/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "pembroke-jp-site",
-      "name": "Pembroke JP (JPC)",
-      "kind": "JCR site",
-      "url": "https://jp.pem.cam.ac.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "pembroke-ents-instagram",
-      "name": "Pembroke Ents Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/pem.ents/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "pembroke-jp-bar",
-      "name": "Pembroke JP bar page",
-      "kind": "JCR events",
-      "url": "https://jp.pem.cam.ac.uk/the-jp-bar/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "pembroke-gp-social",
-      "name": "Pembroke GP social",
-      "kind": "MCR events",
-      "url": "https://gp.pem.cam.ac.uk/graduatelife/social/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "pembroke-gp-site",
-      "name": "Pembroke GP (MCR)",
-      "kind": "MCR site",
-      "url": "https://gp.pem.cam.ac.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "peterhouse-jcr-site",
-      "name": "Peterhouse JCR",
-      "kind": "JCR site",
-      "url": "https://www.peterhousejcr.co.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "peterhouse-mcr-instagram",
-      "name": "Peterhouse MCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/peterhousemcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "peterhouse-jcr-events",
-      "name": "Peterhouse JCR events",
-      "kind": "JCR events",
-      "url": "https://www.peterhousejcr.co.uk/events",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "peterhouse-mcr-site",
-      "name": "Peterhouse MCR",
-      "kind": "MCR site",
-      "url": "https://www.peterhousemcr.co.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "peterhouse-mcr-termcard",
-      "name": "Peterhouse MCR term card",
-      "kind": "Termcard",
-      "url": "https://www.peterhousemcr.co.uk/term-card",
-      "ok": true,
-      "found": 0,
-      "note": "still shows the 2025 term card"
-    },
-    {
-      "slug": "queens-jcr-site",
-      "name": "Queens' JCR (QJCR)",
-      "kind": "JCR site",
-      "url": "https://qjcr.org.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "queens-qents",
-      "name": "QEnts (Queens' JCR Ents)",
-      "kind": "Ents site",
-      "url": "https://qjcr.org.uk/jcr/qents/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "queens-jcr-instagram",
-      "name": "Queens' JCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/queensjcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "queens-mcr-instagram",
-      "name": "Queens' MCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/qmcrcambridge/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "queens-ents-instagram",
-      "name": "Queens' Ents Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/queensents/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "queens-jcr-events",
-      "name": "Queens' JCR events",
-      "kind": "JCR events",
-      "url": "https://qjcr.org.uk/events",
-      "ok": true,
-      "found": 0,
-      "note": "embedded calendar is private (sign-in required)"
-    },
-    {
-      "slug": "queens-mcr-upcoming",
-      "name": "Queens' MCR upcoming events",
-      "kind": "MCR events",
-      "url": "https://www.qmcr.org/upcomingevents",
-      "ok": true,
-      "found": 1,
-      "note": "read via the embedded Google Calendar iCal feed"
-    },
-    {
-      "slug": "queens-mcr-site",
-      "name": "Queens' MCR",
-      "kind": "MCR site",
-      "url": "https://www.qmcr.org/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "robinson-rcsa-site",
-      "name": "Robinson RCSA",
-      "kind": "JCR site",
-      "url": "https://www.rcsa.co.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "robinson-jcr-instagram",
-      "name": "Robinson JCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/robinsoncollegejcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "robinson-rcsa-events",
-      "name": "Robinson RCSA events",
-      "kind": "JCR events",
-      "url": "https://www.rcsa.co.uk/events",
-      "ok": false,
-      "found": 0,
-      "note": "page now shows \"There's Nothing Here\"; listing has moved"
-    },
-    {
-      "slug": "catz-jcr-site",
-      "name": "Catz JCR",
-      "kind": "JCR site",
-      "url": "https://www.catzjcr.com/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "catz-entz-instagram",
-      "name": "Catz Entz Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/catzentz/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "catz-jcr-calendar",
-      "name": "Catz JCR calendar",
-      "kind": "JCR events",
-      "url": "https://www.catzjcr.com/catz-calendar",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "catz-mcr-events",
-      "name": "Catz MCR events",
-      "kind": "MCR events",
-      "url": "https://mcr.caths.cam.ac.uk/events",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "catz-mcr-site",
-      "name": "Catz MCR",
-      "kind": "MCR site",
-      "url": "https://mcr.caths.cam.ac.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "st-edmunds-cr-site",
-      "name": "St Edmund's CR (Combination Room)",
-      "kind": "JCR site",
-      "url": "https://my-cr.st-edmunds.cam.ac.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "st-edmunds-bar-cr",
-      "name": "St Edmund's College Bar & CR page",
-      "kind": "College events",
-      "url": "https://www.st-edmunds.cam.ac.uk/college-life/bar-cr/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "st-edmunds-college-events",
-      "name": "St Edmund's College events",
-      "kind": "College events",
-      "url": "https://www.st-edmunds.cam.ac.uk/news-events/events/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "st-edmund-s-college-instagram",
-      "name": "St Edmund's College Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/stedmundscam/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "st-johns-jcr-site",
-      "name": "St John's JCR",
-      "kind": "JCR site",
-      "url": "https://www.sjcjcr.com/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "st-johns-jcr-ents",
-      "name": "St John's JCR Ents",
-      "kind": "Ents site",
-      "url": "https://www.sjcjcr.com/yourjcr/ents",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "st-john-s-jcr-instagram",
-      "name": "St John's JCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/stjohnsjcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "st-johns-sbr-events",
-      "name": "St John's SBR events",
-      "kind": "MCR events",
-      "url": "https://sites.google.com/cam.ac.uk/sbr/events",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "st-johns-sbr-site",
-      "name": "St John's SBR (MCR)",
-      "kind": "MCR site",
-      "url": "https://sites.google.com/cam.ac.uk/sbr/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "selwyn-jcr-site",
-      "name": "Selwyn JCR",
-      "kind": "JCR site",
-      "url": "https://selwynjcr.org/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "selwyn-ents-instagram",
-      "name": "Selwyn Ents Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/selwynents/",
-      "ok": false,
-      "found": 1,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "selwyn-jcr-calendar",
-      "name": "Selwyn JCR calendar (Google)",
-      "kind": "JCR events",
-      "url": "https://calendar.google.com/calendar/embed?src=c_4d4a7c193587cb0b3adb95cd4df6cc52f93456a2ef5db9017e2345c8df96ef42%40group.calendar.google.com&ctz=Europe%2FLondon",
-      "ok": true,
-      "found": 0,
-      "note": "read via iCal feed; no bops in window"
-    },
-    {
-      "slug": "selwyn-mcr-page",
-      "name": "Selwyn College MCR page",
-      "kind": "MCR site",
-      "url": "https://www.sel.cam.ac.uk/joining-selwyn/graduates/postgraduate-community-and-mcr",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "sidney-sscsu-site",
-      "name": "Sidney Sussex SSCSU (JCR)",
-      "kind": "JCR site",
-      "url": "https://www.sscsu.org.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "sidney-college-sscsu-page",
-      "name": "Sidney Sussex College SSCSU page",
-      "kind": "JCR site",
-      "url": "https://www.sid.cam.ac.uk/life-sidney/clubs-and-societies/sscsu-jcr",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "sidney-college-events",
-      "name": "Sidney Sussex College events",
-      "kind": "College events",
-      "url": "https://www.sid.cam.ac.uk/about-sidney/events",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "sidney-sussex-jcr-instagram",
-      "name": "Sidney Sussex JCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/sidneysussexjcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "sidney-mcr-events",
-      "name": "Sidney Sussex MCR events",
-      "kind": "MCR events",
-      "url": "https://www.sidneysussexmcr.com/events",
-      "ok": true,
-      "found": 2
-    },
-    {
-      "slug": "sidney-mcr-site",
-      "name": "Sidney Sussex MCR",
-      "kind": "MCR site",
-      "url": "https://www.sidneysussexmcr.com/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "trinity-tcsu-site",
-      "name": "Trinity College Students' Union (TCSU)",
-      "kind": "JCR site",
-      "url": "https://web.tcsu.net/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "tcsu-instagram",
-      "name": "TCSU Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/trincollsu/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "trinity-ba-events",
-      "name": "Trinity BA Society events",
-      "kind": "MCR events",
-      "url": "https://www.basociety.net/ba-events/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "trinity-ba-site",
-      "name": "Trinity BA Society (MCR)",
-      "kind": "MCR site",
-      "url": "https://www.basociety.net/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "trinity-hall-jcr-site",
-      "name": "Trinity Hall JCR",
-      "kind": "JCR site",
-      "url": "https://www.jcr.trinhall.cam.ac.uk/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "trinity-hall-jcr-ents",
-      "name": "Trinity Hall JCR Ents",
-      "kind": "Ents site",
-      "url": "https://www.jcr.trinhall.cam.ac.uk/college-life/ents",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "trinity-hall-jcr-instagram",
-      "name": "Trinity Hall JCR Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/trinhall.jcr/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "trinity-hall-mcr-site",
-      "name": "Trinity Hall MCR",
-      "kind": "MCR site",
-      "url": "https://thmcr.soc.srcf.net/",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "wolfson-wcsa-site",
-      "name": "Wolfson College Students' Association (WCSA)",
-      "kind": "JCR site",
-      "url": "https://www.wcsa.org.uk/",
-      "ok": true,
-      "found": 0,
-      "note": "domain now serves an unrelated site (Wiltshire County Shooting Association)"
-    },
-    {
-      "slug": "wolfson-college-wcsa-page",
-      "name": "Wolfson College WCSA page",
-      "kind": "JCR site",
-      "url": "https://www.wolfson.cam.ac.uk/student-association-wcsa",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "wolfson-whats-on",
-      "name": "Wolfson College What's On",
-      "kind": "College events",
-      "url": "https://www.wolfson.cam.ac.uk/college-life/whats-on",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "wcsa-instagram",
-      "name": "WCSA Instagram",
-      "kind": "Instagram",
-      "url": "https://www.instagram.com/wcsa_cambridge/",
-      "ok": false,
-      "found": 0,
-      "note": "not readable by the routine"
-    },
-    {
-      "slug": "cambridge-su-events",
-      "name": "Cambridge SU events",
-      "kind": "SU listings",
-      "url": "https://www.cambridgesu.co.uk/events",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "varsity",
-      "name": "Varsity",
-      "kind": "Student press",
-      "url": "https://www.varsity.co.uk",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "the-tab-cambridge",
-      "name": "The Tab Cambridge",
-      "kind": "Student press",
-      "url": "https://thetab.com/university/cambridge",
-      "ok": true,
-      "found": 0
-    },
-    {
-      "slug": "churchill-churchill-formal-hall",
-      "name": "Churchill formal hall",
-      "kind": "Formal hall",
-      "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "clare-hall-clare-hall-formal-hall",
-      "name": "Clare Hall formal hall",
-      "kind": "Formal hall",
-      "url": "https://www.clarehall.cam.ac.uk/dining/",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "corpus-christi-corpus-christi-formal-hall",
-      "name": "Corpus Christi formal hall",
-      "kind": "Formal hall",
-      "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "darwin-darwin-formal-hall",
-      "name": "Darwin formal hall",
-      "kind": "Formal hall",
-      "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "downing-downing-formal-hall",
-      "name": "Downing formal hall",
-      "kind": "Formal hall",
-      "url": "https://dow.cam.ac.uk/current-students/catering",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "emmanuel-emmanuel-formal-hall",
-      "name": "Emmanuel formal hall",
-      "kind": "Formal hall",
-      "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "girton-girton-formal-hall",
-      "name": "Girton formal hall",
-      "kind": "Formal hall",
-      "url": "https://girton.cam.ac.uk/dining-and-socialising",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "gonville-caius-gonville-caius-formal-hall",
-      "name": "Gonville & Caius formal hall",
-      "kind": "Formal hall",
-      "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "hughes-hall-hughes-hall-formal-hall",
-      "name": "Hughes Hall formal hall",
-      "kind": "Formal hall",
-      "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "jesus-jesus-formal-hall",
-      "name": "Jesus formal hall",
-      "kind": "Formal hall",
-      "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "lucy-cavendish-lucy-cavendish-formal-hall",
-      "name": "Lucy Cavendish formal hall",
-      "kind": "Formal hall",
-      "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "peterhouse-peterhouse-formal-hall",
-      "name": "Peterhouse formal hall",
-      "kind": "Formal hall",
-      "url": "https://www.pet.cam.ac.uk/food-and-drink",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "queens-queens-formal-hall",
-      "name": "Queens' formal hall",
-      "kind": "Formal hall",
-      "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "robinson-robinson-formal-hall",
-      "name": "Robinson formal hall",
-      "kind": "Formal hall",
-      "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "selwyn-selwyn-formal-hall",
-      "name": "Selwyn formal hall",
-      "kind": "Formal hall",
-      "url": "https://selwynjcr.org/college-life/formals",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "st-catharine-s-st-catharine-s-formal-hall",
-      "name": "St Catharine's formal hall",
-      "kind": "Formal hall",
-      "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "st-edmund-s-st-edmund-s-formal-hall",
-      "name": "St Edmund's formal hall",
-      "kind": "Formal hall",
-      "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    },
-    {
-      "slug": "wolfson-wolfson-formal-hall",
-      "name": "Wolfson formal hall",
-      "kind": "Formal hall",
-      "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
-      "ok": false,
-      "found": 0,
-      "note": "added to the registry; first read on the next run"
-    }
-  ],
-  "bops": [
-    {
-      "kind": "bop",
-      "title": "Halloween Formal & Bop",
-      "starts_at": "2026-11-01T19:00:00+00:00",
-      "college": "Churchill",
-      "venue": "Dining Hall",
-      "host": "Churchill JCR",
-      "dress": "Costume, prizes for best individual and group",
-      "url": "https://www.instagram.com/p/Ddj51dYEeBI/",
-      "details": "Formal at 7pm, then the bop.",
-      "source": "churchill-jcr-instagram"
-    },
-    {
-      "kind": "bop",
-      "title": "Gaelic Samhain: queer Halloween party",
-      "starts_at": "2026-11-01T20:00:00+00:00",
-      "ends_at": "2026-11-01T23:00:00+00:00",
-      "college": "Clare",
-      "venue": "Clare Cellars",
-      "host": "King's LGBTQ+ with Clare bar and KCSU",
-      "price": "£4, tickets on RA",
-      "url": "https://ra.co/events/2568970",
-      "source": "clare-ucs-instagram"
-    },
-    {
-      "kind": "formal",
-      "special": true,
-      "title": "Diwali Formal (MCR)",
-      "starts_at": "2026-11-02T18:00:00+00:00",
-      "ends_at": "2026-11-02T23:00:00+00:00",
-      "college": "Sidney Sussex",
-      "venue": "Hall, then Mong Hall and the bar",
-      "host": "Sidney Sussex MCR",
-      "guests": "Graduate formal; swap with 15 members of Trinity Hall",
-      "url": "https://www.sidneysussexmcr.com/events",
-      "details": "Intro to Bollywood dance 6pm in Mong Hall, formal in Hall 7-9pm, then DJ and drinks in the bar until 11pm.",
-      "source": "sidney-mcr-events"
-    },
-    {
-      "kind": "formal",
-      "special": false,
-      "title": "Formal Hall",
-      "starts_at": "2026-11-03T19:30:00+00:00",
-      "college": "Homerton",
-      "venue": "New Dining Hall",
-      "host": "Homerton College",
-      "price": "£20 Homerton students, £24 guests",
-      "guests": "Open to UG and PG students; usually up to 2 guests",
-      "url": "https://homerton-mcr.co.uk/formal-hall-dates",
-      "details": "Regular Tuesday formal; tickets on UPay from 26 Oct. No dress code.",
-      "source": "homerton-mcr-site"
-    },
-    {
-      "kind": "formal",
-      "special": true,
-      "title": "Diwali Formal",
-      "starts_at": "2026-11-04T19:15:00+00:00",
-      "ends_at": "2026-11-04T21:15:00+00:00",
-      "college": "Downing",
-      "venue": "Dining Hall",
-      "url": "https://calendar.google.com/calendar/embed?src=9sn3srd7kjhk8r3ah3l6r0rgas@group.calendar.google.com&ctz=Europe/London",
-      "details": "Listed on the Downing College events calendar.",
-      "source": "downing-college-events"
-    },
-    {
-      "kind": "formal",
-      "special": true,
-      "title": "Firework Night Formal",
-      "starts_at": "2026-11-06T19:30:00+00:00",
-      "ends_at": "2026-11-06T21:30:00+00:00",
-      "college": "Downing",
-      "venue": "Dining Hall",
-      "url": "https://calendar.google.com/calendar/embed?src=9sn3srd7kjhk8r3ah3l6r0rgas@group.calendar.google.com&ctz=Europe/London",
-      "details": "Follows the College Fireworks Display at 7pm.",
-      "source": "downing-college-events"
-    },
-    {
-      "kind": "formal",
-      "special": false,
-      "title": "BA Formal Dinner in Hall",
-      "starts_at": "2026-11-06T19:30:00+00:00",
-      "ends_at": "2026-11-06T20:45:00+00:00",
-      "college": "Magdalene",
-      "venue": "Hall",
-      "host": "Magdalene MCR",
-      "guests": "Students and their guests",
-      "dress": "Formal with gowns",
-      "url": "https://www.mcr.magd.cam.ac.uk/events/ba-formal-dinner-in-hall-hdw54-8wc4j-dfy83-w9sg8-3xrar",
-      "details": "Three courses; book on UPay. Free pre-drinks in Benson Hall from 6.45pm, port and chocolates in the MCR after.",
-      "source": "magdalene-mcr-events"
-    },
-    {
-      "kind": "formal",
-      "special": true,
-      "title": "Themed Formal Hall",
-      "starts_at": "2026-11-10T19:30:00+00:00",
-      "college": "Homerton",
-      "venue": "New Dining Hall",
-      "host": "Homerton College",
-      "price": "£20 Homerton students, £24 guests",
-      "guests": "Open to UG and PG students; usually up to 2 guests",
-      "url": "https://homerton-mcr.co.uk/formal-hall-dates",
-      "details": "Theme to be confirmed; tickets on UPay from 2 Nov.",
-      "source": "homerton-mcr-site"
-    },
-    {
-      "kind": "formal",
-      "special": true,
-      "title": "Alcohol Free Formal",
-      "starts_at": "2026-11-11T19:15:00+00:00",
-      "ends_at": "2026-11-11T21:15:00+00:00",
-      "college": "Downing",
-      "venue": "Dining Hall",
-      "url": "https://calendar.google.com/calendar/embed?src=9sn3srd7kjhk8r3ah3l6r0rgas@group.calendar.google.com&ctz=Europe/London",
-      "details": "Listed on the Downing College events calendar.",
-      "source": "downing-college-events"
-    },
-    {
-      "kind": "formal",
-      "special": true,
-      "title": "Woodville Feast",
-      "starts_at": "2026-11-13T19:00:00+00:00",
-      "ends_at": "2026-11-13T21:45:00+00:00",
-      "college": "Queens'",
-      "venue": "Old Hall",
-      "host": "Queens' MCR",
-      "url": "https://www.qmcr.org/upcomingevents",
-      "details": "The MCR's termly feast in Old Hall, from the MCR events calendar.",
-      "source": "queens-mcr-upcoming"
-    },
-    {
-      "kind": "formal",
-      "special": false,
-      "title": "BA Formal Dinner in Hall",
-      "starts_at": "2026-11-13T19:30:00+00:00",
-      "ends_at": "2026-11-13T20:45:00+00:00",
-      "college": "Magdalene",
-      "venue": "Hall",
-      "host": "Magdalene MCR",
-      "guests": "Students and their guests",
-      "dress": "Formal with gowns",
-      "url": "https://www.mcr.magd.cam.ac.uk/events/ba-formal-dinner-in-hall-hdw54-8wc4j-dfy83-w9sg8-3xrar-wcx6d",
-      "details": "Three courses; book on UPay. Free pre-drinks in Benson Hall from 6.45pm, port and chocolates in the MCR after.",
-      "source": "magdalene-mcr-events"
-    },
-    {
-      "kind": "bop",
-      "title": "50 Years of Women in Selwyn Bop",
-      "starts_at": "2026-11-13T21:00:00+00:00",
-      "college": "Selwyn",
-      "venue": "Selwyn bar",
-      "host": "Selwyn Ents",
-      "dress": "Dress as an inspirational woman",
-      "url": "https://www.instagram.com/selwynents/",
-      "details": "Date marked TBC on the termcard; time assumed.",
-      "source": "selwyn-ents-instagram"
-    },
-    {
-      "kind": "formal",
-      "special": true,
-      "title": "Baila en Sidney formal",
-      "starts_at": "2026-11-14T19:00:00+00:00",
-      "ends_at": "2026-11-14T23:00:00+00:00",
-      "college": "Sidney Sussex",
-      "venue": "Hall, then the bar",
-      "host": "Sidney Sussex MCR",
-      "guests": "Graduate formal; 10 members of Cuban Salsa Soc joining",
-      "url": "https://www.sidneysussexmcr.com/events",
-      "details": "Cuban-themed formal 7-9pm, then a live Latin band and drinks in the bar until 11pm.",
-      "source": "sidney-mcr-events"
-    }
-  ]
+  {
+   "slug": "christ-s-jcr-instagram",
+   "name": "Christ's JCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/christsjcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "christs-jcr-site",
+   "name": "Christ's JCR",
+   "kind": "JCR site",
+   "url": "https://thejcr.co.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "christs-mcr-whats-on",
+   "name": "Christ's MCR What's On",
+   "kind": "MCR events",
+   "url": "https://www.christsmcr.co.uk/whats-on",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "christs-mcr-site",
+   "name": "Christ's MCR",
+   "kind": "MCR site",
+   "url": "https://www.christsmcr.co.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "christs-jcr-termcard",
+   "name": "Christ's JCR termcard",
+   "kind": "Termcard",
+   "url": "https://thejcr.co.uk/get-involved/termcard",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "churchill-jcr-mcr-page",
+   "name": "Churchill College JCR and MCR page",
+   "kind": "College events",
+   "url": "https://www.chu.cam.ac.uk/about/governance/jcr-and-mcr/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "churchill-college-events",
+   "name": "Churchill College events",
+   "kind": "College events",
+   "url": "https://www.chu.cam.ac.uk/events/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "churchill-churchill-formal-hall",
+   "name": "Churchill formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
+   "ok": true,
+   "found": 6
+  },
+  {
+   "slug": "churchill-jcr-instagram",
+   "name": "Churchill JCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/churchillcoljcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 1
+  },
+  {
+   "slug": "clare-ucs-instagram",
+   "name": "Clare UCS Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/ucs_clare/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 1
+  },
+  {
+   "slug": "clare-ucs-going-out",
+   "name": "Clare UCS Going Out",
+   "kind": "JCR events",
+   "url": "https://ucs.clare.cam.ac.uk/current-students/going-out/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "clare-ucs-site",
+   "name": "Clare UCS",
+   "kind": "JCR site",
+   "url": "https://ucs.clare.cam.ac.uk/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "clare-mcr-events",
+   "name": "Clare MCR events",
+   "kind": "MCR events",
+   "url": "https://mcr.clare.cam.ac.uk/news-and-events/all-events",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "clare-mcr-site",
+   "name": "Clare MCR",
+   "kind": "MCR site",
+   "url": "https://mcr.clare.cam.ac.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "clare-hall-events",
+   "name": "Clare Hall events",
+   "kind": "College events",
+   "url": "https://www.clarehall.cam.ac.uk/events/",
+   "ok": true,
+   "found": 1
+  },
+  {
+   "slug": "clare-hall-clare-hall-formal-hall",
+   "name": "Clare Hall formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.clarehall.cam.ac.uk/dining/",
+   "ok": true,
+   "found": 1
+  },
+  {
+   "slug": "clare-hall-gsb-instagram",
+   "name": "Clare Hall GSB Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/clarehall.gsb/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "clare-hall-gsb-events",
+   "name": "Clare Hall GSB events",
+   "kind": "MCR events",
+   "url": "https://www.clarehall.cam.ac.uk/events-category/gsb/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "clare-hall-gsb-site",
+   "name": "Clare Hall GSB",
+   "kind": "MCR site",
+   "url": "https://www.clarehall.cam.ac.uk/gsb/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "corpus-ents",
+   "name": "Corpus Ents",
+   "kind": "Ents site",
+   "url": "https://www.jcr.corpus.cam.ac.uk/corpus-ents",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "corpus-christi-corpus-christi-formal-hall",
+   "name": "Corpus Christi formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
+   "ok": true,
+   "found": 5
+  },
+  {
+   "slug": "corpus-jcr-instagram",
+   "name": "Corpus JCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/corpuschristi_jcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "corpus-jcr-events-calendars",
+   "name": "Corpus JCR events calendars",
+   "kind": "JCR events",
+   "url": "https://www.jcr.corpus.cam.ac.uk/events-calendars",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "corpus-jcr-site",
+   "name": "Corpus JCR",
+   "kind": "JCR site",
+   "url": "https://www.jcr.corpus.cam.ac.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "corpus-mcr-events",
+   "name": "Corpus MCR events",
+   "kind": "MCR events",
+   "url": "https://www.corpusmcr.com/currentstudents/events",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "corpus-mcr-site",
+   "name": "Corpus MCR",
+   "kind": "MCR site",
+   "url": "https://www.corpusmcr.com/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "corpus-mcr-term-card",
+   "name": "Corpus MCR term card",
+   "kind": "Termcard",
+   "url": "https://www.corpusmcr.com/currentstudents/term-card",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "darwin-college-events",
+   "name": "Darwin College events",
+   "kind": "College events",
+   "url": "https://www.darwin.cam.ac.uk/events/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "darwin-darwin-formal-hall",
+   "name": "Darwin formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
+   "ok": true,
+   "found": 4
+  },
+  {
+   "slug": "darwin-dcsa-instagram",
+   "name": "Darwin DCSA Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/dcsa_darwin_college/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "darwin-dcsa-events",
+   "name": "Darwin DCSA events",
+   "kind": "MCR events",
+   "url": "https://www.dcsa.darwin.cam.ac.uk/events/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "darwin-dcsa-site",
+   "name": "Darwin DCSA",
+   "kind": "MCR site",
+   "url": "https://www.dcsa.darwin.cam.ac.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "downing-college-events",
+   "name": "Downing College events",
+   "kind": "College events",
+   "url": "https://dow.cam.ac.uk/about/events",
+   "ok": true,
+   "found": 3
+  },
+  {
+   "slug": "downing-downing-formal-hall",
+   "name": "Downing formal hall",
+   "kind": "Formal hall",
+   "url": "https://dow.cam.ac.uk/current-students/catering",
+   "ok": true,
+   "found": 6
+  },
+  {
+   "slug": "downing-mcr-instagram",
+   "name": "Downing MCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/downingcollegemcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "downing-jcr-site",
+   "name": "Downing JCR",
+   "kind": "JCR site",
+   "url": "https://downingjcr.org.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "downing-mcr-page",
+   "name": "Downing MCR",
+   "kind": "MCR site",
+   "url": "https://dow.cam.ac.uk/people/downing-mcr",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "emmanuel-emmanuel-formal-hall",
+   "name": "Emmanuel formal hall",
+   "kind": "Formal hall",
+   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
+   "ok": true,
+   "found": 9
+  },
+  {
+   "slug": "emmanuel-ecsu-instagram",
+   "name": "Emmanuel ECSU Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/ecsucambridge/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "emmanuel-ecsu-site",
+   "name": "Emmanuel ECSU",
+   "kind": "JCR site",
+   "url": "https://ecsu.org.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "emmanuel-mcr-events-calendar",
+   "name": "Emmanuel MCR events calendar",
+   "kind": "MCR events",
+   "url": "https://www.emmamcr.org.uk/events-calendar",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "emmanuel-mcr-site",
+   "name": "Emmanuel MCR",
+   "kind": "MCR site",
+   "url": "https://www.emmamcr.org.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "fitzwilliam-college-jcr-mcr-page",
+   "name": "Fitzwilliam College JCR and MCR page",
+   "kind": "College events",
+   "url": "https://www.fitz.cam.ac.uk/jcr-mcr",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "fitzwilliam-jcr-instagram",
+   "name": "Fitzwilliam JCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/fitzjcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "fitzwilliam-jcr-site",
+   "name": "Fitzwilliam JCR",
+   "kind": "JCR site",
+   "url": "https://www.fitzjcr.com/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "fitzwilliam-mcr-events",
+   "name": "Fitzwilliam MCR events",
+   "kind": "MCR events",
+   "url": "https://mcr.fitz.cam.ac.uk/events-today/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "fitzwilliam-mcr-site",
+   "name": "Fitzwilliam MCR",
+   "kind": "MCR site",
+   "url": "https://mcr.fitz.cam.ac.uk/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "fitzwilliam-mcr-term-card",
+   "name": "Fitzwilliam MCR term card",
+   "kind": "Termcard",
+   "url": "https://mcr.fitz.cam.ac.uk/overview/term-card/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "girton-college-events",
+   "name": "Girton College events",
+   "kind": "College events",
+   "url": "https://www.girton.cam.ac.uk/upcoming-events",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "girton-girton-formal-hall",
+   "name": "Girton formal hall",
+   "kind": "Formal hall",
+   "url": "https://girton.cam.ac.uk/dining-and-socialising",
+   "ok": true,
+   "found": 2
+  },
+  {
+   "slug": "girton-jcr-instagram",
+   "name": "Girton JCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/girtonjcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "girton-jcr-events-calendar",
+   "name": "Girton JCR events calendar",
+   "kind": "JCR events",
+   "url": "https://girtonjcr.co.uk/events-calendar",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "girton-jcr-site",
+   "name": "Girton JCR",
+   "kind": "JCR site",
+   "url": "https://girtonjcr.co.uk/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "girton-mcr-events",
+   "name": "Girton MCR events",
+   "kind": "MCR events",
+   "url": "https://sites.google.com/cam.ac.uk/girton-mcr/events",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "girton-mcr-site",
+   "name": "Girton MCR",
+   "kind": "MCR site",
+   "url": "https://sites.google.com/cam.ac.uk/girton-mcr/home",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "gonville-caius-gonville-caius-formal-hall",
+   "name": "Gonville & Caius formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "ok": true,
+   "note": "rendered with headless Chromium",
+   "found": 15
+  },
+  {
+   "slug": "caius-mcr-instagram",
+   "name": "Caius MCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/caiusmcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "caius-gcsu-ents",
+   "name": "Caius GCSU Ents",
+   "kind": "JCR events",
+   "url": "https://jcr.cai.cam.ac.uk/college-life/ents/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "caius-gcsu-site",
+   "name": "Caius GCSU (JCR)",
+   "kind": "JCR site",
+   "url": "https://jcr.cai.cam.ac.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "caius-mcr-site",
+   "name": "Caius MCR",
+   "kind": "MCR site",
+   "url": "https://mcr.cai.cam.ac.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "husjcr-instagram",
+   "name": "HUS Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/husjcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "hus-jcr-events",
+   "name": "HUS events",
+   "kind": "JCR events",
+   "url": "https://www.hus-jcr.co.uk/events/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "hus-jcr-site",
+   "name": "Homerton HUS (JCR)",
+   "kind": "JCR site",
+   "url": "https://www.hus-jcr.co.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "homerton-mcr-ents",
+   "name": "Homerton MCR upcoming ents",
+   "kind": "MCR events",
+   "url": "https://homerton-mcr.co.uk/upcoming-ents",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "homerton-mcr-site",
+   "name": "Homerton MCR",
+   "kind": "MCR site",
+   "url": "https://homerton-mcr.co.uk/",
+   "ok": true,
+   "found": 2
+  },
+  {
+   "slug": "hughes-college-events",
+   "name": "Hughes Hall events",
+   "kind": "College events",
+   "url": "https://www.hughes.cam.ac.uk/about/events/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "hughes-hall-hughes-hall-formal-hall",
+   "name": "Hughes Hall formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
+   "ok": true,
+   "found": 4
+  },
+  {
+   "slug": "hughes-hall-mcr-instagram",
+   "name": "Hughes Hall MCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/hugheshallmcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "hughes-mcr-calendar",
+   "name": "Hughes Hall MCR calendar",
+   "kind": "MCR events",
+   "url": "https://www.hughes.cam.ac.uk/student-centre/hughes-hall-mcr/mcr-calendar/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "hughes-mcr-site",
+   "name": "Hughes Hall MCR",
+   "kind": "MCR site",
+   "url": "https://www.hughes.cam.ac.uk/student-centre/hughes-hall-mcr/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "jesus-college-events",
+   "name": "Jesus College events",
+   "kind": "College events",
+   "url": "https://www.jesus.cam.ac.uk/college/events",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "friday-night-jesus-jcsu-ents-on-facebook",
+   "name": "Friday Night Jesus (JCSU ents) on Facebook",
+   "kind": "Facebook",
+   "url": "https://www.facebook.com/FridayNightJesus",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "jesus-jesus-formal-hall",
+   "name": "Jesus formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
+   "ok": true,
+   "found": 9
+  },
+  {
+   "slug": "jesus-ents-instagram",
+   "name": "Jesus Ents Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/jesus_ents/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "jesus-jcsu-instagram",
+   "name": "Jesus JCSU Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/jesuscollegestudentunion/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "jesus-jcsu-calendar",
+   "name": "Jesus JCSU calendar",
+   "kind": "JCR events",
+   "url": "https://jcsu.jesus.cam.ac.uk/current-students/calendar/",
+   "ok": false,
+   "note": "HTTP 403",
+   "found": 0
+  },
+  {
+   "slug": "jesus-jcsu-student-events",
+   "name": "Jesus JCSU student-run events",
+   "kind": "JCR events",
+   "url": "https://jcsu.jesus.cam.ac.uk/current-students/student-run-events/",
+   "ok": false,
+   "note": "HTTP 403",
+   "found": 0
+  },
+  {
+   "slug": "jesus-jcsu-site",
+   "name": "Jesus JCSU",
+   "kind": "JCR site",
+   "url": "https://jcsu.jesus.cam.ac.uk/",
+   "ok": false,
+   "note": "HTTP 403",
+   "found": 0
+  },
+  {
+   "slug": "kcsu-instagram",
+   "name": "KCSU Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/KCSUCambridge/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "kings-ents-instagram",
+   "name": "King's Ents Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/kings.ents/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "kcsu-calendar",
+   "name": "KCSU events calendar",
+   "kind": "JCR events",
+   "url": "https://calendar.google.com/calendar/embed?src=events@kcsu.org.uk&ctz=Europe/London",
+   "ok": false,
+   "note": "empty or JavaScript-only page",
+   "found": 0
+  },
+  {
+   "slug": "kcsu-site",
+   "name": "King's KCSU",
+   "kind": "JCR site",
+   "url": "https://kcsu.org.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "lucy-college-events",
+   "name": "Lucy Cavendish events",
+   "kind": "College events",
+   "url": "https://www.lucy.cam.ac.uk/events",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "lucy-cavendish-lucy-cavendish-formal-hall",
+   "name": "Lucy Cavendish formal hall",
+   "kind": "Formal hall",
+   "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
+   "ok": true,
+   "found": 4
+  },
+  {
+   "slug": "lucy-jcr-instagram",
+   "name": "Lucy JCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/lucycavjcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "lucy-mcr-instagram",
+   "name": "Lucy MCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/lucycavmcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "lucy-jcr-cambridgesu",
+   "name": "Lucy JCR on Cambridge SU",
+   "kind": "JCR events",
+   "url": "https://www.cambridgesu.co.uk/organisation/lucyjcr/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "lucy-su-page",
+   "name": "Lucy Cavendish Students' Union (college page)",
+   "kind": "JCR site",
+   "url": "https://www.lucy.cam.ac.uk/our-college/place-live-and-study/students-union",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "magdalene-jcr-instagram",
+   "name": "Magdalene JCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/magdalenecollegejcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "magdalene-jcr-site",
+   "name": "Magdalene JCR",
+   "kind": "JCR site",
+   "url": "https://jcr.magd.cam.ac.uk/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "magdalene-mcr-events",
+   "name": "Magdalene MCR events",
+   "kind": "MCR events",
+   "url": "https://www.mcr.magd.cam.ac.uk/events",
+   "ok": true,
+   "found": 2
+  },
+  {
+   "slug": "magdalene-mcr-site",
+   "name": "Magdalene MCR",
+   "kind": "MCR site",
+   "url": "https://www.mcr.magd.cam.ac.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "murray-edwards-college-life",
+   "name": "Murray Edwards college life",
+   "kind": "College events",
+   "url": "https://www.murrayedwards.cam.ac.uk/college-life",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "murray-edwards-jcr-cambridgesu",
+   "name": "Murray Edwards JCR on Cambridge SU",
+   "kind": "JCR site",
+   "url": "https://www.cambridgesu.co.uk/organisation/14844/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "murray-edwards-mcr-site",
+   "name": "Murray Edwards MCR",
+   "kind": "MCR site",
+   "url": "https://memcr.soc.srcf.net/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "newnham-college-social-life",
+   "name": "Newnham college social life",
+   "kind": "College events",
+   "url": "https://newn.cam.ac.uk/study-here/life-newnham/societies-and-facilities/college-social-life",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "newnham-mcr-instagram",
+   "name": "Newnham MCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/newnham_mcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "newnham-mcr-cambridgesu",
+   "name": "Newnham MCR on Cambridge SU",
+   "kind": "MCR events",
+   "url": "https://www.cambridgesu.co.uk/organisation/newnhammcr/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "newnham-mcr-site",
+   "name": "Newnham MCR",
+   "kind": "MCR site",
+   "url": "https://newnhammcr.soc.srcf.net/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "pembroke-ents-instagram",
+   "name": "Pembroke Ents Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/pem.ents/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "pembroke-jp-bar",
+   "name": "Pembroke JP bar page",
+   "kind": "JCR events",
+   "url": "https://jp.pem.cam.ac.uk/the-jp-bar/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "pembroke-jp-site",
+   "name": "Pembroke JP (JPC)",
+   "kind": "JCR site",
+   "url": "https://jp.pem.cam.ac.uk/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "pembroke-gp-social",
+   "name": "Pembroke GP social",
+   "kind": "MCR events",
+   "url": "https://gp.pem.cam.ac.uk/graduatelife/social/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "pembroke-gp-site",
+   "name": "Pembroke GP (MCR)",
+   "kind": "MCR site",
+   "url": "https://gp.pem.cam.ac.uk/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "peterhouse-peterhouse-formal-hall",
+   "name": "Peterhouse formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "ok": true,
+   "found": 15
+  },
+  {
+   "slug": "peterhouse-mcr-instagram",
+   "name": "Peterhouse MCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/peterhousemcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "peterhouse-jcr-events",
+   "name": "Peterhouse JCR events",
+   "kind": "JCR events",
+   "url": "https://www.peterhousejcr.co.uk/events",
+   "ok": true,
+   "note": "rendered with headless Chromium",
+   "found": 0
+  },
+  {
+   "slug": "peterhouse-jcr-site",
+   "name": "Peterhouse JCR",
+   "kind": "JCR site",
+   "url": "https://www.peterhousejcr.co.uk/",
+   "ok": true,
+   "note": "rendered with headless Chromium",
+   "found": 0
+  },
+  {
+   "slug": "peterhouse-mcr-site",
+   "name": "Peterhouse MCR",
+   "kind": "MCR site",
+   "url": "https://www.peterhousemcr.co.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "peterhouse-mcr-termcard",
+   "name": "Peterhouse MCR term card",
+   "kind": "Termcard",
+   "url": "https://www.peterhousemcr.co.uk/term-card",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "queens-qents",
+   "name": "QEnts (Queens' JCR Ents)",
+   "kind": "Ents site",
+   "url": "https://qjcr.org.uk/jcr/qents/",
+   "ok": true,
+   "note": "rendered with headless Chromium",
+   "found": 0
+  },
+  {
+   "slug": "queens-queens-formal-hall",
+   "name": "Queens' formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
+   "ok": true,
+   "found": 5
+  },
+  {
+   "slug": "queens-ents-instagram",
+   "name": "Queens' Ents Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/queensents/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "queens-jcr-instagram",
+   "name": "Queens' JCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/queensjcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "queens-mcr-instagram",
+   "name": "Queens' MCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/qmcrcambridge/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "queens-jcr-events",
+   "name": "Queens' JCR events",
+   "kind": "JCR events",
+   "url": "https://qjcr.org.uk/events",
+   "ok": true,
+   "note": "rendered with headless Chromium",
+   "found": 0
+  },
+  {
+   "slug": "queens-jcr-site",
+   "name": "Queens' JCR (QJCR)",
+   "kind": "JCR site",
+   "url": "https://qjcr.org.uk/",
+   "ok": true,
+   "note": "rendered with headless Chromium",
+   "found": 0
+  },
+  {
+   "slug": "queens-mcr-upcoming",
+   "name": "Queens' MCR upcoming events",
+   "kind": "MCR events",
+   "url": "https://www.qmcr.org/upcomingevents",
+   "ok": true,
+   "found": 1
+  },
+  {
+   "slug": "queens-mcr-site",
+   "name": "Queens' MCR",
+   "kind": "MCR site",
+   "url": "https://www.qmcr.org/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "robinson-robinson-formal-hall",
+   "name": "Robinson formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
+   "ok": true,
+   "found": 4
+  },
+  {
+   "slug": "robinson-jcr-instagram",
+   "name": "Robinson JCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/robinsoncollegejcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "robinson-rcsa-events",
+   "name": "Robinson RCSA events",
+   "kind": "JCR events",
+   "url": "https://www.rcsa.co.uk/events",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "robinson-rcsa-site",
+   "name": "Robinson RCSA",
+   "kind": "JCR site",
+   "url": "https://www.rcsa.co.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "selwyn-selwyn-formal-hall",
+   "name": "Selwyn formal hall",
+   "kind": "Formal hall",
+   "url": "https://selwynjcr.org/college-life/formals",
+   "ok": true,
+   "found": 4
+  },
+  {
+   "slug": "selwyn-ents-instagram",
+   "name": "Selwyn Ents Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/selwynents/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 1
+  },
+  {
+   "slug": "selwyn-jcr-calendar",
+   "name": "Selwyn JCR calendar (Google)",
+   "kind": "JCR events",
+   "url": "https://calendar.google.com/calendar/embed?src=c_4d4a7c193587cb0b3adb95cd4df6cc52f93456a2ef5db9017e2345c8df96ef42%40group.calendar.google.com&ctz=Europe%2FLondon",
+   "ok": false,
+   "note": "empty or JavaScript-only page",
+   "found": 0
+  },
+  {
+   "slug": "selwyn-jcr-site",
+   "name": "Selwyn JCR",
+   "kind": "JCR site",
+   "url": "https://selwynjcr.org/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "selwyn-mcr-page",
+   "name": "Selwyn College MCR page",
+   "kind": "MCR site",
+   "url": "https://www.sel.cam.ac.uk/joining-selwyn/graduates/postgraduate-community-and-mcr",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "sidney-college-events",
+   "name": "Sidney Sussex College events",
+   "kind": "College events",
+   "url": "https://www.sid.cam.ac.uk/about-sidney/events",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "sidney-sussex-jcr-instagram",
+   "name": "Sidney Sussex JCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/sidneysussexjcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "sidney-college-sscsu-page",
+   "name": "Sidney Sussex College SSCSU page",
+   "kind": "JCR site",
+   "url": "https://www.sid.cam.ac.uk/life-sidney/clubs-and-societies/sscsu-jcr",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "sidney-sscsu-site",
+   "name": "Sidney Sussex SSCSU (JCR)",
+   "kind": "JCR site",
+   "url": "https://www.sscsu.org.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "sidney-mcr-events",
+   "name": "Sidney Sussex MCR events",
+   "kind": "MCR events",
+   "url": "https://www.sidneysussexmcr.com/events",
+   "ok": true,
+   "found": 3
+  },
+  {
+   "slug": "sidney-mcr-site",
+   "name": "Sidney Sussex MCR",
+   "kind": "MCR site",
+   "url": "https://www.sidneysussexmcr.com/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "st-catharine-s-st-catharine-s-formal-hall",
+   "name": "St Catharine's formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
+   "ok": true,
+   "found": 7
+  },
+  {
+   "slug": "catz-entz-instagram",
+   "name": "Catz Entz Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/catzentz/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "catz-jcr-calendar",
+   "name": "Catz JCR calendar",
+   "kind": "JCR events",
+   "url": "https://www.catzjcr.com/catz-calendar",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "catz-jcr-site",
+   "name": "Catz JCR",
+   "kind": "JCR site",
+   "url": "https://www.catzjcr.com/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "catz-mcr-events",
+   "name": "Catz MCR events",
+   "kind": "MCR events",
+   "url": "https://mcr.caths.cam.ac.uk/events",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "catz-mcr-site",
+   "name": "Catz MCR",
+   "kind": "MCR site",
+   "url": "https://mcr.caths.cam.ac.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "st-edmunds-bar-cr",
+   "name": "St Edmund's College Bar & CR page",
+   "kind": "College events",
+   "url": "https://www.st-edmunds.cam.ac.uk/college-life/bar-cr/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "st-edmunds-college-events",
+   "name": "St Edmund's College events",
+   "kind": "College events",
+   "url": "https://www.st-edmunds.cam.ac.uk/news-events/events/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "st-edmund-s-st-edmund-s-formal-hall",
+   "name": "St Edmund's formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
+   "ok": true,
+   "found": 4
+  },
+  {
+   "slug": "st-edmund-s-college-instagram",
+   "name": "St Edmund's College Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/stedmundscam/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "st-edmunds-cr-site",
+   "name": "St Edmund's CR (Combination Room)",
+   "kind": "JCR site",
+   "url": "https://my-cr.st-edmunds.cam.ac.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "st-johns-jcr-ents",
+   "name": "St John's JCR Ents",
+   "kind": "Ents site",
+   "url": "https://www.sjcjcr.com/yourjcr/ents",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "st-john-s-jcr-instagram",
+   "name": "St John's JCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/stjohnsjcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "st-johns-jcr-site",
+   "name": "St John's JCR",
+   "kind": "JCR site",
+   "url": "https://www.sjcjcr.com/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "st-johns-sbr-events",
+   "name": "St John's SBR events",
+   "kind": "MCR events",
+   "url": "https://sites.google.com/cam.ac.uk/sbr/events",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "st-johns-sbr-site",
+   "name": "St John's SBR (MCR)",
+   "kind": "MCR site",
+   "url": "https://sites.google.com/cam.ac.uk/sbr/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "tcsu-instagram",
+   "name": "TCSU Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/trincollsu/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "trinity-tcsu-site",
+   "name": "Trinity College Students' Union (TCSU)",
+   "kind": "JCR site",
+   "url": "https://web.tcsu.net/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "trinity-ba-events",
+   "name": "Trinity BA Society events",
+   "kind": "MCR events",
+   "url": "https://www.basociety.net/ba-events/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "trinity-ba-site",
+   "name": "Trinity BA Society (MCR)",
+   "kind": "MCR site",
+   "url": "https://www.basociety.net/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "trinity-hall-jcr-ents",
+   "name": "Trinity Hall JCR Ents",
+   "kind": "Ents site",
+   "url": "https://www.jcr.trinhall.cam.ac.uk/college-life/ents",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "trinity-hall-jcr-instagram",
+   "name": "Trinity Hall JCR Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/trinhall.jcr/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "trinity-hall-jcr-site",
+   "name": "Trinity Hall JCR",
+   "kind": "JCR site",
+   "url": "https://www.jcr.trinhall.cam.ac.uk/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "trinity-hall-mcr-site",
+   "name": "Trinity Hall MCR",
+   "kind": "MCR site",
+   "url": "https://thmcr.soc.srcf.net/",
+   "ok": false,
+   "note": "URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>",
+   "found": 0
+  },
+  {
+   "slug": "wolfson-whats-on",
+   "name": "Wolfson College What's On",
+   "kind": "College events",
+   "url": "https://www.wolfson.cam.ac.uk/college-life/whats-on",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "wolfson-wolfson-formal-hall",
+   "name": "Wolfson formal hall",
+   "kind": "Formal hall",
+   "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
+   "ok": true,
+   "found": 4
+  },
+  {
+   "slug": "wcsa-instagram",
+   "name": "WCSA Instagram",
+   "kind": "Instagram",
+   "url": "https://www.instagram.com/wcsa_cambridge/",
+   "ok": false,
+   "note": "not readable by the routine",
+   "found": 0
+  },
+  {
+   "slug": "wolfson-wcsa-site",
+   "name": "Wolfson College Students' Association (WCSA)",
+   "kind": "JCR site",
+   "url": "https://www.wcsa.org.uk/",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "wolfson-college-wcsa-page",
+   "name": "Wolfson College WCSA page",
+   "kind": "JCR site",
+   "url": "https://www.wolfson.cam.ac.uk/student-association-wcsa",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "cambridge-su-events",
+   "name": "Cambridge SU events",
+   "kind": "SU listings",
+   "url": "https://www.cambridgesu.co.uk/events",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "the-tab-cambridge",
+   "name": "The Tab Cambridge",
+   "kind": "Student press",
+   "url": "https://thetab.com/university/cambridge",
+   "ok": true,
+   "found": 0
+  },
+  {
+   "slug": "varsity",
+   "name": "Varsity",
+   "kind": "Student press",
+   "url": "https://www.varsity.co.uk",
+   "ok": true,
+   "found": 0
+  }
+ ],
+ "bops": [
+  {
+   "kind": "bop",
+   "title": "Halloween Formal & Bop",
+   "starts_at": "2026-11-01T19:00:00+00:00",
+   "college": "Churchill",
+   "venue": "Dining Hall",
+   "host": "Churchill JCR",
+   "dress": "Costume, prizes for best individual and group",
+   "url": "https://www.instagram.com/p/Ddj51dYEeBI/",
+   "details": "Formal at 7pm, then the bop.",
+   "source": "churchill-jcr-instagram"
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-01T19:30:00+00:00",
+   "college": "Corpus Christi",
+   "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
+   "source": "corpus-christi-corpus-christi-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-01T19:30:00+00:00",
+   "college": "Downing",
+   "url": "https://dow.cam.ac.uk/current-students/catering",
+   "source": "downing-downing-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-01T19:30:00+00:00",
+   "college": "Emmanuel",
+   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-01T19:30:00+00:00",
+   "college": "Gonville & Caius",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "source": "gonville-caius-gonville-caius-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-01T19:30:00+00:00",
+   "college": "Jesus",
+   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
+   "source": "jesus-jesus-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-01T19:30:00+00:00",
+   "college": "Peterhouse",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "source": "peterhouse-peterhouse-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-01T19:30:00+00:00",
+   "college": "Queens'",
+   "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
+   "source": "queens-queens-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-01T19:30:00+00:00",
+   "college": "St Catharine's",
+   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
+   "source": "st-catharine-s-st-catharine-s-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Wednesday undergraduate, Thursday postgraduate. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "bop",
+   "title": "Gaelic Samhain: queer Halloween party",
+   "starts_at": "2026-11-01T20:00:00+00:00",
+   "ends_at": "2026-11-01T23:00:00+00:00",
+   "college": "Clare",
+   "venue": "Clare Cellars",
+   "host": "King's LGBTQ+ with Clare bar and KCSU",
+   "price": "£4, tickets on RA",
+   "url": "https://ra.co/events/2568970",
+   "source": "clare-ucs-instagram"
+  },
+  {
+   "kind": "formal",
+   "special": true,
+   "title": "Diwali Formal (MCR)",
+   "starts_at": "2026-11-02T18:00:00+00:00",
+   "ends_at": "2026-11-02T23:00:00+00:00",
+   "college": "Sidney Sussex",
+   "venue": "Hall, then Mong Hall and the bar",
+   "host": "Sidney Sussex MCR",
+   "guests": "Graduate formal; swap with 15 members of Trinity Hall",
+   "url": "https://www.sidneysussexmcr.com/events",
+   "details": "Intro to Bollywood dance 6pm in Mong Hall, formal in Hall 7-9pm, then DJ and drinks in the bar until 11pm.",
+   "source": "sidney-mcr-events"
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-02T19:30:00+00:00",
+   "college": "Downing",
+   "url": "https://dow.cam.ac.uk/current-students/catering",
+   "source": "downing-downing-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-02T19:30:00+00:00",
+   "college": "Emmanuel",
+   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-02T19:30:00+00:00",
+   "college": "Gonville & Caius",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "source": "gonville-caius-gonville-caius-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-02T19:30:00+00:00",
+   "college": "Peterhouse",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "source": "peterhouse-peterhouse-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-03T19:00:00+00:00",
+   "college": "Hughes Hall",
+   "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
+   "source": "hughes-hall-hughes-hall-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Usually Tuesdays and Fridays."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-03T19:30:00+00:00",
+   "college": "Homerton",
+   "venue": "New Dining Hall",
+   "host": "Homerton College",
+   "price": "£20 Homerton students, £24 guests",
+   "guests": "Open to UG and PG students; usually up to 2 guests",
+   "url": "https://homerton-mcr.co.uk/formal-hall-dates",
+   "details": "Regular Tuesday formal; tickets on UPay from 26 Oct. No dress code.",
+   "source": "homerton-mcr-site"
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-03T19:30:00+00:00",
+   "college": "Gonville & Caius",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "source": "gonville-caius-gonville-caius-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-03T19:30:00+00:00",
+   "college": "Jesus",
+   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
+   "source": "jesus-jesus-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-03T19:30:00+00:00",
+   "college": "Peterhouse",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "source": "peterhouse-peterhouse-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-03T19:30:00+00:00",
+   "college": "Robinson",
+   "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
+   "source": "robinson-robinson-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-03T19:30:00+00:00",
+   "college": "Selwyn",
+   "url": "https://selwynjcr.org/college-life/formals",
+   "source": "selwyn-selwyn-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-03T19:30:00+00:00",
+   "college": "St Edmund's",
+   "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
+   "source": "st-edmund-s-st-edmund-s-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Most Tuesdays and Fridays. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-03T19:30:00+00:00",
+   "college": "Wolfson",
+   "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
+   "source": "wolfson-wolfson-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": true,
+   "title": "Clare Hall Diwali Formal 2026",
+   "starts_at": "2026-11-04T19:00:00+00:00",
+   "college": "Clare Hall",
+   "venue": "Clare Hall Dining Hall, Herschel Road",
+   "url": "https://www.clarehall.cam.ac.uk/events/",
+   "details": "Members' event listed on the Clare Hall events page, from 7pm.",
+   "source": "clare-hall-events"
+  },
+  {
+   "kind": "formal",
+   "special": true,
+   "title": "Formal swap at Trinity Hall",
+   "starts_at": "2026-11-04T19:00:00+00:00",
+   "college": "Trinity Hall",
+   "host": "Sidney Sussex MCR",
+   "url": "https://www.sidneysussexmcr.com/events",
+   "details": "Sidney Sussex MCR formal swap, dining at Trinity Hall.",
+   "source": "sidney-mcr-events"
+  },
+  {
+   "kind": "formal",
+   "special": true,
+   "title": "Diwali Formal",
+   "starts_at": "2026-11-04T19:15:00+00:00",
+   "ends_at": "2026-11-04T21:15:00+00:00",
+   "college": "Downing",
+   "venue": "Dining Hall",
+   "url": "https://calendar.google.com/calendar/embed?src=9sn3srd7kjhk8r3ah3l6r0rgas@group.calendar.google.com&ctz=Europe/London",
+   "details": "Listed on the Downing College events calendar.",
+   "source": "downing-college-events"
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-04T19:30:00+00:00",
+   "college": "Darwin",
+   "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
+   "source": "darwin-darwin-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Most Wednesdays and Fridays. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-04T19:30:00+00:00",
+   "college": "Gonville & Caius",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "source": "gonville-caius-gonville-caius-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-04T19:30:00+00:00",
+   "college": "Jesus",
+   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
+   "source": "jesus-jesus-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-04T19:30:00+00:00",
+   "college": "Peterhouse",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "source": "peterhouse-peterhouse-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-04T19:30:00+00:00",
+   "college": "Queens'",
+   "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
+   "source": "queens-queens-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-04T19:30:00+00:00",
+   "college": "St Catharine's",
+   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
+   "source": "st-catharine-s-st-catharine-s-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Wednesday undergraduate, Thursday postgraduate. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-05T19:30:00+00:00",
+   "college": "Churchill",
+   "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
+   "source": "churchill-churchill-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-05T19:30:00+00:00",
+   "college": "Girton",
+   "url": "https://girton.cam.ac.uk/dining-and-socialising",
+   "source": "girton-girton-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-05T19:30:00+00:00",
+   "college": "Gonville & Caius",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "source": "gonville-caius-gonville-caius-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-05T19:30:00+00:00",
+   "college": "Lucy Cavendish",
+   "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
+   "source": "lucy-cavendish-lucy-cavendish-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-05T19:30:00+00:00",
+   "college": "Peterhouse",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "source": "peterhouse-peterhouse-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-05T19:30:00+00:00",
+   "college": "Selwyn",
+   "url": "https://selwynjcr.org/college-life/formals",
+   "source": "selwyn-selwyn-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-05T19:30:00+00:00",
+   "college": "St Catharine's",
+   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
+   "source": "st-catharine-s-st-catharine-s-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Wednesday undergraduate, Thursday postgraduate. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-06T19:00:00+00:00",
+   "college": "Hughes Hall",
+   "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
+   "source": "hughes-hall-hughes-hall-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Usually Tuesdays and Fridays."
+  },
+  {
+   "kind": "formal",
+   "special": true,
+   "title": "Firework Night Formal",
+   "starts_at": "2026-11-06T19:30:00+00:00",
+   "ends_at": "2026-11-06T21:30:00+00:00",
+   "college": "Downing",
+   "venue": "Dining Hall",
+   "url": "https://calendar.google.com/calendar/embed?src=9sn3srd7kjhk8r3ah3l6r0rgas@group.calendar.google.com&ctz=Europe/London",
+   "details": "Follows the College Fireworks Display at 7pm.",
+   "source": "downing-college-events"
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "BA Formal Dinner in Hall",
+   "starts_at": "2026-11-06T19:30:00+00:00",
+   "ends_at": "2026-11-06T20:45:00+00:00",
+   "college": "Magdalene",
+   "venue": "Hall",
+   "host": "Magdalene MCR",
+   "guests": "Students and their guests",
+   "dress": "Formal with gowns",
+   "url": "https://www.mcr.magd.cam.ac.uk/events/ba-formal-dinner-in-hall-hdw54-8wc4j-dfy83-w9sg8-3xrar",
+   "details": "Three courses; book on UPay. Free pre-drinks in Benson Hall from 6.45pm, port and chocolates in the MCR after.",
+   "source": "magdalene-mcr-events"
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-06T19:30:00+00:00",
+   "college": "Churchill",
+   "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
+   "source": "churchill-churchill-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-06T19:30:00+00:00",
+   "college": "Corpus Christi",
+   "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
+   "source": "corpus-christi-corpus-christi-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-06T19:30:00+00:00",
+   "college": "Darwin",
+   "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
+   "source": "darwin-darwin-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Most Wednesdays and Fridays. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-06T19:30:00+00:00",
+   "college": "Emmanuel",
+   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-06T19:30:00+00:00",
+   "college": "Gonville & Caius",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "source": "gonville-caius-gonville-caius-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-06T19:30:00+00:00",
+   "college": "Jesus",
+   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
+   "source": "jesus-jesus-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-06T19:30:00+00:00",
+   "college": "Lucy Cavendish",
+   "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
+   "source": "lucy-cavendish-lucy-cavendish-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-06T19:30:00+00:00",
+   "college": "Peterhouse",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "source": "peterhouse-peterhouse-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-06T19:30:00+00:00",
+   "college": "Robinson",
+   "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
+   "source": "robinson-robinson-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-06T19:30:00+00:00",
+   "college": "St Edmund's",
+   "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
+   "source": "st-edmund-s-st-edmund-s-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Most Tuesdays and Fridays. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-06T19:30:00+00:00",
+   "college": "Wolfson",
+   "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
+   "source": "wolfson-wolfson-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-07T19:30:00+00:00",
+   "college": "Emmanuel",
+   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-07T19:30:00+00:00",
+   "college": "Gonville & Caius",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "source": "gonville-caius-gonville-caius-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-07T19:30:00+00:00",
+   "college": "Peterhouse",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "source": "peterhouse-peterhouse-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-08T19:30:00+00:00",
+   "college": "Churchill",
+   "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
+   "source": "churchill-churchill-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-08T19:30:00+00:00",
+   "college": "Corpus Christi",
+   "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
+   "source": "corpus-christi-corpus-christi-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-08T19:30:00+00:00",
+   "college": "Downing",
+   "url": "https://dow.cam.ac.uk/current-students/catering",
+   "source": "downing-downing-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-08T19:30:00+00:00",
+   "college": "Emmanuel",
+   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-08T19:30:00+00:00",
+   "college": "Gonville & Caius",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "source": "gonville-caius-gonville-caius-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-08T19:30:00+00:00",
+   "college": "Jesus",
+   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
+   "source": "jesus-jesus-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-08T19:30:00+00:00",
+   "college": "Peterhouse",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "source": "peterhouse-peterhouse-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-08T19:30:00+00:00",
+   "college": "Queens'",
+   "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
+   "source": "queens-queens-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-08T19:30:00+00:00",
+   "college": "St Catharine's",
+   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
+   "source": "st-catharine-s-st-catharine-s-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Wednesday undergraduate, Thursday postgraduate. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-09T19:30:00+00:00",
+   "college": "Downing",
+   "url": "https://dow.cam.ac.uk/current-students/catering",
+   "source": "downing-downing-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-09T19:30:00+00:00",
+   "college": "Emmanuel",
+   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-09T19:30:00+00:00",
+   "college": "Gonville & Caius",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "source": "gonville-caius-gonville-caius-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-09T19:30:00+00:00",
+   "college": "Peterhouse",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "source": "peterhouse-peterhouse-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-10T19:00:00+00:00",
+   "college": "Hughes Hall",
+   "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
+   "source": "hughes-hall-hughes-hall-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Usually Tuesdays and Fridays."
+  },
+  {
+   "kind": "formal",
+   "special": true,
+   "title": "Themed Formal Hall",
+   "starts_at": "2026-11-10T19:30:00+00:00",
+   "college": "Homerton",
+   "venue": "New Dining Hall",
+   "host": "Homerton College",
+   "price": "£20 Homerton students, £24 guests",
+   "guests": "Open to UG and PG students; usually up to 2 guests",
+   "url": "https://homerton-mcr.co.uk/formal-hall-dates",
+   "details": "Theme to be confirmed; tickets on UPay from 2 Nov.",
+   "source": "homerton-mcr-site"
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-10T19:30:00+00:00",
+   "college": "Gonville & Caius",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "source": "gonville-caius-gonville-caius-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-10T19:30:00+00:00",
+   "college": "Jesus",
+   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
+   "source": "jesus-jesus-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-10T19:30:00+00:00",
+   "college": "Peterhouse",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "source": "peterhouse-peterhouse-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-10T19:30:00+00:00",
+   "college": "Robinson",
+   "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
+   "source": "robinson-robinson-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-10T19:30:00+00:00",
+   "college": "Selwyn",
+   "url": "https://selwynjcr.org/college-life/formals",
+   "source": "selwyn-selwyn-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-10T19:30:00+00:00",
+   "college": "St Edmund's",
+   "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
+   "source": "st-edmund-s-st-edmund-s-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Most Tuesdays and Fridays. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-10T19:30:00+00:00",
+   "college": "Wolfson",
+   "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
+   "source": "wolfson-wolfson-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": true,
+   "title": "Alcohol Free Formal",
+   "starts_at": "2026-11-11T19:15:00+00:00",
+   "ends_at": "2026-11-11T21:15:00+00:00",
+   "college": "Downing",
+   "venue": "Dining Hall",
+   "url": "https://calendar.google.com/calendar/embed?src=9sn3srd7kjhk8r3ah3l6r0rgas@group.calendar.google.com&ctz=Europe/London",
+   "details": "Listed on the Downing College events calendar.",
+   "source": "downing-college-events"
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-11T19:30:00+00:00",
+   "college": "Clare Hall",
+   "url": "https://www.clarehall.cam.ac.uk/dining/",
+   "source": "clare-hall-clare-hall-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-11T19:30:00+00:00",
+   "college": "Darwin",
+   "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
+   "source": "darwin-darwin-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Most Wednesdays and Fridays. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-11T19:30:00+00:00",
+   "college": "Gonville & Caius",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "source": "gonville-caius-gonville-caius-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-11T19:30:00+00:00",
+   "college": "Jesus",
+   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
+   "source": "jesus-jesus-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-11T19:30:00+00:00",
+   "college": "Peterhouse",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "source": "peterhouse-peterhouse-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-11T19:30:00+00:00",
+   "college": "Queens'",
+   "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
+   "source": "queens-queens-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-11T19:30:00+00:00",
+   "college": "St Catharine's",
+   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
+   "source": "st-catharine-s-st-catharine-s-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Wednesday undergraduate, Thursday postgraduate. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-12T19:30:00+00:00",
+   "college": "Churchill",
+   "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
+   "source": "churchill-churchill-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-12T19:30:00+00:00",
+   "college": "Girton",
+   "url": "https://girton.cam.ac.uk/dining-and-socialising",
+   "source": "girton-girton-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-12T19:30:00+00:00",
+   "college": "Gonville & Caius",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "source": "gonville-caius-gonville-caius-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-12T19:30:00+00:00",
+   "college": "Lucy Cavendish",
+   "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
+   "source": "lucy-cavendish-lucy-cavendish-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-12T19:30:00+00:00",
+   "college": "Peterhouse",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "source": "peterhouse-peterhouse-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-12T19:30:00+00:00",
+   "college": "Selwyn",
+   "url": "https://selwynjcr.org/college-life/formals",
+   "source": "selwyn-selwyn-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-12T19:30:00+00:00",
+   "college": "St Catharine's",
+   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
+   "source": "st-catharine-s-st-catharine-s-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Wednesday undergraduate, Thursday postgraduate. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": true,
+   "title": "Woodville Feast",
+   "starts_at": "2026-11-13T19:00:00+00:00",
+   "ends_at": "2026-11-13T21:45:00+00:00",
+   "college": "Queens'",
+   "venue": "Old Hall",
+   "host": "Queens' MCR",
+   "url": "https://www.qmcr.org/upcomingevents",
+   "details": "The MCR's termly feast in Old Hall, from the MCR events calendar.",
+   "source": "queens-mcr-upcoming"
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-13T19:00:00+00:00",
+   "college": "Hughes Hall",
+   "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
+   "source": "hughes-hall-hughes-hall-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Usually Tuesdays and Fridays."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "BA Formal Dinner in Hall",
+   "starts_at": "2026-11-13T19:30:00+00:00",
+   "ends_at": "2026-11-13T20:45:00+00:00",
+   "college": "Magdalene",
+   "venue": "Hall",
+   "host": "Magdalene MCR",
+   "guests": "Students and their guests",
+   "dress": "Formal with gowns",
+   "url": "https://www.mcr.magd.cam.ac.uk/events/ba-formal-dinner-in-hall-hdw54-8wc4j-dfy83-w9sg8-3xrar-wcx6d",
+   "details": "Three courses; book on UPay. Free pre-drinks in Benson Hall from 6.45pm, port and chocolates in the MCR after.",
+   "source": "magdalene-mcr-events"
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-13T19:30:00+00:00",
+   "college": "Churchill",
+   "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
+   "source": "churchill-churchill-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-13T19:30:00+00:00",
+   "college": "Corpus Christi",
+   "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
+   "source": "corpus-christi-corpus-christi-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-13T19:30:00+00:00",
+   "college": "Darwin",
+   "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
+   "source": "darwin-darwin-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Most Wednesdays and Fridays. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-13T19:30:00+00:00",
+   "college": "Downing",
+   "url": "https://dow.cam.ac.uk/current-students/catering",
+   "source": "downing-downing-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-13T19:30:00+00:00",
+   "college": "Emmanuel",
+   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-13T19:30:00+00:00",
+   "college": "Gonville & Caius",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "source": "gonville-caius-gonville-caius-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-13T19:30:00+00:00",
+   "college": "Jesus",
+   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
+   "source": "jesus-jesus-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-13T19:30:00+00:00",
+   "college": "Lucy Cavendish",
+   "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
+   "source": "lucy-cavendish-lucy-cavendish-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-13T19:30:00+00:00",
+   "college": "Peterhouse",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "source": "peterhouse-peterhouse-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-13T19:30:00+00:00",
+   "college": "Robinson",
+   "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
+   "source": "robinson-robinson-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-13T19:30:00+00:00",
+   "college": "St Edmund's",
+   "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
+   "source": "st-edmund-s-st-edmund-s-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Most Tuesdays and Fridays. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-13T19:30:00+00:00",
+   "college": "Wolfson",
+   "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
+   "source": "wolfson-wolfson-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "bop",
+   "title": "50 Years of Women in Selwyn Bop",
+   "starts_at": "2026-11-13T21:00:00+00:00",
+   "college": "Selwyn",
+   "venue": "Selwyn bar",
+   "host": "Selwyn Ents",
+   "dress": "Dress as an inspirational woman",
+   "url": "https://www.instagram.com/selwynents/",
+   "details": "Date marked TBC on the termcard; time assumed.",
+   "source": "selwyn-ents-instagram"
+  },
+  {
+   "kind": "formal",
+   "special": true,
+   "title": "Baila en Sidney formal",
+   "starts_at": "2026-11-14T19:00:00+00:00",
+   "ends_at": "2026-11-14T23:00:00+00:00",
+   "college": "Sidney Sussex",
+   "venue": "Hall, then the bar",
+   "host": "Sidney Sussex MCR",
+   "guests": "Graduate formal; 10 members of Cuban Salsa Soc joining",
+   "url": "https://www.sidneysussexmcr.com/events",
+   "details": "Cuban-themed formal 7-9pm, then a live Latin band and drinks in the bar until 11pm.",
+   "source": "sidney-mcr-events"
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-14T19:30:00+00:00",
+   "college": "Emmanuel",
+   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-14T19:30:00+00:00",
+   "college": "Gonville & Caius",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "source": "gonville-caius-gonville-caius-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-14T19:30:00+00:00",
+   "college": "Peterhouse",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "source": "peterhouse-peterhouse-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-15T19:30:00+00:00",
+   "college": "Churchill",
+   "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
+   "source": "churchill-churchill-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-15T19:30:00+00:00",
+   "college": "Corpus Christi",
+   "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
+   "source": "corpus-christi-corpus-christi-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-15T19:30:00+00:00",
+   "college": "Downing",
+   "url": "https://dow.cam.ac.uk/current-students/catering",
+   "source": "downing-downing-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-15T19:30:00+00:00",
+   "college": "Emmanuel",
+   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-15T19:30:00+00:00",
+   "college": "Gonville & Caius",
+   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
+   "source": "gonville-caius-gonville-caius-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-15T19:30:00+00:00",
+   "college": "Jesus",
+   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
+   "source": "jesus-jesus-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term)."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-15T19:30:00+00:00",
+   "college": "Peterhouse",
+   "url": "https://www.pet.cam.ac.uk/food-and-drink",
+   "source": "peterhouse-peterhouse-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-15T19:30:00+00:00",
+   "college": "Queens'",
+   "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
+   "source": "queens-queens-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+  },
+  {
+   "kind": "formal",
+   "special": false,
+   "title": "Formal Hall",
+   "starts_at": "2026-11-15T19:30:00+00:00",
+   "college": "St Catharine's",
+   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
+   "source": "st-catharine-s-st-catharine-s-formal-hall",
+   "details": "Regular formal hall night (registry schedule, Full Term). Wednesday undergraduate, Thursday postgraduate. Start time not stated; 19:30 assumed."
+  }
+ ]
 }
