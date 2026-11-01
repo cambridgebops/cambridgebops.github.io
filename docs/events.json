@@ -1,11 +1,12 @@
 {
- "generated": "2026-11-01T18:39:34+00:00",
+ "generated": "2026-11-01T21:45:58+00:00",
  "run": {
-  "checked_at": "2026-11-01T18:39:34+00:00",
+  "version": 2,
+  "checked_at": "2026-11-01T21:45:58+00:00",
   "window_from": "2026-11-01",
-  "window_to": "2026-11-15",
+  "window_to": "2026-11-22",
   "sources_checked": 176,
-  "sources_ok": 102
+  "sources_ok": 130
  },
  "sources": [
   {
@@ -33,7 +34,7 @@
    "url": "https://thejcr.co.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "calendar feed unreadable: webmaster@thejcr.co.uk"
   },
   {
    "slug": "christs-mcr-whats-on",
@@ -51,7 +52,7 @@
    "url": "https://www.christsmcr.co.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "christs-jcr-termcard",
@@ -60,7 +61,7 @@
    "url": "https://thejcr.co.uk/get-involved/termcard",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "calendar feed unreadable: webmaster@thejcr.co.uk"
   },
   {
    "slug": "churchill-jcr-mcr-page",
@@ -69,7 +70,7 @@
    "url": "https://www.chu.cam.ac.uk/about/governance/jcr-and-mcr/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "churchill-college-events",
@@ -78,7 +79,7 @@
    "url": "https://www.chu.cam.ac.uk/events/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "churchill-churchill-formal-hall",
@@ -87,7 +88,7 @@
    "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "churchill-jcr-instagram",
@@ -96,7 +97,7 @@
    "url": "https://www.instagram.com/churchillcoljcr/",
    "ok": false,
    "note": "not readable by the routine",
-   "found": 1
+   "found": 0
   },
   {
    "slug": "clare-ucs-instagram",
@@ -105,15 +106,15 @@
    "url": "https://www.instagram.com/ucs_clare/",
    "ok": false,
    "note": "not readable by the routine",
-   "found": 1
+   "found": 0
   },
   {
    "slug": "clare-ucs-going-out",
    "name": "Clare UCS Going Out",
    "kind": "JCR events",
    "url": "https://ucs.clare.cam.ac.uk/current-students/going-out/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "rendered with headless Chromium",
    "found": 0
   },
   {
@@ -121,8 +122,8 @@
    "name": "Clare UCS",
    "kind": "JCR site",
    "url": "https://ucs.clare.cam.ac.uk/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "read",
    "found": 0
   },
   {
@@ -132,7 +133,7 @@
    "url": "https://mcr.clare.cam.ac.uk/news-and-events/all-events",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "clare-mcr-site",
@@ -141,7 +142,7 @@
    "url": "https://mcr.clare.cam.ac.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "clare-hall-events",
@@ -150,7 +151,7 @@
    "url": "https://www.clarehall.cam.ac.uk/events/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "clare-hall-clare-hall-formal-hall",
@@ -159,7 +160,7 @@
    "url": "https://www.clarehall.cam.ac.uk/dining/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "clare-hall-gsb-instagram",
@@ -177,7 +178,7 @@
    "url": "https://www.clarehall.cam.ac.uk/events-category/gsb/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "clare-hall-gsb-site",
@@ -186,7 +187,7 @@
    "url": "https://www.clarehall.cam.ac.uk/gsb/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "corpus-ents",
@@ -195,7 +196,7 @@
    "url": "https://www.jcr.corpus.cam.ac.uk/corpus-ents",
    "ok": true,
    "found": 0,
-   "note": "calendar feed unreadable: 34427e658edf07d5aa50e355b5022b3a1a6c224ee877b8b6db110e25f6938b11@group.calendar.google.com"
+   "note": "calendar feed unreadable: 8e87b4873d94de024c20bdc95eec5106915be246df9d52837e1a5f77bbc98794@group.calendar.google.com"
   },
   {
    "slug": "corpus-christi-corpus-christi-formal-hall",
@@ -204,7 +205,7 @@
    "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "corpus-jcr-instagram",
@@ -222,7 +223,7 @@
    "url": "https://www.jcr.corpus.cam.ac.uk/events-calendars",
    "ok": true,
    "found": 0,
-   "note": "calendar feed unreadable: 34427e658edf07d5aa50e355b5022b3a1a6c224ee877b8b6db110e25f6938b11@group.calendar.google.com"
+   "note": "calendar feed unreadable: 8e87b4873d94de024c20bdc95eec5106915be246df9d52837e1a5f77bbc98794@group.calendar.google.com"
   },
   {
    "slug": "corpus-jcr-site",
@@ -231,7 +232,7 @@
    "url": "https://www.jcr.corpus.cam.ac.uk/",
    "ok": true,
    "found": 0,
-   "note": "calendar feed unreadable: 34427e658edf07d5aa50e355b5022b3a1a6c224ee877b8b6db110e25f6938b11@group.calendar.google.com"
+   "note": "calendar feed unreadable: 8e87b4873d94de024c20bdc95eec5106915be246df9d52837e1a5f77bbc98794@group.calendar.google.com"
   },
   {
    "slug": "corpus-mcr-events",
@@ -249,7 +250,7 @@
    "url": "https://www.corpusmcr.com/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "corpus-mcr-term-card",
@@ -303,7 +304,7 @@
    "url": "https://www.dcsa.darwin.cam.ac.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "downing-college-events",
@@ -311,8 +312,8 @@
    "kind": "College events",
    "url": "https://dow.cam.ac.uk/about/events",
    "ok": true,
-   "found": 8,
-   "note": ""
+   "found": 9,
+   "note": "read"
   },
   {
    "slug": "downing-downing-formal-hall",
@@ -321,7 +322,7 @@
    "url": "https://dow.cam.ac.uk/current-students/catering",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "downing-mcr-instagram",
@@ -339,7 +340,7 @@
    "url": "https://downingjcr.org.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "downing-mcr-page",
@@ -348,7 +349,7 @@
    "url": "https://dow.cam.ac.uk/people/downing-mcr",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "emmanuel-emmanuel-formal-hall",
@@ -357,7 +358,7 @@
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "emmanuel-ecsu-instagram",
@@ -375,7 +376,7 @@
    "url": "https://ecsu.org.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "emmanuel-mcr-events-calendar",
@@ -384,7 +385,7 @@
    "url": "https://www.emmamcr.org.uk/events-calendar",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "emmanuel-mcr-site",
@@ -393,7 +394,7 @@
    "url": "https://www.emmamcr.org.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "fitzwilliam-college-jcr-mcr-page",
@@ -402,7 +403,7 @@
    "url": "https://www.fitz.cam.ac.uk/jcr-mcr",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "fitzwilliam-jcr-instagram",
@@ -420,15 +421,15 @@
    "url": "https://www.fitzjcr.com/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "fitzwilliam-mcr-events",
    "name": "Fitzwilliam MCR events",
    "kind": "MCR events",
    "url": "https://mcr.fitz.cam.ac.uk/events-today/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "read",
    "found": 0
   },
   {
@@ -436,8 +437,8 @@
    "name": "Fitzwilliam MCR",
    "kind": "MCR site",
    "url": "https://mcr.fitz.cam.ac.uk/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "read",
    "found": 0
   },
   {
@@ -445,8 +446,8 @@
    "name": "Fitzwilliam MCR term card",
    "kind": "Termcard",
    "url": "https://mcr.fitz.cam.ac.uk/overview/term-card/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "read",
    "found": 0
   },
   {
@@ -455,8 +456,8 @@
    "kind": "College events",
    "url": "https://www.girton.cam.ac.uk/upcoming-events",
    "ok": true,
-   "found": 4,
-   "note": ""
+   "found": 6,
+   "note": "read"
   },
   {
    "slug": "girton-girton-formal-hall",
@@ -465,7 +466,7 @@
    "url": "https://girton.cam.ac.uk/dining-and-socialising",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "girton-jcr-instagram",
@@ -481,8 +482,8 @@
    "name": "Girton JCR events calendar",
    "kind": "JCR events",
    "url": "https://girtonjcr.co.uk/events-calendar",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "rendered with headless Chromium",
    "found": 0
   },
   {
@@ -490,8 +491,8 @@
    "name": "Girton JCR",
    "kind": "JCR site",
    "url": "https://girtonjcr.co.uk/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "rendered with headless Chromium",
    "found": 0
   },
   {
@@ -501,7 +502,7 @@
    "url": "https://sites.google.com/cam.ac.uk/girton-mcr/events",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "girton-mcr-site",
@@ -510,7 +511,7 @@
    "url": "https://sites.google.com/cam.ac.uk/girton-mcr/home",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "gonville-caius-gonville-caius-formal-hall",
@@ -546,7 +547,7 @@
    "url": "https://jcr.cai.cam.ac.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "caius-mcr-site",
@@ -555,7 +556,7 @@
    "url": "https://mcr.cai.cam.ac.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "husjcr-instagram",
@@ -573,7 +574,7 @@
    "url": "https://www.hus-jcr.co.uk/events/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "hus-jcr-site",
@@ -582,7 +583,7 @@
    "url": "https://www.hus-jcr.co.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "homerton-mcr-ents",
@@ -591,7 +592,7 @@
    "url": "https://homerton-mcr.co.uk/upcoming-ents",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "homerton-mcr-site",
@@ -600,7 +601,7 @@
    "url": "https://homerton-mcr.co.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "hughes-college-events",
@@ -609,7 +610,7 @@
    "url": "https://www.hughes.cam.ac.uk/about/events/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "hughes-hall-hughes-hall-formal-hall",
@@ -618,7 +619,7 @@
    "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "hughes-hall-mcr-instagram",
@@ -636,7 +637,7 @@
    "url": "https://www.hughes.cam.ac.uk/student-centre/hughes-hall-mcr/mcr-calendar/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "hughes-mcr-site",
@@ -645,7 +646,7 @@
    "url": "https://www.hughes.cam.ac.uk/student-centre/hughes-hall-mcr/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "jesus-college-events",
@@ -654,7 +655,7 @@
    "url": "https://www.jesus.cam.ac.uk/college/events",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "friday-night-jesus-jcsu-ents-on-facebook",
@@ -672,7 +673,7 @@
    "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "jesus-ents-instagram",
@@ -753,7 +754,7 @@
    "url": "https://kcsu.org.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "lucy-college-events",
@@ -762,7 +763,7 @@
    "url": "https://www.lucy.cam.ac.uk/events",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "lucy-cavendish-lucy-cavendish-formal-hall",
@@ -771,7 +772,7 @@
    "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "lucy-jcr-instagram",
@@ -798,7 +799,7 @@
    "url": "https://www.cambridgesu.co.uk/organisation/lucyjcr/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "lucy-su-page",
@@ -807,7 +808,7 @@
    "url": "https://www.lucy.cam.ac.uk/our-college/place-live-and-study/students-union",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "magdalene-jcr-instagram",
@@ -823,8 +824,8 @@
    "name": "Magdalene JCR",
    "kind": "JCR site",
    "url": "https://jcr.magd.cam.ac.uk/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "read",
    "found": 0
   },
   {
@@ -834,7 +835,7 @@
    "url": "https://www.mcr.magd.cam.ac.uk/events",
    "ok": true,
    "found": 1,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "magdalene-mcr-site",
@@ -843,7 +844,7 @@
    "url": "https://www.mcr.magd.cam.ac.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "murray-edwards-college-life",
@@ -852,7 +853,7 @@
    "url": "https://www.murrayedwards.cam.ac.uk/college-life",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "murray-edwards-jcr-cambridgesu",
@@ -861,15 +862,15 @@
    "url": "https://www.cambridgesu.co.uk/organisation/14844/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "murray-edwards-mcr-site",
    "name": "Murray Edwards MCR",
    "kind": "MCR site",
    "url": "https://memcr.soc.srcf.net/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "read",
    "found": 0
   },
   {
@@ -879,7 +880,7 @@
    "url": "https://newn.cam.ac.uk/study-here/life-newnham/societies-and-facilities/college-social-life",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "newnham-mcr-instagram",
@@ -897,15 +898,15 @@
    "url": "https://www.cambridgesu.co.uk/organisation/newnhammcr/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "newnham-mcr-site",
    "name": "Newnham MCR",
    "kind": "MCR site",
    "url": "https://newnhammcr.soc.srcf.net/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "read",
    "found": 0
   },
   {
@@ -922,8 +923,8 @@
    "name": "Pembroke JP bar page",
    "kind": "JCR events",
    "url": "https://jp.pem.cam.ac.uk/the-jp-bar/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "read",
    "found": 0
   },
   {
@@ -931,8 +932,8 @@
    "name": "Pembroke JP (JPC)",
    "kind": "JCR site",
    "url": "https://jp.pem.cam.ac.uk/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "read",
    "found": 0
   },
   {
@@ -940,8 +941,8 @@
    "name": "Pembroke GP social",
    "kind": "MCR events",
    "url": "https://gp.pem.cam.ac.uk/graduatelife/social/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "rendered with headless Chromium",
    "found": 0
   },
   {
@@ -949,8 +950,8 @@
    "name": "Pembroke GP (MCR)",
    "kind": "MCR site",
    "url": "https://gp.pem.cam.ac.uk/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "read",
    "found": 0
   },
   {
@@ -996,7 +997,7 @@
    "url": "https://www.peterhousemcr.co.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "peterhouse-mcr-termcard",
@@ -1005,7 +1006,7 @@
    "url": "https://www.peterhousemcr.co.uk/term-card",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "queens-qents",
@@ -1023,7 +1024,7 @@
    "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "queens-ents-instagram",
@@ -1076,8 +1077,8 @@
    "kind": "MCR events",
    "url": "https://www.qmcr.org/upcomingevents",
    "ok": true,
-   "found": 2,
-   "note": ""
+   "found": 3,
+   "note": "read"
   },
   {
    "slug": "queens-mcr-site",
@@ -1086,7 +1087,7 @@
    "url": "https://www.qmcr.org/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "robinson-robinson-formal-hall",
@@ -1095,7 +1096,7 @@
    "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "robinson-jcr-instagram",
@@ -1113,7 +1114,7 @@
    "url": "https://www.rcsa.co.uk/events",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "robinson-rcsa-site",
@@ -1122,7 +1123,7 @@
    "url": "https://www.rcsa.co.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "selwyn-selwyn-formal-hall",
@@ -1131,7 +1132,7 @@
    "url": "https://selwynjcr.org/college-life/formals",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "selwyn-ents-instagram",
@@ -1140,7 +1141,7 @@
    "url": "https://www.instagram.com/selwynents/",
    "ok": false,
    "note": "not readable by the routine",
-   "found": 1
+   "found": 0
   },
   {
    "slug": "selwyn-jcr-calendar",
@@ -1158,7 +1159,7 @@
    "url": "https://selwynjcr.org/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "selwyn-mcr-page",
@@ -1167,7 +1168,7 @@
    "url": "https://www.sel.cam.ac.uk/joining-selwyn/graduates/postgraduate-community-and-mcr",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "sidney-college-events",
@@ -1176,7 +1177,7 @@
    "url": "https://www.sid.cam.ac.uk/about-sidney/events",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "sidney-sussex-jcr-instagram",
@@ -1194,7 +1195,7 @@
    "url": "https://www.sid.cam.ac.uk/life-sidney/clubs-and-societies/sscsu-jcr",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "sidney-sscsu-site",
@@ -1203,7 +1204,7 @@
    "url": "https://www.sscsu.org.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "sidney-mcr-events",
@@ -1211,8 +1212,8 @@
    "kind": "MCR events",
    "url": "https://www.sidneysussexmcr.com/events",
    "ok": true,
-   "found": 3,
-   "note": ""
+   "found": 4,
+   "note": "read"
   },
   {
    "slug": "sidney-mcr-site",
@@ -1221,7 +1222,7 @@
    "url": "https://www.sidneysussexmcr.com/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "st-catharine-s-st-catharine-s-formal-hall",
@@ -1230,7 +1231,7 @@
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "catz-entz-instagram",
@@ -1248,7 +1249,7 @@
    "url": "https://www.catzjcr.com/catz-calendar",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "catz-jcr-site",
@@ -1257,7 +1258,7 @@
    "url": "https://www.catzjcr.com/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "catz-mcr-events",
@@ -1265,8 +1266,8 @@
    "kind": "MCR events",
    "url": "https://mcr.caths.cam.ac.uk/events",
    "ok": true,
-   "found": 2,
-   "note": ""
+   "found": 3,
+   "note": "calendar feed unreadable: cathsmcr@gmail.com"
   },
   {
    "slug": "catz-mcr-site",
@@ -1275,7 +1276,7 @@
    "url": "https://mcr.caths.cam.ac.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "calendar feed unreadable: cathsmcr@gmail.com"
   },
   {
    "slug": "st-edmunds-bar-cr",
@@ -1284,7 +1285,7 @@
    "url": "https://www.st-edmunds.cam.ac.uk/college-life/bar-cr/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "st-edmunds-college-events",
@@ -1293,7 +1294,7 @@
    "url": "https://www.st-edmunds.cam.ac.uk/news-events/events/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "st-edmund-s-st-edmund-s-formal-hall",
@@ -1302,7 +1303,7 @@
    "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "st-edmund-s-college-instagram",
@@ -1320,7 +1321,7 @@
    "url": "https://my-cr.st-edmunds.cam.ac.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "st-johns-jcr-ents",
@@ -1328,7 +1329,7 @@
    "kind": "Ents site",
    "url": "https://www.sjcjcr.com/yourjcr/ents",
    "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "note": "HTTP 503",
    "found": 0
   },
   {
@@ -1346,7 +1347,7 @@
    "kind": "JCR site",
    "url": "https://www.sjcjcr.com/",
    "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "note": "HTTP 503",
    "found": 0
   },
   {
@@ -1365,7 +1366,7 @@
    "url": "https://sites.google.com/cam.ac.uk/sbr/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "tcsu-instagram",
@@ -1383,15 +1384,15 @@
    "url": "https://web.tcsu.net/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "trinity-ba-events",
    "name": "Trinity BA Society events",
    "kind": "MCR events",
    "url": "https://www.basociety.net/ba-events/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "rendered with headless Chromium",
    "found": 0
   },
   {
@@ -1399,8 +1400,8 @@
    "name": "Trinity BA Society (MCR)",
    "kind": "MCR site",
    "url": "https://www.basociety.net/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "read",
    "found": 0
   },
   {
@@ -1408,8 +1409,8 @@
    "name": "Trinity Hall JCR Ents",
    "kind": "Ents site",
    "url": "https://www.jcr.trinhall.cam.ac.uk/college-life/ents",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "rendered with headless Chromium",
    "found": 0
   },
   {
@@ -1426,8 +1427,8 @@
    "name": "Trinity Hall JCR",
    "kind": "JCR site",
    "url": "https://www.jcr.trinhall.cam.ac.uk/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "read",
    "found": 0
   },
   {
@@ -1435,8 +1436,8 @@
    "name": "Trinity Hall MCR",
    "kind": "MCR site",
    "url": "https://thmcr.soc.srcf.net/",
-   "ok": false,
-   "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "ok": true,
+   "note": "read",
    "found": 0
   },
   {
@@ -1446,7 +1447,7 @@
    "url": "https://www.wolfson.cam.ac.uk/college-life/whats-on",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "wolfson-wolfson-formal-hall",
@@ -1455,7 +1456,7 @@
    "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "wcsa-instagram",
@@ -1473,7 +1474,7 @@
    "url": "https://www.wcsa.org.uk/",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "wolfson-college-wcsa-page",
@@ -1482,7 +1483,7 @@
    "url": "https://www.wolfson.cam.ac.uk/student-association-wcsa",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "cambridge-su-events",
@@ -1491,7 +1492,7 @@
    "url": "https://www.cambridgesu.co.uk/events",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "the-tab-cambridge",
@@ -1500,7 +1501,7 @@
    "url": "https://thetab.com/university/cambridge",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "varsity",
@@ -1509,103 +1510,91 @@
    "url": "https://www.varsity.co.uk",
    "ok": true,
    "found": 0,
-   "note": ""
+   "note": "read"
   },
   {
    "slug": "society-footlights",
    "name": "The Cambridge University Footlights Dramatic Club",
    "kind": "Society events",
    "url": "https://www.cambridgefootlights.org/services-9",
-   "ok": false,
-   "found": 0,
-   "note": "added to the registry; first read on the next weekly run"
+   "ok": true,
+   "found": 1,
+   "note": "read"
   },
   {
    "slug": "society-cuadc",
    "name": "Cambridge University Amateur Dramatic Club",
    "kind": "Ticketing page",
    "url": "https://www.camdram.net/societies/cambridge-university-amateur-dramatic-club",
-   "ok": false,
+   "ok": true,
    "found": 0,
-   "note": "added to the registry; first read on the next weekly run"
+   "note": "read"
   },
   {
    "slug": "society-isoc",
    "name": "Cambridge University Islamic Society",
    "kind": "Society calendar",
    "url": "https://calendar.google.com/calendar/embed?src=e5c94f5eef33fa6d7ba8098c9f0d6b8936a1f4dd80a4c210c8076ad31f914d68%40group.calendar.google.com&ctz=Europe%2FLondon",
-   "ok": false,
+   "ok": true,
    "found": 0,
-   "note": "added to the registry; first read on the next weekly run"
+   "note": "read as its iCal feed"
   },
   {
    "slug": "society-cumts",
    "name": "Cambridge University Musical Theatre Society",
    "kind": "Ticketing page",
    "url": "https://www.camdram.net/societies/cambridge-university-musical-theatre-society",
-   "ok": false,
-   "found": 0,
-   "note": "added to the registry; first read on the next weekly run"
+   "ok": true,
+   "found": 1,
+   "note": "read"
   },
   {
    "slug": "society-cu-wine-society",
    "name": "Cambridge University Wine Society",
    "kind": "Society events",
    "url": "https://cuws.org.uk/upcoming-tastings/",
-   "ok": false,
+   "ok": true,
    "found": 0,
-   "note": "added to the registry; first read on the next weekly run"
+   "note": "read"
   },
   {
    "slug": "society-cuso",
    "name": "Cambridge University Symphony Orchestra",
    "kind": "Society events",
    "url": "https://cuso.org.uk/performances.php",
-   "ok": false,
+   "ok": true,
    "found": 0,
-   "note": "added to the registry; first read on the next weekly run"
+   "note": "read"
   },
   {
    "slug": "society-marlowe-society",
    "name": "The Marlowe Society",
    "kind": "Ticketing page",
    "url": "https://www.camdram.net/societies/the-marlowe-society",
-   "ok": false,
+   "ok": true,
    "found": 0,
-   "note": "added to the registry; first read on the next weekly run"
+   "note": "read"
   },
   {
    "slug": "society-cu-g-s",
    "name": "Cambridge University Gilbert and Sullivan Society",
    "kind": "Ticketing page",
    "url": "https://www.camdram.net/societies/cambridge-university-gilbert-and-sullivan-society",
-   "ok": false,
+   "ok": true,
    "found": 0,
-   "note": "added to the registry; first read on the next weekly run"
+   "note": "read"
   },
   {
    "slug": "society-cules",
    "name": "Cambridge University Light Entertainment Society",
    "kind": "Ticketing page",
    "url": "https://www.camdram.net/societies/cambridge-university-light-entertainment-society",
-   "ok": false,
+   "ok": true,
    "found": 0,
-   "note": "added to the registry; first read on the next weekly run"
+   "note": "read"
   }
  ],
  "bops": [
-  {
-   "kind": "bop",
-   "title": "Halloween Formal & Bop",
-   "starts_at": "2026-11-01T19:00:00+00:00",
-   "college": "Churchill",
-   "venue": "Dining Hall",
-   "host": "Churchill JCR",
-   "dress": "Costume, prizes for best individual and group",
-   "url": "https://www.instagram.com/p/Ddj51dYEeBI/",
-   "details": "Formal at 7pm, then the bop.",
-   "source": "churchill-jcr-instagram"
-  },
   {
    "kind": "other",
    "title": "Bach Cantatas and more",
@@ -1614,19 +1603,11 @@
    "venue": "Old Hall",
    "url": "https://www.girton.cam.ac.uk/upcoming-events",
    "details": "Time not stated.",
-   "source": "girton-college-events"
-  },
-  {
-   "kind": "bop",
-   "title": "Gaelic Samhain: queer Halloween party",
-   "starts_at": "2026-11-01T20:00:00+00:00",
-   "ends_at": "2026-11-01T23:00:00+00:00",
-   "college": "Clare",
-   "venue": "Clare Cellars",
-   "host": "King's LGBTQ+ with Clare bar and KCSU",
-   "price": "£4, tickets on RA",
-   "url": "https://www.instagram.com/ucs_clare/",
-   "source": "clare-ucs-instagram"
+   "source": "girton-college-events",
+   "evidence": {
+    "quote": "01 Nov 2026 Bach Cantatas and more",
+    "where": "Old Hall"
+   }
   },
   {
    "kind": "other",
@@ -1636,7 +1617,11 @@
    "venue": "Downing College Chapel",
    "host": "Downing Dramatic Society",
    "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events"
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-11-02T19:00+00:00 | DDS: Moonlight Monologues | Downing College Chapel | recurring",
+    "where": "Downing College Chapel"
+   }
   },
   {
    "kind": "other",
@@ -1646,7 +1631,11 @@
    "venue": "QBar",
    "host": "Queens' MCR",
    "url": "https://www.qmcr.org/upcomingevents",
-   "source": "queens-mcr-upcoming"
+   "source": "queens-mcr-upcoming",
+   "evidence": {
+    "quote": "Queens' | 2026-11-02T19:30+00:00 | MCR Pub Quiz | QBar",
+    "where": "QBar"
+   }
   },
   {
    "kind": "other",
@@ -1657,7 +1646,11 @@
    "venue": "College Bar",
    "host": "Magdalene MCR",
    "url": "https://www.mcr.magd.cam.ac.uk/events",
-   "source": "magdalene-mcr-events"
+   "source": "magdalene-mcr-events",
+   "evidence": {
+    "quote": "Quiz Night in the College Bar Monday 2 November 2026 20:00 22:00",
+    "where": "Location Magdalene College"
+   }
   },
   {
    "kind": "other",
@@ -1667,7 +1660,11 @@
    "venue": "E-Staircase Music Room",
    "url": "https://dow.cam.ac.uk/about/events",
    "details": "Ukrainian pianist in concert.",
-   "source": "downing-college-events"
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-11-03T18:30+00:00 | Downing Arts: Ukrainian pianist Lubomyr Melynk in concert | E-Staircase Music Room",
+    "where": "E-Staircase Music Room"
+   }
   },
   {
    "kind": "other",
@@ -1677,7 +1674,11 @@
    "venue": "Downing College Chapel",
    "host": "Downing Dramatic Society",
    "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events"
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-11-03T19:00+00:00 | DDS: Moonlight Monologues | Downing College Chapel | recurring",
+    "where": "Downing College Chapel"
+   }
   },
   {
    "kind": "other",
@@ -1686,7 +1687,11 @@
    "college": "Downing",
    "venue": "Wilkins Room",
    "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events"
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-11-04T18:30+00:00 | Yoga with Katherine | Wilkins Room | recurring",
+    "where": "Wilkins Room"
+   }
   },
   {
    "kind": "other",
@@ -1696,7 +1701,11 @@
    "venue": "Rushmore Room",
    "host": "St Catharine's MCR",
    "url": "https://mcr.caths.cam.ac.uk/events",
-   "source": "catz-mcr-events"
+   "source": "catz-mcr-events",
+   "evidence": {
+    "quote": "St Catharine's | 2026-11-04T18:30+00:00 | Welfare yoga | Rushmore Room | recurring",
+    "where": "Rushmore Room"
+   }
   },
   {
    "kind": "other",
@@ -1706,7 +1715,11 @@
    "venue": "MCR",
    "host": "Sidney Sussex MCR",
    "url": "https://www.sidneysussexmcr.com/events",
-   "source": "sidney-mcr-events"
+   "source": "sidney-mcr-events",
+   "evidence": {
+    "quote": "Sidney Sussex | 2026-11-04T21:00+00:00 | Second Desserts | MCR",
+    "where": "MCR"
+   }
   },
   {
    "kind": "other",
@@ -1716,7 +1729,11 @@
    "venue": "Old Hall",
    "url": "https://www.girton.cam.ac.uk/upcoming-events",
    "details": "Time not stated.",
-   "source": "girton-college-events"
+   "source": "girton-college-events",
+   "evidence": {
+    "quote": "06 Nov 2026 Girton Jazz presents Iain McKenzie",
+    "where": "Old Hall, Girton College"
+   }
   },
   {
    "kind": "other",
@@ -1725,7 +1742,11 @@
    "college": "Downing",
    "venue": "JCR",
    "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events"
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-11-06T21:00+00:00 | Week 5 Blues | JCR",
+    "where": "JCR"
+   }
   },
   {
    "kind": "other",
@@ -1734,7 +1755,25 @@
    "college": "Downing",
    "venue": "Howard Theatre",
    "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events"
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-11-07T18:00+00:00 | No Provenance: Dahomey and Ayouni double film screening | Howard Theatre, Downing College, Howard Theatre, Cambridge C",
+    "where": "Howard Theatre, Downing College, Howard Theatre, Cambridge C"
+   }
+  },
+  {
+   "kind": "society",
+   "society": "CUMTS",
+   "title": "CUMTS Freshers Bar Night",
+   "starts_at": "2026-11-07T20:00:00+00:00",
+   "venue": "ADC Theatre (Bar)",
+   "host": "Cambridge University Musical Theatre Society",
+   "url": "https://www.camdram.net/societies/cambridge-university-musical-theatre-society",
+   "source": "society-cumts",
+   "evidence": {
+    "quote": "Sat 7 Nov 20:00 CUMTS Freshers Bar Night ADC Theatre (Bar)",
+    "where": "ADC Theatre (Bar)"
+   }
   },
   {
    "kind": "other",
@@ -1744,7 +1783,11 @@
    "venue": "Chapel",
    "url": "https://www.girton.cam.ac.uk/upcoming-events",
    "details": "Time not stated.",
-   "source": "girton-college-events"
+   "source": "girton-college-events",
+   "evidence": {
+    "quote": "08 Nov 2026 A concert for Remembrance Sunday",
+    "where": "Chapel"
+   }
   },
   {
    "kind": "other",
@@ -1754,7 +1797,11 @@
    "venue": "Old Hall",
    "host": "Queens' MCR",
    "url": "https://www.qmcr.org/upcomingevents",
-   "source": "queens-mcr-upcoming"
+   "source": "queens-mcr-upcoming",
+   "evidence": {
+    "quote": "Queens' | 2026-11-08T19:30+00:00 | Wine & Cheese | Old Hall",
+    "where": "Old Hall"
+   }
   },
   {
    "kind": "other",
@@ -1764,7 +1811,26 @@
    "venue": "Old Library",
    "url": "https://www.sidneysussexmcr.com/events",
    "details": "Open to staff and students.",
-   "source": "sidney-mcr-events"
+   "source": "sidney-mcr-events",
+   "evidence": {
+    "quote": "Sidney Sussex | 2026-11-10T12:00+00:00 | Women at Sidney lunch (open to staff and students) | Old Library",
+    "where": "Old Library"
+   }
+  },
+  {
+   "kind": "society",
+   "society": "Footlights",
+   "title": "Footlights Smoker",
+   "starts_at": "2026-11-10T21:30:00+00:00",
+   "venue": "Corpus Playroom",
+   "host": "Cambridge University Footlights Dramatic Club",
+   "url": "https://www.cambridgefootlights.org/services-9",
+   "details": "Student sketch and stand-up comedy; tickets from the ADC website.",
+   "source": "society-footlights",
+   "evidence": {
+    "quote": "21:30, Tue 10th November 2026 at Corpus Playroom",
+    "where": "Corpus Playroom"
+   }
   },
   {
    "kind": "other",
@@ -1773,7 +1839,11 @@
    "college": "Downing",
    "venue": "Wilkins Room",
    "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events"
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-11-11T18:30+00:00 | Yoga with Katherine | Wilkins Room | recurring",
+    "where": "Wilkins Room"
+   }
   },
   {
    "kind": "other",
@@ -1783,7 +1853,11 @@
    "venue": "Rushmore Room",
    "host": "St Catharine's MCR",
    "url": "https://mcr.caths.cam.ac.uk/events",
-   "source": "catz-mcr-events"
+   "source": "catz-mcr-events",
+   "evidence": {
+    "quote": "St Catharine's | 2026-11-11T18:30+00:00 | Welfare yoga | Rushmore Room | recurring",
+    "where": "Rushmore Room"
+   }
   },
   {
    "kind": "other",
@@ -1793,7 +1867,11 @@
    "venue": "MCR",
    "host": "Sidney Sussex MCR",
    "url": "https://www.sidneysussexmcr.com/events",
-   "source": "sidney-mcr-events"
+   "source": "sidney-mcr-events",
+   "evidence": {
+    "quote": "Sidney Sussex | 2026-11-12T15:00+00:00 | Welfare Event: Cake & Chat in the MCR | ",
+    "where": "Welfare Event: Cake & Chat in the MCR"
+   }
   },
   {
    "kind": "other",
@@ -1802,19 +1880,11 @@
    "college": "Downing",
    "venue": "Downing College Chapel",
    "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events"
-  },
-  {
-   "kind": "bop",
-   "title": "50 Years of Women in Selwyn Bop",
-   "starts_at": "2026-11-13T21:00:00+00:00",
-   "college": "Selwyn",
-   "venue": "Selwyn bar",
-   "host": "Selwyn Ents",
-   "dress": "Dress as an inspirational woman",
-   "url": "https://www.instagram.com/selwynents/",
-   "details": "Date marked TBC on the termcard; time assumed.",
-   "source": "selwyn-ents-instagram"
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-11-13T18:45+00:00 | Organ Recital | Downing College Chapel, Central Cambridge, Cambridge CB2 1DB",
+    "where": "Downing College Chapel, Central Cambridge, Cambridge CB2 1DB"
+   }
   },
   {
    "kind": "other",
@@ -1824,7 +1894,94 @@
    "venue": "Stanley Library",
    "url": "https://www.girton.cam.ac.uk/upcoming-events",
    "details": "Time not stated.",
-   "source": "girton-college-events"
+   "source": "girton-college-events",
+   "evidence": {
+    "quote": "15 Nov 2026 Prize-winning pianist returns to Girton",
+    "where": "Stanley Library"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "MCR Pub Quiz",
+   "starts_at": "2026-11-16T19:30:00+00:00",
+   "college": "Queens'",
+   "venue": "QBar",
+   "host": "Queens' MCR",
+   "url": "https://www.qmcr.org/upcomingevents",
+   "source": "queens-mcr-upcoming",
+   "evidence": {
+    "quote": "Queens' | 2026-11-16T19:30+00:00 | MCR Pub Quiz | QBar",
+    "where": "QBar"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "Yoga with Katherine",
+   "starts_at": "2026-11-18T18:30:00+00:00",
+   "college": "Downing",
+   "venue": "Wilkins Room",
+   "url": "https://dow.cam.ac.uk/about/events",
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-11-18T18:30+00:00 | Yoga with Katherine | Wilkins Room | recurring",
+    "where": "Wilkins Room"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "Welfare yoga",
+   "starts_at": "2026-11-18T18:30:00+00:00",
+   "college": "St Catharine's",
+   "venue": "Rushmore Room",
+   "host": "St Catharine's MCR",
+   "url": "https://mcr.caths.cam.ac.uk/events",
+   "source": "catz-mcr-events",
+   "evidence": {
+    "quote": "St Catharine's | 2026-11-18T18:30+00:00 | Welfare yoga | Rushmore Room | recurring",
+    "where": "Rushmore Room"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "Girton Jazz presents 'Kind Of Blue'",
+   "starts_at": "2026-11-18T19:00:00+00:00",
+   "college": "Girton",
+   "venue": "Girton College",
+   "url": "https://www.girton.cam.ac.uk/upcoming-events",
+   "details": "Time not stated.",
+   "source": "girton-college-events",
+   "evidence": {
+    "quote": "18 Nov 2026 Girton Jazz presents 'Kind Of Blue'",
+    "where": "Girton College"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "Second Desserts",
+   "starts_at": "2026-11-18T21:00:00+00:00",
+   "college": "Sidney Sussex",
+   "venue": "MCR",
+   "host": "Sidney Sussex MCR",
+   "url": "https://www.sidneysussexmcr.com/events",
+   "source": "sidney-mcr-events",
+   "evidence": {
+    "quote": "Sidney Sussex | 2026-11-18T21:00+00:00 | Second Desserts | MCR",
+    "where": "MCR"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "A programme of chamber music",
+   "starts_at": "2026-11-22T19:00:00+00:00",
+   "college": "Girton",
+   "venue": "Stanley Library, Girton College",
+   "url": "https://www.girton.cam.ac.uk/upcoming-events",
+   "details": "Time not stated.",
+   "source": "girton-college-events",
+   "evidence": {
+    "quote": "22 Nov 2026 A programme of chamber music",
+    "where": "Stanley Library"
+   }
   }
  ]
 }
