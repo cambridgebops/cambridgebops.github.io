@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-31T06:10:38+00:00",
+  "generated": "2026-11-01T06:16:44+00:00",
   "run": {
-    "checked_at": "2026-10-31T06:10:38+00:00",
-    "window_from": "2026-10-31",
-    "window_to": "2026-11-14",
+    "checked_at": "2026-11-01T06:16:44+00:00",
+    "window_from": "2026-11-01",
+    "window_to": "2026-11-15",
     "sources_checked": 149,
-    "sources_ok": 111
+    "sources_ok": 106
   },
   "sources": [
     {
@@ -197,7 +197,8 @@
       "kind": "MCR events",
       "url": "https://www.corpusmcr.com/currentstudents/events",
       "ok": true,
-      "found": 0
+      "found": 0,
+      "note": "this is Corpus Christi College, Oxford MCR, not Cambridge"
     },
     {
       "slug": "corpus-mcr-site",
@@ -205,7 +206,8 @@
       "kind": "MCR site",
       "url": "https://www.corpusmcr.com/",
       "ok": true,
-      "found": 0
+      "found": 0,
+      "note": "this is Corpus Christi College, Oxford MCR, not Cambridge"
     },
     {
       "slug": "corpus-mcr-term-card",
@@ -213,7 +215,8 @@
       "kind": "Termcard",
       "url": "https://www.corpusmcr.com/currentstudents/term-card",
       "ok": true,
-      "found": 0
+      "found": 0,
+      "note": "this is Corpus Christi College, Oxford MCR, not Cambridge"
     },
     {
       "slug": "darwin-college-events",
@@ -221,7 +224,8 @@
       "kind": "College events",
       "url": "https://www.darwin.cam.ac.uk/events/",
       "ok": true,
-      "found": 0
+      "found": 0,
+      "note": "plain fetch reset; read with headless browser"
     },
     {
       "slug": "darwin-dcsa-instagram",
@@ -345,7 +349,8 @@
       "kind": "MCR events",
       "url": "https://mcr.fitz.cam.ac.uk/events-today/",
       "ok": true,
-      "found": 0
+      "found": 0,
+      "note": "plain fetch timed out; read with headless browser"
     },
     {
       "slug": "fitzwilliam-mcr-site",
@@ -451,8 +456,9 @@
       "name": "Homerton HUS (JCR)",
       "kind": "JCR site",
       "url": "https://www.hus-jcr.co.uk/",
-      "ok": true,
-      "found": 0
+      "ok": false,
+      "found": 0,
+      "note": "502 / connection closed today"
     },
     {
       "slug": "husjcr-instagram",
@@ -468,8 +474,9 @@
       "name": "HUS events",
       "kind": "JCR events",
       "url": "https://www.hus-jcr.co.uk/events/",
-      "ok": true,
-      "found": 0
+      "ok": false,
+      "found": 0,
+      "note": "502 / connection closed today"
     },
     {
       "slug": "homerton-mcr-ents",
@@ -525,8 +532,9 @@
       "name": "Jesus JCSU",
       "kind": "JCR site",
       "url": "https://jcsu.jesus.cam.ac.uk/",
-      "ok": true,
-      "found": 0
+      "ok": false,
+      "found": 0,
+      "note": "403 today"
     },
     {
       "slug": "jesus-college-events",
@@ -568,16 +576,18 @@
       "name": "Jesus JCSU calendar",
       "kind": "JCR events",
       "url": "https://jcsu.jesus.cam.ac.uk/current-students/calendar/",
-      "ok": true,
-      "found": 0
+      "ok": false,
+      "found": 0,
+      "note": "403 today"
     },
     {
       "slug": "jesus-jcsu-student-events",
       "name": "Jesus JCSU student-run events",
       "kind": "JCR events",
       "url": "https://jcsu.jesus.cam.ac.uk/current-students/student-run-events/",
-      "ok": true,
-      "found": 0
+      "ok": false,
+      "found": 0,
+      "note": "403 today"
     },
     {
       "slug": "kcsu-site",
@@ -878,7 +888,8 @@
       "kind": "JCR events",
       "url": "https://qjcr.org.uk/events",
       "ok": true,
-      "found": 0
+      "found": 0,
+      "note": "embedded calendar is private (sign-in required)"
     },
     {
       "slug": "queens-mcr-upcoming",
@@ -1192,7 +1203,8 @@
       "kind": "JCR site",
       "url": "https://www.wcsa.org.uk/",
       "ok": true,
-      "found": 0
+      "found": 0,
+      "note": "domain now serves an unrelated site (Wiltshire County Shooting Association)"
     },
     {
       "slug": "wolfson-college-wcsa-page",
