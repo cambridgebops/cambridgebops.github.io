@@ -1435,7 +1435,7 @@
    "college": "Corpus Christi",
    "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
    "source": "corpus-christi-corpus-christi-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1445,7 +1445,7 @@
    "college": "Downing",
    "url": "https://dow.cam.ac.uk/current-students/catering",
    "source": "downing-downing-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1454,8 +1454,7 @@
    "starts_at": "2026-11-01T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "emmanuel-emmanuel-formal-hall"
   },
   {
    "kind": "formal",
@@ -1465,7 +1464,7 @@
    "college": "Gonville & Caius",
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+   "details": "Second sitting. Time not stated."
   },
   {
    "kind": "formal",
@@ -1474,8 +1473,7 @@
    "starts_at": "2026-11-01T19:30:00+00:00",
    "college": "Jesus",
    "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "jesus-jesus-formal-hall"
   },
   {
    "kind": "formal",
@@ -1485,7 +1483,7 @@
    "college": "Peterhouse",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1495,7 +1493,7 @@
    "college": "Queens'",
    "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
    "source": "queens-queens-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1505,7 +1503,7 @@
    "college": "St Catharine's",
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Wednesday undergraduate, Thursday postgraduate. Start time not stated; 19:30 assumed."
+   "details": "Wednesday undergraduate, Thursday postgraduate. Time not stated."
   },
   {
    "kind": "bop",
@@ -1541,7 +1539,7 @@
    "college": "Downing",
    "url": "https://dow.cam.ac.uk/current-students/catering",
    "source": "downing-downing-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1550,8 +1548,7 @@
    "starts_at": "2026-11-02T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "emmanuel-emmanuel-formal-hall"
   },
   {
    "kind": "formal",
@@ -1561,7 +1558,7 @@
    "college": "Gonville & Caius",
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+   "details": "Second sitting. Time not stated."
   },
   {
    "kind": "formal",
@@ -1571,7 +1568,7 @@
    "college": "Peterhouse",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1581,7 +1578,7 @@
    "college": "Hughes Hall",
    "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
    "source": "hughes-hall-hughes-hall-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Usually Tuesdays and Fridays."
+   "details": "Usually Tuesdays and Fridays."
   },
   {
    "kind": "formal",
@@ -1605,7 +1602,7 @@
    "college": "Gonville & Caius",
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+   "details": "Second sitting. Time not stated."
   },
   {
    "kind": "formal",
@@ -1614,8 +1611,7 @@
    "starts_at": "2026-11-03T19:30:00+00:00",
    "college": "Jesus",
    "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "jesus-jesus-formal-hall"
   },
   {
    "kind": "formal",
@@ -1625,7 +1621,7 @@
    "college": "Peterhouse",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1635,7 +1631,7 @@
    "college": "Robinson",
    "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
    "source": "robinson-robinson-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1645,7 +1641,7 @@
    "college": "Selwyn",
    "url": "https://selwynjcr.org/college-life/formals",
    "source": "selwyn-selwyn-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1655,7 +1651,7 @@
    "college": "St Edmund's",
    "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
    "source": "st-edmund-s-st-edmund-s-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Most Tuesdays and Fridays. Start time not stated; 19:30 assumed."
+   "details": "Most Tuesdays and Fridays. Time not stated."
   },
   {
    "kind": "formal",
@@ -1665,7 +1661,7 @@
    "college": "Wolfson",
    "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
    "source": "wolfson-wolfson-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1709,7 +1705,7 @@
    "college": "Darwin",
    "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
    "source": "darwin-darwin-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Most Wednesdays and Fridays. Start time not stated; 19:30 assumed."
+   "details": "Most Wednesdays and Fridays. Time not stated."
   },
   {
    "kind": "formal",
@@ -1719,7 +1715,7 @@
    "college": "Gonville & Caius",
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+   "details": "Second sitting. Time not stated."
   },
   {
    "kind": "formal",
@@ -1728,8 +1724,7 @@
    "starts_at": "2026-11-04T19:30:00+00:00",
    "college": "Jesus",
    "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "jesus-jesus-formal-hall"
   },
   {
    "kind": "formal",
@@ -1739,7 +1734,7 @@
    "college": "Peterhouse",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1749,7 +1744,7 @@
    "college": "Queens'",
    "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
    "source": "queens-queens-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1759,7 +1754,7 @@
    "college": "St Catharine's",
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Wednesday undergraduate, Thursday postgraduate. Start time not stated; 19:30 assumed."
+   "details": "Wednesday undergraduate, Thursday postgraduate. Time not stated."
   },
   {
    "kind": "formal",
@@ -1768,8 +1763,7 @@
    "starts_at": "2026-11-05T19:30:00+00:00",
    "college": "Churchill",
    "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
-   "source": "churchill-churchill-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "churchill-churchill-formal-hall"
   },
   {
    "kind": "formal",
@@ -1779,7 +1773,7 @@
    "college": "Girton",
    "url": "https://girton.cam.ac.uk/dining-and-socialising",
    "source": "girton-girton-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1789,7 +1783,7 @@
    "college": "Gonville & Caius",
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+   "details": "Second sitting. Time not stated."
   },
   {
    "kind": "formal",
@@ -1799,7 +1793,7 @@
    "college": "Lucy Cavendish",
    "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
    "source": "lucy-cavendish-lucy-cavendish-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1809,7 +1803,7 @@
    "college": "Peterhouse",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1819,7 +1813,7 @@
    "college": "Selwyn",
    "url": "https://selwynjcr.org/college-life/formals",
    "source": "selwyn-selwyn-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1829,7 +1823,7 @@
    "college": "St Catharine's",
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Wednesday undergraduate, Thursday postgraduate. Start time not stated; 19:30 assumed."
+   "details": "Wednesday undergraduate, Thursday postgraduate. Time not stated."
   },
   {
    "kind": "formal",
@@ -1839,7 +1833,7 @@
    "college": "Hughes Hall",
    "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
    "source": "hughes-hall-hughes-hall-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Usually Tuesdays and Fridays."
+   "details": "Usually Tuesdays and Fridays."
   },
   {
    "kind": "formal",
@@ -1875,8 +1869,7 @@
    "starts_at": "2026-11-06T19:30:00+00:00",
    "college": "Churchill",
    "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
-   "source": "churchill-churchill-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "churchill-churchill-formal-hall"
   },
   {
    "kind": "formal",
@@ -1886,7 +1879,7 @@
    "college": "Corpus Christi",
    "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
    "source": "corpus-christi-corpus-christi-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1896,7 +1889,7 @@
    "college": "Darwin",
    "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
    "source": "darwin-darwin-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Most Wednesdays and Fridays. Start time not stated; 19:30 assumed."
+   "details": "Most Wednesdays and Fridays. Time not stated."
   },
   {
    "kind": "formal",
@@ -1905,8 +1898,7 @@
    "starts_at": "2026-11-06T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "emmanuel-emmanuel-formal-hall"
   },
   {
    "kind": "formal",
@@ -1916,7 +1908,7 @@
    "college": "Gonville & Caius",
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+   "details": "Second sitting. Time not stated."
   },
   {
    "kind": "formal",
@@ -1925,8 +1917,7 @@
    "starts_at": "2026-11-06T19:30:00+00:00",
    "college": "Jesus",
    "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "jesus-jesus-formal-hall"
   },
   {
    "kind": "formal",
@@ -1936,7 +1927,7 @@
    "college": "Lucy Cavendish",
    "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
    "source": "lucy-cavendish-lucy-cavendish-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1946,7 +1937,7 @@
    "college": "Peterhouse",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1956,7 +1947,7 @@
    "college": "Robinson",
    "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
    "source": "robinson-robinson-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1966,7 +1957,7 @@
    "college": "St Edmund's",
    "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
    "source": "st-edmund-s-st-edmund-s-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Most Tuesdays and Fridays. Start time not stated; 19:30 assumed."
+   "details": "Most Tuesdays and Fridays. Time not stated."
   },
   {
    "kind": "formal",
@@ -1976,7 +1967,7 @@
    "college": "Wolfson",
    "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
    "source": "wolfson-wolfson-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1985,8 +1976,7 @@
    "starts_at": "2026-11-07T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "emmanuel-emmanuel-formal-hall"
   },
   {
    "kind": "formal",
@@ -1996,7 +1986,7 @@
    "college": "Gonville & Caius",
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+   "details": "Second sitting. Time not stated."
   },
   {
    "kind": "formal",
@@ -2006,7 +1996,7 @@
    "college": "Peterhouse",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2015,8 +2005,7 @@
    "starts_at": "2026-11-08T19:30:00+00:00",
    "college": "Churchill",
    "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
-   "source": "churchill-churchill-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "churchill-churchill-formal-hall"
   },
   {
    "kind": "formal",
@@ -2026,7 +2015,7 @@
    "college": "Corpus Christi",
    "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
    "source": "corpus-christi-corpus-christi-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2036,7 +2025,7 @@
    "college": "Downing",
    "url": "https://dow.cam.ac.uk/current-students/catering",
    "source": "downing-downing-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2045,8 +2034,7 @@
    "starts_at": "2026-11-08T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "emmanuel-emmanuel-formal-hall"
   },
   {
    "kind": "formal",
@@ -2056,7 +2044,7 @@
    "college": "Gonville & Caius",
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+   "details": "Second sitting. Time not stated."
   },
   {
    "kind": "formal",
@@ -2065,8 +2053,7 @@
    "starts_at": "2026-11-08T19:30:00+00:00",
    "college": "Jesus",
    "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "jesus-jesus-formal-hall"
   },
   {
    "kind": "formal",
@@ -2076,7 +2063,7 @@
    "college": "Peterhouse",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2086,7 +2073,7 @@
    "college": "Queens'",
    "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
    "source": "queens-queens-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2096,7 +2083,7 @@
    "college": "St Catharine's",
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Wednesday undergraduate, Thursday postgraduate. Start time not stated; 19:30 assumed."
+   "details": "Wednesday undergraduate, Thursday postgraduate. Time not stated."
   },
   {
    "kind": "formal",
@@ -2106,7 +2093,7 @@
    "college": "Downing",
    "url": "https://dow.cam.ac.uk/current-students/catering",
    "source": "downing-downing-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2115,8 +2102,7 @@
    "starts_at": "2026-11-09T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "emmanuel-emmanuel-formal-hall"
   },
   {
    "kind": "formal",
@@ -2126,7 +2112,7 @@
    "college": "Gonville & Caius",
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+   "details": "Second sitting. Time not stated."
   },
   {
    "kind": "formal",
@@ -2136,7 +2122,7 @@
    "college": "Peterhouse",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2146,7 +2132,7 @@
    "college": "Hughes Hall",
    "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
    "source": "hughes-hall-hughes-hall-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Usually Tuesdays and Fridays."
+   "details": "Usually Tuesdays and Fridays."
   },
   {
    "kind": "formal",
@@ -2170,7 +2156,7 @@
    "college": "Gonville & Caius",
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+   "details": "Second sitting. Time not stated."
   },
   {
    "kind": "formal",
@@ -2179,8 +2165,7 @@
    "starts_at": "2026-11-10T19:30:00+00:00",
    "college": "Jesus",
    "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "jesus-jesus-formal-hall"
   },
   {
    "kind": "formal",
@@ -2190,7 +2175,7 @@
    "college": "Peterhouse",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2200,7 +2185,7 @@
    "college": "Robinson",
    "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
    "source": "robinson-robinson-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2210,7 +2195,7 @@
    "college": "Selwyn",
    "url": "https://selwynjcr.org/college-life/formals",
    "source": "selwyn-selwyn-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2220,7 +2205,7 @@
    "college": "St Edmund's",
    "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
    "source": "st-edmund-s-st-edmund-s-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Most Tuesdays and Fridays. Start time not stated; 19:30 assumed."
+   "details": "Most Tuesdays and Fridays. Time not stated."
   },
   {
    "kind": "formal",
@@ -2230,7 +2215,7 @@
    "college": "Wolfson",
    "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
    "source": "wolfson-wolfson-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2252,7 +2237,7 @@
    "college": "Clare Hall",
    "url": "https://www.clarehall.cam.ac.uk/dining/",
    "source": "clare-hall-clare-hall-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2262,7 +2247,7 @@
    "college": "Darwin",
    "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
    "source": "darwin-darwin-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Most Wednesdays and Fridays. Start time not stated; 19:30 assumed."
+   "details": "Most Wednesdays and Fridays. Time not stated."
   },
   {
    "kind": "formal",
@@ -2272,7 +2257,7 @@
    "college": "Gonville & Caius",
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+   "details": "Second sitting. Time not stated."
   },
   {
    "kind": "formal",
@@ -2281,8 +2266,7 @@
    "starts_at": "2026-11-11T19:30:00+00:00",
    "college": "Jesus",
    "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "jesus-jesus-formal-hall"
   },
   {
    "kind": "formal",
@@ -2292,7 +2276,7 @@
    "college": "Peterhouse",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2302,7 +2286,7 @@
    "college": "Queens'",
    "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
    "source": "queens-queens-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2312,7 +2296,7 @@
    "college": "St Catharine's",
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Wednesday undergraduate, Thursday postgraduate. Start time not stated; 19:30 assumed."
+   "details": "Wednesday undergraduate, Thursday postgraduate. Time not stated."
   },
   {
    "kind": "formal",
@@ -2321,8 +2305,7 @@
    "starts_at": "2026-11-12T19:30:00+00:00",
    "college": "Churchill",
    "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
-   "source": "churchill-churchill-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "churchill-churchill-formal-hall"
   },
   {
    "kind": "formal",
@@ -2332,7 +2315,7 @@
    "college": "Girton",
    "url": "https://girton.cam.ac.uk/dining-and-socialising",
    "source": "girton-girton-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2342,7 +2325,7 @@
    "college": "Gonville & Caius",
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+   "details": "Second sitting. Time not stated."
   },
   {
    "kind": "formal",
@@ -2352,7 +2335,7 @@
    "college": "Lucy Cavendish",
    "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
    "source": "lucy-cavendish-lucy-cavendish-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2362,7 +2345,7 @@
    "college": "Peterhouse",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2372,7 +2355,7 @@
    "college": "Selwyn",
    "url": "https://selwynjcr.org/college-life/formals",
    "source": "selwyn-selwyn-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2382,7 +2365,7 @@
    "college": "St Catharine's",
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Wednesday undergraduate, Thursday postgraduate. Start time not stated; 19:30 assumed."
+   "details": "Wednesday undergraduate, Thursday postgraduate. Time not stated."
   },
   {
    "kind": "formal",
@@ -2405,7 +2388,7 @@
    "college": "Hughes Hall",
    "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
    "source": "hughes-hall-hughes-hall-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Usually Tuesdays and Fridays."
+   "details": "Usually Tuesdays and Fridays."
   },
   {
    "kind": "formal",
@@ -2429,8 +2412,7 @@
    "starts_at": "2026-11-13T19:30:00+00:00",
    "college": "Churchill",
    "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
-   "source": "churchill-churchill-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "churchill-churchill-formal-hall"
   },
   {
    "kind": "formal",
@@ -2440,7 +2422,7 @@
    "college": "Corpus Christi",
    "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
    "source": "corpus-christi-corpus-christi-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2450,7 +2432,7 @@
    "college": "Darwin",
    "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
    "source": "darwin-darwin-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Most Wednesdays and Fridays. Start time not stated; 19:30 assumed."
+   "details": "Most Wednesdays and Fridays. Time not stated."
   },
   {
    "kind": "formal",
@@ -2460,7 +2442,7 @@
    "college": "Downing",
    "url": "https://dow.cam.ac.uk/current-students/catering",
    "source": "downing-downing-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2469,8 +2451,7 @@
    "starts_at": "2026-11-13T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "emmanuel-emmanuel-formal-hall"
   },
   {
    "kind": "formal",
@@ -2480,7 +2461,7 @@
    "college": "Gonville & Caius",
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+   "details": "Second sitting. Time not stated."
   },
   {
    "kind": "formal",
@@ -2489,8 +2470,7 @@
    "starts_at": "2026-11-13T19:30:00+00:00",
    "college": "Jesus",
    "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "jesus-jesus-formal-hall"
   },
   {
    "kind": "formal",
@@ -2500,7 +2480,7 @@
    "college": "Lucy Cavendish",
    "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
    "source": "lucy-cavendish-lucy-cavendish-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2510,7 +2490,7 @@
    "college": "Peterhouse",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2520,7 +2500,7 @@
    "college": "Robinson",
    "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
    "source": "robinson-robinson-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2530,7 +2510,7 @@
    "college": "St Edmund's",
    "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
    "source": "st-edmund-s-st-edmund-s-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Most Tuesdays and Fridays. Start time not stated; 19:30 assumed."
+   "details": "Most Tuesdays and Fridays. Time not stated."
   },
   {
    "kind": "formal",
@@ -2540,7 +2520,7 @@
    "college": "Wolfson",
    "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
    "source": "wolfson-wolfson-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "bop",
@@ -2575,8 +2555,7 @@
    "starts_at": "2026-11-14T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "emmanuel-emmanuel-formal-hall"
   },
   {
    "kind": "formal",
@@ -2586,7 +2565,7 @@
    "college": "Gonville & Caius",
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+   "details": "Second sitting. Time not stated."
   },
   {
    "kind": "formal",
@@ -2596,7 +2575,7 @@
    "college": "Peterhouse",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2605,8 +2584,7 @@
    "starts_at": "2026-11-15T19:30:00+00:00",
    "college": "Churchill",
    "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
-   "source": "churchill-churchill-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "churchill-churchill-formal-hall"
   },
   {
    "kind": "formal",
@@ -2616,7 +2594,7 @@
    "college": "Corpus Christi",
    "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
    "source": "corpus-christi-corpus-christi-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2626,7 +2604,7 @@
    "college": "Downing",
    "url": "https://dow.cam.ac.uk/current-students/catering",
    "source": "downing-downing-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2635,8 +2613,7 @@
    "starts_at": "2026-11-15T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "emmanuel-emmanuel-formal-hall"
   },
   {
    "kind": "formal",
@@ -2646,7 +2623,7 @@
    "college": "Gonville & Caius",
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Second sitting. Start time not stated; 19:30 assumed."
+   "details": "Second sitting. Time not stated."
   },
   {
    "kind": "formal",
@@ -2655,8 +2632,7 @@
    "starts_at": "2026-11-15T19:30:00+00:00",
    "college": "Jesus",
    "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term)."
+   "source": "jesus-jesus-formal-hall"
   },
   {
    "kind": "formal",
@@ -2666,7 +2642,7 @@
    "college": "Peterhouse",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2676,7 +2652,7 @@
    "college": "Queens'",
    "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
    "source": "queens-queens-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Start time not stated; 19:30 assumed."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2686,7 +2662,7 @@
    "college": "St Catharine's",
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Regular formal hall night (registry schedule, Full Term). Wednesday undergraduate, Thursday postgraduate. Start time not stated; 19:30 assumed."
+   "details": "Wednesday undergraduate, Thursday postgraduate. Time not stated."
   }
  ]
 }
