@@ -9,7 +9,16 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from PIL import Image
+try:
+    from PIL import Image
+except Exception:   # the image library is optional (missing or broken); without it these tests are skipped, not failed
+    Image = None
+    raise unittest.SkipTest("Pillow is not installed")
+try:
+    from PIL import ImageFont
+    ImageFont.truetype("DejaVuSans.ttf", 10)
+except Exception:   # the renderer needs the DejaVu font; without it these tests are skipped, so they never block a data update
+    raise unittest.SkipTest("DejaVu Sans font is not available")
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import instagram_preview as preview
 
