@@ -1225,5 +1225,79 @@
    "url": "https://www.varsity.co.uk"
   }
  ],
- "_notes": "Clare Ents (clareents.com) is offline; Clare Cellars ents are announced on the Clare Ents and Clare Cellars Facebook and Instagram pages, reached from the Clare UCS 'Going out' page."
+ "_notes": "Clare Ents (clareents.com) is offline; Clare Cellars ents are announced on the Clare Ents and Clare Cellars Facebook and Instagram pages, reached from the Clare UCS 'Going out' page.",
+ "societies": [
+  {
+   "society": "Footlights",
+   "name": "The Cambridge University Footlights Dramatic Club",
+   "kind": "Society events",
+   "url": "https://www.cambridgefootlights.org/services-9",
+   "rank": 1,
+   "popularity": "Calls itself a world-renowned student sketch comedy society; its tour show and spring revue run at the ADC and Arts Theatre and are listed by Cambridge105 and Visit Cambridge (https://www.cambridgefootlights.org/, https://cambridge105.co.uk/event/cambridge-footlights/)."
+  },
+  {
+   "society": "CUADC",
+   "name": "Cambridge University Amateur Dramatic Club",
+   "kind": "Ticketing page",
+   "url": "https://www.camdram.net/societies/cambridge-university-amateur-dramatic-club",
+   "rank": 2,
+   "popularity": "Founded 1855, the club behind the ADC Theatre's main programme and the CUADC/Footlights Pantomime (https://en.wikipedia.org/wiki/Cambridge_University_Amateur_Dramatic_Club, https://www.adctheatre.com/about-us/)."
+  },
+  {
+   "society": "ISoc",
+   "name": "Cambridge University Islamic Society",
+   "kind": "Society calendar",
+   "url": "https://calendar.google.com/calendar/embed?src=e5c94f5eef33fa6d7ba8098c9f0d6b8936a1f4dd80a4c210c8076ad31f914d68%40group.calendar.google.com&ctz=Europe%2FLondon",
+   "rank": 3,
+   "popularity": "Runs one of the densest programmes of any society: its public termcard calendar has 78 events between October and December 2026, plus annual Charity Week, Explore Islam Week and an Annual Dinner (https://isoc-admin.squarespace.com/events)."
+  },
+  {
+   "society": "CUMTS",
+   "name": "Cambridge University Musical Theatre Society",
+   "kind": "Ticketing page",
+   "url": "https://www.camdram.net/societies/cambridge-university-musical-theatre-society",
+   "rank": 4,
+   "popularity": "The university's main musical theatre society, producing ADC mainshows (e.g. Sweet Charity, The Wiz) and an annual freshers' musical (https://www.cumts.co.uk/)."
+  },
+  {
+   "society": "CU Wine Society",
+   "name": "Cambridge University Wine Society",
+   "kind": "Society events",
+   "url": "https://cuws.org.uk/upcoming-tastings/",
+   "rank": 5,
+   "popularity": "Founded 1792, one of the oldest active student societies at Cambridge, running ticketed producer tastings each term (https://en.wikipedia.org/wiki/Cambridge_University_Wine_Society)."
+  },
+  {
+   "society": "CUSO",
+   "name": "Cambridge University Symphony Orchestra",
+   "kind": "Society events",
+   "url": "https://cuso.org.uk/performances.php",
+   "rank": 6,
+   "popularity": "One of the university's principal symphony orchestras, performing termly at West Road Concert Hall (https://cuso.org.uk/)."
+  },
+  {
+   "society": "Marlowe Society",
+   "name": "The Marlowe Society",
+   "kind": "Ticketing page",
+   "url": "https://www.camdram.net/societies/the-marlowe-society",
+   "rank": 7,
+   "popularity": "The university's long-running Shakespeare society, whose annual Arts Show runs at the Cambridge Arts Theatre (https://www.camdram.net/societies/the-marlowe-society)."
+  },
+  {
+   "society": "CU G&S",
+   "name": "Cambridge University Gilbert and Sullivan Society",
+   "kind": "Ticketing page",
+   "url": "https://www.camdram.net/societies/cambridge-university-gilbert-and-sullivan-society",
+   "rank": 8,
+   "popularity": "Long-standing university operetta society staging termly productions (https://www.camdram.net/societies/cambridge-university-gilbert-and-sullivan-society)."
+  },
+  {
+   "society": "CULES",
+   "name": "Cambridge University Light Entertainment Society",
+   "kind": "Ticketing page",
+   "url": "https://www.camdram.net/societies/cambridge-university-light-entertainment-society",
+   "rank": 9,
+   "popularity": "University society staging the annual CULES pantomime (https://www.camdram.net/societies/cambridge-university-light-entertainment-society)."
+  }
+ ]
 }

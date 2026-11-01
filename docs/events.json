@@ -4,7 +4,7 @@
   "checked_at": "2026-11-01T18:39:34+00:00",
   "window_from": "2026-11-01",
   "window_to": "2026-11-15",
-  "sources_checked": 167,
+  "sources_checked": 176,
   "sources_ok": 102
  },
  "sources": [
@@ -1510,6 +1510,87 @@
    "ok": true,
    "found": 0,
    "note": ""
+  },
+  {
+   "slug": "society-footlights",
+   "name": "The Cambridge University Footlights Dramatic Club",
+   "kind": "Society events",
+   "url": "https://www.cambridgefootlights.org/services-9",
+   "ok": false,
+   "found": 0,
+   "note": "added to the registry; first read on the next weekly run"
+  },
+  {
+   "slug": "society-cuadc",
+   "name": "Cambridge University Amateur Dramatic Club",
+   "kind": "Ticketing page",
+   "url": "https://www.camdram.net/societies/cambridge-university-amateur-dramatic-club",
+   "ok": false,
+   "found": 0,
+   "note": "added to the registry; first read on the next weekly run"
+  },
+  {
+   "slug": "society-isoc",
+   "name": "Cambridge University Islamic Society",
+   "kind": "Society calendar",
+   "url": "https://calendar.google.com/calendar/embed?src=e5c94f5eef33fa6d7ba8098c9f0d6b8936a1f4dd80a4c210c8076ad31f914d68%40group.calendar.google.com&ctz=Europe%2FLondon",
+   "ok": false,
+   "found": 0,
+   "note": "added to the registry; first read on the next weekly run"
+  },
+  {
+   "slug": "society-cumts",
+   "name": "Cambridge University Musical Theatre Society",
+   "kind": "Ticketing page",
+   "url": "https://www.camdram.net/societies/cambridge-university-musical-theatre-society",
+   "ok": false,
+   "found": 0,
+   "note": "added to the registry; first read on the next weekly run"
+  },
+  {
+   "slug": "society-cu-wine-society",
+   "name": "Cambridge University Wine Society",
+   "kind": "Society events",
+   "url": "https://cuws.org.uk/upcoming-tastings/",
+   "ok": false,
+   "found": 0,
+   "note": "added to the registry; first read on the next weekly run"
+  },
+  {
+   "slug": "society-cuso",
+   "name": "Cambridge University Symphony Orchestra",
+   "kind": "Society events",
+   "url": "https://cuso.org.uk/performances.php",
+   "ok": false,
+   "found": 0,
+   "note": "added to the registry; first read on the next weekly run"
+  },
+  {
+   "slug": "society-marlowe-society",
+   "name": "The Marlowe Society",
+   "kind": "Ticketing page",
+   "url": "https://www.camdram.net/societies/the-marlowe-society",
+   "ok": false,
+   "found": 0,
+   "note": "added to the registry; first read on the next weekly run"
+  },
+  {
+   "slug": "society-cu-g-s",
+   "name": "Cambridge University Gilbert and Sullivan Society",
+   "kind": "Ticketing page",
+   "url": "https://www.camdram.net/societies/cambridge-university-gilbert-and-sullivan-society",
+   "ok": false,
+   "found": 0,
+   "note": "added to the registry; first read on the next weekly run"
+  },
+  {
+   "slug": "society-cules",
+   "name": "Cambridge University Light Entertainment Society",
+   "kind": "Ticketing page",
+   "url": "https://www.camdram.net/societies/cambridge-university-light-entertainment-society",
+   "ok": false,
+   "found": 0,
+   "note": "added to the registry; first read on the next weekly run"
   }
  ],
  "bops": [
