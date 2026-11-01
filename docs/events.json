@@ -1283,6 +1283,7 @@
     },
     {
       "kind": "formal",
+      "special": true,
       "title": "Diwali Formal (MCR)",
       "starts_at": "2026-11-02T18:00:00+00:00",
       "ends_at": "2026-11-02T23:00:00+00:00",
@@ -1296,6 +1297,7 @@
     },
     {
       "kind": "formal",
+      "special": false,
       "title": "Formal Hall",
       "starts_at": "2026-11-03T19:30:00+00:00",
       "college": "Homerton",
@@ -1309,6 +1311,7 @@
     },
     {
       "kind": "formal",
+      "special": true,
       "title": "Diwali Formal",
       "starts_at": "2026-11-04T19:15:00+00:00",
       "ends_at": "2026-11-04T21:15:00+00:00",
@@ -1320,6 +1323,7 @@
     },
     {
       "kind": "formal",
+      "special": true,
       "title": "Firework Night Formal",
       "starts_at": "2026-11-06T19:30:00+00:00",
       "ends_at": "2026-11-06T21:30:00+00:00",
@@ -1331,6 +1335,7 @@
     },
     {
       "kind": "formal",
+      "special": false,
       "title": "BA Formal Dinner in Hall",
       "starts_at": "2026-11-06T19:30:00+00:00",
       "ends_at": "2026-11-06T20:45:00+00:00",
@@ -1345,6 +1350,7 @@
     },
     {
       "kind": "formal",
+      "special": true,
       "title": "Themed Formal Hall",
       "starts_at": "2026-11-10T19:30:00+00:00",
       "college": "Homerton",
@@ -1358,6 +1364,7 @@
     },
     {
       "kind": "formal",
+      "special": true,
       "title": "Alcohol Free Formal",
       "starts_at": "2026-11-11T19:15:00+00:00",
       "ends_at": "2026-11-11T21:15:00+00:00",
@@ -1369,6 +1376,7 @@
     },
     {
       "kind": "formal",
+      "special": true,
       "title": "Woodville Feast",
       "starts_at": "2026-11-13T19:00:00+00:00",
       "ends_at": "2026-11-13T21:45:00+00:00",
@@ -1381,6 +1389,7 @@
     },
     {
       "kind": "formal",
+      "special": false,
       "title": "BA Formal Dinner in Hall",
       "starts_at": "2026-11-13T19:30:00+00:00",
       "ends_at": "2026-11-13T20:45:00+00:00",
@@ -1407,6 +1416,7 @@
     },
     {
       "kind": "formal",
+      "special": true,
       "title": "Baila en Sidney formal",
       "starts_at": "2026-11-14T19:00:00+00:00",
       "ends_at": "2026-11-14T23:00:00+00:00",
