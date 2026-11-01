@@ -1134,7 +1134,7 @@
    "kind": "MCR events",
    "url": "https://www.sidneysussexmcr.com/events",
    "ok": true,
-   "found": 3
+   "found": 2
   },
   {
    "slug": "sidney-mcr-site",
@@ -1444,8 +1444,7 @@
    "starts_at": "2026-11-01T19:30:00+00:00",
    "college": "Downing",
    "url": "https://dow.cam.ac.uk/current-students/catering",
-   "source": "downing-downing-formal-hall",
-   "details": "Time not stated."
+   "source": "downing-downing-formal-hall"
   },
   {
    "kind": "formal",
@@ -1454,7 +1453,8 @@
    "starts_at": "2026-11-01T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall"
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1492,8 +1492,7 @@
    "starts_at": "2026-11-01T19:30:00+00:00",
    "college": "Queens'",
    "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
-   "source": "queens-queens-formal-hall",
-   "details": "Time not stated."
+   "source": "queens-queens-formal-hall"
   },
   {
    "kind": "formal",
@@ -1503,7 +1502,7 @@
    "college": "St Catharine's",
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Wednesday undergraduate, Thursday postgraduate. Time not stated."
+   "details": "Time not stated."
   },
   {
    "kind": "bop",
@@ -1521,7 +1520,7 @@
    "kind": "formal",
    "special": true,
    "title": "Diwali Formal (MCR)",
-   "starts_at": "2026-11-02T18:00:00+00:00",
+   "starts_at": "2026-11-02T19:00:00+00:00",
    "ends_at": "2026-11-02T23:00:00+00:00",
    "college": "Sidney Sussex",
    "venue": "Hall, then Mong Hall and the bar",
@@ -1538,8 +1537,7 @@
    "starts_at": "2026-11-02T19:30:00+00:00",
    "college": "Downing",
    "url": "https://dow.cam.ac.uk/current-students/catering",
-   "source": "downing-downing-formal-hall",
-   "details": "Time not stated."
+   "source": "downing-downing-formal-hall"
   },
   {
    "kind": "formal",
@@ -1548,7 +1546,8 @@
    "starts_at": "2026-11-02T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall"
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1574,11 +1573,10 @@
    "kind": "formal",
    "special": false,
    "title": "Formal Hall",
-   "starts_at": "2026-11-03T19:00:00+00:00",
+   "starts_at": "2026-11-03T19:30:00+00:00",
    "college": "Hughes Hall",
    "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
-   "source": "hughes-hall-hughes-hall-formal-hall",
-   "details": "Usually Tuesdays and Fridays."
+   "source": "hughes-hall-hughes-hall-formal-hall"
   },
   {
    "kind": "formal",
@@ -1631,7 +1629,7 @@
    "college": "Robinson",
    "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
    "source": "robinson-robinson-formal-hall",
-   "details": "Time not stated."
+   "details": "Tuesday Hall, the less formal of the two. Time not stated."
   },
   {
    "kind": "formal",
@@ -1651,7 +1649,7 @@
    "college": "St Edmund's",
    "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
    "source": "st-edmund-s-st-edmund-s-formal-hall",
-   "details": "Most Tuesdays and Fridays. Time not stated."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1660,8 +1658,7 @@
    "starts_at": "2026-11-03T19:30:00+00:00",
    "college": "Wolfson",
    "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
-   "source": "wolfson-wolfson-formal-hall",
-   "details": "Time not stated."
+   "source": "wolfson-wolfson-formal-hall"
   },
   {
    "kind": "formal",
@@ -1673,17 +1670,6 @@
    "url": "https://www.clarehall.cam.ac.uk/events/",
    "details": "Members' event listed on the Clare Hall events page, from 7pm.",
    "source": "clare-hall-events"
-  },
-  {
-   "kind": "formal",
-   "special": true,
-   "title": "Formal swap at Trinity Hall",
-   "starts_at": "2026-11-04T19:00:00+00:00",
-   "college": "Trinity Hall",
-   "host": "Sidney Sussex MCR",
-   "url": "https://www.sidneysussexmcr.com/events",
-   "details": "Sidney Sussex MCR formal swap, dining at Trinity Hall.",
-   "source": "sidney-mcr-events"
   },
   {
    "kind": "formal",
@@ -1704,8 +1690,7 @@
    "starts_at": "2026-11-04T19:30:00+00:00",
    "college": "Darwin",
    "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
-   "source": "darwin-darwin-formal-hall",
-   "details": "Most Wednesdays and Fridays. Time not stated."
+   "source": "darwin-darwin-formal-hall"
   },
   {
    "kind": "formal",
@@ -1724,7 +1709,8 @@
    "starts_at": "2026-11-04T19:30:00+00:00",
    "college": "Jesus",
    "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall"
+   "source": "jesus-jesus-formal-hall",
+   "details": "Postgraduates dine separately in Upper Hall."
   },
   {
    "kind": "formal",
@@ -1743,8 +1729,7 @@
    "starts_at": "2026-11-04T19:30:00+00:00",
    "college": "Queens'",
    "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
-   "source": "queens-queens-formal-hall",
-   "details": "Time not stated."
+   "source": "queens-queens-formal-hall"
   },
   {
    "kind": "formal",
@@ -1754,7 +1739,7 @@
    "college": "St Catharine's",
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Wednesday undergraduate, Thursday postgraduate. Time not stated."
+   "details": "Undergraduate formal hall. Time not stated."
   },
   {
    "kind": "formal",
@@ -1823,17 +1808,16 @@
    "college": "St Catharine's",
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Wednesday undergraduate, Thursday postgraduate. Time not stated."
+   "details": "Postgraduate formal hall. Time not stated."
   },
   {
    "kind": "formal",
    "special": false,
    "title": "Formal Hall",
-   "starts_at": "2026-11-06T19:00:00+00:00",
+   "starts_at": "2026-11-06T19:30:00+00:00",
    "college": "Hughes Hall",
    "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
-   "source": "hughes-hall-hughes-hall-formal-hall",
-   "details": "Usually Tuesdays and Fridays."
+   "source": "hughes-hall-hughes-hall-formal-hall"
   },
   {
    "kind": "formal",
@@ -1888,8 +1872,7 @@
    "starts_at": "2026-11-06T19:30:00+00:00",
    "college": "Darwin",
    "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
-   "source": "darwin-darwin-formal-hall",
-   "details": "Most Wednesdays and Fridays. Time not stated."
+   "source": "darwin-darwin-formal-hall"
   },
   {
    "kind": "formal",
@@ -1898,7 +1881,8 @@
    "starts_at": "2026-11-06T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall"
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1947,7 +1931,7 @@
    "college": "Robinson",
    "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
    "source": "robinson-robinson-formal-hall",
-   "details": "Time not stated."
+   "details": "Friday Hall, with Fellows on High Table. Time not stated."
   },
   {
    "kind": "formal",
@@ -1957,7 +1941,7 @@
    "college": "St Edmund's",
    "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
    "source": "st-edmund-s-st-edmund-s-formal-hall",
-   "details": "Most Tuesdays and Fridays. Time not stated."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -1966,8 +1950,7 @@
    "starts_at": "2026-11-06T19:30:00+00:00",
    "college": "Wolfson",
    "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
-   "source": "wolfson-wolfson-formal-hall",
-   "details": "Time not stated."
+   "source": "wolfson-wolfson-formal-hall"
   },
   {
    "kind": "formal",
@@ -1976,7 +1959,8 @@
    "starts_at": "2026-11-07T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall"
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2024,8 +2008,7 @@
    "starts_at": "2026-11-08T19:30:00+00:00",
    "college": "Downing",
    "url": "https://dow.cam.ac.uk/current-students/catering",
-   "source": "downing-downing-formal-hall",
-   "details": "Time not stated."
+   "source": "downing-downing-formal-hall"
   },
   {
    "kind": "formal",
@@ -2034,7 +2017,8 @@
    "starts_at": "2026-11-08T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall"
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2072,8 +2056,7 @@
    "starts_at": "2026-11-08T19:30:00+00:00",
    "college": "Queens'",
    "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
-   "source": "queens-queens-formal-hall",
-   "details": "Time not stated."
+   "source": "queens-queens-formal-hall"
   },
   {
    "kind": "formal",
@@ -2083,7 +2066,7 @@
    "college": "St Catharine's",
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Wednesday undergraduate, Thursday postgraduate. Time not stated."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2092,8 +2075,7 @@
    "starts_at": "2026-11-09T19:30:00+00:00",
    "college": "Downing",
    "url": "https://dow.cam.ac.uk/current-students/catering",
-   "source": "downing-downing-formal-hall",
-   "details": "Time not stated."
+   "source": "downing-downing-formal-hall"
   },
   {
    "kind": "formal",
@@ -2102,7 +2084,8 @@
    "starts_at": "2026-11-09T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall"
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2128,11 +2111,10 @@
    "kind": "formal",
    "special": false,
    "title": "Formal Hall",
-   "starts_at": "2026-11-10T19:00:00+00:00",
+   "starts_at": "2026-11-10T19:30:00+00:00",
    "college": "Hughes Hall",
    "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
-   "source": "hughes-hall-hughes-hall-formal-hall",
-   "details": "Usually Tuesdays and Fridays."
+   "source": "hughes-hall-hughes-hall-formal-hall"
   },
   {
    "kind": "formal",
@@ -2185,7 +2167,7 @@
    "college": "Robinson",
    "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
    "source": "robinson-robinson-formal-hall",
-   "details": "Time not stated."
+   "details": "Tuesday Hall, the less formal of the two. Time not stated."
   },
   {
    "kind": "formal",
@@ -2205,7 +2187,7 @@
    "college": "St Edmund's",
    "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
    "source": "st-edmund-s-st-edmund-s-formal-hall",
-   "details": "Most Tuesdays and Fridays. Time not stated."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2214,8 +2196,7 @@
    "starts_at": "2026-11-10T19:30:00+00:00",
    "college": "Wolfson",
    "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
-   "source": "wolfson-wolfson-formal-hall",
-   "details": "Time not stated."
+   "source": "wolfson-wolfson-formal-hall"
   },
   {
    "kind": "formal",
@@ -2236,8 +2217,7 @@
    "starts_at": "2026-11-11T19:30:00+00:00",
    "college": "Clare Hall",
    "url": "https://www.clarehall.cam.ac.uk/dining/",
-   "source": "clare-hall-clare-hall-formal-hall",
-   "details": "Time not stated."
+   "source": "clare-hall-clare-hall-formal-hall"
   },
   {
    "kind": "formal",
@@ -2246,8 +2226,7 @@
    "starts_at": "2026-11-11T19:30:00+00:00",
    "college": "Darwin",
    "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
-   "source": "darwin-darwin-formal-hall",
-   "details": "Most Wednesdays and Fridays. Time not stated."
+   "source": "darwin-darwin-formal-hall"
   },
   {
    "kind": "formal",
@@ -2266,7 +2245,8 @@
    "starts_at": "2026-11-11T19:30:00+00:00",
    "college": "Jesus",
    "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall"
+   "source": "jesus-jesus-formal-hall",
+   "details": "Postgraduates dine separately in Upper Hall."
   },
   {
    "kind": "formal",
@@ -2285,8 +2265,7 @@
    "starts_at": "2026-11-11T19:30:00+00:00",
    "college": "Queens'",
    "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
-   "source": "queens-queens-formal-hall",
-   "details": "Time not stated."
+   "source": "queens-queens-formal-hall"
   },
   {
    "kind": "formal",
@@ -2296,7 +2275,7 @@
    "college": "St Catharine's",
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Wednesday undergraduate, Thursday postgraduate. Time not stated."
+   "details": "Undergraduate formal hall. Time not stated."
   },
   {
    "kind": "formal",
@@ -2365,7 +2344,7 @@
    "college": "St Catharine's",
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Wednesday undergraduate, Thursday postgraduate. Time not stated."
+   "details": "Postgraduate formal hall. Time not stated."
   },
   {
    "kind": "formal",
@@ -2384,11 +2363,10 @@
    "kind": "formal",
    "special": false,
    "title": "Formal Hall",
-   "starts_at": "2026-11-13T19:00:00+00:00",
+   "starts_at": "2026-11-13T19:30:00+00:00",
    "college": "Hughes Hall",
    "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
-   "source": "hughes-hall-hughes-hall-formal-hall",
-   "details": "Usually Tuesdays and Fridays."
+   "source": "hughes-hall-hughes-hall-formal-hall"
   },
   {
    "kind": "formal",
@@ -2431,8 +2409,7 @@
    "starts_at": "2026-11-13T19:30:00+00:00",
    "college": "Darwin",
    "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
-   "source": "darwin-darwin-formal-hall",
-   "details": "Most Wednesdays and Fridays. Time not stated."
+   "source": "darwin-darwin-formal-hall"
   },
   {
    "kind": "formal",
@@ -2441,8 +2418,7 @@
    "starts_at": "2026-11-13T19:30:00+00:00",
    "college": "Downing",
    "url": "https://dow.cam.ac.uk/current-students/catering",
-   "source": "downing-downing-formal-hall",
-   "details": "Time not stated."
+   "source": "downing-downing-formal-hall"
   },
   {
    "kind": "formal",
@@ -2451,7 +2427,8 @@
    "starts_at": "2026-11-13T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall"
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2500,7 +2477,7 @@
    "college": "Robinson",
    "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
    "source": "robinson-robinson-formal-hall",
-   "details": "Time not stated."
+   "details": "Friday Hall, with Fellows on High Table. Time not stated."
   },
   {
    "kind": "formal",
@@ -2510,7 +2487,7 @@
    "college": "St Edmund's",
    "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
    "source": "st-edmund-s-st-edmund-s-formal-hall",
-   "details": "Most Tuesdays and Fridays. Time not stated."
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2519,8 +2496,7 @@
    "starts_at": "2026-11-13T19:30:00+00:00",
    "college": "Wolfson",
    "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
-   "source": "wolfson-wolfson-formal-hall",
-   "details": "Time not stated."
+   "source": "wolfson-wolfson-formal-hall"
   },
   {
    "kind": "bop",
@@ -2555,7 +2531,8 @@
    "starts_at": "2026-11-14T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall"
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2603,8 +2580,7 @@
    "starts_at": "2026-11-15T19:30:00+00:00",
    "college": "Downing",
    "url": "https://dow.cam.ac.uk/current-students/catering",
-   "source": "downing-downing-formal-hall",
-   "details": "Time not stated."
+   "source": "downing-downing-formal-hall"
   },
   {
    "kind": "formal",
@@ -2613,7 +2589,8 @@
    "starts_at": "2026-11-15T19:30:00+00:00",
    "college": "Emmanuel",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall"
+   "source": "emmanuel-emmanuel-formal-hall",
+   "details": "Time not stated."
   },
   {
    "kind": "formal",
@@ -2651,8 +2628,7 @@
    "starts_at": "2026-11-15T19:30:00+00:00",
    "college": "Queens'",
    "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
-   "source": "queens-queens-formal-hall",
-   "details": "Time not stated."
+   "source": "queens-queens-formal-hall"
   },
   {
    "kind": "formal",
@@ -2662,7 +2638,7 @@
    "college": "St Catharine's",
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Wednesday undergraduate, Thursday postgraduate. Time not stated."
+   "details": "Time not stated."
   }
  ]
 }

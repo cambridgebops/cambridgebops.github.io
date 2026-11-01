@@ -95,7 +95,8 @@
     "Thu",
     "Fri",
     "Sun"
-   ]
+   ],
+   "formal_time": "19:30"
   },
   {
    "college": "Churchill",
@@ -150,7 +151,8 @@
    "url": "https://www.clarehall.cam.ac.uk/dining/",
    "formal_days": [
     "Wed"
-   ]
+   ],
+   "formal_time": "19:30"
   },
   {
    "college": "Clare Hall",
@@ -241,7 +243,8 @@
     "Wed",
     "Fri"
    ],
-   "note": "Most Wednesdays and Fridays"
+   "note": "Most Wednesdays and Fridays",
+   "formal_time": "19:30"
   },
   {
    "college": "Darwin",
@@ -280,7 +283,8 @@
     "Wed",
     "Fri",
     "Sun"
-   ]
+   ],
+   "formal_time": "19:30"
   },
   {
    "college": "Downing",
@@ -442,7 +446,16 @@
     "Sat",
     "Sun"
    ],
-   "note": "Second sitting"
+   "note": "Second sitting",
+   "day_notes": {
+    "Mon": "Second sitting.",
+    "Tue": "Second sitting.",
+    "Wed": "Second sitting.",
+    "Thu": "Second sitting.",
+    "Fri": "Second sitting.",
+    "Sat": "Second sitting.",
+    "Sun": "Second sitting."
+   }
   },
   {
    "college": "Gonville & Caius",
@@ -516,7 +529,8 @@
     "Tue",
     "Fri"
    ],
-   "note": "Usually Tuesdays and Fridays"
+   "note": "Usually Tuesdays and Fridays",
+   "formal_time": "19:30"
   },
   {
    "college": "Hughes Hall",
@@ -560,7 +574,11 @@
     "Wed",
     "Fri",
     "Sun"
-   ]
+   ],
+   "formal_time": "19:30",
+   "day_notes": {
+    "Wed": "Postgraduates dine separately in Upper Hall."
+   }
   },
   {
    "college": "Jesus",
@@ -827,7 +845,8 @@
    "formal_days": [
     "Wed",
     "Sun"
-   ]
+   ],
+   "formal_time": "19:30"
   },
   {
    "college": "Queens'",
@@ -881,7 +900,11 @@
    "formal_days": [
     "Tue",
     "Fri"
-   ]
+   ],
+   "day_notes": {
+    "Tue": "Tuesday Hall, the less formal of the two.",
+    "Fri": "Friday Hall, with Fellows on High Table."
+   }
   },
   {
    "college": "Robinson",
@@ -989,7 +1012,11 @@
     "Thu",
     "Sun"
    ],
-   "note": "Wednesday undergraduate, Thursday postgraduate"
+   "note": "Formal hall on Sunday too; a Super Hall on a Friday twice a term.",
+   "day_notes": {
+    "Wed": "Undergraduate formal hall.",
+    "Thu": "Postgraduate formal hall."
+   }
   },
   {
    "college": "St Catharine's",
@@ -1156,7 +1183,8 @@
    "formal_days": [
     "Tue",
     "Fri"
-   ]
+   ],
+   "formal_time": "19:30"
   },
   {
    "college": "Wolfson",
