@@ -23,3 +23,6 @@ scratch/
 .claude/
 audit.json
 audit.log
+
+# Generated Instagram review artifacts
+instagram_previews/
