@@ -86,7 +86,7 @@
    "kind": "Formal hall",
    "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
    "ok": true,
-   "found": 6,
+   "found": 0,
    "note": ""
   },
   {
@@ -149,7 +149,7 @@
    "kind": "College events",
    "url": "https://www.clarehall.cam.ac.uk/events/",
    "ok": true,
-   "found": 1,
+   "found": 0,
    "note": ""
   },
   {
@@ -158,7 +158,7 @@
    "kind": "Formal hall",
    "url": "https://www.clarehall.cam.ac.uk/dining/",
    "ok": true,
-   "found": 1,
+   "found": 0,
    "note": ""
   },
   {
@@ -203,7 +203,7 @@
    "kind": "Formal hall",
    "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
    "ok": true,
-   "found": 5,
+   "found": 0,
    "note": ""
   },
   {
@@ -275,7 +275,7 @@
    "kind": "Formal hall",
    "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
    "ok": true,
-   "found": 4,
+   "found": 0,
    "note": "rendered with headless Chromium"
   },
   {
@@ -311,7 +311,7 @@
    "kind": "College events",
    "url": "https://dow.cam.ac.uk/about/events",
    "ok": true,
-   "found": 11,
+   "found": 8,
    "note": ""
   },
   {
@@ -320,7 +320,7 @@
    "kind": "Formal hall",
    "url": "https://dow.cam.ac.uk/current-students/catering",
    "ok": true,
-   "found": 6,
+   "found": 0,
    "note": ""
   },
   {
@@ -356,7 +356,7 @@
    "kind": "Formal hall",
    "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
    "ok": true,
-   "found": 9,
+   "found": 0,
    "note": ""
   },
   {
@@ -464,7 +464,7 @@
    "kind": "Formal hall",
    "url": "https://girton.cam.ac.uk/dining-and-socialising",
    "ok": true,
-   "found": 2,
+   "found": 0,
    "note": ""
   },
   {
@@ -519,7 +519,7 @@
    "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
    "ok": false,
    "note": "login page",
-   "found": 15
+   "found": 0
   },
   {
    "slug": "caius-mcr-instagram",
@@ -599,7 +599,7 @@
    "kind": "MCR site",
    "url": "https://homerton-mcr.co.uk/",
    "ok": true,
-   "found": 2,
+   "found": 0,
    "note": ""
   },
   {
@@ -617,7 +617,7 @@
    "kind": "Formal hall",
    "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
    "ok": true,
-   "found": 4,
+   "found": 0,
    "note": ""
   },
   {
@@ -671,7 +671,7 @@
    "kind": "Formal hall",
    "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
    "ok": true,
-   "found": 9,
+   "found": 0,
    "note": ""
   },
   {
@@ -770,7 +770,7 @@
    "kind": "Formal hall",
    "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
    "ok": true,
-   "found": 4,
+   "found": 0,
    "note": ""
   },
   {
@@ -833,7 +833,7 @@
    "kind": "MCR events",
    "url": "https://www.mcr.magd.cam.ac.uk/events",
    "ok": true,
-   "found": 3,
+   "found": 1,
    "note": ""
   },
   {
@@ -959,7 +959,7 @@
    "kind": "Formal hall",
    "url": "https://www.pet.cam.ac.uk/food-and-drink",
    "ok": true,
-   "found": 15,
+   "found": 0,
    "note": "rendered with headless Chromium"
   },
   {
@@ -1022,7 +1022,7 @@
    "kind": "Formal hall",
    "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
    "ok": true,
-   "found": 5,
+   "found": 0,
    "note": ""
   },
   {
@@ -1076,7 +1076,7 @@
    "kind": "MCR events",
    "url": "https://www.qmcr.org/upcomingevents",
    "ok": true,
-   "found": 3,
+   "found": 2,
    "note": ""
   },
   {
@@ -1094,7 +1094,7 @@
    "kind": "Formal hall",
    "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
    "ok": true,
-   "found": 4,
+   "found": 0,
    "note": ""
   },
   {
@@ -1130,7 +1130,7 @@
    "kind": "Formal hall",
    "url": "https://selwynjcr.org/college-life/formals",
    "ok": true,
-   "found": 4,
+   "found": 0,
    "note": ""
   },
   {
@@ -1211,7 +1211,7 @@
    "kind": "MCR events",
    "url": "https://www.sidneysussexmcr.com/events",
    "ok": true,
-   "found": 5,
+   "found": 3,
    "note": ""
   },
   {
@@ -1229,7 +1229,7 @@
    "kind": "Formal hall",
    "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
    "ok": true,
-   "found": 7,
+   "found": 0,
    "note": ""
   },
   {
@@ -1301,7 +1301,7 @@
    "kind": "Formal hall",
    "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
    "ok": true,
-   "found": 4,
+   "found": 0,
    "note": ""
   },
   {
@@ -1454,7 +1454,7 @@
    "kind": "Formal hall",
    "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
    "ok": true,
-   "found": 4,
+   "found": 0,
    "note": ""
   },
   {
@@ -1617,83 +1617,6 @@
    "source": "girton-college-events"
   },
   {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-01T19:30:00+00:00",
-   "college": "Corpus Christi",
-   "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
-   "source": "corpus-christi-corpus-christi-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-01T19:30:00+00:00",
-   "college": "Downing",
-   "url": "https://dow.cam.ac.uk/current-students/catering",
-   "source": "downing-downing-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-01T19:30:00+00:00",
-   "college": "Emmanuel",
-   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-01T19:30:00+00:00",
-   "college": "Gonville & Caius",
-   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-   "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Second sitting. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-01T19:30:00+00:00",
-   "college": "Jesus",
-   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-01T19:30:00+00:00",
-   "college": "Peterhouse",
-   "url": "https://www.pet.cam.ac.uk/food-and-drink",
-   "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-01T19:30:00+00:00",
-   "college": "Queens'",
-   "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
-   "source": "queens-queens-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-01T19:30:00+00:00",
-   "college": "St Catharine's",
-   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
-   "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Time not stated."
-  },
-  {
    "kind": "bop",
    "title": "Gaelic Samhain: queer Halloween party",
    "starts_at": "2026-11-01T20:00:00+00:00",
@@ -1714,59 +1637,6 @@
    "host": "Downing Dramatic Society",
    "url": "https://dow.cam.ac.uk/about/events",
    "source": "downing-college-events"
-  },
-  {
-   "kind": "formal",
-   "special": true,
-   "title": "Diwali Formal (MCR)",
-   "starts_at": "2026-11-02T19:00:00+00:00",
-   "ends_at": "2026-11-02T23:00:00+00:00",
-   "college": "Sidney Sussex",
-   "venue": "Hall, then Mong Hall and the bar",
-   "host": "Sidney Sussex MCR",
-   "guests": "Graduate formal; swap with 15 members of Trinity Hall",
-   "url": "https://www.sidneysussexmcr.com/events",
-   "details": "Intro to Bollywood dance 6pm in Mong Hall, formal in Hall 7-9pm, then DJ and drinks in the bar until 11pm.",
-   "source": "sidney-mcr-events"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-02T19:30:00+00:00",
-   "college": "Downing",
-   "url": "https://dow.cam.ac.uk/current-students/catering",
-   "source": "downing-downing-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-02T19:30:00+00:00",
-   "college": "Emmanuel",
-   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-02T19:30:00+00:00",
-   "college": "Gonville & Caius",
-   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-   "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Second sitting. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-02T19:30:00+00:00",
-   "college": "Peterhouse",
-   "url": "https://www.pet.cam.ac.uk/food-and-drink",
-   "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Time not stated."
   },
   {
    "kind": "other",
@@ -1810,97 +1680,6 @@
    "source": "downing-college-events"
   },
   {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-03T19:30:00+00:00",
-   "college": "Gonville & Caius",
-   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-   "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Second sitting. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-03T19:30:00+00:00",
-   "college": "Homerton",
-   "venue": "New Dining Hall",
-   "host": "Homerton College",
-   "price": "£20 Homerton students, £24 guests",
-   "guests": "Open to UG and PG students; usually up to 2 guests",
-   "url": "https://homerton-mcr.co.uk/formal-hall-dates",
-   "details": "Regular Tuesday formal; tickets on UPay from 26 Oct. No dress code.",
-   "source": "homerton-mcr-site"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-03T19:30:00+00:00",
-   "college": "Hughes Hall",
-   "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
-   "source": "hughes-hall-hughes-hall-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-03T19:30:00+00:00",
-   "college": "Jesus",
-   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-03T19:30:00+00:00",
-   "college": "Peterhouse",
-   "url": "https://www.pet.cam.ac.uk/food-and-drink",
-   "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-03T19:30:00+00:00",
-   "college": "Robinson",
-   "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
-   "source": "robinson-robinson-formal-hall",
-   "details": "Tuesday Hall, the less formal of the two. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-03T19:30:00+00:00",
-   "college": "Selwyn",
-   "url": "https://selwynjcr.org/college-life/formals",
-   "source": "selwyn-selwyn-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-03T19:30:00+00:00",
-   "college": "St Edmund's",
-   "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
-   "source": "st-edmund-s-st-edmund-s-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-03T19:30:00+00:00",
-   "college": "Wolfson",
-   "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
-   "source": "wolfson-wolfson-formal-hall"
-  },
-  {
    "kind": "other",
    "title": "Yoga with Katherine",
    "starts_at": "2026-11-04T18:30:00+00:00",
@@ -1920,87 +1699,6 @@
    "source": "catz-mcr-events"
   },
   {
-   "kind": "formal",
-   "special": true,
-   "title": "Clare Hall Diwali Formal 2026",
-   "starts_at": "2026-11-04T19:00:00+00:00",
-   "college": "Clare Hall",
-   "venue": "Clare Hall Dining Hall, Herschel Road",
-   "url": "https://www.clarehall.cam.ac.uk/events/",
-   "details": "Members' event listed on the Clare Hall events page, from 7pm.",
-   "source": "clare-hall-events"
-  },
-  {
-   "kind": "formal",
-   "special": true,
-   "title": "Diwali Formal",
-   "starts_at": "2026-11-04T19:15:00+00:00",
-   "ends_at": "2026-11-04T21:15:00+00:00",
-   "college": "Downing",
-   "venue": "Dining Hall",
-   "url": "https://calendar.google.com/calendar/embed?src=9sn3srd7kjhk8r3ah3l6r0rgas@group.calendar.google.com&ctz=Europe/London",
-   "details": "Listed on the Downing College events calendar.",
-   "source": "downing-college-events"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-04T19:30:00+00:00",
-   "college": "Darwin",
-   "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
-   "source": "darwin-darwin-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-04T19:30:00+00:00",
-   "college": "Gonville & Caius",
-   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-   "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Second sitting. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-04T19:30:00+00:00",
-   "college": "Jesus",
-   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall",
-   "details": "Postgraduates dine separately in Upper Hall."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-04T19:30:00+00:00",
-   "college": "Peterhouse",
-   "url": "https://www.pet.cam.ac.uk/food-and-drink",
-   "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-04T19:30:00+00:00",
-   "college": "Queens'",
-   "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
-   "source": "queens-queens-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-04T19:30:00+00:00",
-   "college": "St Catharine's",
-   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
-   "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Undergraduate formal hall. Time not stated."
-  },
-  {
    "kind": "other",
    "title": "Second Desserts",
    "starts_at": "2026-11-04T21:00:00+00:00",
@@ -2011,75 +1709,6 @@
    "source": "sidney-mcr-events"
   },
   {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-05T19:30:00+00:00",
-   "college": "Churchill",
-   "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
-   "source": "churchill-churchill-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-05T19:30:00+00:00",
-   "college": "Girton",
-   "url": "https://girton.cam.ac.uk/dining-and-socialising",
-   "source": "girton-girton-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-05T19:30:00+00:00",
-   "college": "Gonville & Caius",
-   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-   "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Second sitting. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-05T19:30:00+00:00",
-   "college": "Lucy Cavendish",
-   "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
-   "source": "lucy-cavendish-lucy-cavendish-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-05T19:30:00+00:00",
-   "college": "Peterhouse",
-   "url": "https://www.pet.cam.ac.uk/food-and-drink",
-   "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-05T19:30:00+00:00",
-   "college": "Selwyn",
-   "url": "https://selwynjcr.org/college-life/formals",
-   "source": "selwyn-selwyn-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-05T19:30:00+00:00",
-   "college": "St Catharine's",
-   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
-   "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Postgraduate formal hall. Time not stated."
-  },
-  {
    "kind": "other",
    "title": "Girton Jazz presents Iain McKenzie",
    "starts_at": "2026-11-06T19:00:00+00:00",
@@ -2088,148 +1717,6 @@
    "url": "https://www.girton.cam.ac.uk/upcoming-events",
    "details": "Time not stated.",
    "source": "girton-college-events"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-06T19:30:00+00:00",
-   "college": "Churchill",
-   "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
-   "source": "churchill-churchill-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-06T19:30:00+00:00",
-   "college": "Corpus Christi",
-   "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
-   "source": "corpus-christi-corpus-christi-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-06T19:30:00+00:00",
-   "college": "Darwin",
-   "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
-   "source": "darwin-darwin-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": true,
-   "title": "Firework Night Formal",
-   "starts_at": "2026-11-06T19:30:00+00:00",
-   "ends_at": "2026-11-06T21:30:00+00:00",
-   "college": "Downing",
-   "venue": "Dining Hall",
-   "url": "https://calendar.google.com/calendar/embed?src=9sn3srd7kjhk8r3ah3l6r0rgas@group.calendar.google.com&ctz=Europe/London",
-   "details": "Follows the College Fireworks Display at 7pm.",
-   "source": "downing-college-events"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-06T19:30:00+00:00",
-   "college": "Emmanuel",
-   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-06T19:30:00+00:00",
-   "college": "Gonville & Caius",
-   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-   "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Second sitting. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-06T19:30:00+00:00",
-   "college": "Hughes Hall",
-   "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
-   "source": "hughes-hall-hughes-hall-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-06T19:30:00+00:00",
-   "college": "Jesus",
-   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-06T19:30:00+00:00",
-   "college": "Lucy Cavendish",
-   "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
-   "source": "lucy-cavendish-lucy-cavendish-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "BA Formal Dinner in Hall",
-   "starts_at": "2026-11-06T19:30:00+00:00",
-   "ends_at": "2026-11-06T20:45:00+00:00",
-   "college": "Magdalene",
-   "venue": "Hall",
-   "host": "Magdalene MCR",
-   "guests": "Students and their guests",
-   "dress": "Formal with gowns",
-   "url": "https://www.mcr.magd.cam.ac.uk/events/ba-formal-dinner-in-hall-hdw54-8wc4j-dfy83-w9sg8-3xrar",
-   "details": "Three courses; book on UPay. Free pre-drinks in Benson Hall from 6.45pm, port and chocolates in the MCR after.",
-   "source": "magdalene-mcr-events"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-06T19:30:00+00:00",
-   "college": "Peterhouse",
-   "url": "https://www.pet.cam.ac.uk/food-and-drink",
-   "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-06T19:30:00+00:00",
-   "college": "Robinson",
-   "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
-   "source": "robinson-robinson-formal-hall",
-   "details": "Friday Hall, with Fellows on High Table. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-06T19:30:00+00:00",
-   "college": "St Edmund's",
-   "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
-   "source": "st-edmund-s-st-edmund-s-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-06T19:30:00+00:00",
-   "college": "Wolfson",
-   "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
-   "source": "wolfson-wolfson-formal-hall"
   },
   {
    "kind": "other",
@@ -2250,36 +1737,6 @@
    "source": "downing-college-events"
   },
   {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-07T19:30:00+00:00",
-   "college": "Emmanuel",
-   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-07T19:30:00+00:00",
-   "college": "Gonville & Caius",
-   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-   "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Second sitting. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-07T19:30:00+00:00",
-   "college": "Peterhouse",
-   "url": "https://www.pet.cam.ac.uk/food-and-drink",
-   "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Time not stated."
-  },
-  {
    "kind": "other",
    "title": "A concert for Remembrance Sunday",
    "starts_at": "2026-11-08T19:00:00+00:00",
@@ -2288,82 +1745,6 @@
    "url": "https://www.girton.cam.ac.uk/upcoming-events",
    "details": "Time not stated.",
    "source": "girton-college-events"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-08T19:30:00+00:00",
-   "college": "Churchill",
-   "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
-   "source": "churchill-churchill-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-08T19:30:00+00:00",
-   "college": "Corpus Christi",
-   "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
-   "source": "corpus-christi-corpus-christi-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-08T19:30:00+00:00",
-   "college": "Downing",
-   "url": "https://dow.cam.ac.uk/current-students/catering",
-   "source": "downing-downing-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-08T19:30:00+00:00",
-   "college": "Emmanuel",
-   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-08T19:30:00+00:00",
-   "college": "Gonville & Caius",
-   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-   "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Second sitting. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-08T19:30:00+00:00",
-   "college": "Jesus",
-   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-08T19:30:00+00:00",
-   "college": "Peterhouse",
-   "url": "https://www.pet.cam.ac.uk/food-and-drink",
-   "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-08T19:30:00+00:00",
-   "college": "Queens'",
-   "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
-   "source": "queens-queens-formal-hall"
   },
   {
    "kind": "other",
@@ -2376,55 +1757,6 @@
    "source": "queens-mcr-upcoming"
   },
   {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-08T19:30:00+00:00",
-   "college": "St Catharine's",
-   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
-   "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-09T19:30:00+00:00",
-   "college": "Downing",
-   "url": "https://dow.cam.ac.uk/current-students/catering",
-   "source": "downing-downing-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-09T19:30:00+00:00",
-   "college": "Emmanuel",
-   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-09T19:30:00+00:00",
-   "college": "Gonville & Caius",
-   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-   "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Second sitting. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-09T19:30:00+00:00",
-   "college": "Peterhouse",
-   "url": "https://www.pet.cam.ac.uk/food-and-drink",
-   "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Time not stated."
-  },
-  {
    "kind": "other",
    "title": "Women at Sidney lunch",
    "starts_at": "2026-11-10T12:00:00+00:00",
@@ -2433,97 +1765,6 @@
    "url": "https://www.sidneysussexmcr.com/events",
    "details": "Open to staff and students.",
    "source": "sidney-mcr-events"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-10T19:30:00+00:00",
-   "college": "Gonville & Caius",
-   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-   "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Second sitting. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": true,
-   "title": "Themed Formal Hall",
-   "starts_at": "2026-11-10T19:30:00+00:00",
-   "college": "Homerton",
-   "venue": "New Dining Hall",
-   "host": "Homerton College",
-   "price": "£20 Homerton students, £24 guests",
-   "guests": "Open to UG and PG students; usually up to 2 guests",
-   "url": "https://homerton-mcr.co.uk/formal-hall-dates",
-   "details": "Theme to be confirmed; tickets on UPay from 2 Nov.",
-   "source": "homerton-mcr-site"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-10T19:30:00+00:00",
-   "college": "Hughes Hall",
-   "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
-   "source": "hughes-hall-hughes-hall-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-10T19:30:00+00:00",
-   "college": "Jesus",
-   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-10T19:30:00+00:00",
-   "college": "Peterhouse",
-   "url": "https://www.pet.cam.ac.uk/food-and-drink",
-   "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-10T19:30:00+00:00",
-   "college": "Robinson",
-   "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
-   "source": "robinson-robinson-formal-hall",
-   "details": "Tuesday Hall, the less formal of the two. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-10T19:30:00+00:00",
-   "college": "Selwyn",
-   "url": "https://selwynjcr.org/college-life/formals",
-   "source": "selwyn-selwyn-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-10T19:30:00+00:00",
-   "college": "St Edmund's",
-   "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
-   "source": "st-edmund-s-st-edmund-s-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-10T19:30:00+00:00",
-   "college": "Wolfson",
-   "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
-   "source": "wolfson-wolfson-formal-hall"
   },
   {
    "kind": "other",
@@ -2545,85 +1786,6 @@
    "source": "catz-mcr-events"
   },
   {
-   "kind": "formal",
-   "special": true,
-   "title": "Alcohol Free Formal",
-   "starts_at": "2026-11-11T19:15:00+00:00",
-   "ends_at": "2026-11-11T21:15:00+00:00",
-   "college": "Downing",
-   "venue": "Dining Hall",
-   "url": "https://calendar.google.com/calendar/embed?src=9sn3srd7kjhk8r3ah3l6r0rgas@group.calendar.google.com&ctz=Europe/London",
-   "details": "Listed on the Downing College events calendar.",
-   "source": "downing-college-events"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-11T19:30:00+00:00",
-   "college": "Clare Hall",
-   "url": "https://www.clarehall.cam.ac.uk/dining/",
-   "source": "clare-hall-clare-hall-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-11T19:30:00+00:00",
-   "college": "Darwin",
-   "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
-   "source": "darwin-darwin-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-11T19:30:00+00:00",
-   "college": "Gonville & Caius",
-   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-   "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Second sitting. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-11T19:30:00+00:00",
-   "college": "Jesus",
-   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall",
-   "details": "Postgraduates dine separately in Upper Hall."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-11T19:30:00+00:00",
-   "college": "Peterhouse",
-   "url": "https://www.pet.cam.ac.uk/food-and-drink",
-   "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-11T19:30:00+00:00",
-   "college": "Queens'",
-   "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
-   "source": "queens-queens-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-11T19:30:00+00:00",
-   "college": "St Catharine's",
-   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
-   "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Undergraduate formal hall. Time not stated."
-  },
-  {
    "kind": "other",
    "title": "Welfare Event: Cake & Chat in the MCR",
    "starts_at": "2026-11-12T15:00:00+00:00",
@@ -2634,75 +1796,6 @@
    "source": "sidney-mcr-events"
   },
   {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-12T19:30:00+00:00",
-   "college": "Churchill",
-   "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
-   "source": "churchill-churchill-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-12T19:30:00+00:00",
-   "college": "Girton",
-   "url": "https://girton.cam.ac.uk/dining-and-socialising",
-   "source": "girton-girton-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-12T19:30:00+00:00",
-   "college": "Gonville & Caius",
-   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-   "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Second sitting. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-12T19:30:00+00:00",
-   "college": "Lucy Cavendish",
-   "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
-   "source": "lucy-cavendish-lucy-cavendish-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-12T19:30:00+00:00",
-   "college": "Peterhouse",
-   "url": "https://www.pet.cam.ac.uk/food-and-drink",
-   "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-12T19:30:00+00:00",
-   "college": "Selwyn",
-   "url": "https://selwynjcr.org/college-life/formals",
-   "source": "selwyn-selwyn-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-12T19:30:00+00:00",
-   "college": "St Catharine's",
-   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
-   "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Postgraduate formal hall. Time not stated."
-  },
-  {
    "kind": "other",
    "title": "Organ Recital",
    "starts_at": "2026-11-13T18:45:00+00:00",
@@ -2710,158 +1803,6 @@
    "venue": "Downing College Chapel",
    "url": "https://dow.cam.ac.uk/about/events",
    "source": "downing-college-events"
-  },
-  {
-   "kind": "formal",
-   "special": true,
-   "title": "Woodville Feast",
-   "starts_at": "2026-11-13T19:00:00+00:00",
-   "ends_at": "2026-11-13T21:45:00+00:00",
-   "college": "Queens'",
-   "venue": "Old Hall",
-   "host": "Queens' MCR",
-   "url": "https://www.qmcr.org/upcomingevents",
-   "details": "The MCR's termly feast in Old Hall, from the MCR events calendar.",
-   "source": "queens-mcr-upcoming"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-13T19:30:00+00:00",
-   "college": "Churchill",
-   "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
-   "source": "churchill-churchill-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-13T19:30:00+00:00",
-   "college": "Corpus Christi",
-   "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
-   "source": "corpus-christi-corpus-christi-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-13T19:30:00+00:00",
-   "college": "Darwin",
-   "url": "https://www.darwin.cam.ac.uk/dine/formal-hall",
-   "source": "darwin-darwin-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-13T19:30:00+00:00",
-   "college": "Downing",
-   "url": "https://dow.cam.ac.uk/current-students/catering",
-   "source": "downing-downing-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-13T19:30:00+00:00",
-   "college": "Emmanuel",
-   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-13T19:30:00+00:00",
-   "college": "Gonville & Caius",
-   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-   "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Second sitting. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-13T19:30:00+00:00",
-   "college": "Hughes Hall",
-   "url": "https://www.hughes.cam.ac.uk/student-centre/practical/dining/formal-halls/",
-   "source": "hughes-hall-hughes-hall-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-13T19:30:00+00:00",
-   "college": "Jesus",
-   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-13T19:30:00+00:00",
-   "college": "Lucy Cavendish",
-   "url": "https://lucy.cam.ac.uk/formal-hall-faqs",
-   "source": "lucy-cavendish-lucy-cavendish-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "BA Formal Dinner in Hall",
-   "starts_at": "2026-11-13T19:30:00+00:00",
-   "ends_at": "2026-11-13T20:45:00+00:00",
-   "college": "Magdalene",
-   "venue": "Hall",
-   "host": "Magdalene MCR",
-   "guests": "Students and their guests",
-   "dress": "Formal with gowns",
-   "url": "https://www.mcr.magd.cam.ac.uk/events/ba-formal-dinner-in-hall-hdw54-8wc4j-dfy83-w9sg8-3xrar-wcx6d",
-   "details": "Three courses; book on UPay. Free pre-drinks in Benson Hall from 6.45pm, port and chocolates in the MCR after.",
-   "source": "magdalene-mcr-events"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-13T19:30:00+00:00",
-   "college": "Peterhouse",
-   "url": "https://www.pet.cam.ac.uk/food-and-drink",
-   "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-13T19:30:00+00:00",
-   "college": "Robinson",
-   "url": "https://www.robinson.cam.ac.uk/college-life/formal-halls",
-   "source": "robinson-robinson-formal-hall",
-   "details": "Friday Hall, with Fellows on High Table. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-13T19:30:00+00:00",
-   "college": "St Edmund's",
-   "url": "https://www.st-edmunds.cam.ac.uk/college-life/dining/",
-   "source": "st-edmund-s-st-edmund-s-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-13T19:30:00+00:00",
-   "college": "Wolfson",
-   "url": "https://www.wolfson.cam.ac.uk/college-life/food/formal-halls",
-   "source": "wolfson-wolfson-formal-hall"
   },
   {
    "kind": "bop",
@@ -2876,50 +1817,6 @@
    "source": "selwyn-ents-instagram"
   },
   {
-   "kind": "formal",
-   "special": true,
-   "title": "Baila en Sidney formal",
-   "starts_at": "2026-11-14T19:00:00+00:00",
-   "ends_at": "2026-11-14T23:00:00+00:00",
-   "college": "Sidney Sussex",
-   "venue": "Hall, then the bar",
-   "host": "Sidney Sussex MCR",
-   "guests": "Graduate formal; 10 members of Cuban Salsa Soc joining",
-   "url": "https://www.sidneysussexmcr.com/events",
-   "details": "Cuban-themed formal 7-9pm, then a live Latin band and drinks in the bar until 11pm.",
-   "source": "sidney-mcr-events"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-14T19:30:00+00:00",
-   "college": "Emmanuel",
-   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-14T19:30:00+00:00",
-   "college": "Gonville & Caius",
-   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-   "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Second sitting. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-14T19:30:00+00:00",
-   "college": "Peterhouse",
-   "url": "https://www.pet.cam.ac.uk/food-and-drink",
-   "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Time not stated."
-  },
-  {
    "kind": "other",
    "title": "Prize-winning pianist returns to Girton",
    "starts_at": "2026-11-15T19:00:00+00:00",
@@ -2928,92 +1825,6 @@
    "url": "https://www.girton.cam.ac.uk/upcoming-events",
    "details": "Time not stated.",
    "source": "girton-college-events"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-15T19:30:00+00:00",
-   "college": "Churchill",
-   "url": "https://www.chu.cam.ac.uk/about/campus/dining-at-college/",
-   "source": "churchill-churchill-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-15T19:30:00+00:00",
-   "college": "Corpus Christi",
-   "url": "https://www.corpus.cam.ac.uk/undergraduate-study/living-corpus/food-and-dining",
-   "source": "corpus-christi-corpus-christi-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-15T19:30:00+00:00",
-   "college": "Downing",
-   "url": "https://dow.cam.ac.uk/current-students/catering",
-   "source": "downing-downing-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-15T19:30:00+00:00",
-   "college": "Emmanuel",
-   "url": "https://apps.emma.cam.ac.uk/college/documents/pdfs/FORMALS.pdf",
-   "source": "emmanuel-emmanuel-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-15T19:30:00+00:00",
-   "college": "Gonville & Caius",
-   "url": "https://www.cai.cam.ac.uk/living-here/food-and-drink",
-   "source": "gonville-caius-gonville-caius-formal-hall",
-   "details": "Second sitting. Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-15T19:30:00+00:00",
-   "college": "Jesus",
-   "url": "https://www.jesus.cam.ac.uk/college/life-jesus/food-and-drink/formal-hall",
-   "source": "jesus-jesus-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-15T19:30:00+00:00",
-   "college": "Peterhouse",
-   "url": "https://www.pet.cam.ac.uk/food-and-drink",
-   "source": "peterhouse-peterhouse-formal-hall",
-   "details": "Time not stated."
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-15T19:30:00+00:00",
-   "college": "Queens'",
-   "url": "https://www.queens.cam.ac.uk/life-at-queens/catering/formal-hall/",
-   "source": "queens-queens-formal-hall"
-  },
-  {
-   "kind": "formal",
-   "special": false,
-   "title": "Formal Hall",
-   "starts_at": "2026-11-15T19:30:00+00:00",
-   "college": "St Catharine's",
-   "url": "https://www.caths.cam.ac.uk/students/college-facilities-and-forms/catering-for-our-community/formal-hall",
-   "source": "st-catharine-s-st-catharine-s-formal-hall",
-   "details": "Time not stated."
   }
  ]
 }
