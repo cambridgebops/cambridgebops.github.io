@@ -38,9 +38,9 @@ fonts or images are fetched.
 After committing the implementation, open **Actions → Instagram preview → Run
 workflow**. Leave date blank for today or enter `YYYY-MM-DD`. Download the
 `instagram-preview-<run number>` artifact from the completed run, unzip it, and
-review the PNGs, caption and manifest. Artifacts last 14 days. It also runs when preview workflow, generator or dependency files change on `main`, and at
-08:30 UTC daily, after the documented 06:00 UTC refresh, but cannot guarantee the
-external refresh finished. Inspect the source generation time and freshness warning.
+review the PNGs, caption and manifest. Artifacts last 14 days. Automatic GitHub triggers are disabled; this workflow is manual only. For a
+recurring Codex cloud task, schedule the command below in Codex after the daily
+event refresh. Inspect the source generation time and freshness warning.
 The workflow is independent of deployment and only has read permission.
 
 ## Limits and future publishing
@@ -57,3 +57,19 @@ caption characters; a reviewer would need to split/edit these before publishing.
 Actual publishing is deliberately absent. A separate future task would need an
 approved account/API integration, secure credentials, media hosting/upload,
 platform limit validation, explicit approval and retry/duplicate protection.
+
+## Codex cloud daily task
+
+Use this repository and the prepared cloud environment. Schedule daily at 08:30
+Europe/London (after the documented 06:00 UTC data refresh). Task instructions:
+
+> Run `python3 scripts/instagram_preview.py` from the repository root using the
+> current `docs/events.json`. Do not collect, edit or publish events. Review the
+> generated manifest for freshness and platform-limit warnings. Report the event
+> count and caption, and attach all numbered PNGs, caption.txt and manifest.json
+> as downloadable task outputs using the task's supported attachment mechanism.
+> No Instagram publishing.
+
+The cloud environment setup alone does not create a recurring task or retain live
+processes. Create the schedule in Codex's scheduling UI if available. This chat
+cannot register it automatically.

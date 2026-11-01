@@ -1,19 +1,11 @@
 name: Instagram preview
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/instagram-preview.yml'
-      - 'scripts/instagram_preview.py'
-      - 'scripts/requirements-instagram.txt'
   workflow_dispatch:
     inputs:
       date:
         description: 'Date in Europe/London (YYYY-MM-DD); blank means today'
         required: false
         type: string
-  schedule:
-    - cron: '30 8 * * *'
 permissions:
   contents: read
 jobs:
