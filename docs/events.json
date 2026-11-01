@@ -149,7 +149,7 @@
    "kind": "College events",
    "url": "https://www.clarehall.cam.ac.uk/events/",
    "ok": true,
-   "found": 2,
+   "found": 1,
    "note": ""
   },
   {
@@ -311,7 +311,7 @@
    "kind": "College events",
    "url": "https://dow.cam.ac.uk/about/events",
    "ok": true,
-   "found": 13,
+   "found": 11,
    "note": ""
   },
   {
@@ -608,7 +608,7 @@
    "kind": "College events",
    "url": "https://www.hughes.cam.ac.uk/about/events/",
    "ok": true,
-   "found": 1,
+   "found": 0,
    "note": ""
   },
   {
@@ -761,7 +761,7 @@
    "kind": "College events",
    "url": "https://www.lucy.cam.ac.uk/events",
    "ok": true,
-   "found": 1,
+   "found": 0,
    "note": ""
   },
   {
@@ -833,7 +833,7 @@
    "kind": "MCR events",
    "url": "https://www.mcr.magd.cam.ac.uk/events",
    "ok": true,
-   "found": 5,
+   "found": 3,
    "note": ""
   },
   {
@@ -1211,7 +1211,7 @@
    "kind": "MCR events",
    "url": "https://www.sidneysussexmcr.com/events",
    "ok": true,
-   "found": 8,
+   "found": 7,
    "note": ""
   },
   {
@@ -1445,7 +1445,7 @@
    "kind": "College events",
    "url": "https://www.wolfson.cam.ac.uk/college-life/whats-on",
    "ok": true,
-   "found": 1,
+   "found": 0,
    "note": ""
   },
   {
@@ -1595,15 +1595,6 @@
  ],
  "bops": [
   {
-   "kind": "other",
-   "title": "MCR Brunch",
-   "starts_at": "2026-11-01T11:00:00+00:00",
-   "college": "Sidney Sussex",
-   "host": "Sidney Sussex MCR",
-   "url": "https://www.sidneysussexmcr.com/events",
-   "source": "sidney-mcr-events"
-  },
-  {
    "kind": "bop",
    "title": "Halloween Formal & Bop",
    "starts_at": "2026-11-01T19:00:00+00:00",
@@ -1739,14 +1730,6 @@
    "source": "sidney-mcr-events"
   },
   {
-   "kind": "other",
-   "title": "Clare Hall Book Club",
-   "starts_at": "2026-11-02T19:30:00+00:00",
-   "college": "Clare Hall",
-   "url": "https://www.clarehall.cam.ac.uk/events/",
-   "source": "clare-hall-events"
-  },
-  {
    "kind": "formal",
    "special": false,
    "title": "Formal Hall",
@@ -1808,15 +1791,6 @@
   },
   {
    "kind": "other",
-   "title": "Hughes Brews",
-   "starts_at": "2026-11-03T15:00:00+00:00",
-   "college": "Hughes Hall",
-   "url": "https://www.hughes.cam.ac.uk/about/events/",
-   "details": "Free refreshments with the Library Team, open to all Hughes Hall students.",
-   "source": "hughes-college-events"
-  },
-  {
-   "kind": "other",
    "title": "Downing Arts: Lubomyr Melynk in concert",
    "starts_at": "2026-11-03T18:30:00+00:00",
    "college": "Downing",
@@ -1827,17 +1801,6 @@
   },
   {
    "kind": "other",
-   "title": "MCR Diwali Celebration",
-   "starts_at": "2026-11-03T18:30:00+00:00",
-   "ends_at": "2026-11-03T21:30:00+00:00",
-   "college": "Magdalene",
-   "host": "Magdalene MCR",
-   "url": "https://www.mcr.magd.cam.ac.uk/events/mcr-diwali-celebration",
-   "details": "Diwali celebration dinner; see the MCR notices for sign-up.",
-   "source": "magdalene-mcr-events"
-  },
-  {
-   "kind": "other",
    "title": "DDS: Moonlight Monologues",
    "starts_at": "2026-11-03T19:00:00+00:00",
    "college": "Downing",
@@ -1845,14 +1808,6 @@
    "host": "Downing Dramatic Society",
    "url": "https://dow.cam.ac.uk/about/events",
    "source": "downing-college-events"
-  },
-  {
-   "kind": "other",
-   "title": "Science Pub Quiz",
-   "starts_at": "2026-11-03T19:15:00+00:00",
-   "college": "Wolfson",
-   "url": "https://www.wolfson.cam.ac.uk/college-life/whats-on",
-   "source": "wolfson-whats-on"
   },
   {
    "kind": "formal",
@@ -2067,16 +2022,6 @@
    "source": "sidney-mcr-events"
   },
   {
-   "kind": "other",
-   "title": "PhD Meet-Up",
-   "starts_at": "2026-11-05T19:00:00+00:00",
-   "ends_at": "2026-11-05T22:00:00+00:00",
-   "college": "Magdalene",
-   "host": "Magdalene MCR",
-   "url": "https://www.mcr.magd.cam.ac.uk/events",
-   "source": "magdalene-mcr-events"
-  },
-  {
    "kind": "formal",
    "special": false,
    "title": "Formal Hall",
@@ -2154,23 +2099,6 @@
    "host": "Sidney Sussex MCR",
    "url": "https://www.sidneysussexmcr.com/events",
    "source": "sidney-mcr-events"
-  },
-  {
-   "kind": "other",
-   "title": "A 'Spirited' Conversation with Ruchira Neotia",
-   "starts_at": "2026-11-06T17:30:00+00:00",
-   "college": "Lucy Cavendish",
-   "url": "https://www.lucy.cam.ac.uk/events",
-   "details": "Whisky tasting celebrating India in the global spirits market.",
-   "source": "lucy-college-events"
-  },
-  {
-   "kind": "other",
-   "title": "College Fireworks Display",
-   "starts_at": "2026-11-06T19:00:00+00:00",
-   "college": "Downing",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events"
   },
   {
    "kind": "other",
@@ -2725,16 +2653,6 @@
    "host": "Sidney Sussex MCR",
    "url": "https://www.sidneysussexmcr.com/events",
    "source": "sidney-mcr-events"
-  },
-  {
-   "kind": "other",
-   "title": "DDS - Odd Couple: An evening with Noel Coward and Harold Pinter",
-   "starts_at": "2026-11-12T19:00:00+00:00",
-   "college": "Downing",
-   "host": "Downing Dramatic Society",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "details": "Time not stated.",
-   "source": "downing-college-events"
   },
   {
    "kind": "formal",
