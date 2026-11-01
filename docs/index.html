@@ -19,6 +19,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="google-site-verification" content="4kEhS1TREuM96Up72zVqNz7P6Uqdfi1HXUBDGA8lo94">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Cambridge Bops", "url": "https://cambridgebops.github.io/", "alternateName": ["Cambridge bops", "Cambridge college bops", "Cambridge formals"], "description": "Cambridge college bops, formals, May Balls and more, updated every Sunday."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Cambridge Bops student event listings", "description": "Unofficial, automatically gathered listings of college bops, formal halls, balls, society events and other student events in Cambridge, updated weekly from the organisers' own public pages. Not verified: confirm with the organiser.", "url": "https://cambridgebops.github.io/", "license": "https://creativecommons.org/licenses/by/4.0/", "isAccessibleForFree": true, "creditText": "Source: Cambridge Bops (https://cambridgebops.github.io/)", "creator": {"@type": "Organization", "name": "Cambridge Bops", "url": "https://cambridgebops.github.io/"}, "keywords": ["Cambridge bops", "Cambridge formal hall", "May Balls", "student events", "Cambridge societies"], "spatialCoverage": {"@type": "Place", "name": "Cambridge, United Kingdom"}, "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://cambridgebops.github.io/events.json"}, {"@type": "DataDownload", "encodingFormat": "text/plain", "contentUrl": "https://cambridgebops.github.io/llms-full.txt"}]}</script>
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2040%2040%22%3E%3Crect%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%229%22%20fill%3D%22%23A3C1AD%22/%3E%3CclipPath%20id%3D%22c%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2214%22/%3E%3C/clipPath%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2214%22%20fill%3D%22%23F7F9F7%22/%3E%3Cg%20clip-path%3D%22url%28%23c%29%22%20stroke%3D%22%23A3C1AD%22%20stroke-width%3D%221.8%22%3E%3Cpath%20d%3D%22M4%2011h32M4%2016h32M4%2020h32M4%2024h32M4%2029h32%22/%3E%3Cpath%20d%3D%22M11%204v32M16%204v32M20%204v32M24%204v32M29%204v32%22/%3E%3C/g%3E%3C/svg%3E">
 <meta name="description" content="Cambridge bops tonight and this fortnight: every college bop, formal hall, society event and May Ball in Cambridge, with times, prices and dress codes, updated every week from the colleges' and societies' own pages.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -254,6 +256,7 @@ footer a { display: inline-block; padding: .6rem 0; }
   <footer>
     <span id="lastrun">Updated every Sunday from college calendars, ents pages, society pages and student press.</span>
     <span>Unofficial; not affiliated with the University, its colleges or societies. Always check with the organiser before you go. <a href="terms/">Terms of use</a></span>
+    <span>Listings free to reuse with credit (<a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener noreferrer">CC BY 4.0</a>): "Source: Cambridge Bops". Bots and AI: see <a href="llms.txt">llms.txt</a>.</span>
   </footer>
 </main>
 
@@ -686,7 +689,7 @@ footer a { display: inline-block; padding: .6rem 0; }
   }
 
   // Terms: the page stays inert behind the dialog until this version is accepted; acceptance is remembered in this browser.
-  const TERMS = "2026-11-01.2";
+  const TERMS = "2026-11-01.3";
   (function termsGate() {
     let ok = false;
     try { ok = localStorage.getItem(KEY + "terms") === TERMS; } catch (e) {}
