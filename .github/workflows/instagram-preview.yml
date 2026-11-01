@@ -1,5 +1,11 @@
 name: Instagram preview
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/instagram-preview.yml'
+      - 'scripts/instagram_preview.py'
+      - 'scripts/requirements-instagram.txt'
   workflow_dispatch:
     inputs:
       date:

@@ -38,7 +38,7 @@ fonts or images are fetched.
 After committing the implementation, open **Actions → Instagram preview → Run
 workflow**. Leave date blank for today or enter `YYYY-MM-DD`. Download the
 `instagram-preview-<run number>` artifact from the completed run, unzip it, and
-review the PNGs, caption and manifest. Artifacts last 14 days. It also runs at
+review the PNGs, caption and manifest. Artifacts last 14 days. It also runs when preview workflow, generator or dependency files change on `main`, and at
 08:30 UTC daily, after the documented 06:00 UTC refresh, but cannot guarantee the
 external refresh finished. Inspect the source generation time and freshness warning.
 The workflow is independent of deployment and only has read permission.
