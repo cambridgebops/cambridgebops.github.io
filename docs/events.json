@@ -312,7 +312,7 @@
    "kind": "College events",
    "url": "https://dow.cam.ac.uk/about/events",
    "ok": true,
-   "found": 9,
+   "found": 8,
    "note": "read"
   },
   {
@@ -1650,20 +1650,6 @@
    "evidence": {
     "quote": "Quiz Night in the College Bar Monday 2 November 2026 20:00 22:00",
     "where": "Location Magdalene College"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "Downing Arts: Lubomyr Melynk in concert",
-   "starts_at": "2026-11-03T18:30:00+00:00",
-   "college": "Downing",
-   "venue": "E-Staircase Music Room",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "details": "Ukrainian pianist in concert.",
-   "source": "downing-college-events",
-   "evidence": {
-    "quote": "Downing | 2026-11-03T18:30+00:00 | Downing Arts: Ukrainian pianist Lubomyr Melynk in concert | E-Staircase Music Room",
-    "where": "E-Staircase Music Room"
    }
   },
   {
