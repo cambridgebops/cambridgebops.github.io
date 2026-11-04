@@ -312,7 +312,7 @@
    "kind": "College events",
    "url": "https://dow.cam.ac.uk/about/events",
    "ok": true,
-   "found": 9,
+   "found": 5,
    "note": "read"
   },
   {
@@ -1654,20 +1654,6 @@
   },
   {
    "kind": "other",
-   "title": "Downing Arts: Lubomyr Melynk in concert",
-   "starts_at": "2026-11-03T18:30:00+00:00",
-   "college": "Downing",
-   "venue": "E-Staircase Music Room",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "details": "Ukrainian pianist in concert.",
-   "source": "downing-college-events",
-   "evidence": {
-    "quote": "Downing | 2026-11-03T18:30+00:00 | Downing Arts: Ukrainian pianist Lubomyr Melynk in concert | E-Staircase Music Room",
-    "where": "E-Staircase Music Room"
-   }
-  },
-  {
-   "kind": "other",
    "title": "DDS: Moonlight Monologues",
    "starts_at": "2026-11-03T19:00:00+00:00",
    "college": "Downing",
@@ -1678,19 +1664,6 @@
    "evidence": {
     "quote": "Downing | 2026-11-03T19:00+00:00 | DDS: Moonlight Monologues | Downing College Chapel | recurring",
     "where": "Downing College Chapel"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "Yoga with Katherine",
-   "starts_at": "2026-11-04T18:30:00+00:00",
-   "college": "Downing",
-   "venue": "Wilkins Room",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events",
-   "evidence": {
-    "quote": "Downing | 2026-11-04T18:30+00:00 | Yoga with Katherine | Wilkins Room | recurring",
-    "where": "Wilkins Room"
    }
   },
   {
@@ -1834,19 +1807,6 @@
   },
   {
    "kind": "other",
-   "title": "Yoga with Katherine",
-   "starts_at": "2026-11-11T18:30:00+00:00",
-   "college": "Downing",
-   "venue": "Wilkins Room",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events",
-   "evidence": {
-    "quote": "Downing | 2026-11-11T18:30+00:00 | Yoga with Katherine | Wilkins Room | recurring",
-    "where": "Wilkins Room"
-   }
-  },
-  {
-   "kind": "other",
    "title": "Welfare yoga",
    "starts_at": "2026-11-11T18:30:00+00:00",
    "college": "St Catharine's",
@@ -1912,19 +1872,6 @@
    "evidence": {
     "quote": "Queens' | 2026-11-16T19:30+00:00 | MCR Pub Quiz | QBar",
     "where": "QBar"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "Yoga with Katherine",
-   "starts_at": "2026-11-18T18:30:00+00:00",
-   "college": "Downing",
-   "venue": "Wilkins Room",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events",
-   "evidence": {
-    "quote": "Downing | 2026-11-18T18:30+00:00 | Yoga with Katherine | Wilkins Room | recurring",
-    "where": "Wilkins Room"
    }
   },
   {
