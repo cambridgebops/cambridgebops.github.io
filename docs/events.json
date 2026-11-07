@@ -312,7 +312,7 @@
    "kind": "College events",
    "url": "https://dow.cam.ac.uk/about/events",
    "ok": true,
-   "found": 9,
+   "found": 8,
    "note": "read"
   },
   {
@@ -1746,19 +1746,6 @@
    "evidence": {
     "quote": "Downing | 2026-11-06T21:00+00:00 | Week 5 Blues | JCR",
     "where": "JCR"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "No Provenance: Dahomey and Ayouni double film screening",
-   "starts_at": "2026-11-07T18:00:00+00:00",
-   "college": "Downing",
-   "venue": "Howard Theatre",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events",
-   "evidence": {
-    "quote": "Downing | 2026-11-07T18:00+00:00 | No Provenance: Dahomey and Ayouni double film screening | Howard Theatre, Downing College, Howard Theatre, Cambridge C",
-    "where": "Howard Theatre, Downing College, Howard Theatre, Cambridge C"
    }
   },
   {
