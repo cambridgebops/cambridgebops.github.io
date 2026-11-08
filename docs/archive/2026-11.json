@@ -1,0 +1,182 @@
+[
+ {
+  "kind": "other",
+  "title": "Bach Cantatas and more",
+  "starts_at": "2026-11-01T19:00:00+00:00",
+  "college": "Girton",
+  "venue": "Old Hall",
+  "url": "https://www.girton.cam.ac.uk/upcoming-events",
+  "details": "Time not stated.",
+  "source": "girton-college-events",
+  "evidence": {
+   "quote": "01 Nov 2026 Bach Cantatas and more",
+   "where": "Old Hall"
+  }
+ },
+ {
+  "kind": "other",
+  "title": "DDS: Moonlight Monologues",
+  "starts_at": "2026-11-02T19:00:00+00:00",
+  "college": "Downing",
+  "venue": "Downing College Chapel",
+  "host": "Downing Dramatic Society",
+  "url": "https://dow.cam.ac.uk/about/events",
+  "source": "downing-college-events",
+  "evidence": {
+   "quote": "Downing | 2026-11-02T19:00+00:00 | DDS: Moonlight Monologues | Downing College Chapel | recurring",
+   "where": "Downing College Chapel"
+  }
+ },
+ {
+  "kind": "other",
+  "title": "MCR Pub Quiz",
+  "starts_at": "2026-11-02T19:30:00+00:00",
+  "college": "Queens'",
+  "venue": "QBar",
+  "host": "Queens' MCR",
+  "url": "https://www.qmcr.org/upcomingevents",
+  "source": "queens-mcr-upcoming",
+  "evidence": {
+   "quote": "Queens' | 2026-11-02T19:30+00:00 | MCR Pub Quiz | QBar",
+   "where": "QBar"
+  }
+ },
+ {
+  "kind": "other",
+  "title": "Quiz Night in the College Bar",
+  "starts_at": "2026-11-02T20:00:00+00:00",
+  "ends_at": "2026-11-02T22:00:00+00:00",
+  "college": "Magdalene",
+  "venue": "College Bar",
+  "host": "Magdalene MCR",
+  "url": "https://www.mcr.magd.cam.ac.uk/events",
+  "source": "magdalene-mcr-events",
+  "evidence": {
+   "quote": "Quiz Night in the College Bar Monday 2 November 2026 20:00 22:00",
+   "where": "Location Magdalene College"
+  }
+ },
+ {
+  "kind": "other",
+  "title": "Downing Arts: Lubomyr Melynk in concert",
+  "starts_at": "2026-11-03T18:30:00+00:00",
+  "college": "Downing",
+  "venue": "E-Staircase Music Room",
+  "url": "https://dow.cam.ac.uk/about/events",
+  "details": "Ukrainian pianist in concert.",
+  "source": "downing-college-events",
+  "evidence": {
+   "quote": "Downing | 2026-11-03T18:30+00:00 | Downing Arts: Ukrainian pianist Lubomyr Melynk in concert | E-Staircase Music Room",
+   "where": "E-Staircase Music Room"
+  }
+ },
+ {
+  "kind": "other",
+  "title": "DDS: Moonlight Monologues",
+  "starts_at": "2026-11-03T19:00:00+00:00",
+  "college": "Downing",
+  "venue": "Downing College Chapel",
+  "host": "Downing Dramatic Society",
+  "url": "https://dow.cam.ac.uk/about/events",
+  "source": "downing-college-events",
+  "evidence": {
+   "quote": "Downing | 2026-11-03T19:00+00:00 | DDS: Moonlight Monologues | Downing College Chapel | recurring",
+   "where": "Downing College Chapel"
+  }
+ },
+ {
+  "kind": "other",
+  "title": "Yoga with Katherine",
+  "starts_at": "2026-11-04T18:30:00+00:00",
+  "college": "Downing",
+  "venue": "Wilkins Room",
+  "url": "https://dow.cam.ac.uk/about/events",
+  "source": "downing-college-events",
+  "evidence": {
+   "quote": "Downing | 2026-11-04T18:30+00:00 | Yoga with Katherine | Wilkins Room | recurring",
+   "where": "Wilkins Room"
+  }
+ },
+ {
+  "kind": "other",
+  "title": "Welfare yoga",
+  "starts_at": "2026-11-04T18:30:00+00:00",
+  "college": "St Catharine's",
+  "venue": "Rushmore Room",
+  "host": "St Catharine's MCR",
+  "url": "https://mcr.caths.cam.ac.uk/events",
+  "source": "catz-mcr-events",
+  "evidence": {
+   "quote": "St Catharine's | 2026-11-04T18:30+00:00 | Welfare yoga | Rushmore Room | recurring",
+   "where": "Rushmore Room"
+  }
+ },
+ {
+  "kind": "other",
+  "title": "Second Desserts",
+  "starts_at": "2026-11-04T21:00:00+00:00",
+  "college": "Sidney Sussex",
+  "venue": "MCR",
+  "host": "Sidney Sussex MCR",
+  "url": "https://www.sidneysussexmcr.com/events",
+  "source": "sidney-mcr-events",
+  "evidence": {
+   "quote": "Sidney Sussex | 2026-11-04T21:00+00:00 | Second Desserts | MCR",
+   "where": "MCR"
+  }
+ },
+ {
+  "kind": "other",
+  "title": "Girton Jazz presents Iain McKenzie",
+  "starts_at": "2026-11-06T19:00:00+00:00",
+  "college": "Girton",
+  "venue": "Old Hall",
+  "url": "https://www.girton.cam.ac.uk/upcoming-events",
+  "details": "Time not stated.",
+  "source": "girton-college-events",
+  "evidence": {
+   "quote": "06 Nov 2026 Girton Jazz presents Iain McKenzie",
+   "where": "Old Hall, Girton College"
+  }
+ },
+ {
+  "kind": "other",
+  "title": "Week 5 Blues",
+  "starts_at": "2026-11-06T21:00:00+00:00",
+  "college": "Downing",
+  "venue": "JCR",
+  "url": "https://dow.cam.ac.uk/about/events",
+  "source": "downing-college-events",
+  "evidence": {
+   "quote": "Downing | 2026-11-06T21:00+00:00 | Week 5 Blues | JCR",
+   "where": "JCR"
+  }
+ },
+ {
+  "kind": "other",
+  "title": "No Provenance: Dahomey and Ayouni double film screening",
+  "starts_at": "2026-11-07T18:00:00+00:00",
+  "college": "Downing",
+  "venue": "Howard Theatre",
+  "url": "https://dow.cam.ac.uk/about/events",
+  "source": "downing-college-events",
+  "evidence": {
+   "quote": "Downing | 2026-11-07T18:00+00:00 | No Provenance: Dahomey and Ayouni double film screening | Howard Theatre, Downing College, Howard Theatre, Cambridge C",
+   "where": "Howard Theatre, Downing College, Howard Theatre, Cambridge C"
+  }
+ },
+ {
+  "kind": "society",
+  "society": "CUMTS",
+  "title": "CUMTS Freshers Bar Night",
+  "starts_at": "2026-11-07T20:00:00+00:00",
+  "venue": "ADC Theatre (Bar)",
+  "host": "Cambridge University Musical Theatre Society",
+  "url": "https://www.camdram.net/societies/cambridge-university-musical-theatre-society",
+  "source": "society-cumts",
+  "evidence": {
+   "quote": "Sat 7 Nov 20:00 CUMTS Freshers Bar Night ADC Theatre (Bar)",
+   "where": "ADC Theatre (Bar)"
+  }
+ }
+]
