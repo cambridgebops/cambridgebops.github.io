@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-01T21:45:58+00:00",
+ "generated": "2026-11-15T07:08:30+00:00",
  "run": {
   "version": 2,
-  "checked_at": "2026-11-01T21:45:58+00:00",
-  "window_from": "2026-11-01",
-  "window_to": "2026-11-22",
+  "checked_at": "2026-11-15T07:08:30+00:00",
+  "window_from": "2026-11-15",
+  "window_to": "2026-12-06",
   "sources_checked": 176,
-  "sources_ok": 130
+  "sources_ok": 132
  },
  "sources": [
   {
@@ -34,7 +34,7 @@
    "url": "https://thejcr.co.uk/",
    "ok": true,
    "found": 0,
-   "note": "calendar feed unreadable: webmaster@thejcr.co.uk"
+   "note": "read"
   },
   {
    "slug": "christs-mcr-whats-on",
@@ -61,7 +61,7 @@
    "url": "https://thejcr.co.uk/get-involved/termcard",
    "ok": true,
    "found": 0,
-   "note": "calendar feed unreadable: webmaster@thejcr.co.uk"
+   "note": "read"
   },
   {
    "slug": "churchill-jcr-mcr-page",
@@ -196,7 +196,7 @@
    "url": "https://www.jcr.corpus.cam.ac.uk/corpus-ents",
    "ok": true,
    "found": 0,
-   "note": "calendar feed unreadable: 8e87b4873d94de024c20bdc95eec5106915be246df9d52837e1a5f77bbc98794@group.calendar.google.com"
+   "note": "read"
   },
   {
    "slug": "corpus-christi-corpus-christi-formal-hall",
@@ -223,7 +223,7 @@
    "url": "https://www.jcr.corpus.cam.ac.uk/events-calendars",
    "ok": true,
    "found": 0,
-   "note": "calendar feed unreadable: 8e87b4873d94de024c20bdc95eec5106915be246df9d52837e1a5f77bbc98794@group.calendar.google.com"
+   "note": "read"
   },
   {
    "slug": "corpus-jcr-site",
@@ -232,7 +232,7 @@
    "url": "https://www.jcr.corpus.cam.ac.uk/",
    "ok": true,
    "found": 0,
-   "note": "calendar feed unreadable: 8e87b4873d94de024c20bdc95eec5106915be246df9d52837e1a5f77bbc98794@group.calendar.google.com"
+   "note": "read"
   },
   {
    "slug": "corpus-mcr-events",
@@ -312,7 +312,7 @@
    "kind": "College events",
    "url": "https://dow.cam.ac.uk/about/events",
    "ok": true,
-   "found": 9,
+   "found": 8,
    "note": "read"
   },
   {
@@ -456,7 +456,7 @@
    "kind": "College events",
    "url": "https://www.girton.cam.ac.uk/upcoming-events",
    "ok": true,
-   "found": 6,
+   "found": 5,
    "note": "read"
   },
   {
@@ -834,7 +834,7 @@
    "kind": "MCR events",
    "url": "https://www.mcr.magd.cam.ac.uk/events",
    "ok": true,
-   "found": 1,
+   "found": 0,
    "note": "read"
   },
   {
@@ -925,7 +925,7 @@
    "url": "https://jp.pem.cam.ac.uk/the-jp-bar/",
    "ok": true,
    "note": "read",
-   "found": 0
+   "found": 1
   },
   {
    "slug": "pembroke-jp-site",
@@ -1077,7 +1077,7 @@
    "kind": "MCR events",
    "url": "https://www.qmcr.org/upcomingevents",
    "ok": true,
-   "found": 3,
+   "found": 2,
    "note": "read"
   },
   {
@@ -1212,7 +1212,7 @@
    "kind": "MCR events",
    "url": "https://www.sidneysussexmcr.com/events",
    "ok": true,
-   "found": 4,
+   "found": 3,
    "note": "read"
   },
   {
@@ -1267,7 +1267,7 @@
    "url": "https://mcr.caths.cam.ac.uk/events",
    "ok": true,
    "found": 3,
-   "note": "calendar feed unreadable: cathsmcr@gmail.com"
+   "note": "read"
   },
   {
    "slug": "catz-mcr-site",
@@ -1276,7 +1276,7 @@
    "url": "https://mcr.caths.cam.ac.uk/",
    "ok": true,
    "found": 0,
-   "note": "calendar feed unreadable: cathsmcr@gmail.com"
+   "note": "read"
   },
   {
    "slug": "st-edmunds-bar-cr",
@@ -1328,8 +1328,8 @@
    "name": "St John's JCR Ents",
    "kind": "Ents site",
    "url": "https://www.sjcjcr.com/yourjcr/ents",
-   "ok": false,
-   "note": "HTTP 503",
+   "ok": true,
+   "note": "rendered with headless Chromium",
    "found": 0
   },
   {
@@ -1346,8 +1346,8 @@
    "name": "St John's JCR",
    "kind": "JCR site",
    "url": "https://www.sjcjcr.com/",
-   "ok": false,
-   "note": "HTTP 503",
+   "ok": true,
+   "note": "read",
    "found": 0
   },
   {
@@ -1518,7 +1518,7 @@
    "kind": "Society events",
    "url": "https://www.cambridgefootlights.org/services-9",
    "ok": true,
-   "found": 1,
+   "found": 3,
    "note": "read"
   },
   {
@@ -1545,7 +1545,7 @@
    "kind": "Ticketing page",
    "url": "https://www.camdram.net/societies/cambridge-university-musical-theatre-society",
    "ok": true,
-   "found": 1,
+   "found": 0,
    "note": "read"
   },
   {
@@ -1563,7 +1563,7 @@
    "kind": "Society events",
    "url": "https://cuso.org.uk/performances.php",
    "ok": true,
-   "found": 0,
+   "found": 1,
    "note": "read"
   },
   {
@@ -1597,297 +1597,6 @@
  "bops": [
   {
    "kind": "other",
-   "title": "Bach Cantatas and more",
-   "starts_at": "2026-11-01T19:00:00+00:00",
-   "college": "Girton",
-   "venue": "Old Hall",
-   "url": "https://www.girton.cam.ac.uk/upcoming-events",
-   "details": "Time not stated.",
-   "source": "girton-college-events",
-   "evidence": {
-    "quote": "01 Nov 2026 Bach Cantatas and more",
-    "where": "Old Hall"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "DDS: Moonlight Monologues",
-   "starts_at": "2026-11-02T19:00:00+00:00",
-   "college": "Downing",
-   "venue": "Downing College Chapel",
-   "host": "Downing Dramatic Society",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events",
-   "evidence": {
-    "quote": "Downing | 2026-11-02T19:00+00:00 | DDS: Moonlight Monologues | Downing College Chapel | recurring",
-    "where": "Downing College Chapel"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "MCR Pub Quiz",
-   "starts_at": "2026-11-02T19:30:00+00:00",
-   "college": "Queens'",
-   "venue": "QBar",
-   "host": "Queens' MCR",
-   "url": "https://www.qmcr.org/upcomingevents",
-   "source": "queens-mcr-upcoming",
-   "evidence": {
-    "quote": "Queens' | 2026-11-02T19:30+00:00 | MCR Pub Quiz | QBar",
-    "where": "QBar"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "Quiz Night in the College Bar",
-   "starts_at": "2026-11-02T20:00:00+00:00",
-   "ends_at": "2026-11-02T22:00:00+00:00",
-   "college": "Magdalene",
-   "venue": "College Bar",
-   "host": "Magdalene MCR",
-   "url": "https://www.mcr.magd.cam.ac.uk/events",
-   "source": "magdalene-mcr-events",
-   "evidence": {
-    "quote": "Quiz Night in the College Bar Monday 2 November 2026 20:00 22:00",
-    "where": "Location Magdalene College"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "Downing Arts: Lubomyr Melynk in concert",
-   "starts_at": "2026-11-03T18:30:00+00:00",
-   "college": "Downing",
-   "venue": "E-Staircase Music Room",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "details": "Ukrainian pianist in concert.",
-   "source": "downing-college-events",
-   "evidence": {
-    "quote": "Downing | 2026-11-03T18:30+00:00 | Downing Arts: Ukrainian pianist Lubomyr Melynk in concert | E-Staircase Music Room",
-    "where": "E-Staircase Music Room"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "DDS: Moonlight Monologues",
-   "starts_at": "2026-11-03T19:00:00+00:00",
-   "college": "Downing",
-   "venue": "Downing College Chapel",
-   "host": "Downing Dramatic Society",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events",
-   "evidence": {
-    "quote": "Downing | 2026-11-03T19:00+00:00 | DDS: Moonlight Monologues | Downing College Chapel | recurring",
-    "where": "Downing College Chapel"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "Yoga with Katherine",
-   "starts_at": "2026-11-04T18:30:00+00:00",
-   "college": "Downing",
-   "venue": "Wilkins Room",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events",
-   "evidence": {
-    "quote": "Downing | 2026-11-04T18:30+00:00 | Yoga with Katherine | Wilkins Room | recurring",
-    "where": "Wilkins Room"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "Welfare yoga",
-   "starts_at": "2026-11-04T18:30:00+00:00",
-   "college": "St Catharine's",
-   "venue": "Rushmore Room",
-   "host": "St Catharine's MCR",
-   "url": "https://mcr.caths.cam.ac.uk/events",
-   "source": "catz-mcr-events",
-   "evidence": {
-    "quote": "St Catharine's | 2026-11-04T18:30+00:00 | Welfare yoga | Rushmore Room | recurring",
-    "where": "Rushmore Room"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "Second Desserts",
-   "starts_at": "2026-11-04T21:00:00+00:00",
-   "college": "Sidney Sussex",
-   "venue": "MCR",
-   "host": "Sidney Sussex MCR",
-   "url": "https://www.sidneysussexmcr.com/events",
-   "source": "sidney-mcr-events",
-   "evidence": {
-    "quote": "Sidney Sussex | 2026-11-04T21:00+00:00 | Second Desserts | MCR",
-    "where": "MCR"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "Girton Jazz presents Iain McKenzie",
-   "starts_at": "2026-11-06T19:00:00+00:00",
-   "college": "Girton",
-   "venue": "Old Hall",
-   "url": "https://www.girton.cam.ac.uk/upcoming-events",
-   "details": "Time not stated.",
-   "source": "girton-college-events",
-   "evidence": {
-    "quote": "06 Nov 2026 Girton Jazz presents Iain McKenzie",
-    "where": "Old Hall, Girton College"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "Week 5 Blues",
-   "starts_at": "2026-11-06T21:00:00+00:00",
-   "college": "Downing",
-   "venue": "JCR",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events",
-   "evidence": {
-    "quote": "Downing | 2026-11-06T21:00+00:00 | Week 5 Blues | JCR",
-    "where": "JCR"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "No Provenance: Dahomey and Ayouni double film screening",
-   "starts_at": "2026-11-07T18:00:00+00:00",
-   "college": "Downing",
-   "venue": "Howard Theatre",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events",
-   "evidence": {
-    "quote": "Downing | 2026-11-07T18:00+00:00 | No Provenance: Dahomey and Ayouni double film screening | Howard Theatre, Downing College, Howard Theatre, Cambridge C",
-    "where": "Howard Theatre, Downing College, Howard Theatre, Cambridge C"
-   }
-  },
-  {
-   "kind": "society",
-   "society": "CUMTS",
-   "title": "CUMTS Freshers Bar Night",
-   "starts_at": "2026-11-07T20:00:00+00:00",
-   "venue": "ADC Theatre (Bar)",
-   "host": "Cambridge University Musical Theatre Society",
-   "url": "https://www.camdram.net/societies/cambridge-university-musical-theatre-society",
-   "source": "society-cumts",
-   "evidence": {
-    "quote": "Sat 7 Nov 20:00 CUMTS Freshers Bar Night ADC Theatre (Bar)",
-    "where": "ADC Theatre (Bar)"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "A concert for Remembrance Sunday",
-   "starts_at": "2026-11-08T19:00:00+00:00",
-   "college": "Girton",
-   "venue": "Chapel",
-   "url": "https://www.girton.cam.ac.uk/upcoming-events",
-   "details": "Time not stated.",
-   "source": "girton-college-events",
-   "evidence": {
-    "quote": "08 Nov 2026 A concert for Remembrance Sunday",
-    "where": "Chapel"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "MCR Wine & Cheese",
-   "starts_at": "2026-11-08T19:30:00+00:00",
-   "college": "Queens'",
-   "venue": "Old Hall",
-   "host": "Queens' MCR",
-   "url": "https://www.qmcr.org/upcomingevents",
-   "source": "queens-mcr-upcoming",
-   "evidence": {
-    "quote": "Queens' | 2026-11-08T19:30+00:00 | Wine & Cheese | Old Hall",
-    "where": "Old Hall"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "Women at Sidney lunch",
-   "starts_at": "2026-11-10T12:00:00+00:00",
-   "college": "Sidney Sussex",
-   "venue": "Old Library",
-   "url": "https://www.sidneysussexmcr.com/events",
-   "details": "Open to staff and students.",
-   "source": "sidney-mcr-events",
-   "evidence": {
-    "quote": "Sidney Sussex | 2026-11-10T12:00+00:00 | Women at Sidney lunch (open to staff and students) | Old Library",
-    "where": "Old Library"
-   }
-  },
-  {
-   "kind": "society",
-   "society": "Footlights",
-   "title": "Footlights Smoker",
-   "starts_at": "2026-11-10T21:30:00+00:00",
-   "venue": "Corpus Playroom",
-   "host": "Cambridge University Footlights Dramatic Club",
-   "url": "https://www.cambridgefootlights.org/services-9",
-   "details": "Student sketch and stand-up comedy; tickets from the ADC website.",
-   "source": "society-footlights",
-   "evidence": {
-    "quote": "21:30, Tue 10th November 2026 at Corpus Playroom",
-    "where": "Corpus Playroom"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "Yoga with Katherine",
-   "starts_at": "2026-11-11T18:30:00+00:00",
-   "college": "Downing",
-   "venue": "Wilkins Room",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events",
-   "evidence": {
-    "quote": "Downing | 2026-11-11T18:30+00:00 | Yoga with Katherine | Wilkins Room | recurring",
-    "where": "Wilkins Room"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "Welfare yoga",
-   "starts_at": "2026-11-11T18:30:00+00:00",
-   "college": "St Catharine's",
-   "venue": "Rushmore Room",
-   "host": "St Catharine's MCR",
-   "url": "https://mcr.caths.cam.ac.uk/events",
-   "source": "catz-mcr-events",
-   "evidence": {
-    "quote": "St Catharine's | 2026-11-11T18:30+00:00 | Welfare yoga | Rushmore Room | recurring",
-    "where": "Rushmore Room"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "Welfare Event: Cake & Chat in the MCR",
-   "starts_at": "2026-11-12T15:00:00+00:00",
-   "college": "Sidney Sussex",
-   "venue": "MCR",
-   "host": "Sidney Sussex MCR",
-   "url": "https://www.sidneysussexmcr.com/events",
-   "source": "sidney-mcr-events",
-   "evidence": {
-    "quote": "Sidney Sussex | 2026-11-12T15:00+00:00 | Welfare Event: Cake & Chat in the MCR | ",
-    "where": "Welfare Event: Cake & Chat in the MCR"
-   }
-  },
-  {
-   "kind": "other",
-   "title": "Organ Recital",
-   "starts_at": "2026-11-13T18:45:00+00:00",
-   "college": "Downing",
-   "venue": "Downing College Chapel",
-   "url": "https://dow.cam.ac.uk/about/events",
-   "source": "downing-college-events",
-   "evidence": {
-    "quote": "Downing | 2026-11-13T18:45+00:00 | Organ Recital | Downing College Chapel, Central Cambridge, Cambridge CB2 1DB",
-    "where": "Downing College Chapel, Central Cambridge, Cambridge CB2 1DB"
-   }
-  },
-  {
-   "kind": "other",
    "title": "Prize-winning pianist returns to Girton",
    "starts_at": "2026-11-15T19:00:00+00:00",
    "college": "Girton",
@@ -1898,6 +1607,20 @@
    "evidence": {
     "quote": "15 Nov 2026 Prize-winning pianist returns to Girton",
     "where": "Stanley Library"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "Live Music Night",
+   "starts_at": "2026-11-15T21:00:00+00:00",
+   "college": "Pembroke",
+   "venue": "The JP, Pembroke College",
+   "url": "https://jp.pem.cam.ac.uk/the-jp-bar/",
+   "source": "pembroke-jp-bar",
+   "details": "Live music in the JP, on the JP & Bar calendar.",
+   "evidence": {
+    "quote": "Pembroke | 2026-11-15T21:00+00:00 | Live Music Night | ",
+    "where": "The JP, as well as being the collective name of the undergraduate body, is a large physical space on N-Staircase open to Undergraduate Members to socialise and hosts events, such as live music nights or BOPs. It is managed by the JPC."
    }
   },
   {
@@ -1971,6 +1694,20 @@
   },
   {
    "kind": "other",
+   "title": "Austyn Mair Engineering Society: CSO of Rolls Royce talk",
+   "starts_at": "2026-11-20T18:00:00+00:00",
+   "college": "Downing",
+   "venue": "Howard Theatre, Downing College",
+   "url": "https://dow.cam.ac.uk/about/events",
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-11-20T18:00+00:00 | Austyn Mair Engineering Society: CSO of Rolls Royce talk | Howard Theatre, Downing College, Howard Theatre, Cambridge C",
+    "where": "Howard Theatre, Downing College, Howard Theatre, Cambridge C"
+   },
+   "details": "Talk hosted by the Austyn Mair Engineering Society."
+  },
+  {
+   "kind": "other",
    "title": "A programme of chamber music",
    "starts_at": "2026-11-22T19:00:00+00:00",
    "college": "Girton",
@@ -1981,6 +1718,240 @@
    "evidence": {
     "quote": "22 Nov 2026 A programme of chamber music",
     "where": "Stanley Library"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "Girton Jazz presents Delfeayo Marsalis Quintet ft Eric Alexander",
+   "starts_at": "2026-11-23T19:00:00+00:00",
+   "college": "Girton",
+   "venue": "Girton College",
+   "url": "https://www.girton.cam.ac.uk/upcoming-events",
+   "source": "girton-college-events",
+   "details": "Time not stated.",
+   "evidence": {
+    "quote": "23 Nov 2026 Girton Jazz presents Delfeayo Marsalis Quintet ft Eric Alexander",
+    "where": "Girton College"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "A night at the musicals",
+   "starts_at": "2026-11-24T19:00:00+00:00",
+   "college": "Girton",
+   "venue": "Old Hall, Girton College",
+   "url": "https://www.girton.cam.ac.uk/upcoming-events",
+   "source": "girton-college-events",
+   "details": "Time not stated.",
+   "evidence": {
+    "quote": "24 Nov 2026 A night at the musicals",
+    "where": "Old Hall"
+   }
+  },
+  {
+   "kind": "society",
+   "society": "Footlights",
+   "title": "You're So Vain You Probably Think This Show Is About You",
+   "starts_at": "2026-11-24T21:30:00+00:00",
+   "college": null,
+   "venue": "Corpus Playroom",
+   "url": "https://www.cambridgefootlights.org/services-9",
+   "source": "society-footlights",
+   "details": "Show by Footlights President Freya Bielby; tickets from the ADC website.",
+   "evidence": {
+    "quote": "You're So Vain You Probably Think This Show Is About You 21:30, Tue 24th November 2026 at Corpus Playroom",
+    "where": "21:30, Tue 24th November 2026 at Corpus Playroom"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "Yoga with Katherine",
+   "starts_at": "2026-11-25T18:30:00+00:00",
+   "college": "Downing",
+   "venue": "Wilkins Room, Downing College",
+   "url": "https://dow.cam.ac.uk/about/events",
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-11-25T18:30+00:00 | Yoga with Katherine | Wilkins Room | recurring",
+    "where": "Wilkins Room"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "Welfare yoga",
+   "starts_at": "2026-11-25T18:30:00+00:00",
+   "college": "St Catharine's",
+   "venue": "Rushmore Room, St Catharine's College",
+   "url": "https://mcr.caths.cam.ac.uk/events",
+   "source": "catz-mcr-events",
+   "evidence": {
+    "quote": "St Catharine's | 2026-11-25T18:30+00:00 | Welfare yoga | Rushmore Room | recurring",
+    "where": "Rushmore Room"
+   }
+  },
+  {
+   "kind": "society",
+   "society": "Footlights",
+   "title": "CUADC/Footlights Pantomime 2026: Cinderella",
+   "starts_at": "2026-11-25T19:45:00+00:00",
+   "college": null,
+   "venue": "ADC Theatre",
+   "host": "CUADC and Footlights",
+   "url": "https://www.cambridgefootlights.org/services-9",
+   "source": "society-footlights",
+   "details": "Opening night; runs to Sat 5 Dec. Tickets from the ADC website.",
+   "evidence": {
+    "quote": "CUADC/Footlights Pantomime 2026: Cinderella 19:45, Wed 25th November – Sat 5th December 2026 at  ADC Theatre",
+    "where": "19:45, Wed 25th November – Sat 5th December 2026 at  ADC Theatre"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "DDS: The Winter's Tale",
+   "starts_at": "2026-11-26T19:00:00+00:00",
+   "college": "Downing",
+   "venue": "Howard Theatre, Downing College",
+   "url": "https://dow.cam.ac.uk/about/events",
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-11-26T19:00+00:00 | DDS: The Winter's Tale | Howard Theatre, Downing College, Howard Theatre, Cambridge C | recurring",
+    "where": "Howard Theatre, Downing College, Howard Theatre, Cambridge C"
+   },
+   "details": "Further performances 27, 28 and 29 Nov at 19:00."
+  },
+  {
+   "kind": "other",
+   "title": "DCMS Open Recital",
+   "starts_at": "2026-11-27T18:30:00+00:00",
+   "college": "Downing",
+   "venue": "E Staircase Music Room, Downing College",
+   "url": "https://dow.cam.ac.uk/about/events",
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-11-27T18:30+00:00 | DCMS Open Recital | E Staircase Music Room",
+    "where": "E Staircase Music Room"
+   }
+  },
+  {
+   "kind": "society",
+   "society": "Footlights",
+   "title": "Footlights Smoker",
+   "starts_at": "2026-11-27T23:00:00+00:00",
+   "college": null,
+   "venue": "ADC Theatre",
+   "url": "https://www.cambridgefootlights.org/services-9",
+   "source": "society-footlights",
+   "details": "Songs, sketches and stand-up; tickets from the ADC website.",
+   "evidence": {
+    "quote": "Footlights Smokers 21:00, Wed 14th October 2026 at  ADC Theatre 21:30, Tue 20th October 2026 at  Corpus Playroom 23:00, Tue 27th October 2026 at  ADC Theatre 21:30, Tue 10th November 2026 at   Corpus Playroom 23:00, Fri 27th November 2026 at  ADC Theatre",
+    "where": "23:00, Fri 27th November 2026 at  ADC Theatre"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "MCR Pub Quiz",
+   "starts_at": "2026-11-30T19:30:00+00:00",
+   "college": "Queens'",
+   "venue": "QBar, Queens' College",
+   "url": "https://www.qmcr.org/upcomingevents",
+   "source": "queens-mcr-upcoming",
+   "evidence": {
+    "quote": "Queens' | 2026-11-30T19:30+00:00 | MCR Pub Quiz | QBar",
+    "where": "QBar"
+   }
+  },
+  {
+   "kind": "society",
+   "society": "CUSO",
+   "title": "CUSO: Haydn, Arutiunian and Tchaikovsky",
+   "starts_at": "2026-11-30T19:30:00+00:00",
+   "college": null,
+   "venue": "West Road Concert Hall",
+   "price": "£12; concessions £8; students and staff £5",
+   "url": "https://cuso.org.uk/performances.php",
+   "source": "society-cuso",
+   "details": "Tchaikovsky Symphony No. 6 and Arutiunian Trumpet Concerto.",
+   "evidence": {
+    "quote": "Haydn, Arutiunian and Tchaikovsky Monday 30 November 2026  ·  7:30pm West Road Concert Hall, Cambridge",
+    "where": "West Road Concert Hall, Cambridge"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "Christmas Jazz in the JCR",
+   "starts_at": "2026-12-01T21:00:00+00:00",
+   "college": "Downing",
+   "venue": "JCR, Downing College",
+   "url": "https://dow.cam.ac.uk/about/events",
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-12-01T21:00+00:00 | Christmas Jazz in the JCR | ",
+    "where": "Christmas Jazz in the JCR"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "Winter wind-down - End of term celebration",
+   "starts_at": "2026-12-02T16:00:00+00:00",
+   "college": "Sidney Sussex",
+   "venue": "Master's Lawn, Sidney Sussex College",
+   "url": "https://www.sidneysussexmcr.com/events",
+   "source": "sidney-mcr-events",
+   "evidence": {
+    "quote": "Sidney Sussex | 2026-12-02T16:00+00:00 | Winter wind-down - End of term celebration | Master's Lawn",
+    "where": "Master's Lawn"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "Yoga with Katherine",
+   "starts_at": "2026-12-02T18:30:00+00:00",
+   "college": "Downing",
+   "venue": "Wilkins Room, Downing College",
+   "url": "https://dow.cam.ac.uk/about/events",
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-12-02T18:30+00:00 | Yoga with Katherine | Wilkins Room | recurring",
+    "where": "Wilkins Room"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "Welfare yoga",
+   "starts_at": "2026-12-02T18:30:00+00:00",
+   "college": "St Catharine's",
+   "venue": "Rushmore Room, St Catharine's College",
+   "url": "https://mcr.caths.cam.ac.uk/events",
+   "source": "catz-mcr-events",
+   "evidence": {
+    "quote": "St Catharine's | 2026-12-02T18:30+00:00 | Welfare yoga | Rushmore Room | recurring",
+    "where": "Rushmore Room"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "Second Desserts",
+   "starts_at": "2026-12-02T21:00:00+00:00",
+   "college": "Sidney Sussex",
+   "venue": "MCR, Sidney Sussex College",
+   "url": "https://www.sidneysussexmcr.com/events",
+   "source": "sidney-mcr-events",
+   "evidence": {
+    "quote": "Sidney Sussex | 2026-12-02T21:00+00:00 | Second Desserts | MCR",
+    "where": "MCR"
+   }
+  },
+  {
+   "kind": "other",
+   "title": "Christmas Karaoke in the JCR",
+   "starts_at": "2026-12-04T21:00:00+00:00",
+   "college": "Downing",
+   "venue": "JCR, Downing College",
+   "url": "https://dow.cam.ac.uk/about/events",
+   "source": "downing-college-events",
+   "evidence": {
+    "quote": "Downing | 2026-12-04T21:00+00:00 | Christmas Karaoke in the JCR | JCR",
+    "where": "JCR"
    }
   }
  ]
