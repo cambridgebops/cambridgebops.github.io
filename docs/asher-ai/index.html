@@ -951,10 +951,13 @@ const deck = new SlidePresentation();
    LIVE DEMO: load the app only on click, so the
    deck stays light and the PDF shows the screenshot
    =========================================== */
-/* The demo connects to a live Asher AI server when one answers: http://localhost:8787 by default
-   (npm start), or any address given as ?server=https://... in the deck's URL. Otherwise it loads the
-   bundled offline copy in demo/, where Asher is scripted. */
-const DEMO_SERVER = (new URLSearchParams(location.search).get('server') || 'http://localhost:8787').replace(/\/+$/, '');
+/* The demo slide. Opened on a computer (as a file or from localhost), it looks for a running Asher AI server
+   (npm start, http://localhost:8787) and uses the live app, with the live model, when one answers. Hosted
+   anywhere else, such as a shared web page, it always uses the bundled offline copy in demo/, so the deck needs
+   no backend. ?server=https://... in the deck's URL points it at a specific server instead. */
+const SERVER_PARAM = new URLSearchParams(location.search).get('server');
+const LOCAL = location.protocol === 'file:' || ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
+const DEMO_SERVER = SERVER_PARAM ? SERVER_PARAM.replace(/\/+$/, '') : LOCAL ? 'http://localhost:8787' : null;
 async function serverUp(url) {
   try {
     const c = new AbortController();
@@ -967,11 +970,11 @@ async function serverUp(url) {
 document.getElementById('demoStart').addEventListener('click', async () => {
   const frame = document.getElementById('demoFrame');
   if (!frame.querySelector('iframe')) {
-    const live = await serverUp(DEMO_SERVER);
+    const live = DEMO_SERVER !== null && await serverUp(DEMO_SERVER);
     const f = document.createElement('iframe');
     f.src = live ? DEMO_SERVER + '/#/demo' : 'demo/index.html';
-    f.title = live ? 'Asher AI, live server' : 'Asher AI, offline demo';
-    frame.querySelector('.bar-top span').textContent = live ? 'asher ai · live · ' + DEMO_SERVER.replace(/^https?:\/\//, '') : 'asher ai · offline demo';
+    f.title = live ? 'Asher AI, live' : 'Asher AI demo';
+    if (live) frame.querySelector('.bar-top span').textContent = 'asher ai · live · ' + DEMO_SERVER.replace(/^https?:\/\//, '');
     frame.appendChild(f);
   }
   frame.classList.add('live');
