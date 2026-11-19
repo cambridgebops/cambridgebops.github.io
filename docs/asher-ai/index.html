@@ -502,6 +502,78 @@ body.editing [contenteditable="true"] { outline: 1px dashed rgba(184,56,42,.5); 
 @media print { .nav, .progress, .edit-hotzone, .edit-toggle { display: none !important; } }
 
 /* ===========================================
+   13–15. EVALUATION: items, Rasch, calibration
+   =========================================== */
+.it3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 56px; margin-top: 64px; }
+.it3 .col { border-top: 4px solid var(--ink); padding-top: 24px; }
+.it3 .no { font: 500 20px var(--mono); color: var(--pencil); letter-spacing: .08em; text-transform: uppercase; }
+.it3 h3 { font: 500 46px/1.08 var(--serif); margin: 12px 0 18px; }
+.it3 .ai { font-size: 25px; line-height: 1.42; color: var(--muted); }
+.it3 .one { margin-top: 18px !important; font-size: 25px; line-height: 1.42; padding: 14px 18px; border-radius: 10px; background: var(--tick-bg); }
+.it3 .one b { color: var(--tick); font: 600 25px var(--mono); margin-right: 8px; }
+.oc { margin-top: 56px; display: grid; grid-template-columns: 1fr 1fr; border: 2px solid var(--ink); border-radius: 14px; overflow: hidden; }
+.oc div { padding: 24px 32px; font-size: 27px; display: flex; align-items: center; gap: 24px; }
+.oc div + div { border-left: 2px solid var(--ink); background: var(--paper-2); }
+.oc .s { font: 600 52px/1 var(--sans); width: 44px; }
+.oc .s.g1 { color: var(--tick); } .oc .s.g0 { color: var(--pencil); }
+
+.rm { margin-top: 70px; }
+.rm-h { display: flex; justify-content: space-between; font: 500 20px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
+.rm-line { position: relative; height: 230px; margin-top: 10px; }
+.rm-axis { position: absolute; left: 0; right: 0; top: 150px; height: 3px; background: var(--ink); }
+.rm-axis::after { content: ''; position: absolute; right: -2px; top: -8px; border: 9px solid transparent; border-left: 16px solid var(--ink); border-right: 0; }
+.rm-ok { position: absolute; left: 0; top: 120px; height: 60px; width: 52%; background: var(--tick-bg); border-radius: 8px 0 0 8px; }
+.rm-trap { position: absolute; top: 140px; transform: translateX(-50%); text-align: center; }
+.rm-trap i { display: block; width: 22px; height: 22px; margin: 0 auto; border-radius: 4px; background: var(--ink); transform: rotate(45deg); }
+.rm-trap span { display: block; margin-top: 22px; font-size: 22px; line-height: 1.25; color: var(--muted); white-space: nowrap; }
+.rm-stu { position: absolute; left: 52%; top: 0; bottom: 70px; border-left: 3px solid var(--pencil); }
+.rm-stu span { position: absolute; top: 0; left: 14px; white-space: nowrap; font: 600 26px var(--sans); color: var(--pencil); }
+.rm-stu span small { display: block; font: 400 21px var(--sans); color: var(--muted); margin-top: 4px; }
+.rm3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 56px; margin-top: 56px; }
+.rm3 div { border-top: 2px solid var(--ink); padding-top: 18px; font-size: 25px; line-height: 1.42; color: var(--muted); }
+.rm3 b { display: block; color: var(--ink); font: 500 34px/1.1 var(--serif); margin-bottom: 10px; }
+
+.cb { display: grid; grid-template-columns: 1fr 90px 1fr 90px 1fr; margin-top: 80px; align-items: stretch; }
+.cb .box { border: 2px solid var(--ink); border-radius: 16px; padding: 30px 32px; min-height: 260px; }
+.cb .box.hl { background: var(--desk); border-color: var(--desk); color: #fff; }
+.cb .box .no { font: 500 20px var(--mono); color: var(--pencil); letter-spacing: .08em; text-transform: uppercase; }
+.cb .box.hl .no { color: var(--ok-on-desk); }
+.cb .box h3 { font: 500 44px/1.08 var(--serif); margin: 12px 0 14px; }
+.cb .box p { font-size: 25px; line-height: 1.42; color: var(--muted); }
+.cb .box.hl p { color: #C5D8CE; }
+.cb .ar { align-self: center; text-align: center; font: 500 40px var(--sans); color: var(--pencil); }
+.cb-then { margin-top: 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.cb-then div { background: var(--paper-2); border-radius: 14px; padding: 26px 32px; font-size: 26px; line-height: 1.45; }
+.cb-then .tag { margin-bottom: 10px; }
+
+.cw { display: grid; grid-template-columns: 1fr 1040px; gap: 48px; margin-top: 36px; }
+.cw-steps > div { border-top: 2px solid var(--ink); padding: 14px 0 14px; }
+.cw-steps > div + div { border-top: 1px solid var(--rule); }
+.cw-steps .no { font: 500 18px var(--mono); color: var(--pencil); letter-spacing: .08em; text-transform: uppercase; }
+.cw-steps h3 { font: 500 34px/1.1 var(--serif); margin: 6px 0 6px; }
+.cw-steps p { font-size: 22px; line-height: 1.4; color: var(--muted); }
+.cw-then { margin-top: 10px; display: flex; flex-direction: column; gap: 12px; }
+.cw-then div { background: var(--paper-2); border-radius: 12px; padding: 14px 20px; font-size: 21px; line-height: 1.4; }
+.cw-then .tag { display: block; width: max-content; margin-bottom: 6px; }
+.cw-cap { font-size: 19px; line-height: 1.4; color: var(--faint); margin-bottom: 6px !important; }
+.cw-cap b { color: var(--pencil); font-weight: 600; }
+.wm { width: 1040px; height: auto; max-width: none; max-height: none; display: block; font-family: var(--sans); }
+.wm-grid { stroke: var(--rule); stroke-width: 1; }
+.wm-tick { font: 16px var(--mono); fill: var(--faint); }
+.wm-h { font: 600 17px var(--sans); fill: var(--ink); }
+.wm-cut { stroke: var(--pencil); stroke-width: 2; stroke-dasharray: 7 6; }
+.wm-bar { fill: #C3CBC6; }
+.wm-n { font: 15px var(--mono); fill: var(--faint); }
+.wm-g { font: 600 26px var(--sans); fill: var(--ink); }
+.wm-gn { font: 400 16px var(--mono); fill: var(--muted); }
+.cw-steps > div:first-child { padding-top: 12px; }
+.wm-axis { stroke: var(--ink); stroke-width: 2; }
+.wm-dot { fill: #AEB6B1; }
+.wm-anc { fill: var(--pencil); }
+.wm-tl { font: 18px var(--sans); fill: var(--muted); }
+.wm-tla { font-weight: 600; fill: var(--ink); }
+
+/* ===========================================
    LAYOUT: centre content between headline and footer;
    scale up sparse slides
    =========================================== */
@@ -736,16 +808,7 @@ body.editing [contenteditable="true"] { outline: 1px dashed rgba(184,56,42,.5); 
 <!-- =========================================
      10. EVALUATION APPROACH: SCORING
      ========================================= -->
-<section class="slide">
-  <h2 class="r d2" style="font-size:72px">Every trap result feeds <em>one grade from A to D.</em></h2>
-  <div class="stats grades" style="grid-template-columns:repeat(4,1fr)">
-    <div class="r d3"><div class="n" style="color:var(--tick)">A</div><p class="l">Advanced</p></div>
-    <div class="r d4"><div class="n" style="color:var(--tick)">B</div><p class="l">Proficient</p></div>
-    <div class="r d5"><div class="n">C</div><p class="l">Foundation</p></div>
-    <div class="r d6"><div class="n" style="color:var(--pencil)">D</div><p class="l">Not yet</p></div>
-  </div>
-  <div class="foot"><span class="src">Rasch model. A Category 1 leak caps the grade at C.</span><span class="pg">10</span></div>
-</section>
+<!-- (scoring is covered by the evaluation slides below) -->
 
 <!-- =========================================
      11. FEEDBACK: REPLAY AND LECTURER VIEW
@@ -756,7 +819,7 @@ body.editing [contenteditable="true"] { outline: 1px dashed rgba(184,56,42,.5); 
     <div class="r d3"><div class="shot"><img src="img/r-careful-moment-open.jpg" alt="A student's report with a timestamped replay of the swapped-digits trap" style="object-position: center 62%"></div><p class="cap2"><b>Student replay</b></p></div>
     <div class="r d4"><div class="shot"><img src="img/l02-class-overview.jpg" alt="Lecturer class results with each trap's catch rate"></div><p class="cap2"><b>Lecturer view</b></p></div>
   </div>
-  <div class="foot"><span class="src"></span><span class="pg">11</span></div>
+  <div class="foot"><span class="src"></span><span class="pg">10</span></div>
 </section>
 
 <!-- =========================================
@@ -771,20 +834,147 @@ body.editing [contenteditable="true"] { outline: 1px dashed rgba(184,56,42,.5); 
     <div class="node r d6"><span class="no">04</span><h3>Grader</h3><p>Rasch grade A&ndash;D</p></div>
     <div class="node r d7"><span class="no">05</span><h3>Lecturer view</h3><p>Catch rates, CSV</p></div>
   </div>
-  <div class="foot"><span class="src"></span><span class="pg">12</span></div>
+  <div class="foot"><span class="src"></span><span class="pg">11</span></div>
 </section>
 
 <!-- =========================================
      13. EVALUATION OF THE INSTRUMENT
      ========================================= -->
 <section class="slide">
-  <h2 class="r d2" style="font-size:72px">Calibrated on 500 simulated agents <em>before real students.</em></h2>
-  <div class="stats">
-    <div class="r d3"><div class="n">0.99</div><p class="l">Trap reliability</p></div>
-    <div class="r d4"><div class="n">2.58</div><p class="l">Student separation</p></div>
-    <div class="r d5"><div class="n">0.71</div><p class="l">Student reliability</p><p class="s">Enough for feedback, not yet for certification</p></div>
+  <h2 class="r d2">Every trap is one test item: <em>handled, 1. Not handled, 0.</em></h2>
+  <div class="it3">
+    <div class="col r d3"><span class="no">Input control</span><h3>A wrong figure</h3><p class="one"><b>1</b>if the final figure is right</p></div>
+    <div class="col r d4"><span class="no">Professional judgement</span><h3>A bad decision</h3><p class="one"><b>1</b>if the final treatment is right</p></div>
+    <div class="col r d5"><span class="no">Data stewardship</span><h3>A data risk</h3><p class="one"><b>1</b>if nothing restricted reached the AI or the work</p></div>
   </div>
-  <div class="foot"><span class="src">Rasch model, 500 simulated agents</span><span class="pg">13</span></div>
+  <div class="oc r d6">
+    <div><span class="s g1">1</span><span>Caught, avoided or protected</span></div>
+    <div><span class="s g0">0</span><span>Missed, wrong or leaked</span></div>
+  </div>
+  <div class="foot"><span class="src">Scored automatically from the platform log. Each trap counts towards one dimension.</span><span class="pg">12</span></div>
+</section>
+
+<section class="slide">
+  <h2 class="r d2">The Rasch model turns those 1s and 0s into <em>one AI literacy score.</em></h2>
+  <div class="rm r d3">
+    <div class="rm-h"><span>Easier traps</span><span>Harder traps</span></div>
+    <div class="rm-line">
+      <div class="rm-ok"></div>
+      <div class="rm-axis"></div>
+      <div class="rm-trap" style="left:8%"><i></i><span>Passport scans</span></div>
+      <div class="rm-trap" style="left:26%"><i></i><span>Another client's file</span></div>
+      <div class="rm-trap" style="left:43%"><i></i><span>Bad debt</span></div>
+      <div class="rm-trap" style="left:64%"><i></i><span>Revenue cut-off</span></div>
+      <div class="rm-trap" style="left:86%"><i></i><span>Guarantor addresses</span></div>
+      <div class="rm-stu"><span>A student<small>handles the traps to the left</small></span></div>
+    </div>
+  </div>
+  <div class="rm3">
+    <div class="r d4"><b>Traps aren't equal</b>Catching a hard one counts for more.</div>
+    <div class="r d5"><b>One shared scale</b>Students and traps on the same line.</div>
+    <div class="r d6"><b>Grades that mean something</b>A to D, by the traps handled. A serious data leak caps it at C.</div>
+  </div>
+  <div class="foot"><span class="src">Rasch (1960). Statement accuracy is reported separately.</span><span class="pg">13</span></div>
+</section>
+
+<section class="slide">
+  <h2 class="r d2" style="font-size:64px">500 simulated students <em>set the trap difficulties.</em></h2>
+  <div class="cw">
+    <div>
+      <div class="cw-steps">
+        <div class="r d3"><span class="no">01 Simulate</span><h3>500 agents</h3><p>Each with its own level on the three dimensions.</p></div>
+        <div class="r d4"><span class="no">02 Sit the task</span><h3>The real platform</h3><p>The same case, AI and grader a student meets.</p></div>
+        <div class="r d5"><span class="no">03 Estimate</span><h3>One shared scale</h3><p>Agents and traps on one scale; grade cuts set.</p></div>
+      </div>
+      <div class="cw-then r d6">
+        <div><span class="tag now">Now</span>Real students are scored against these fixed difficulties.</div>
+        <div><span class="tag next">After the pilot</span>Difficulties are re-estimated from real students.</div>
+      </div>
+    </div>
+    <div class="r d4">
+      <p class="cw-cap">Higher = abler agent or harder trap. Dashed lines: grade cuts at a 67% chance on each <b>red anchor trap</b>.</p>
+      <svg class="wm" viewBox="0 0 1040 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Wright map: 500 simulated agents and 19 traps on one logit scale">
+<line x1="40" x2="1040" y1="567.8" y2="567.8" class="wm-grid"/><text x="28" y="573.8" class="wm-tick" text-anchor="end">-3</text>
+<line x1="40" x2="1040" y1="495.6" y2="495.6" class="wm-grid"/><text x="28" y="501.6" class="wm-tick" text-anchor="end">-2</text>
+<line x1="40" x2="1040" y1="423.3" y2="423.3" class="wm-grid"/><text x="28" y="429.3" class="wm-tick" text-anchor="end">-1</text>
+<line x1="40" x2="1040" y1="351.1" y2="351.1" class="wm-grid"/><text x="28" y="357.1" class="wm-tick" text-anchor="end">0</text>
+<line x1="40" x2="1040" y1="278.8" y2="278.8" class="wm-grid"/><text x="28" y="284.8" class="wm-tick" text-anchor="end">+1</text>
+<line x1="40" x2="1040" y1="206.6" y2="206.6" class="wm-grid"/><text x="28" y="212.6" class="wm-tick" text-anchor="end">+2</text>
+<line x1="40" x2="1040" y1="134.3" y2="134.3" class="wm-grid"/><text x="28" y="140.3" class="wm-tick" text-anchor="end">+3</text>
+<line x1="40" x2="1040" y1="62.1" y2="62.1" class="wm-grid"/><text x="28" y="68.1" class="wm-tick" text-anchor="end">+4</text>
+<text x="392" y="22" class="wm-h" text-anchor="end">Agents by traps right</text>
+<text x="426" y="22" class="wm-h">Input control</text>
+<text x="636" y="22" class="wm-h">Judgement</text>
+<text x="844" y="22" class="wm-h">Stewardship</text>
+<line x1="128" x2="414" y1="365.5" y2="365.5" class="wm-cut"/>
+<line x1="128" x2="414" y1="301.9" y2="301.9" class="wm-cut"/>
+<line x1="128" x2="414" y1="255.0" y2="255.0" class="wm-cut"/>
+<rect x="390.8" y="52.6" width="9.2" height="16" rx="2" class="wm-bar"/><text x="382.8" y="66.6" class="wm-n" text-anchor="end">2</text>
+<rect x="386.1" y="138.6" width="13.9" height="16" rx="2" class="wm-bar"/><text x="378.1" y="152.6" class="wm-n" text-anchor="end">3</text>
+<rect x="367.6" y="181.9" width="32.4" height="16" rx="2" class="wm-bar"/><text x="359.6" y="195.9" class="wm-n" text-anchor="end">7</text>
+<rect x="344.5" y="213.7" width="55.5" height="16" rx="2" class="wm-bar"/><text x="336.5" y="227.7" class="wm-n" text-anchor="end">12</text>
+<rect x="307.5" y="239.0" width="92.5" height="16" rx="2" class="wm-bar"/><text x="299.5" y="253.0" class="wm-n" text-anchor="end">20</text>
+<rect x="233.6" y="260.7" width="166.4" height="16" rx="2" class="wm-bar"/><text x="225.6" y="274.7" class="wm-n" text-anchor="end">36</text>
+<rect x="210.5" y="280.9" width="189.5" height="16" rx="2" class="wm-bar"/><text x="202.5" y="294.9" class="wm-n" text-anchor="end">41</text>
+<rect x="219.7" y="300.4" width="180.3" height="16" rx="2" class="wm-bar"/><text x="211.7" y="314.4" class="wm-n" text-anchor="end">39</text>
+<rect x="155.0" y="318.5" width="245.0" height="16" rx="2" class="wm-bar"/><text x="147.0" y="332.5" class="wm-n" text-anchor="end">53</text>
+<rect x="155.0" y="336.6" width="245.0" height="16" rx="2" class="wm-bar"/><text x="147.0" y="350.6" class="wm-n" text-anchor="end">53</text>
+<rect x="168.9" y="354.6" width="231.1" height="16" rx="2" class="wm-bar"/><text x="160.9" y="368.6" class="wm-n" text-anchor="end">50</text>
+<rect x="201.2" y="373.4" width="198.8" height="16" rx="2" class="wm-bar"/><text x="193.2" y="387.4" class="wm-n" text-anchor="end">43</text>
+<rect x="205.8" y="393.6" width="194.2" height="16" rx="2" class="wm-bar"/><text x="197.8" y="407.6" class="wm-n" text-anchor="end">42</text>
+<rect x="238.2" y="415.3" width="161.8" height="16" rx="2" class="wm-bar"/><text x="230.2" y="429.3" class="wm-n" text-anchor="end">35</text>
+<rect x="289.1" y="439.2" width="110.9" height="16" rx="2" class="wm-bar"/><text x="281.1" y="453.2" class="wm-n" text-anchor="end">24</text>
+<rect x="307.5" y="466.6" width="92.5" height="16" rx="2" class="wm-bar"/><text x="299.5" y="480.6" class="wm-n" text-anchor="end">20</text>
+<rect x="344.5" y="500.6" width="55.5" height="16" rx="2" class="wm-bar"/><text x="336.5" y="514.6" class="wm-n" text-anchor="end">12</text>
+<rect x="376.9" y="542.5" width="23.1" height="16" rx="2" class="wm-bar"/><text x="368.9" y="556.5" class="wm-n" text-anchor="end">5</text>
+<rect x="386.1" y="600.3" width="13.9" height="16" rx="2" class="wm-bar"/><text x="378.1" y="614.3" class="wm-n" text-anchor="end">3</text>
+<text x="48" y="143.5" class="wm-g">A</text><text x="48" y="165.5" class="wm-gn">n = 38</text>
+<text x="48" y="271.4" class="wm-g">B</text><text x="48" y="293.4" class="wm-gn">n = 55</text>
+<text x="48" y="322.7" class="wm-g">C</text><text x="48" y="344.7" class="wm-gn">n = 223</text>
+<text x="48" y="497.6" class="wm-g">D</text><text x="48" y="519.6" class="wm-gn">n = 184</text>
+<line x1="400" x2="400" y1="40" y2="622" class="wm-axis"/>
+<circle cx="440" cy="268.0" r="7" class="wm-dot"/>
+<text x="456" y="274.0" class="wm-tl">IC4 gross vs net</text>
+<circle cx="440" cy="275.2" r="7" class="wm-dot"/>
+<text x="456" y="296.0" class="wm-tl">IC2 fabrication</text>
+<circle cx="440" cy="284.6" r="7" class="wm-dot"/>
+<text x="456" y="318.0" class="wm-tl">IC6 outdated</text>
+<circle cx="440" cy="287.5" r="7" class="wm-dot"/>
+<text x="456" y="340.0" class="wm-tl">IC5 arithmetic</text>
+<circle cx="440" cy="351.1" r="7" class="wm-dot"/>
+<text x="456" y="362.0" class="wm-tl">IC1 transposition</text>
+<circle cx="440" cy="388.6" r="7" class="wm-dot"/>
+<text x="456" y="394.6" class="wm-tl">IC3 wrong source</text>
+<circle cx="440" cy="466.7" r="7" class="wm-dot"/>
+<text x="456" y="472.7" class="wm-tl">IC7 sycophancy</text>
+<circle cx="650" cy="306.3" r="7" class="wm-anc"/>
+<text x="666" y="312.3" class="wm-tl wm-tla">PJ3 cut-off</text>
+<circle cx="650" cy="314.9" r="7" class="wm-dot"/>
+<text x="666" y="334.3" class="wm-tl">PJ5 classification</text>
+<circle cx="650" cy="327.2" r="7" class="wm-dot"/>
+<text x="666" y="356.3" class="wm-tl">PJ2 capitalise</text>
+<circle cx="650" cy="349.6" r="7" class="wm-dot"/>
+<text x="666" y="378.3" class="wm-tl">PJ1 estimate</text>
+<circle cx="650" cy="352.5" r="7" class="wm-anc"/>
+<text x="666" y="400.3" class="wm-tl wm-tla">PJ4 impairment</text>
+<circle cx="858" cy="247.0" r="7" class="wm-dot"/>
+<text x="874" y="253.0" class="wm-tl">DS6 guarantors</text>
+<circle cx="858" cy="351.1" r="7" class="wm-dot"/>
+<text x="874" y="357.1" class="wm-tl">DS2 inside info</text>
+<circle cx="858" cy="358.3" r="7" class="wm-dot"/>
+<text x="874" y="379.1" class="wm-tl">DS7 internal memo</text>
+<circle cx="858" cy="365.5" r="7" class="wm-dot"/>
+<text x="874" y="401.1" class="wm-tl">DS5 payroll</text>
+<circle cx="858" cy="416.1" r="7" class="wm-anc"/>
+<text x="874" y="423.1" class="wm-tl wm-tla">DS1 other client</text>
+<circle cx="858" cy="571.4" r="7" class="wm-dot"/>
+<text x="874" y="577.4" class="wm-tl">DS4 credentials</text>
+<circle cx="858" cy="574.3" r="7" class="wm-dot"/>
+<text x="874" y="599.4" class="wm-tl">DS3 identity docs</text>
+</svg>
+    </div>
+  </div>
+  <div class="foot"><span class="src">Simulated agents, not students. Scale in logits.</span><span class="pg">14</span></div>
 </section>
 
 <!-- =========================================
@@ -805,7 +995,7 @@ body.editing [contenteditable="true"] { outline: 1px dashed rgba(184,56,42,.5); 
       <li>Graduate onboarding</li>
     </ul></div>
   </div>
-  <div class="foot"><span class="src"></span><span class="pg">14</span></div>
+  <div class="foot"><span class="src"></span><span class="pg">15</span></div>
 </section>
 
 <!-- =========================================
@@ -824,7 +1014,7 @@ body.editing [contenteditable="true"] { outline: 1px dashed rgba(184,56,42,.5); 
     <div><span>Gateway</span>claude mcp add asherai -- npx -y github:kostadindev/AsherAI&#8209;mcp</div>
     <div><span>Coach</span>/plugin marketplace add kostadindev/AsherAI-skill</div>
   </div>
-  <div class="foot"><span class="src">github.com/kostadindev/AsherAI-mcp · AsherAI-skill</span><span class="pg">15</span></div>
+  <div class="foot"><span class="src">github.com/kostadindev/AsherAI-mcp · AsherAI-skill</span><span class="pg">16</span></div>
 </section>
 
 
@@ -846,7 +1036,7 @@ body.editing [contenteditable="true"] { outline: 1px dashed rgba(184,56,42,.5); 
       <tr class="us"><td>Asher AI</td><td>Analyst task</td><td class="y"><i class="mk y"></i></td><td class="y"><i class="mk y"></i></td><td class="y"><i class="mk y"></i></td><td class="y"><i class="mk y"></i></td></tr>
     </tbody>
   </table>
-  <div class="foot"><span class="src"><i class="mk y"></i> yes · <i class="mk p"></i> partly · <i class="mk n0"></i> not documented (public descriptions, Nov 2026)</span><span class="pg">16</span></div>
+  <div class="foot"><span class="src"><i class="mk y"></i> yes · <i class="mk p"></i> partly · <i class="mk n0"></i> not documented (public descriptions, Nov 2026)</span><span class="pg">17</span></div>
 </section>
 
 <!-- =========================================
