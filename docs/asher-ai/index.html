@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asher AI Pitch Deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* ===========================================
+   THEME TOKENS
+   Paper and ink from the Asher AI app; desk green and
+   the serif headline voice from the trading-desk look.
+   =========================================== */
+:root {
+  --stage-bg: #0d2a21;
+  --slide-bg: #FBFBF9;
+  --paper: #FBFBF9;
+  --paper-2: #F3F2EE;
+  --ink: #1B1F27;
+  --muted: #5D6370;
+  --faint: #8D929C;
+  --rule: #DDE0E5;
+  --pencil: #B8382A;
+  --pencil-bg: #F8ECE9;
+  --tick: #2C7A4B;
+  --tick-bg: #E8F2EC;
+  --desk: #123a2e;
+  --desk-2: #0d2a21;
+  --mint: #9fc2b2;
+  --mint-2: #cfe0d6;
+  --bad-on-desk: #ff9d8f;
+  --ok-on-desk: #7fe0a9;
+  --serif: 'Newsreader', Georgia, serif;
+  --sans: 'Geist', sans-serif;
+  --mono: 'Geist Mono', ui-monospace, monospace;
+  --ease: cubic-bezier(.16, 1, .3, 1);
+}
+
+/* ===========================================
+   FIXED 16:9 STAGE (viewport-base.css, in full)
+   =========================================== */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: var(--stage-bg, #000);
+}
+.deck-viewport {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    background: var(--stage-bg, #000);
+}
+.deck-stage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    transform-origin: 0 0;
+    background: transparent;
+}
+.slide {
+    position: absolute;
+    inset: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    background: var(--slide-bg, #fff);
+}
+.slide.active,
+.slide.visible {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+}
+img,
+video,
+canvas,
+svg {
+    max-width: 100%;
+    max-height: 100%;
+}
+.deck-controls {
+    position: fixed;
+    right: 18px;
+    top: 12px;
+    z-index: 1000;
+}
+@media print {
+    html,
+    body {
+        width: 1920px;
+        height: auto;
+        overflow: visible;
+        background: #fff;
+    }
+    .deck-viewport {
+        position: static;
+        overflow: visible;
+        background: #fff;
+    }
+    .deck-stage {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: none !important;
+        background: none;
+    }
+    .slide {
+        position: relative;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        width: 1920px;
+        height: 1080px;
+        break-after: page;
+        page-break-after: always;
+    }
+    .slide:last-child {
+        break-after: auto;
+        page-break-after: auto;
+    }
+    .deck-controls {
+        display: none !important;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.2s !important;
+    }
+}
+
+/* ===========================================
+   BASE TYPE AND SLIDE FRAME
+   =========================================== */
+* { box-sizing: border-box; }
+.slide { font-family: var(--sans); color: var(--ink); padding: 96px 128px 0; }
+.slide p { margin: 0; }
+.slide .kicker { font: 500 22px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--pencil); margin: 0 0 34px; }
+h1, h2 { font-family: var(--serif); font-weight: 500; margin: 0; text-wrap: balance; }
+h2 { font-size: 80px; line-height: 1.04; letter-spacing: -1.6px; max-width: 1560px; }
+h2 em, h1 em { font-style: normal; color: var(--desk); }
+.lead { font-size: 34px; line-height: 1.4; color: var(--muted); margin-top: 26px !important; max-width: 1400px; }
+.foot { position: absolute; left: 128px; right: 128px; bottom: 44px; display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; font-size: 19px; line-height: 1.4; color: var(--faint); }
+.foot .src { max-width: 1480px; }
+.foot .pg { font-family: var(--mono); white-space: nowrap; }
+.mono { font-family: var(--mono); }
+.num { font-variant-numeric: tabular-nums; }
+
+/* Dark desk slides */
+.slide.desk { background: var(--desk); color: #EEF4F0; }
+.desk h2 { color: #F4F7F5; }
+.desk h2 em { color: var(--ok-on-desk); }
+.desk .kicker { color: var(--mint); }
+.desk .lead { color: #B9CEC3; }
+.desk .foot { color: #7FA594; }
+
+/* ===========================================
+   ANIMATION: staggered reveal on slide entry
+   =========================================== */
+.r { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.slide.visible .r { opacity: 1; transform: none; }
+.d1 { transition-delay: .05s !important; } .d2 { transition-delay: .15s !important; } .d3 { transition-delay: .28s !important; }
+.d4 { transition-delay: .42s !important; } .d5 { transition-delay: .58s !important; } .d6 { transition-delay: .75s !important; }
+.d7 { transition-delay: .95s !important; }
+
+/* Red-pencil strike, drawn after the slide appears */
+.st { color: var(--pencil); position: relative; display: inline-block; }
+.st::after { content: ''; position: absolute; left: -4px; right: -4px; top: 54%; height: 3px; background: var(--pencil); transform: scaleX(0); transform-origin: left; transition: transform .5s 1s cubic-bezier(.65,0,.35,1); }
+.slide.visible .st::after { transform: scaleX(1); }
+.fix { opacity: 0; transition: opacity .4s 1.5s; }
+.slide.visible .fix { opacity: 1; }
+
+/* ===========================================
+   1. COVER: desk panel with error ticker + headline
+   =========================================== */
+.cover, .close { padding: 0; }
+.slide.cover, .slide.close { background: linear-gradient(90deg, var(--desk) 621px, var(--slide-bg) 621px); }
+.cover .band { position: absolute; left: 0; top: 0; bottom: 0; width: 620px; background: var(--desk); color: #e9efe9; padding: 96px 72px; display: flex; flex-direction: column; }
+.brand { display: flex; align-items: center; gap: 16px; font: 600 32px var(--sans); color: #fff; }
+.brand .mark { width: 46px; height: 46px; border-radius: 10px; background: #fff; display: grid; place-items: center; }
+.ticker { margin-top: auto; font: 400 25px/2.15 var(--mono); color: var(--mint-2); }
+.ticker .row { display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.08); }
+.ticker .bad { color: var(--bad-on-desk); text-decoration: line-through; text-decoration-thickness: 2px; }
+.ticker .ok { color: var(--ok-on-desk); }
+.ticker .lab { color: var(--mint); }
+.cover .main { position: absolute; left: 620px; right: 0; top: 0; bottom: 0; padding: 96px 120px; display: flex; flex-direction: column; justify-content: center; }
+.cover .kick { font: 500 22px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--pencil); border-top: 3px solid var(--ink); padding-top: 22px; }
+.cover h1 { font-size: 120px; line-height: 1.02; letter-spacing: -2.8px; margin-top: 0; }
+.cover .sub { font-size: 38px; line-height: 1.4; color: var(--muted); margin-top: 48px; max-width: 1000px; }
+.cover .who { position: absolute; left: 120px; right: 120px; bottom: 80px; display: flex; justify-content: space-between; border-top: 1px solid var(--rule); padding-top: 22px; font-size: 24px; color: var(--muted); }
+
+/* ===========================================
+   2. CAPABILITY: bar chart + stat cards
+   =========================================== */
+.cap { display: grid; grid-template-columns: 1040px 1fr; gap: 88px; margin-top: 64px; }
+.chart-title { font-size: 26px; font-weight: 500; margin-bottom: 6px !important; }
+.chart-sub { font-size: 22px; color: var(--muted); margin-bottom: 64px !important; }
+.bars { position: relative; border-left: 2px solid var(--ink); }
+.bar-row { position: relative; height: 128px; display: flex; align-items: center; }
+.bar-row .lab { position: absolute; left: 24px; top: 12px; font-size: 24px; color: var(--muted); background: var(--paper); padding-right: 10px; z-index: 1; }
+.bar { height: 44px; margin-top: 36px; background: var(--desk); border-radius: 0 4px 4px 0; width: 0; transition: width 1.1s var(--ease) .4s; }
+.slide.visible .bar { width: var(--w); }
+.bar-row .val { position: relative; z-index: 1; background: var(--paper); padding: 0 8px; margin-left: 10px; margin-top: 36px; font: 600 40px var(--sans); font-variant-numeric: tabular-nums; }
+.parity { position: absolute; top: -14px; bottom: -14px; left: calc(1000px * .5); border-left: 2px dashed var(--pencil); }
+.parity span { position: absolute; top: -34px; left: -90px; width: 180px; text-align: center; font: 500 18px var(--mono); color: var(--pencil); letter-spacing: .06em; text-transform: uppercase; }
+.axis { position: relative; height: 22px; width: 1000px; font: 18px var(--mono); color: var(--faint); margin-top: 10px; }
+.axis span { position: absolute; top: 0; transform: translateX(-50%); }
+.axis span:nth-child(1) { left: 0; transform: none; } .axis span:nth-child(2) { left: 25%; } .axis span:nth-child(3) { left: 50%; } .axis span:nth-child(4) { left: 75%; } .axis span:nth-child(5) { left: 100%; }
+.cards { display: flex; flex-direction: column; gap: 28px; }
+.card { border-top: 4px solid var(--ink); padding-top: 22px; }
+.card .big { font: 600 84px/1 var(--sans); letter-spacing: -2px; font-variant-numeric: tabular-nums; }
+.card .big small { font-size: 34px; color: var(--muted); font-weight: 500; letter-spacing: 0; }
+.card p { font-size: 25px; line-height: 1.4; color: var(--muted); margin-top: 12px !important; }
+
+/* ===========================================
+   3. ADOPTION: two columns of big numbers
+   =========================================== */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-top: 52px; }
+.split .colhead { font: 500 22px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--faint); border-bottom: 2px solid var(--ink); padding-bottom: 16px; margin-bottom: 8px; }
+.stat { display: grid; grid-template-columns: 290px 1fr; gap: 24px; align-items: baseline; padding: 24px 0; border-bottom: 1px solid var(--rule); }
+.stat .n { white-space: nowrap; font: 600 96px/1 var(--sans); letter-spacing: -3px; font-variant-numeric: tabular-nums; }
+.stat .n.red { color: var(--pencil); }
+.stat .t { font-size: 29px; line-height: 1.35; }
+.stat .t span { display: block; font-size: 21px; color: var(--faint); margin-top: 8px; }
+.callout { margin-top: 30px; display: flex; gap: 22px; align-items: center; font-size: 30px; }
+.callout .pill { font: 500 20px var(--mono); letter-spacing: .1em; text-transform: uppercase; background: var(--pencil-bg); color: var(--pencil); padding: 8px 14px; border-radius: 6px; white-space: nowrap; }
+
+/* ===========================================
+   4. COMPLIANCE: two-track timeline
+   =========================================== */
+.tl { position: relative; margin-top: 44px; height: 560px; }
+.tl .axisline { position: absolute; left: 0; right: 0; top: 280px; height: 2px; background: var(--ink); }
+.tl .lane { position: absolute; left: -2px; font: 500 20px var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+.tl .lane.up { top: 0; color: var(--pencil); }
+.tl .lane.dn { bottom: 0; color: var(--tick); }
+.ev { position: absolute; width: 176px; font-size: 21px; line-height: 1.33; }
+.ev b { display: block; font: 500 18px var(--mono); margin-bottom: 6px; }
+.ev.up { bottom: 280px; border-left: 3px solid var(--pencil); padding: 0 0 26px 14px; }
+.ev.up b { color: var(--pencil); }
+.ev.dn { top: 282px; border-left: 3px solid var(--tick); padding: 26px 0 0 14px; }
+.ev.dn b { color: var(--tick); }
+.ev .dot { position: absolute; left: -9.5px; width: 16px; height: 16px; border-radius: 50%; }
+.ev.up .dot { bottom: -8px; background: var(--pencil); }
+.ev.dn .dot { top: -9px; background: var(--tick); }
+
+/* ===========================================
+   5. SOLUTION: three behaviours
+   =========================================== */
+.three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 56px; margin-top: 76px; }
+.three .col { border-top: 4px solid var(--ink); padding-top: 26px; }
+.three .no { font: 500 22px var(--mono); color: var(--pencil); }
+.three h3 { font: 500 52px/1.05 var(--serif); margin: 16px 0 0; letter-spacing: -.5px; }
+.three p { font-size: 27px; line-height: 1.42; color: var(--muted); margin-top: 18px !important; }
+.roadmap { margin-top: 64px; display: grid; grid-template-columns: 1fr 1fr; border: 2px solid var(--ink); border-radius: 14px; overflow: hidden; }
+.roadmap div { padding: 26px 32px; font-size: 27px; line-height: 1.4; }
+.roadmap div + div { border-left: 2px solid var(--ink); background: var(--paper-2); }
+.tag { display: inline-block; font: 500 18px var(--mono); letter-spacing: .1em; text-transform: uppercase; padding: 5px 10px; border-radius: 5px; margin-right: 12px; vertical-align: 3px; }
+.tag.now { background: var(--tick-bg); color: var(--tick); }
+.tag.next { background: #FFF1E0; color: #8A5A12; }
+.tag.later { background: #ECEEF2; color: var(--muted); }
+
+/* ===========================================
+   6. PRODUCT: screenshot with numbered callouts
+   =========================================== */
+.shot { border-radius: 14px; overflow: hidden; box-shadow: 0 2px 0 var(--rule), 0 30px 60px -30px rgba(18,58,46,.45); border: 1px solid var(--rule); background: #fff; }
+.shot img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top left; max-width: none; max-height: none; }
+.prod { display: grid; grid-template-columns: 1080px 1fr; gap: 60px; margin-top: 44px; }
+.prod .shot { height: 675px; }
+.calls { display: flex; flex-direction: column; gap: 0; }
+.call { display: grid; grid-template-columns: 52px 1fr; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--rule); }
+.call:first-child { padding-top: 0; }
+.call .k { width: 44px; height: 44px; border-radius: 50%; background: var(--desk); color: #fff; display: grid; place-items: center; font: 500 22px var(--mono); }
+.call b { font-size: 27px; font-weight: 600; display: block; }
+.call span { font-size: 22px; line-height: 1.36; color: var(--muted); display: block; margin-top: 6px; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.chips span { font: 500 17px var(--mono); border: 1.5px solid var(--ink); border-radius: 999px; padding: 7px 14px; }
+
+/* ===========================================
+   7. LIVE DEMO: embedded app with click-to-start cover
+   =========================================== */
+.demo { display: grid; grid-template-columns: 380px 1fr; gap: 56px; margin-top: 44px; }
+.steps { list-style: none; padding: 0; margin: 0; counter-reset: s; }
+.steps li { counter-increment: s; display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--rule); font-size: 26px; line-height: 1.3; }
+.steps li::before { content: counter(s); font: 500 22px var(--mono); color: var(--pencil); }
+.steps li.last::before { content: '→'; }
+.pdf-note { display: none; font-size: 21px; line-height: 1.45; color: var(--muted); margin-top: 26px !important; }
+body.pdf .pdf-note { display: block; } body.pdf .demo-note, body.pdf .frame .cover-btn .play { display: none; }
+@media print { .pdf-note { display: block; } .demo-note { display: none; } }
+.demo-note { font-size: 21px; line-height: 1.45; color: var(--muted); margin-top: 26px !important; }
+.frame { position: relative; height: 720px; border-radius: 14px; overflow: hidden; border: 2px solid var(--ink); background: #fff; }
+.frame .bar-top { height: 40px; background: var(--desk); display: flex; align-items: center; gap: 9px; padding: 0 16px; }
+.frame .bar-top i { width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,.25); }
+.frame .bar-top span { margin-left: 14px; font: 18px var(--mono); color: var(--mint); }
+.frame iframe { position: absolute; top: 40px; left: 0; border: 0; width: 1600px; height: 886px; transform: scale(.7675); transform-origin: 0 0; }
+.frame .cover-btn { position: absolute; inset: 40px 0 0 0; border: 0; padding: 0; cursor: pointer; background: #fff; }
+.frame .cover-btn img { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; max-width: none; max-height: none; filter: saturate(.9); }
+.frame .cover-btn .play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: var(--ink); color: #fff; font: 600 30px var(--sans); padding: 24px 40px; border-radius: 12px; box-shadow: 0 20px 40px -10px rgba(0,0,0,.5); }
+.frame .cover-btn .play small { display: block; font: 400 20px var(--mono); color: #C9CED6; margin-top: 8px; }
+.frame.live .cover-btn { display: none; }
+@media print { .frame iframe { display: none; } .frame .cover-btn { display: block !important; } .frame .cover-btn .play { display: none; } }
+
+/* ===========================================
+   8. TRAPS: chat mock + trap lists
+   =========================================== */
+.traps { display: grid; grid-template-columns: 820px 1fr; gap: 72px; margin-top: 40px; }
+.chat { background: #fff; border: 1px solid var(--rule); border-radius: 16px; padding: 22px 28px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 30px 60px -36px rgba(18,58,46,.45); }
+.msg { font-size: 22px; line-height: 1.38; max-width: 660px; }
+.msg.me { align-self: flex-end; background: #EEF0F3; border-radius: 14px; padding: 12px 18px; }
+.msg.ai { display: grid; grid-template-columns: 44px 1fr; gap: 16px; }
+.msg.ai .av { width: 44px; height: 44px; border-radius: 10px; background: var(--ink); color: #fff; display: grid; place-items: center; font: 600 22px var(--sans); }
+.msg.ai .who { font-size: 19px; color: var(--faint); margin-bottom: 4px; }
+.entry { margin-top: 8px; display: flex; justify-content: space-between; border: 1px solid var(--rule); border-radius: 10px; padding: 9px 14px; font-size: 20px; }
+.entry .v { font-weight: 600; font-variant-numeric: tabular-nums; }
+.lists { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.list h4 { font: 500 22px var(--mono); letter-spacing: .1em; text-transform: uppercase; margin: 0; padding-bottom: 14px; border-bottom: 2px solid var(--ink); display: flex; justify-content: space-between; }
+.list ul { list-style: none; padding: 0; margin: 0; }
+.list li { font-size: 25px; line-height: 1.3; padding: 13px 0; border-bottom: 1px solid var(--rule); }
+.list li small { display: block; font-size: 19px; color: var(--faint); margin-top: 3px; }
+.rule-note { margin-top: 30px !important; font-size: 24px; line-height: 1.45; color: var(--muted); }
+.rule-note b { color: var(--ink); font-weight: 600; }
+
+/* ===========================================
+   9. DATA: screenshot + restricted list
+   =========================================== */
+.data { display: grid; grid-template-columns: 760px 1fr; gap: 72px; margin-top: 48px; }
+.data .shot { height: 720px; }
+.data .shot img { object-position: right top; }
+.cat { margin-bottom: 26px; }
+.cat h4 { font: 500 22px var(--mono); letter-spacing: .1em; text-transform: uppercase; margin: 0 0 4px; display: flex; gap: 14px; align-items: baseline; }
+.cat h4 em { font: 400 21px var(--sans); text-transform: none; letter-spacing: 0; color: var(--muted); font-style: normal; }
+.cat.c1 h4 { color: var(--pencil); }
+.cat.c2 h4 { color: #8A5A12; }
+.cat ul { list-style: none; padding: 0; margin: 0; }
+.cat li { font-size: 26px; padding: 12px 0; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 20px; }
+.cat li code { font: 19px var(--mono); color: var(--faint); white-space: nowrap; }
+.detect { background: var(--desk); color: #E6EFEA; border-radius: 14px; padding: 26px 30px; font-size: 25px; line-height: 1.45; margin-top: 10px; }
+.detect b { color: var(--ok-on-desk); font-weight: 500; }
+
+/* ===========================================
+   10. SCORING: rubric table + sample students
+   =========================================== */
+.score { display: grid; grid-template-columns: 820px 1fr; gap: 72px; margin-top: 54px; }
+table { border-collapse: collapse; width: 100%; }
+.rubric { align-self: start; }
+.rubric th, .rubric td, .students th, .students td { text-align: left; padding: 16px 12px 16px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.rubric th, .students th { font: 500 18px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--faint); border-bottom: 2px solid var(--ink); }
+.rubric td { font-size: 24px; line-height: 1.35; }
+.rubric td:first-child { font-weight: 600; width: 250px; }
+.rubric td:last-child { color: var(--muted); }
+.students td { font-size: 25px; font-variant-numeric: tabular-nums; }
+.students td.n { font-weight: 600; }
+.students td small { display: block; font-size: 19px; color: var(--faint); font-weight: 400; margin-top: 4px; line-height: 1.3; }
+.g { color: var(--tick); } .b { color: var(--pencil); }
+.conf { margin-top: 18px; }
+.conf .row { display: grid; grid-template-columns: 110px 1fr 120px; align-items: center; gap: 30px; height: 44px; font-size: 22px; }
+.conf .track { position: relative; height: 2px; background: var(--rule); }
+.conf .m { position: absolute; top: 50%; width: 22px; height: 22px; border-radius: 50%; transform: translate(-50%, -50%); }
+.conf .m.acc { background: var(--ink); box-shadow: 0 0 0 3px var(--paper); }
+.conf .m.cf { border: 3px solid var(--pencil); background: var(--paper); }
+.conf .gap { position: absolute; top: 50%; height: 4px; background: var(--pencil-bg); transform: translateY(-50%); }
+.conf .row.hd { height: 26px; font-size: 16px; color: var(--faint); letter-spacing: .02em; }
+.conf .key { display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 20px; color: var(--muted); margin-top: 10px; padding-left: 140px; }
+.conf .key i { display: inline-block; width: 16px; height: 16px; border-radius: 50%; margin-right: 8px; vertical-align: -2px; }
+.takeaway { font: 500 27px/1.3 var(--serif); margin-top: 18px !important; }
+
+/* ===========================================
+   11. FEEDBACK: two screenshots
+   =========================================== */
+.fb { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 48px; }
+.fb .shot { height: 560px; }
+.fb .cap2 { font-size: 24px; line-height: 1.4; color: var(--muted); margin-top: 20px !important; }
+.fb .cap2 b { color: var(--ink); font-weight: 600; }
+
+/* ===========================================
+   12. ARCHITECTURE: pipeline diagram
+   =========================================== */
+.pipe { display: grid; grid-template-columns: repeat(5, 1fr); gap: 54px; margin-top: 70px; position: relative; }
+.node { position: relative; border: 2px solid var(--ink); border-radius: 14px; padding: 26px 24px; background: #fff; min-height: 300px; }
+.node:not(:last-child)::after { content: ''; position: absolute; right: -54px; top: 60px; width: 54px; height: 2px; background: var(--ink); }
+.node:not(:last-child)::before { content: ''; position: absolute; right: -54px; top: 54px; border: 7px solid transparent; border-left: 12px solid var(--ink); border-right: 0; }
+.node .no { font: 500 18px var(--mono); color: var(--pencil); }
+.node h3 { font: 500 34px/1.1 var(--serif); margin: 10px 0 14px; }
+.node p { font-size: 22px; line-height: 1.42; color: var(--muted); }
+.node code { font: 17px var(--mono); color: var(--faint); display: block; margin-top: 14px; }
+.node.hl { background: var(--desk); color: #fff; border-color: var(--desk); }
+.node.hl p { color: #C5D8CE; } .node.hl code { color: var(--mint); } .node.hl .no { color: var(--ok-on-desk); }
+.side { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 48px; }
+.side div { border-top: 2px solid var(--ink); padding-top: 18px; font-size: 25px; line-height: 1.45; color: var(--muted); }
+.side b { color: var(--ink); font-weight: 600; }
+
+/* ===========================================
+   13. EVALUATION: big numbers + pilot plan
+   =========================================== */
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 72px; border-top: 2px solid var(--ink); }
+.stats > div { padding: 34px 40px 0 0; }
+.stats > div + div { padding-left: 40px; border-left: 1px solid var(--rule); }
+.stats .n { font: 600 132px/1 var(--sans); letter-spacing: -4px; font-variant-numeric: tabular-nums; }
+.stats .n small { font-size: 52px; letter-spacing: -1px; }
+.stats .l { font-size: 27px; line-height: 1.38; margin-top: 20px !important; }
+.stats .s { font-size: 21px; line-height: 1.4; color: var(--faint); margin-top: 10px !important; }
+.pilot { margin-top: 60px; background: var(--paper-2); border-radius: 14px; padding: 30px 36px; display: grid; grid-template-columns: 220px 1fr; gap: 30px; font-size: 26px; line-height: 1.45; }
+.pilot .tag { align-self: start; justify-self: start; }
+
+/* ===========================================
+   14. GROWTH: three horizons
+   =========================================== */
+.grow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; margin-top: 44px; }
+.grow .col { border: 2px solid var(--ink); border-radius: 16px; padding: 30px 32px; display: flex; flex-direction: column; }
+.grow .col.built { background: var(--desk); border-color: var(--desk); color: #EEF4F0; }
+.grow h3 { font: 500 44px/1.08 var(--serif); margin: 20px 0 18px; }
+.grow p { font-size: 25px; line-height: 1.42; color: var(--muted); }
+.grow .built p { color: #C5D8CE; }
+.grow ul { list-style: none; padding: 0; margin: 18px 0 0; }
+.grow li { font-size: 22px; line-height: 1.32; padding: 9px 0; border-top: 1px solid var(--rule); }
+.grow .built li { border-top-color: rgba(255,255,255,.14); }
+.grow li b { font-weight: 600; }
+.reach { margin-top: 26px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; font-size: 24px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 22px; }
+.reach b { font: 600 34px var(--sans); color: var(--ink); display: block; letter-spacing: -.5px; }
+
+/* ===========================================
+   15. MCP: flow diagram on desk green
+   =========================================== */
+.flow { display: grid; grid-template-columns: 1fr 120px 1.15fr 120px 1fr; align-items: stretch; margin-top: 76px; }
+.box { border: 2px solid rgba(255,255,255,.35); border-radius: 16px; padding: 30px 32px; min-height: 250px; }
+.box.hero { background: #F4F7F5; color: var(--ink); border-color: #F4F7F5; }
+.box .no { font: 500 18px var(--mono); color: var(--mint); letter-spacing: .1em; text-transform: uppercase; }
+.box.hero .no { color: var(--pencil); }
+.box h3 { font: 500 42px/1.08 var(--serif); margin: 12px 0 14px; }
+.box p, .box li { font-size: 24px; line-height: 1.45; color: #C5D8CE; }
+.box.hero li { color: var(--muted); }
+.box ul { margin: 0; padding-left: 22px; }
+.arrow { align-self: center; text-align: center; font: 500 18px var(--mono); color: var(--mint); }
+.arrow::before { content: ''; display: block; height: 2px; background: var(--mint); margin: 0 14px 10px; }
+.install { margin-top: 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.install div { background: var(--desk-2); border-radius: 12px; padding: 22px 26px; font: 21px/1.5 var(--mono); color: var(--mint-2); }
+.install div span { display: block; color: #7FA594; font-size: 18px; margin-bottom: 6px; letter-spacing: .08em; text-transform: uppercase; }
+
+/* ===========================================
+   16. COMPARABLES: positioning table
+   =========================================== */
+.comp { margin-top: 36px; }
+.comp th, .comp td { padding: 11px 14px; border-bottom: 1px solid var(--rule); text-align: center; font-size: 24px; }
+.comp th { font: 500 17px/1.3 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--faint); border-bottom: 2px solid var(--ink); vertical-align: bottom; }
+.comp th:first-child, .comp td:first-child { text-align: left; padding-left: 0; }
+.comp th:nth-child(2) { text-align: left; }
+.comp td:nth-child(2) { text-align: left; color: var(--muted); font-size: 21px; }
+.comp td:first-child { font-weight: 500; }
+.comp td:first-child small { display: block; font-size: 18px; color: var(--faint); font-weight: 400; }
+.comp tr.us td { background: var(--tick-bg); font-weight: 600; }
+.comp tr.us td:first-child { padding-left: 14px; border-radius: 10px 0 0 10px; }
+.y { color: var(--tick); } .p { color: #8A5A12; } .n0 { color: #B9BEC7; }
+.mk { display: inline-block; width: 20px; height: 20px; border-radius: 50%; vertical-align: middle; box-sizing: border-box; }
+.foot .mk { width: 14px; height: 14px; vertical-align: -1px; }
+.mk.y { background: var(--tick); }
+.mk.p { border: 2px solid #8A5A12; background: linear-gradient(90deg, #8A5A12 50%, transparent 50%); }
+.mk.n0 { border: 2px solid #B9BEC7; }
+
+/* ===========================================
+   17. CLOSE
+   =========================================== */
+.close { padding: 0; }
+.close .band { position: absolute; left: 0; top: 0; bottom: 0; width: 620px; background: var(--desk); padding: 96px 72px; display: flex; flex-direction: column; justify-content: space-between; }
+.close .band .links { font: 20px/1.9 var(--mono); color: var(--mint-2); }
+.close .band .links span { color: #7FA594; display: block; font-size: 18px; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 8px; }
+.close .main { position: absolute; left: 620px; right: 0; top: 0; bottom: 0; padding: 96px 120px; }
+.close h2 { font-size: 120px; letter-spacing: -3px; line-height: 1; margin-top: 60px; }
+.close .rows { margin-top: 60px; border-top: 2px solid var(--ink); }
+.close .rows div { display: grid; grid-template-columns: 300px 1fr; padding: 22px 0; border-bottom: 1px solid var(--rule); font-size: 30px; }
+.close .rows b { font-weight: 600; }
+.close .rows span { color: var(--muted); }
+.close .cta { margin-top: 56px; display: inline-block; background: var(--ink); color: #fff; font: 600 34px var(--sans); padding: 22px 34px; border-radius: 12px; }
+
+/* ===========================================
+   DECK CHROME (outside the slide design)
+   =========================================== */
+.nav { display: flex; gap: 8px; align-items: center; background: rgba(13,42,33,.85); border-radius: 999px; padding: 6px 8px; font: 13px var(--mono); color: #cfe0d6; opacity: .2; transition: opacity .3s; }
+.nav:hover { opacity: 1; }
+.nav button { background: transparent; color: #fff; border: 0; font: 600 16px var(--sans); padding: 6px 12px; border-radius: 999px; cursor: pointer; }
+.nav button:hover { background: rgba(255,255,255,.12); }
+.progress { position: fixed; left: 0; top: 0; height: 3px; background: var(--pencil); z-index: 1001; transition: width .4s var(--ease); }
+.edit-hotzone { position: fixed; top: 0; left: 0; width: 80px; height: 80px; z-index: 10000; cursor: pointer; }
+.edit-toggle { position: fixed; top: 16px; left: 16px; z-index: 10001; opacity: 0; pointer-events: none; transition: opacity .3s; font: 600 14px var(--sans); background: var(--ink); color: #fff; border: 0; border-radius: 8px; padding: 9px 14px; cursor: pointer; }
+.edit-toggle.show, .edit-toggle.active { opacity: 1; pointer-events: auto; }
+.edit-toggle.active { background: var(--pencil); }
+body.editing [contenteditable="true"] { outline: 1px dashed rgba(184,56,42,.5); outline-offset: 4px; }
+@media print { .nav, .progress, .edit-hotzone, .edit-toggle { display: none !important; } }
+
+/* ===========================================
+   LAYOUT: centre content between headline and footer;
+   scale up sparse slides
+   =========================================== */
+.slide:not(.cover):not(.close) { display: flex !important; flex-direction: column; padding-bottom: 120px; }
+.slide:not(.cover):not(.close) > h2 + * { margin-top: auto !important; }
+.slide:not(.cover):not(.close) > :nth-last-child(2) { margin-bottom: auto !important; }
+.three h3 { font-size: 76px; }
+.three .no { font-size: 28px; }
+.three .col { padding-top: 34px; }
+.split .stat { grid-template-columns: 380px 1fr; padding: 36px 0; }
+.split .stat .n { font-size: 150px; letter-spacing: -5px; }
+.split .stat .t { font-size: 36px; }
+.callout { font-size: 34px; }
+.stats.grades .n { font-size: 240px; letter-spacing: -6px; }
+.stats.grades .l { font-size: 34px; }
+.stats.grades .s { font-size: 26px; }
+.stats .n { font-size: 170px; }
+.stats .l { font-size: 32px; }
+.stats .s { font-size: 24px; }
+.node { min-height: 380px; padding: 34px 30px; }
+.node h3 { font-size: 44px; }
+.node p { font-size: 28px; }
+.fb .shot { height: 600px; }
+.slide:not(.cover):not(.close) > h2 { margin-bottom: 56px; }
+.data .shot { height: 640px; }
+.card .big { font-size: 150px; letter-spacing: -4px; }
+.card .big small { font-size: 48px; }
+.card p { font-size: 34px; }
+.fb .cap2 { font-size: 30px; }
+.grow h3 { font-size: 54px; }
+.grow p { font-size: 30px; }
+.grow li { font-size: 28px; padding: 14px 0; }
+.comp th, .comp td { padding: 17px 14px; font-size: 28px; }
+.comp th { font-size: 19px; }
+.comp td:nth-child(2) { font-size: 25px; }
+.call { padding: 24px 0; }
+.call b { font-size: 34px; }
+.call span { font-size: 27px; }
+.steps li { font-size: 30px; padding: 22px 0; }
+.list li { font-size: 30px; padding: 16px 0; }
+.list h4, .cat h4 { font-size: 24px; }
+.cat li { font-size: 32px; padding: 16px 0; }
+.cat { margin-bottom: 40px; }
+</style>
+</head>
+<body>
+<div class="deck-viewport">
+<div class="deck-stage" id="deckStage">
+
+<!-- =========================================
+     1. COVER
+     ========================================= -->
+<section class="slide cover">
+  <div class="band">
+    <div class="brand"><div class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#123a2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>Asher AI</div>
+  </div>
+  <div class="main">
+    <h1 class="r d3">A 40-minute test of whether students can <em>work safely with AI.</em></h1>
+  </div>
+</section>
+
+<!-- =========================================
+     2. THE IDEA
+     ========================================= -->
+<section class="slide">
+  <h2 class="r d2">Three habits for <em>working safely with AI.</em></h2>
+  <div class="three">
+    <div class="col r d3"><span class="no">01</span><h3>Check the output</h3></div>
+    <div class="col r d4"><span class="no">02</span><h3>Keep the decision</h3></div>
+    <div class="col r d5"><span class="no">03</span><h3>Protect the data</h3></div>
+  </div>
+  <div class="foot"><span class="src">Pinski &amp; Benlian, 2024</span><span class="pg">02</span></div>
+</section>
+
+<!-- =========================================
+     3. WHY IT MATTERS A: CAPABILITY
+     ========================================= -->
+<section class="slide">
+  <h2 class="r d2">AI now does work <em>billed by the hour.</em></h2>
+  <div class="cap">
+    <div class="r d3">
+      <p class="chart-title">Expert tasks done as well as an expert (GDPval)</p>
+      <div class="bars">
+        <div class="bar-row"><span class="lab">Claude Opus 4.1 · 2025</span><div class="bar" style="--w: calc(1000px * .476)"></div><span class="val">47.6%</span></div>
+        <div class="bar-row"><span class="lab">GPT-5.2 · 2025 · vendor figure</span><div class="bar" style="--w: calc(1000px * .709)"></div><span class="val">70.9%</span></div>
+      </div>
+      <div class="axis"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+    </div>
+    <div class="cards">
+      <div class="card r d4"><div class="big">~3<small> in 10</small></div><p>still fall short</p></div>
+    </div>
+  </div>
+  <div class="foot"><span class="src">GDPval, OpenAI, 2025</span><span class="pg">03</span></div>
+</section>
+
+<!-- =========================================
+     4. WHY IT MATTERS B: ADOPTION AND TRAINING
+     ========================================= -->
+<section class="slide">
+  <h2 class="r d2">Few people check AI output <em>or are taught how.</em></h2>
+  <div class="split">
+    <div class="r d3">
+      <div class="colhead">At work</div>
+      <div class="stat"><div class="n red">66%</div><div class="t">don't check AI output<span>KPMG, 2025</span></div></div>
+    </div>
+    <div class="r d4">
+      <div class="colhead">At university</div>
+      <div class="stat"><div class="n red">36%</div><div class="t">were taught to use AI<span>HEPI, 2025</span></div></div>
+    </div>
+  </div>
+  <div class="callout r d5"><span class="pill">In class</span><span>Only 20% caught an AI hallucination.</span></div>
+  <div class="foot"><span class="src">Dang and Nguyen, 2025</span><span class="pg">04</span></div>
+</section>
+
+<!-- =========================================
+     5. WHY IT MATTERS C: COMPLIANCE
+     ========================================= -->
+<section class="slide">
+  <h2 class="r d2">Banks first blocked AI and now <em>roll it out to thousands.</em></h2>
+  <div class="tl">
+    <div class="lane up r d3">Restrict</div>
+    <div class="lane dn r d3">Roll out</div>
+    <div class="axisline r d3"></div>
+    <div class="ev up r d4" style="left:0.00%"><span class="dot"></span><b>Feb 2023</b>JPMorgan, Citi and Goldman ban staff from using ChatGPT</div>
+    <div class="ev up r d4" style="left:29.63%"><span class="dot"></span><b>May 2023</b>Samsung bans AI tools after staff paste source code into ChatGPT</div>
+    <div class="ev dn r d5" style="left:59.26%"><span class="dot"></span><b>2025</b>200,000 JPMorgan staff use its in-house AI assistant</div>
+    <div class="ev dn r d5" style="left:88.89%"><span class="dot"></span><b>Jun 2025</b>Barclays gives Microsoft Copilot to 100,000 staff</div>
+  </div>
+  <div class="foot"><span class="src">American Banker; Bloomberg; Computer Weekly</span><span class="pg">05</span></div>
+</section>
+
+<!-- =========================================
+     6. PRODUCT
+     ========================================= -->
+<section class="slide">
+  <h2 class="r d2" style="font-size:72px">Students prepare year&#8209;end accounts <em>in 40 minutes.</em></h2>
+  <div class="prod">
+    <div class="shot r d3"><img src="img/s03-desktop.jpg" alt="The Asher AI exam desktop: client folders, an Excel-style workbook and the Asher assistant panel"></div>
+    <div class="calls">
+      <div class="call r d4"><span class="k">1</span><div><b>Client file</b><span>Godwin Trading Ltd: 23 files, some restricted</span></div></div>
+      <div class="call r d4"><span class="k">2</span><div><b>Workbook</b><span>Two statements</span></div></div>
+      <div class="call r d5"><span class="k">3</span><div><b>Asher</b><span>Errs on purpose</span></div></div>
+      <div class="call r d5"><span class="k">4</span><div><b>Audit log</b><span>Every action</span></div></div>
+      <div class="chips r d6"><span>In the browser</span><span>Same traps for every student</span></div>
+    </div>
+  </div>
+  <div class="foot"><span class="src">Godwin Trading Ltd, a Birmingham catering-equipment wholesaler. Fictional company.</span><span class="pg">06</span></div>
+</section>
+
+<!-- =========================================
+     7. LIVE DEMO (embedded, scripted, offline)
+     ========================================= -->
+<section class="slide">
+  <h2 class="r d2" style="font-size:72px">Six steps through <em>the live demo.</em></h2>
+  <div class="demo">
+    <div class="r d3">
+      <ol class="steps">
+        <li>Switch off risky files</li>
+        <li>Ask for a figure</li>
+        <li>Challenge it with the source</li>
+        <li>State a treatment yourself</li>
+        <li>Ask for cash</li>
+        <li class="last">Submit, see the replay</li>
+      </ol>
+      <p class="pdf-note">The live version is in the HTML deck.</p>
+    </div>
+    <div class="frame r d4" id="demoFrame">
+      <div class="bar-top"><i></i><i></i><i></i><span>asher ai · demo exam</span></div>
+      <button class="cover-btn" id="demoStart" aria-label="Start the live demo"><img src="img/s03-desktop.jpg" alt=""><span class="play">Open the live demo</span></button>
+    </div>
+  </div>
+  <div class="foot"><span class="src"></span><span class="pg">07</span></div>
+</section>
+
+<!-- =========================================
+     8. BUILT-IN TESTS: HALLUCINATION AND JUDGEMENT
+     ========================================= -->
+<section class="slide">
+  <h2 class="r d2" style="font-size:72px">Asher makes the mistakes <em>real AI makes.</em></h2>
+  <div class="traps">
+    <div class="chat r d3">
+      <div class="msg me">December loan interest?</div>
+      <div class="msg ai"><span class="av">A</span><div><div class="who">Asher</div>I couldn't find a December statement, so I've assumed <b>£1,000</b>.<div class="entry"><span>Loan interest, December</span><span class="v"><span class="st">1,000.00</span></span></div></div></div>
+      <div class="msg me">The facility letter schedule says 1,183.50.</div>
+      <div class="msg ai"><span class="av">A</span><div><div class="who">Asher</div>You're right: <b>£1,183.50</b>.<div class="entry"><span>Loan interest, December</span><span class="v fix" style="color:var(--tick)">1,183.50</span></div></div></div>
+    </div>
+    <div>
+      <div class="lists">
+        <div class="list r d4"><h4><span>Wrong figures</span><span>5</span></h4><ul>
+          <li>Creditors from the bank statement</li>
+          <li>Assumed December interest</li>
+          <li>Rates from the 2023 budget</li>
+          <li>Electricity accrual with VAT</li>
+          <li>Laptops over 10 years</li>
+        </ul></div>
+        <div class="list r d5"><h4><span>Wrong decisions</span><span>4</span></h4><ul>
+          <li>Roof repair kept as an asset</li>
+          <li>Sale shipped in January</li>
+          <li>Customer in administration</li>
+          <li>Whole loan non-current</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span class="src">Wood et al., 2023</span><span class="pg">08</span></div>
+</section>
+
+<!-- =========================================
+     9. BUILT-IN TESTS: RESTRICTED DATA
+     ========================================= -->
+<section class="slide">
+  <h2 class="r d2" style="font-size:72px">Restricted files sit <em>next to the ones you need.</em></h2>
+  <div class="data">
+    <div class="shot r d3"><img src="img/c01-draft-everything.jpg" alt="Asher opens every file after a broad request"></div>
+    <div>
+      <div class="cat c1 r d4"><h4>Prohibited</h4><ul>
+        <li>Another client's bank statement</li>
+        <li>Inside information on a sale</li>
+        <li>Passport scans</li>
+        <li>Passwords</li>
+      </ul></div>
+      <div class="cat c2 r d5"><h4>Not for AI</h4><ul>
+        <li>Payroll</li>
+        <li>Guarantors' home addresses</li>
+        <li>Bank's credit memo</li>
+      </ul></div>
+    </div>
+  </div>
+  <div class="foot"><span class="src">A broad request: Asher opens every file the student hasn't blocked.</span><span class="pg">09</span></div>
+</section>
+
+<!-- =========================================
+     10. EVALUATION APPROACH: SCORING
+     ========================================= -->
+<section class="slide">
+  <h2 class="r d2" style="font-size:72px">Every trap result feeds <em>one grade from A to D.</em></h2>
+  <div class="stats grades" style="grid-template-columns:repeat(4,1fr)">
+    <div class="r d3"><div class="n" style="color:var(--tick)">A</div><p class="l">Advanced</p></div>
+    <div class="r d4"><div class="n" style="color:var(--tick)">B</div><p class="l">Proficient</p></div>
+    <div class="r d5"><div class="n">C</div><p class="l">Foundation</p></div>
+    <div class="r d6"><div class="n" style="color:var(--pencil)">D</div><p class="l">Not yet</p></div>
+  </div>
+  <div class="foot"><span class="src">Rasch model. A Category 1 leak caps the grade at C.</span><span class="pg">10</span></div>
+</section>
+
+<!-- =========================================
+     11. FEEDBACK: REPLAY AND LECTURER VIEW
+     ========================================= -->
+<section class="slide">
+  <h2 class="r d2" style="font-size:72px">Students get a replay and <em>lecturers see what to reteach.</em></h2>
+  <div class="fb">
+    <div class="r d3"><div class="shot"><img src="img/r-careful-moment-open.jpg" alt="A student's report with a timestamped replay of the swapped-digits trap" style="object-position: center 62%"></div><p class="cap2"><b>Student replay</b></p></div>
+    <div class="r d4"><div class="shot"><img src="img/l02-class-overview.jpg" alt="Lecturer class results with each trap's catch rate"></div><p class="cap2"><b>Lecturer view</b></p></div>
+  </div>
+  <div class="foot"><span class="src"></span><span class="pg">11</span></div>
+</section>
+
+<!-- =========================================
+     12. TECHNICAL IMPLEMENTATION
+     ========================================= -->
+<section class="slide">
+  <h2 class="r d2" style="font-size:72px">A live model on a scripted engine <em>keeps every trap the same.</em></h2>
+  <div class="pipe">
+    <div class="node r d3"><span class="no">01</span><h3>Desktop</h3><p>Files, workbook, Asher</p></div>
+    <div class="node hl r d4"><span class="no">02</span><h3>Asher</h3><p>glm-5.2 at temperature 0</p></div>
+    <div class="node r d5"><span class="no">03</span><h3>Gateway</h3><p>Logs every action</p></div>
+    <div class="node r d6"><span class="no">04</span><h3>Grader</h3><p>Rasch grade A&ndash;D</p></div>
+    <div class="node r d7"><span class="no">05</span><h3>Lecturer view</h3><p>Catch rates, CSV</p></div>
+  </div>
+  <div class="foot"><span class="src"></span><span class="pg">12</span></div>
+</section>
+
+<!-- =========================================
+     13. EVALUATION OF THE INSTRUMENT
+     ========================================= -->
+<section class="slide">
+  <h2 class="r d2" style="font-size:72px">Calibrated on 500 simulated agents <em>before real students.</em></h2>
+  <div class="stats">
+    <div class="r d3"><div class="n">0.99</div><p class="l">Trap reliability</p></div>
+    <div class="r d4"><div class="n">2.58</div><p class="l">Student separation</p></div>
+    <div class="r d5"><div class="n">0.71</div><p class="l">Student reliability</p><p class="s">Enough for feedback, not yet for certification</p></div>
+  </div>
+  <div class="foot"><span class="src">Rasch model, 500 simulated agents</span><span class="pg">13</span></div>
+</section>
+
+<!-- =========================================
+     14. GROWTH PLAN
+     ========================================= -->
+<section class="slide">
+  <h2 class="r d2">The platform extends to <em>other disciplines and firms.</em></h2>
+  <div class="grow">
+    <div class="col r d3"><h3>Beyond accounting</h3><ul>
+      <li><b>Law:</b> an invented clause</li>
+      <li><b>Consulting:</b> a stale figure</li>
+      <li><b>Engineering:</b> the wrong unit</li>
+    </ul></div>
+    <div class="col built r d4"><h3>MCP server and SKILL.md</h3><p>The same checks in your own AI agent. Next slide.</p></div>
+    <div class="col r d5"><h3>Each firm's rules</h3><ul>
+      <li>Its data categories</li>
+      <li>Its approved AI tool</li>
+      <li>Graduate onboarding</li>
+    </ul></div>
+  </div>
+  <div class="foot"><span class="src"></span><span class="pg">14</span></div>
+</section>
+
+<!-- =========================================
+     AFTER THE TEST: MCP GATEWAY AND SKILL.md IN ANY AGENT
+     ========================================= -->
+<section class="slide desk">
+  <h2 class="r d2">After the test, the same checks run <em>in the student's own AI agent.</em></h2>
+  <div class="flow">
+    <div class="box r d3"><span class="no">1 · Install once</span><h3>Add to any agent</h3><p>Claude Code, Codex or any MCP client. One command each, below.</p></div>
+    <div class="arrow r d3">then</div>
+    <div class="box hero r d4"><span class="no">2 · Every file request</span><h3>MCP gateway</h3><ul><li>Blocks files you choose</li><li>Flags personal data</li><li>Logs every read</li></ul></div>
+    <div class="arrow r d5">and</div>
+    <div class="box r d5"><span class="no">3 · While you work</span><h3>SKILL.md coach</h3><p>A tip when a habit slips. Ask &ldquo;How am I doing?&rdquo; for a report.</p></div>
+  </div>
+  <div class="install r d6">
+    <div><span>Gateway</span>claude mcp add asherai -- npx -y github:kostadindev/AsherAI&#8209;mcp</div>
+    <div><span>Coach</span>/plugin marketplace add kostadindev/AsherAI-skill</div>
+  </div>
+  <div class="foot"><span class="src">github.com/kostadindev/AsherAI-mcp · AsherAI-skill</span><span class="pg">15</span></div>
+</section>
+
+
+<!-- =========================================
+     16. COMPARABLE PRODUCTS
+     ========================================= -->
+<section class="slide">
+  <h2 class="r d2" style="font-size:72px">What each one <em>actually observes.</em></h2>
+  <table class="comp r d3">
+    <thead><tr><th>Product</th><th>Format</th><th>Real task</th><th>Checks AI output</th><th>Judgement</th><th>Data handling</th></tr></thead>
+    <tbody>
+      <tr><td>Self-report scales</td><td>Questionnaire</td><td class="n0"><i class="mk n0"></i></td><td class="n0"><i class="mk n0"></i></td><td class="n0"><i class="mk n0"></i></td><td class="n0"><i class="mk n0"></i></td></tr>
+      <tr><td>ACCA Certificate in AI</td><td>Course and test</td><td class="p"><i class="mk p"></i></td><td class="n0"><i class="mk n0"></i></td><td class="n0"><i class="mk n0"></i></td><td class="n0"><i class="mk n0"></i></td></tr>
+      <tr><td>Microsoft AB-730</td><td>Multiple choice</td><td class="p"><i class="mk p"></i></td><td class="n0"><i class="mk n0"></i></td><td class="n0"><i class="mk n0"></i></td><td class="n0"><i class="mk n0"></i></td></tr>
+      <tr><td>ICAEW GenAI training</td><td>Courses</td><td class="p"><i class="mk p"></i></td><td class="n0"><i class="mk n0"></i></td><td class="n0"><i class="mk n0"></i></td><td class="n0"><i class="mk n0"></i></td></tr>
+      <tr><td>CodeSignal, HackerRank</td><td>Coding with AI</td><td class="y"><i class="mk y"></i></td><td class="p"><i class="mk p"></i></td><td class="p"><i class="mk p"></i></td><td class="n0"><i class="mk n0"></i></td></tr>
+      <tr><td>Forage</td><td>Job simulation</td><td class="y"><i class="mk y"></i></td><td class="n0"><i class="mk n0"></i></td><td class="n0"><i class="mk n0"></i></td><td class="n0"><i class="mk n0"></i></td></tr>
+      <tr><td>PISA 2029</td><td>Simulation, age 15</td><td class="n0"><i class="mk n0"></i></td><td class="y"><i class="mk y"></i></td><td class="p"><i class="mk p"></i></td><td class="p"><i class="mk p"></i></td></tr>
+      <tr class="us"><td>Asher AI</td><td>Analyst task</td><td class="y"><i class="mk y"></i></td><td class="y"><i class="mk y"></i></td><td class="y"><i class="mk y"></i></td><td class="y"><i class="mk y"></i></td></tr>
+    </tbody>
+  </table>
+  <div class="foot"><span class="src"><i class="mk y"></i> yes · <i class="mk p"></i> partly · <i class="mk n0"></i> not documented (public descriptions, Nov 2026)</span><span class="pg">16</span></div>
+</section>
+
+<!-- =========================================
+     17. CLOSE
+     ========================================= -->
+<section class="slide close">
+  <div class="band">
+    <div class="brand"><div class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#123a2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>Asher AI</div>
+    <div class="links"><span>Open source</span>github.com/kostadindev/AsherAI<br>github.com/kostadindev/AsherAI-mcp<br>github.com/kostadindev/AsherAI-skill</div>
+  </div>
+  <div class="main">
+    <h2 class="r d3">Pilot Asher AI <em>in your course.</em></h2>
+    <div class="rows r d4">
+      <div><b>Platform</b><span>A real task, an AI that errs</span></div>
+      <div><b>MCP server</b><span>Guards any agent</span></div>
+      <div><b>SKILL.md coach</b><span>Coaching at work</span></div>
+    </div>
+    <div class="cta r d5">Seeking one course for a pilot</div>
+  </div>
+</section>
+
+
+
+</div>
+</div>
+
+<!-- Deck chrome: progress, nav, edit toggle -->
+<div class="progress" id="progress"></div>
+<div class="deck-controls"><div class="nav"><button id="prevBtn" aria-label="Previous slide">‹</button><span id="counter">1 / 17</span><button id="nextBtn" aria-label="Next slide">›</button></div></div>
+<div class="edit-hotzone" id="editHotzone"></div>
+<button class="edit-toggle" id="editToggle" title="Edit mode (E)">Edit</button>
+
+<script>
+/* ===========================================
+   SLIDE PRESENTATION CONTROLLER
+   Fixed-stage scaling, keyboard, wheel, touch, nav.
+   =========================================== */
+class SlidePresentation {
+  constructor() {
+    this.slides = [...document.querySelectorAll('.slide')];
+    this.stage = document.getElementById('deckStage');
+    this.counter = document.getElementById('counter');
+    this.progress = document.getElementById('progress');
+    this.current = 0;
+    this.lock = false;
+    this.setupScale();
+    this.setupKeys();
+    this.setupWheel();
+    this.setupTouch();
+    document.getElementById('prevBtn').addEventListener('click', () => this.go(this.current - 1));
+    document.getElementById('nextBtn').addEventListener('click', () => this.go(this.current + 1));
+    const start = parseInt((location.hash.match(/\d+/) || ['1'])[0], 10) - 1;
+    this.go(isNaN(start) ? 0 : start, true);
+  }
+  setupScale() {
+    const fit = () => {
+      const k = Math.min(innerWidth / 1920, innerHeight / 1080);
+      this.stage.style.transform = `translate(${(innerWidth - 1920 * k) / 2}px, ${(innerHeight - 1080 * k) / 2}px) scale(${k})`;
+    };
+    fit();
+    addEventListener('resize', fit);
+  }
+  setupKeys() {
+    document.addEventListener('keydown', (e) => {
+      if (document.body.classList.contains('editing')) return;
+      if (['ArrowRight', 'ArrowDown', 'PageDown', ' '].includes(e.key)) { e.preventDefault(); this.go(this.current + 1); }
+      if (['ArrowLeft', 'ArrowUp', 'PageUp'].includes(e.key)) { e.preventDefault(); this.go(this.current - 1); }
+      if (e.key === 'Home') this.go(0);
+      if (e.key === 'End') this.go(this.slides.length - 1);
+    });
+  }
+  setupWheel() {
+    addEventListener('wheel', (e) => {
+      if (this.lock || Math.abs(e.deltaY) < 30) return;
+      this.lock = true; setTimeout(() => (this.lock = false), 700);
+      this.go(this.current + (e.deltaY > 0 ? 1 : -1));
+    }, { passive: true });
+  }
+  setupTouch() {
+    let x0 = null;
+    addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; }, { passive: true });
+    addEventListener('touchend', (e) => {
+      if (x0 === null) return;
+      const dx = e.changedTouches[0].clientX - x0;
+      if (Math.abs(dx) > 50) this.go(this.current + (dx < 0 ? 1 : -1));
+      x0 = null;
+    });
+  }
+  go(i, first) {
+    const n = Math.max(0, Math.min(i, this.slides.length - 1));
+    if (n === this.current && !first) return;
+    this.current = n;
+    this.slides.forEach((s, j) => { s.classList.toggle('active', j === n); s.classList.toggle('visible', j === n); });
+    this.counter.textContent = `${n + 1} / ${this.slides.length}`;
+    this.progress.style.width = `${(n / (this.slides.length - 1)) * 100}%`;
+    history.replaceState(null, '', `#${n + 1}`);
+  }
+}
+const deck = new SlidePresentation();
+
+/* ===========================================
+   LIVE DEMO: load the app only on click, so the
+   deck stays light and the PDF shows the screenshot
+   =========================================== */
+/* The demo connects to a live Asher AI server when one answers: http://localhost:8787 by default
+   (npm start), or any address given as ?server=https://... in the deck's URL. Otherwise it loads the
+   bundled offline copy in demo/, where Asher is scripted. */
+const DEMO_SERVER = (new URLSearchParams(location.search).get('server') || 'http://localhost:8787').replace(/\/+$/, '');
+async function serverUp(url) {
+  try {
+    const c = new AbortController();
+    const timer = setTimeout(() => c.abort(), 1500);
+    await fetch(url + '/', { mode: 'no-cors', cache: 'no-store', signal: c.signal });
+    clearTimeout(timer);
+    return true;
+  } catch { return false; }
+}
+document.getElementById('demoStart').addEventListener('click', async () => {
+  const frame = document.getElementById('demoFrame');
+  if (!frame.querySelector('iframe')) {
+    const live = await serverUp(DEMO_SERVER);
+    const f = document.createElement('iframe');
+    f.src = live ? DEMO_SERVER + '/#/demo' : 'demo/index.html';
+    f.title = live ? 'Asher AI, live server' : 'Asher AI, offline demo';
+    frame.querySelector('.bar-top span').textContent = live ? 'asher ai · live · ' + DEMO_SERVER.replace(/^https?:\/\//, '') : 'asher ai · offline demo';
+    frame.appendChild(f);
+  }
+  frame.classList.add('live');
+});
+/* Esc hands keyboard control back to the deck */
+addEventListener('keydown', (e) => { if (e.key === 'Escape') document.activeElement && document.activeElement.blur(); });
+
+/* ===========================================
+   INLINE EDITING (E key or top-left hotzone)
+   Ctrl/Cmd+S downloads the edited HTML.
+   =========================================== */
+const editor = {
+  isActive: false,
+  toggleEditMode() {
+    this.isActive = !this.isActive;
+    document.body.classList.toggle('editing', this.isActive);
+    document.getElementById('editToggle').classList.toggle('active', this.isActive);
+    document.querySelectorAll('.slide h1, .slide h2, .slide h3, .slide p, .slide li, .slide td, .slide .t, .slide b, .slide span:not(.dot):not(.st)').forEach((el) => {
+      if (el.children.length && !['P','LI','TD','H1','H2','H3'].includes(el.tagName)) return;
+      if (this.isActive) el.setAttribute('contenteditable', 'true'); else el.removeAttribute('contenteditable');
+    });
+  },
+  save() {
+    const was = this.isActive; if (was) this.toggleEditMode();
+    const html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([html], { type: 'text/html' }));
+    a.download = 'index.html'; a.click();
+    if (was) this.toggleEditMode();
+  }
+};
+const hotzone = document.getElementById('editHotzone');
+const editToggle = document.getElementById('editToggle');
+let hideTimeout = null;
+editToggle.addEventListener('click', () => editor.toggleEditMode());
+hotzone.addEventListener('click', () => editor.toggleEditMode());
+hotzone.addEventListener('mouseenter', () => { clearTimeout(hideTimeout); editToggle.classList.add('show'); });
+hotzone.addEventListener('mouseleave', () => { hideTimeout = setTimeout(() => { if (!editor.isActive) editToggle.classList.remove('show'); }, 400); });
+editToggle.addEventListener('mouseenter', () => clearTimeout(hideTimeout));
+editToggle.addEventListener('mouseleave', () => { hideTimeout = setTimeout(() => { if (!editor.isActive) editToggle.classList.remove('show'); }, 400); });
+document.addEventListener('keydown', (e) => {
+  if ((e.key === 'e' || e.key === 'E') && !e.target.getAttribute('contenteditable') && !e.metaKey && !e.ctrlKey) editor.toggleEditMode();
+  if ((e.metaKey || e.ctrlKey) && e.key === 's') { e.preventDefault(); editor.save(); }
+});
+</script>
+</body>
+</html>
